@@ -1,0 +1,1 @@
+> Suppose you are sitting under some extraordinary circumstances. `If you try to calm your mind you will be unable to sit,` and if you try not to be disturbed, your effort will not be the `right effort`. The only effort that will help you is to count your breathing, or to concentrate on your inhaling and exhaling. - Shunryu Suzuki
