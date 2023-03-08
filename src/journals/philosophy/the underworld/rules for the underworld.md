@@ -108,7 +108,32 @@
 - to the person that never has seen the rainbow, it may appear as if someone had barfed all over a unity and ruined perfection
 
 
-- pilgrims progress
+- the underworld can be understood as an unreal or surreal nexus, like Bush's "axis of evil", it is a composite, an admixture of sorts, and this composite can be clothed in a plurality of equally unreal metaphors, i came to understand the underworld that enveloped me (or the one i traversed through), for example, as a crossroads or an intersection where wall street meets little rock, ak. that isn't much by way of a description, but it paints a picture, so you can have some idea of the life i (and my family by extension) lived and what i went through. the point is, when it rains it pours, adversity of any sort never comes alone. 
+
+
+- it took me the first 33-34 years to figure out just where exactly i was. but that's half the battle, an accurate assessment of your location on this spiritual plane will allow you to see things with more clarity
+
+
+- make no mistake, anyone in the underworld is automatically a pilgrim, a more visceral exposition of the spiritual basis of existence isn't possible
+
+
+- understand that nobody puts another in the underworld, nor can you actually enter it by seeking it - you may be born in it like i was, or you may enter it by stroke of sheer happenstance
+
+
+- not all gangsters/spies/cult members etc are in the underworld in the same manner as the chinese don't eat chinese food, to them it is simply food. no it is the very thrownness/Geworfenheit of the human condition that leads a select few through this pilgrimage. stated differently, the underworld needn't necessarily be the world of crime and corruption it is commonly associated with, you might well be a bank teller and go through this shadow region.
+
+
+- The concept of the "dark night of the soul" has a close mapping to journeys taken through the shadow world, albeit a spiritually restrictive one
+
+
+- an "audience" with whatever religious people call "god" is almost guaranteed for successful pilgrims, i was fortunate enough to be one of those.
+
+
+- this does not, however mean that if you emulate my pilgrimage you will end up in the same position as me, you might, but there is no guarantee of this, there is a leap of faith involved in both worlds
+
+
+- 
+
 - cs lewis
 - kirkegaard
 - twins/duplicates/lookalikes/doppelgangers
