@@ -149,3 +149,35 @@
   - all whys in one word, are you ready? tweak.
   - existence precedes essence because existence is a customisation, a slight tilt on the scale of non-existence
   - the glory of the world passes in translation
+
+
+---
+
+
+- consider the underworld as a spatial coefficient, or metaphorical corollary, to any existenially mortifying temporal label, e.g.  "dark night of the soul".
+
+- it is a mythical place where no one can hear you scream, the realm of "no other", a place where death and debt are trapped in a naval gazing competition until flesh and bone become one. here egos stand in threatening glory while superegos penetrate through narratives hitherto considered closed to inquiry.
+
+- here desire loops on itself and many a criminal and/or philosopher is born. here the uncorrupt are corrupted and the corrupt are absolved,  by virtue of _irreason_.
+
+- shaped like an onion, the underworld is layered and dense as a maze in the desert. 
+
+- jokers define its thresholds as they traverse it, their trails the only source of natural light in any primordial darkness.
+
+- the underworld is a perpetually drunken layer of any human society, and the only way out is through
+
+- the only priviledge of being in the underworld, the only solace is the exclusivity, but if you find it at all glamourous, you're not a pilgrim yet
+
+- regardless at which age you enter it, the underworld feels the same
+
+- here self-interest strips to reveal seld-destructive dreams and taboo and fantasy travel through the zeitgeist like electricity
+
+- here the jokes get funnier, raunchier
+
+- it's the substratum, the subtext and context which feeds the masses, it is the world's own amoral sandbox, a playground for the past, prersent and future of capital, and it's not reserved for the rich alone
+
+- here everything is death and life becomes but a reminder and every day an adventure into new reminders
+
+- only a few who discern bear witness to its machinations
+
+- being here is no different than being under trial for supernatural crimes 
