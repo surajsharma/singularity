@@ -1,3 +1,25 @@
+##mentalmodels
+
+https://fronterablog.com/mental-model-examples-and-their-explanations/
+
+1. Antifragility
+2. Input Goals
+3. Information Arbitrage
+4. Fosbury Flop
+5. Exponential Thinking
+6. Minimum Viable Product
+7. The 5/25 Rule
+8. Compartmentalization
+9. Resistance
+10. The 80/20 Rule
+11. Leverage
+12. Redundancy
+13. The Snowball Effect
+14. Proactive Procrastination
+15. The 5-minute Rule
+16. Unlearning
+1. Second-Order Thinking
+
 
 facts:
 
