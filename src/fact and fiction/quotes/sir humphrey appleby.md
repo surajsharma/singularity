@@ -1,0 +1,1 @@
+Sir Humphrey Appleby : No, they have theright to be ignorant . Knowledge implies complicity,ignorance has a certain Dignity. ... Sir Humphrey Appleby : He who wouldkeep a secret mustkeep it a secret that he hath a secret to keep . Sir Humphrey Appleby : The PrimeMinister Giveth, and the PrimeMinister Taketh Away.

@@ -1,0 +1,1 @@
+“Power prefers darkness. If it’s exposed to light, it erodes”

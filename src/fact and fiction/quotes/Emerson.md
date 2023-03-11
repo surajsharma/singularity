@@ -1,0 +1,1 @@
+The essence of greatness is the perception that virtue is enough. Poverty is its ornament. It does not need plenty, and can very well abide its loss - Emerson

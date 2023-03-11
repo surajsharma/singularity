@@ -1,0 +1,1 @@
+“The physical is inherently entropic, giving off energy in ever more disorderly ways. The metaphysical is antientropic, methodically marshalling energy. Life is antientropic. It is spontaneously inquisitive. It sorts out and endeavors to understand” —R. Buckminster Fuller
