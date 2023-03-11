@@ -38,3 +38,6 @@
 
 ## learn pain management from the blind, nightmare management from us
 
+## if you found god would you want to play a finite game with him?
+
+
