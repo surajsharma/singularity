@@ -3,7 +3,7 @@
 [[Rick Roderick]]
 [[You Know Nothing of My Work! - Douglas Coupland]]
 
-[[0. introduction: something to write home about]]
+[[0 introduction: something to write home about]]
 
 > phd thesis:  human is the only self-aware entity in space/time. 
 
