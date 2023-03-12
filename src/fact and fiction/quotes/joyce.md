@@ -1,0 +1,1 @@
+"I will not serve that in which I no longer believe whether it call itself my home, my fatherland or my church: and I will try to express myself in some mode of life or art as freely as I can and as wholly as I can, using for my defence the only arms I allow myself to use – silence, exile, and cunning."

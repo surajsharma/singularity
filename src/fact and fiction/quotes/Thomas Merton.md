@@ -1,0 +1,4 @@
+  Despair is the absolute extreme of self-love. It is reached when a man deliberately turns his back on all help from anyone else in order to taste the rotten luxury of knowing himself to be lost.
+      In every man there is hidden some root of despair because in every man there is pride that vegetates and springs weeds and rank flowers of self-pity as soon as our own resources fail us. But because our own resources inevitably fail us, we are all more or less subject to discouragement and to despair.
+      Despair is the ultimate development of a pride so great and so stiff-necked that it selects the absolute misery of damnation rather than accept happiness from the hands of God and thereby acknowledge that He is above us and that we are not capable of fulfilling our destiny by ourselves.
+      But a man who is truly humble cannot despair, because in the humble man there is no longer any such thing as self-pity.

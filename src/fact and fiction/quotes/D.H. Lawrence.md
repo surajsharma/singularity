@@ -1,0 +1,1 @@
+"Those that go searching for love, only manifest their own loveless-ness. And the loveless never find love, only the loving find love. And they never have to seek for it." - D. H. Lawrence

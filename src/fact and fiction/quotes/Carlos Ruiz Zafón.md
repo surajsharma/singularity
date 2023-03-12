@@ -1,0 +1,1 @@
+Carlos Ruiz Zafón was right when he wrote that "Envy is the #religion of the mediocre. It comforts them, it soothes their worries, and finally it rots their souls, allowing them to justify their meanness and their greed until they believe these to be virtues."
