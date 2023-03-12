@@ -2,7 +2,7 @@
 
 ABSTRACT: A brand new, deeply syncretic ontology. A story of Daesin hitherto unlocked in human unconscious uncovered as a result of new experiments in surveillance.
 
-[[0 introduction: something to write home about]]: (A succinct note on state broadcaster logos, dial-uop modem meets metaphysics)
+[[0 introduction - something to write home about]]: (A succinct note on state broadcaster logos, dial-uop modem meets metaphysics)
 
 [[1 revealed knowledge and revealed hoaxes]]  (a-deconstruction-in-a-quad/spooky action at a distance, feedback and strange loops, language as a lorenz attractor (deep structure, indeterminacy of translation), finite state machines (consciousness, qualia, pain), paradigmatic efficiency of a functional view of the universe, twice born vs born again aka recursion,  epistemological idealism and science, nature of time and knowledge in myth, socrates' trial and plato's cave, the phenomenology of vision or why the brahmin appears as brahmin, the nuclear premise of brahminical might and supremacy, reduced stature of brahmin in modernity, trinities and their hierarchies, i and thou: the two ends of a mantra, subjective perception of time and space, the dogmas of instrumental reason, sense data and its filters, ...on discerning,  )
 
@@ -24,7 +24,7 @@ ABSTRACT: A brand new, deeply syncretic ontology. A story of Daesin hitherto unl
 [[7 the brahmin and the buddha]], a 21st century transcription (when god wants to fight aka (non)/violence, a matter of domains)
 
 
-[[8 modern hinduism: a show about nothing]] (the chimera that is tech, caste your vote, AI or astrology? (Dark Night of the Soul vs rahu/ketu), deification of error, steve jobs, enlightenment as a never ending war, war as suffering fools gladly, identity politics (hindu rashtra and other totalitarian fantasies (walter benjamin)) )
+[[8 modern hinduism - a show about nothing]] (the chimera that is tech, caste your vote, AI or astrology? (Dark Night of the Soul vs rahu/ketu), deification of error, steve jobs, enlightenment as a never ending war, war as suffering fools gladly, identity politics (hindu rashtra and other totalitarian fantasies (walter benjamin)) )
 
 
 [[9 wall street sannyas and service rendered]] (role of the guru, the other is "not" (heathen activity), solution to evil, charlie munger, ray dalio (debt and credit cycles, on the necessity of cycles), efficient markets, institutional and civilizational decline, zimbardo et al, on the possibility ofd true emancipation for humanity) 
@@ -39,7 +39,7 @@ ABSTRACT: A brand new, deeply syncretic ontology. A story of Daesin hitherto unl
 
 [[12 the future is scruples all the way down]] (barriers to more utopian societies (structural/functional/emotional))
 
-[[13 epilogue: brahminism is theft]] (stealing god from god, shaktism and modernity, be the alien you want to see and mind the gap)
+[[13 epilogue - brahminism is theft]] (stealing god from god, shaktism and modernity, be the alien you want to see and mind the gap)
 
 
 
