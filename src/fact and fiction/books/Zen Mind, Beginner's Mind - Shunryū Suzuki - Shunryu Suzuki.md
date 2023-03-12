@@ -633,3 +633,23 @@
 (Chapter:EPILOGUE)
 
 > Suppose you are sitting under some extraordinary circumstances. `If you try to calm your mind you will be unable to sit,` and if you try not to be disturbed, your effort will not be the `right effort`. The only effort that will help you is to count your breathing, or to concentrate on your inhaling and exhaling. 
+
+
+
+### 3 creations
+
+When we emerge from nothing, when everything emerges from nothing, we see it all as a fresh new creation. 
+
+
+
+This is non-attachment: 
+
+The second kind of creation is when you act, or produce or prepare something like food or tea.  
+ 
+The third kind is to create something within yourself, such as education, or culture, or art, or some system for our society.  
+ 
+But if you forget the first, the most important one, the other two will be like children who have lost their parents; their creation will mean nothing.
+
+
+
+#zen

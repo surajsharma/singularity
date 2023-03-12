@@ -1,12 +1,10 @@
-== PRESCRIPTIVE / NORMATIVE / EPISTEMOLOGY ==
-
 [[attunement]]
 
-[[0. introduction: something to write home about]]: something to write home about
+ABSTRACT: A brand new, deeply syncretic ontology. A story of Daesin hitherto unlocked in human unconscious uncovered as a result of new experiments in surveillance.
 
+[[0. introduction: something to write home about]]: (A succinct note on state broadcaster logos, dial-uop modem meets metaphysics)
 
 [[1. revealed knowledge and revealed hoaxes]]  (a-deconstruction-in-a-quad/spooky action at a distance, feedback and strange loops, language as a lorenz attractor (deep structure, indeterminacy of translation), finite state machines (consciousness, qualia, pain), paradigmatic efficiency of a functional view of the universe, twice born vs born again aka recursion,  epistemological idealism and science, nature of time and knowledge in myth, socrates' trial and plato's cave, the phenomenology of vision or why the brahmin appears as brahmin, the nuclear premise of brahminical might and supremacy, reduced stature of brahmin in modernity, trinities and their hierarchies, i and thou: the two ends of a mantra, subjective perception of time and space, the dogmas of instrumental reason, sense data and its filters, ...on discerning,  )
-
 
 [[2. myth and ideology - whose dream is this anyway?]]` (schelling's tracing of the contours of myth, "emergence" as a hegelian primitive, my spiritual exhibitionism and other german wounds, D&G (empires and schizophrenia), what would darshan do?, the perverse core of christianity up close and personal, on the total reversal of opinion on aliens, kierkegaard and the precarious nature of modern life)
 
