@@ -1,6 +1,4 @@
-A Little Book on the Human Shadow - Robert Bly (Highlight: 70; Note: 0)
-
-───────────────
+# A Little Book on the Human Shadow - Robert Bly (Highlight: 70; Note: 0)
 
 ◆ Foreword
 

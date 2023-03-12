@@ -1,4 +1,4 @@
-Existential Rationalism: Handling Hume's Fork - Eschauzier, Marcel (Highlight: 67; Note: 0) ─────────────── 
+# Existential Rationalism: Handling Hume's Fork - Eschauzier, Marcel (Highlight: 67; Note: 0)
 
 ◆ Existential Rationalism: Handling Hume's Fork ▪ The desire to transcend conceals the truth. 
 

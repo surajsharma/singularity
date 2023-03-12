@@ -1,5 +1,5 @@
 # Blessed Are the Weird: A Manifesto for Creatives - Nordby, Jacob (Highlight: 90; Note: 0)
-───────────────
+
 
 ◆ Dedication
 
