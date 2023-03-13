@@ -33,4 +33,6 @@
 - you made your father as much as he made you  #newontology🪶
 
 
-- 
+- just as i, who was used to saying "yes" had trouble in saying "no", so the naysayers, who are accustomed to saying "no", now have trouble saying "now"
+
+

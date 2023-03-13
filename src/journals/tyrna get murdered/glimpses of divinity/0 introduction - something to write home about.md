@@ -5,7 +5,7 @@
 
 > _"As if one could escape it by turning a switch. That's why I say you can't turn off TV. It can turn you off, but you can't turn it off. You can't make it disappear, but it can make you disappear."_ - [[Rick Roderick]]
 
-## 0.1 A succinct note on state broadcaster logos OR the story of "the retina of the mind's eye" 
+## 0.1 A succinct note on state broadcaster logos OR the story of "the retina of the mind's eye" as witnessed by the people
 
 - State broadcasting was never a glamourous enterprise, rather an undertaking born out of a necessity. Governments had to do it, not as a means of revenue generation but mostly as outreach (especially during wartime when it was imperative that news of the troops reached their families). 
   
@@ -24,7 +24,13 @@
 - Our aim is to first understand precisely how broadcasting is a pathological symptom of an evolving consciousness, thereby reducing to a minimum, the prescriptive aspect of our ontological claims.
 
 
-- 
+- bbc
+- nhk
+- pbs 
+- dd 
+- ct ussr 
+
+
  
 
 ## DIAL-UP MODEM MEETS METAPHYSICS
