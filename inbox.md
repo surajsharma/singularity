@@ -36,3 +36,7 @@
 - just as i, who was used to saying "yes" had trouble in saying "no", so the naysayers, who are accustomed to saying "no", now have trouble saying "now"
 
 
+- #TILFI narcs are easy to please
+
+
+- 

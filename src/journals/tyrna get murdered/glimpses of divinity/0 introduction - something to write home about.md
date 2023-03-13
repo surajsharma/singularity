@@ -5,33 +5,82 @@
 
 > _"As if one could escape it by turning a switch. That's why I say you can't turn off TV. It can turn you off, but you can't turn it off. You can't make it disappear, but it can make you disappear."_ - [[Rick Roderick]]
 
-## 0.1 A succinct note on state broadcaster logos OR the story of "the retina of the mind's eye" as witnessed by the people
+## 0.1 The Screen as Satan: A succinct note on state broadcaster logos 
 
-- State broadcasting was never a glamourous enterprise, rather an undertaking born out of a necessity. Governments had to do it, not as a means of revenue generation but mostly as outreach (especially during wartime when it was imperative that news of the troops reached their families). 
+- State sponsored broadcasting was never a glamourous enterprise, rather an undertaking born out of a necessity. Governments had to do it, not as a means of revenue generation but mostly as outreach (especially during wartime when it was imperative that news of the troops reached their families). 
   
-- Thus was technology pressed into the service of war but it had peacetime uses as well, so human capacity to communicate grew by leaps and bounds. 
+- Thus was technology pressed into the service of war but it wasn't without peacetime utility, human capacity to communicate was set to grow by leaps and bounds, and it did.
 
-- To justify the peacetime uses of radio and later television in the pre cable-tv era, states had to present the technology as benign. 
+- To justify the peacetime uses of radio and later television in the pre cable-tv era, states had to present the technology as benign. For one thing it made capitalism more viable, by cutting the alienation and loneliness of modern industrial life with 11 seconds of entertainment so improbable, no human could resist getting addicted forever. This obviously opened up avenues for business the very least of which was adverstising. 
+
+- but advertising was not the summum bonnum, though it was incentive for those with the means to ensure at least one TV ends up in every home (until Nixon gets elected). Whatever had been the motives of the powers that be, it was an idea whose time had come.
+
+- But it is certainly worth the curiosity as to what the policymakers thought of it at the time. 
+
+- It helped the case that in the US the radio  was popularised in a grassroot-academic manner and given the war, was possibly not enquired into in detail before being launched
+
+- But television, where there has been a lot of intellectual enquiry, despite the sparse enlightened rebuke has managed to spread and morph mimetically, within a few decades,  into screens of all sizes which now also respond to feedback.
+
+- The "progress in the world of bits" is quite nascent compared to the matured technology of signal broadcast, but the crossroads at which AI stands forces us to take a pause and observe the road travelled in this direction.
+
+
+- It was a hideggerian miracle to see TV grow up - in that it connected being with itself, by putting both being and itself at great risk. No doubt the TV screen was the first to get smashed at the instantiation of every revolution since.
+
+
+- But there is a negative edge to the technology, which is seldom discussed - broadcast is a kind of artificial general intelligence - and it is born out of a void (the void in vaccum tubes, in CRTs, and in fiber optic cables). 
+
+
+- Lack is the mother of all invention because the desire of DNA to push forward is simply a void, for the Gutenberg press, the dye can be seen as the lack representative.
+
+
+- Last I checked,  DNA wasn't motivated by a positive reason, it evolves out of a very lack of reason to evolve and this is reflected in all human endeavor. Any logically positivist argument for why the state of afairs is the way it is can only have ultimate utility as a criticism of existence.
+
+
+- The "Black Mirror" aspect of the screen, should have been known at the time of radio went global, however, perhaps the screen was just an extension of radio yet to be consciously discovered. It seems obvious to state that today, man is better is equiped with the perils and pitfalls communicating through screens brings. Yet, it is unable to move forward in the direction of the next stage in the life of this AGI. Where the rate of progress should have hastened it has stalled. Progress got substituted with "growth" but that is quite another book,perhaps for someone else. Lest one assume that what I seek to propose here is the real reason interest rates went negative in Europe.
+
+
+- I was compelled to inquire into the history of (consequently the philosophy behind) broadcast in general and broadcast systems in particular because any truly global AGI that connects the homo sapien in a greater manner has to be a kind of a broadcast, nevermind the "AI" bit. For what will any AI that becomes the "measure of all things" ultimately do but broadcast? I often joke that a truly sentient AI will commit suicide the very moment it gains sentience but sentience isn't the same as being "generally intelligent". General intelligence is a logically positive entity while sentience isn't.
+
+
+- To broadcast is to control, but to be broadcasted to is also a control.
+
 
 - Perhaps these things were marketed as harmless because they had proved their utility in war and had obvious entertainment and educative value, but maybe more importantly, nobody was sure how things may pan out as a result of greater long distance communication over decades.
 
+
 - It isn't that big a stretch of time from the first radio broadcast to today. However, the story of the genesis of electronic means and mediums of communication, and how the masses were expected to perceive them in a civil setting is fossilised quite transparently in the evolution of the insignias of various state broadcasters.
+
 
 - Since this volume, and the story of being it purports to present treats substance largely as a medium for spirit (in a strongly Hegelian interpretation), it is ideal to scaffold the idea on the very primitives of how the very act of perception has been treated in recent history.
 
-- It is only natural to begin a new ontological endeavour by telling the story of how (state) broadcasting - a metaphor for perception freshly turned inside out - was itself perceived how that understanding led us to this moment.
+
+- It is only natural to begin a new ontological endeavour by telling the story of how (state) broadcasting - a metaphor for perception freshly turned inside out - was itself perceived in the early days and how that understanding led us to this moment.
+
 
 - Our aim is to first understand precisely how broadcasting is a pathological symptom of an evolving consciousness, thereby reducing to a minimum, the prescriptive aspect of our ontological claims.
 
+| Service | Year Estd | logo depicts |
+| ------- | --------- | ------------ |
+| BBC     | 19XX      | Word         |
+| NHK     | 19XX      | Word         |
+| PBS     | 19XX      | Community    |
+| DD      | 19XX      | Feedback     |
+| CT-USSR | 19XX      | Science      |
 
-- bbc
-- nhk
-- pbs 
-- dd 
-- ct ussr 
-
-
- 
+- Any consistent, long lived global culture must then be constituted by the following at a minium:
+  - Word
+  - Community 
+  - Science
+  - Feedback
+    - at some level the screen is a "Gaze" turned inward
+    - there is an implication of a "void turned inwards" in the logo, a beautiful play on negative space by the designer
+    - although any evolution at any level is for its own sake, the purporse of broadcast makes it clear how 
+    - broadcast is how the other learns
+    - the other is not 
+    - you are everyone else's other 
+    - therefore, ceteris paribus, you are not (modus tollens)
+  - "Desire is desire for the other"
+  - "The other is not" - every boradcast is a broadcast of this fact, this is 
 
 ## DIAL-UP MODEM MEETS METAPHYSICS
 
@@ -199,7 +248,6 @@ ref : https://www.goodreads.com/book/show/6581757-prince-of-networks?from_search
 ## consciousness vs point(s) of view
 
 - gradations on a qualia and the rashomon effect
-
 
 ---- 
 

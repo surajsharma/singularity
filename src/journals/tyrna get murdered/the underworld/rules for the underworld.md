@@ -1,5 +1,7 @@
 ## Abandon All Hope
 
+- the underworld is wasted on the dead
+
 - one thing i think Dante forgot to mention is that nobody leaves the underworld without some sort of mark on the body, whether it be a scar, bullet wound or something of the sort. but that is for those who make it through psychologically and spiritually. 99% give up before making it to the mark.
 
 
