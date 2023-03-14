@@ -2,10 +2,9 @@
 
 > _"history breaks down into images, not stories"_ - [[Walter Benjamin]]
 
+## 0.1 The Screen as Satan: A succinct note on state broadcaster logos 
 
 > _"As if one could escape it by turning a switch. That's why I say you can't turn off TV. It can turn you off, but you can't turn it off. You can't make it disappear, but it can make you disappear."_ - [[Rick Roderick]]
-
-## 0.1 The Screen as Satan: A succinct note on state broadcaster logos 
 
 - State sponsored broadcasting was never a glamourous enterprise, rather an undertaking born out of a necessity. Governments had to do it, not as a means of revenue generation but mostly as outreach (especially during wartime when it was imperative that news of the troops reached their families). 
   
@@ -67,6 +66,10 @@
 | DD      | 19XX      | Feedback     |
 | CT-USSR | 19XX      | Science      |
 
+
+![](../../../../../attachments/2023-03-11-17-02-01-tv.png) - from [[Richard Serra - Television Delivers People]](https://www.youtube.com/watch?v=LvZYwaQlJsg)
+
+
 - Any consistent, long lived global culture must then be constituted by the following at a minium:
   - Word
   - Community 
@@ -75,23 +78,26 @@
     - at some level the screen is a "Gaze" turned inward
     - there is an implication of a "void turned inwards" in the logo, a beautiful play on negative space by the designer
     - although any evolution at any level is for its own sake, the purporse of broadcast makes it clear how 
-    - broadcast is how the other learns
-    - the other is not 
+    - broadcast is how the other learns (desire)
+      - what the TV teaches is materialistic consumption
+    - the other is not (aka not you)
     - you are everyone else's other 
     - therefore, ceteris paribus, you are not (modus tollens)
   - "Desire is desire for the other"
   - "The other is not" - every boradcast is a broadcast of this fact, this is 
 
-## DIAL-UP MODEM MEETS METAPHYSICS
+## Dial up modem meets metaphysics
 
 ### a-deconstruction-in-a-quad/spooky action at a distance
+
+- If Control over broadcasting is an excercise in controlling society[1](#1), then it stands to reason that with the internet, the control returns back to the society. If then, it is true that "television delivers people to the advertisers", the internet may be said to deliver people unto themselves, making everyone an advertiser. 
+
+- This naturally delivers the existing power and control structures into an uncanny valley and renders the screen a mephistophelian agent creating a narcissistic double-bind outside of which exists only a vacuous, primordial existence - fertile grounds for war, revolution and other regressive ideas diametrically opposite to status-quo.
 
 in 2011 I [wrote](http://surajsharma.blogspot.com/2011/07/micro-refutation-of-latuors-practical.html) about the futility of taking a plurality of metaphysics a-la Latour et al to mean . Today, it appears that a 'split' in metaphysics is but one end of a dilectic (not only because mind tends to think in thirds so you cannot reduce it to psych 101 but also because thirds seem to be a universal pattern, think golden ratio, pi etc) -- is metaphysics reducible to a philosophy of mind? largely, yes. 
 
 
 this mind-created dialectial of metaphysics informs much of our everyday lives. the trinity emerges as images of 'yes', 'no', 'maybe' choices to attend across each waking moment. 
-
-
 
 
 at the maybe end of things is Latours plurality, where it all fizzles out in relativistic frequencies of matter touching (or appearing to touch) matter, maybe is the realm of the second law of thermodynamics, the synthesis of our metaphyics generating machine of a mind. maybe is the land of the multiplexed.
@@ -256,3 +262,7 @@ to live in old tales is to die there, and most die there, to wake up is to start
 why is age measured in years? it ought to be measured in the smallest unit of time possible, nothing inherently special about surviving a revolution on a spinning rock, "here's charlie at 12 thousand seconds old", what is so symbolic or significant about a revolution around the sun that we have to cling emotionally to  it and make our calendars around it? if its just abount having sth to count, one can never count anything more precious than a single draw of air, exhaled with the total awareness of the body's situation at a plantary level. compassion is the only thing i am competitive about, so if i get shot over it, how can i help?
 
 to invent a unit is to measure 
+
+
+---
+<a id="1">[1]</a> [[Richard Serra - Television Delivers People]], 1973
