@@ -1,0 +1,31 @@
+# Slip
+
+## Yet another lisp?
+
+
+The whole idea of writing yet another lisp in C is frankly boring and does not help me get out of bed in the morning.
+
+
+I need an edge, even if I am to write the most basic compiler one that does one thing OKAY
+
+
+It is only a matter of time before I will pick Rust up anyway, so why not with this.
+
+
+Going by the general [guide](https://buildyourownlisp.com/contents), there isn't much to go by on [[optimizations]]
+
+
+Ideally it would nice to have some kind of optimization 
+
+
+I have a choice whether to follow the guide and then port the code to Rust, or simply port it - without writing at all.
+
+
+## [[grammar]]
+
+
+
+## [[opti]]
+
+---
+

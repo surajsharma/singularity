@@ -1,0 +1,1 @@
+What magical trick makes us intelligent? The trick is that there is no trick. The power of intelligence stems from our vast diversity, not from any single, perfect principle. —Marvin Minsky, The Society of Mind, p. 308

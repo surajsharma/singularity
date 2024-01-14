@@ -1,0 +1,5 @@
+* 📄 [AddInt.wasm](AddInt.wasm)
+* 📄 [AddInt.wat](AddInt.wat)
+* 📄 [SumSquared.js](SumSquared.js)
+* 📄 [SumSquared.wasm](SumSquared.wasm)
+* 📄 [SumSquared.wat](SumSquared.wat)

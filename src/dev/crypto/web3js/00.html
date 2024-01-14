@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>web3js - 00 intro</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/web3/4.0.2/web3.min.js" integrity="sha512-4D1Ssn7wnKX8wN5ngp9Gq+r5paUi7N+lYQO8/Mhr4djP6BDjErM9IxpaayiU0VuQKrU7wCc/+Y8ZZ9IM2lyS1Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://unpkg.com/98.css">
+    <style>
+        body{
+            background-color: rgb(227, 122, 110);
+        }
+    </style>
+</head>
+
+<body class="helvetica">
+    <div class="window" style="width: 475px">
+        <div class="title-bar">
+            <div class="title-bar-text"> blockchain with web3js - 00 </div>
+        </div>
+        <div class="window-body">
+            <form>
+                <div class="field-row-stacked">
+                    <label for="from">From: </label>
+                    <input id="from" type="text" style="width: 300px"/>
+                </div>
+                <div class="field-row-stacked">
+                    <label for="to">To: </label>
+                    <input id="to" type="text" style="width: 300px;"/>
+                </div>
+                <div class="field-row-stacked">
+                    <label for="eth">ETH Amount</label>
+                    <input id="eth" type="text" style="width: 300px" />
+                </div>        
+                <br/>
+                <button type="submit" class="f6 link dim br2 ph3 pv2 mb2 dib white bg-dark-green bw0 fl w-100">send</button>
+                </br>
+            </form>
+        </div>
+        <div class="status-bar">
+            <div class="status-bar-field" id="status"></div>
+        </div>
+    <div>        
+
+    <script defer>
+        console.clear();
+
+        const w3 = new Web3(Web3.givenProvider)
+
+        var connection = window.ethereum;
+
+        var fromAdd = document.querySelector("#from")
+        var toAdd = document.querySelector("#to")
+
+        const f = document.querySelector("form")
+        const status = document.getElementById("status")
+
+
+        const send = async (value) => {
+            if(value<=0){
+                return;
+            }
+            
+            const amount =  w3.utils.toWei(value, "ether")
+            
+            const account = await window.ethereum.request({
+                method:"eth_requestAccounts"
+            })
+
+            if(account[0]){
+                fromAdd.setAttribute('value',account[0])
+                toAdd.setAttribute('value',"0xdA812f9BF215be67B7Bb19458175be353205A91A")
+
+                window.ethereum.request({
+                    method:"eth_sendTransaction",
+                    params:[{
+                        from: account[0],
+                        to:"0xdA812f9BF215be67B7Bb19458175be353205A91A",
+                        value: w3.utils.numberToHex(amount) //Updated
+                    }]
+                })
+            }
+        }
+
+        f.addEventListener("submit", (e) => {
+            e.preventDefault()
+            send(document.querySelector("#eth").value)
+        })
+        
+        if(connection){
+            status.style.color="green"
+            status.innerText = "✅ connected to wallet"
+        }else{
+            status.style.color="red"
+            status.innerText = "❌ not connected to wallet"
+        }
+    </script>    
+    
+</body>
+</html>
+

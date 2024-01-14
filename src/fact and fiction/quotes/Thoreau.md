@@ -1,0 +1,1 @@
+“I do not propose to write an ode to dejection, but to brag as lustily as chanticleer in the morning, standing on his roost.” - Thoreau

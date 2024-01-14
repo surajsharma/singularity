@@ -1,0 +1,1 @@
+If you pick someone you're safe, if they pick you, you have to be careful because they have selected themselves.

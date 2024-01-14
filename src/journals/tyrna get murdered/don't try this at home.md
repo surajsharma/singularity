@@ -1,0 +1,38 @@
+[[Rick Roderick]]
+
+[[You Know Nothing of My Work! - Douglas Coupland]]
+
+[[0 introduction - a city in a mirror]]
+
+> phd thesis:  human is the only self-aware entity in space/time. 
+
+
+Alle Dinge sind Gift, und nichts ist ohne Gift, allein die Dosis macht dass ein Ding kein Gift ist.
+
+All things are poison, and nothing is without poison, the dosage alone makes it so a thing is not a poison.
+
+—Paracelsus, 1538[1]
+
+
+`Deleuze: the dream of those who dream concerns those who are not dreaming ...why?.. because as soon as someone else dreams there is danger...people's dreams are always devouring...and threaten to engulf us ..the other's dream is very dangerous. .. Dreams have a terrible will to prove .. and each one of us is a victim to the other's dream.. `even the most gracious of young girls .. is a terrible devourer ... not because of her soul.. but because of her dreams..`because if you are caught in the other's dreams you are done for!  - Gilles Deleuze - Beware of the other's dream : https://www.youtube.com/watch?v=Klhi6S6G-OY ⚠️`
+
+   - If once we were able to view the Borges fable in which the cartographers of the Empire draw up a map so detailed that it ends up covering the territory exactly [...] this fable has now come full circle for us, and possesses nothing but `the discrete charm of second-order simulacrum` [...] It is the real, and not the map, whose vestiges persist here and there in the deserts that are no longer those of the Empire, but ours. The desert of the real itself. 
+   - Jean Baudrillard, Simulacra and Simulations
+
+   - Why this insistent, unqualified demand that the religious man should suffer and that his suffering should grow more intense as his religion advances? Kierkegaard explains it as follows:
+    > ‘This suffering has its ground in the fact that the individual is in his immediacy `absolutely committed to relative ends`; its significance lies in the transposition of the relationship, the dying away from immediacy, or in the expression existentially of the principle that the individual can do absolutely nothing of himself, but is as nothing before God; for here again the negative is the mark by which the God-relationship is recognised, and self-annihilation is the essential form for the God-relationship.’19 - KG, CUP
+
+    - nothing, after all, so develops a human being as adhering to a plan in defiance of the whole world. even if it were something evil, it would still serve to a high degree to develop a person... giddyap...
+    
+    - "the master thief" : the complete outsider to society who sees the flaws in the system and challenges it, with a willingness to accept the consequential punishment it may well entail
+    
+    - Journalists are animal-keepers who provide sth for the public to talk about. In ancient days ppl were cast to the wild animals. Now the public devours the ppl - those tastefully prepared by the journalists.
+        
+
+- "history with a capital h, the imaginary real that hurts" -- zizek
+
+- `your father is convinced that he is an >inadequate< human being, women have been telling him that for 30-40 years, he doesn't know how to talk, he can't express himself, he doesn't know what his feelings are, `people hear what they hear`, your father feels that he's okay when he's with a hammer but in every other way he's inadequate` 
+        - Robert Bly
+
+- the clock is to time as the mirror is to space - baudrillard
+

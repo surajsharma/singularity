@@ -1,0 +1,2 @@
+* 📂 [celibacy](celibacy)
+* 📂 [prayers](prayers)

@@ -1,0 +1,8 @@
+* 📄 [alan perlis.md](alan perlis.md)
+* 📄 [hindley-milner.lua](hindley-milner.lua)
+* 📄 [ideas.md](ideas.md)
+* 📄 [obj-c.md](obj-c.md)
+* 📄 [optimizations.md](optimizations.md)
+* 📄 [resources.md](resources.md)
+* 📂 [rust](rust)
+* 📂 [slip](slip)

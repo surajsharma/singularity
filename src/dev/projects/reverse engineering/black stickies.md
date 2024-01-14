@@ -1,0 +1,1 @@
+started here: https://lowlevelbits.org/reverse-engineering-stickies.app/

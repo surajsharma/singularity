@@ -1,0 +1,2 @@
+* 📂 [journals](journals)
+* 📂 [projects](projects)
