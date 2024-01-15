@@ -1,3 +1,4 @@
+* 📂 [data for web3](data for web3)
 * 📄 [resources.md](resources.md)
 * 📂 [solidity](solidity)
 * 📄 [web2-web3.md](web2-web3.md)

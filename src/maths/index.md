@@ -4,4 +4,3 @@
 * 📂 [ncert](ncert)
 * 📄 [number systems.md](number systems.md)
 * 📄 [probability.md](probability.md)
-* 📂 [statistics](statistics)

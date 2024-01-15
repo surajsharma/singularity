@@ -1,5 +1,4 @@
 * 📂 [AMND](AMND)
-* 📂 [crypto](crypto)
 * 📂 [dsa](dsa)
 * 📂 [graphics](graphics)
 * 📂 [languages](languages)
@@ -9,3 +8,4 @@
 * 📂 [resources](resources)
 * 📂 [system design](system design)
 * 📂 [web](web)
+* 📂 [web3](web3)

@@ -1,1 +1,1 @@
-* 📂 [hello](hello)
+* 📂 [rust_cli](rust_cli)
