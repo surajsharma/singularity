@@ -3,8 +3,7 @@ node_modules
 _site
 target
 Cargo.lock
+Gemfile.lock
 .ipynb_checkpoints
-.ipynb_checkpoints/
-target/
-debug/
-cargo.toml
+target
+debug
