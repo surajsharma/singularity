@@ -4,7 +4,7 @@
 
 find . -name "index.md" -type f -delete  
 node files.js archives && node files.js src
-
+echo src and archives indexed
 # Add all changed files to git
 #git add .
 
