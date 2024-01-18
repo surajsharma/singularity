@@ -10,6 +10,8 @@
 
 - if i am unable to raise others to my level, i am sure as shit not falling to theirs
 
+- in situations of moral dissonance, we should do the most im/moral thing we possibly can. i.e revert to extremes, because any situation that creates a moral dissonance in you is likely an evil, objectively narcissistic double-bind undeserving of moderate response. the only fitting response in such a situation is a violently disproportinate one.
+
 # thus spoke zarathustra
 
 - "My soul is calm and clear, like the mountains in the morning. But they think I am cold, and a mocker with terrible jests."
