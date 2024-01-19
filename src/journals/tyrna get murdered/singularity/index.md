@@ -1,4 +1,3 @@
-* 📂 [.ipynb_checkpoints](.ipynb_checkpoints)
 * 📄 [a meditation gone wrong.md](a meditation gone wrong.md)
 * 📄 [a treasure map to nowhere.md](a treasure map to nowhere.md)
 * 📄 [a wife for every conspiracy.md](a wife for every conspiracy.md)
