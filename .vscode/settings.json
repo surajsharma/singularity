@@ -26,5 +26,6 @@
   "pasteImage.path": "${projectRoot}/attachments",
   "pasteImage.showFilePathConfirmInputBox": true,
   "prettier.singleQuote": false,
-  "editor.fontSize": 18
+  "editor.fontSize": 18,
+  "GitHooks.hooksDirectory": "/root/singularity/.git/hooks"
 }

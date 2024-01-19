@@ -1,5 +1,4 @@
 * 📂 [.ipynb_checkpoints](.ipynb_checkpoints)
-* 📄 [.noself.md.swp](.noself.md.swp)
 * 📂 [llmlogs](llmlogs)
 * 📄 [noself.md](noself.md)
 * 📂 [principles](principles)
