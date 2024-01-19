@@ -1,1 +1,2 @@
 * 📂 [journals](journals)
+* 📂 [philosophy](philosophy)

@@ -1,4 +1,3 @@
-* 📂 [.ipynb_checkpoints](.ipynb_checkpoints)
 * 📄 [100 rules.md](100 rules.md)
 * 📄 [kk's unsolicited advice.md](kk's unsolicited advice.md)
 * 📄 [opposition.md](opposition.md)
