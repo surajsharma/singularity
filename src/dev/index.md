@@ -5,7 +5,6 @@
 * 📂 [mobile](mobile)
 * 📂 [networking](networking)
 * 📂 [projects](projects)
-* 📂 [resources](resources)
 * 📂 [system design](system design)
 * 📂 [web](web)
 * 📂 [web3](web3)
