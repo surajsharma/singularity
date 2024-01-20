@@ -8,3 +8,4 @@ Gemfile.lock
 target
 debug
 *.swp
+.jekyll-metadata
