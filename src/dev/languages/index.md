@@ -1,3 +1,4 @@
+* 📄 [All Programming Philosophies Are About State.md](All Programming Philosophies Are About State.md)
 * 📄 [alan perlis.md](alan perlis.md)
 * 📄 [hindley-milner.lua](hindley-milner.lua)
 * 📄 [ideas.md](ideas.md)

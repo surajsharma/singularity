@@ -1,3 +1,5 @@
+# optimizations
+
 Techniques used in optimization can be broken up among various scopes which can affect anything from a single statement to the entire program. Generally speaking, locally scoped techniques are easier to implement than global ones but result in smaller gains. Some examples of scopes include:
 
 # Peephole optimization
