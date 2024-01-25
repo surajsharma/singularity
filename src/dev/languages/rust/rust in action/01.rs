@@ -1,0 +1,11 @@
+fn main() {
+    println!("Hello, world!");
+    let japan = "ハロー・ワールド ";
+    let germany = "Grüß Gott!";
+
+    let regions = [japan, germany];
+
+    for region in regions.iter() {
+        println!("{}", &region);
+    }
+}
