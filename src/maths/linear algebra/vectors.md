@@ -102,8 +102,24 @@ $$end
 
 - thus, the length of the vector can be calculated thus 
 
-- $$  |\vec P| = \sqrt{\langle \vec P \cdot \vec P \rangle}
+- $$  |\vec P| = \sqrt{\langle \vec P \cdot \vec P \rangle} $$end
 
 #### Cross Product 
 
-- 
+- between two vectors
+- gives another vector 
+- $$ \vec V \times \vec W $$end 
+- cross product of two vectors is perpendicular to both of them
+- ![Alt text](image-6.png)
+
+- the computation is a bit more involved:
+- $$ \vec S = \vec U \times \vec R \\
+S_x = U_y \cdot R_z - U_z \cdot R_y \\
+S_y = U_x \cdot R_z - U_z \cdot R_x \\
+S_z = U_x \cdot R_y - U_y \cdot R_x \\
+$$end
+
+- not commutative, specifically: 
+    - $$ \vec U \times \vec R = -(\vec R \times \vec U)$$end
+
+- We use the cross product to compute the normal vectored a surface—that is, a unit vector perpendicular to the surface. To do this, we take two vectors on the surface, calculate their cross product, and normalize the result.
