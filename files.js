@@ -13,6 +13,8 @@ function createIndexes(dirPath) {
 
   const excludedFiles = ['.DS_Store', 'index.md'];
 
+  const excludedExts = ['.png', '.jpg', '.gif'];
+
   const results = {};
   let items;
 
@@ -42,10 +44,11 @@ function createIndexes(dirPath) {
             if (!excludedFiles.includes(fileName)) {
               const fileStr = `* 📄 [${item}](${fileName})\n`;
 
-              fs.appendFileSync(`${dirPath}/index.md`, fileStr, function (err) {
-                if (err) throw err;
-              });
-
+              if(!excludedExts.includes(path.extname(fileName))){
+                fs.appendFileSync(`${dirPath}/index.md`, fileStr, function (err) {
+                  if (err) throw err;
+                });  
+              }
             }
           }
         }
