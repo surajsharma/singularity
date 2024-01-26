@@ -1,3 +1,6 @@
+---
+layout: katex
+---
 - [Matrices](#matrices)
   - [Ops](#ops)
     - [Addition](#addition)
@@ -14,7 +17,7 @@ $$ M= \begin{bmatrix}
 a_1 & a_2 & a_3 \\
 b_1 & b_2 & b_3 \\
 c_1 & c_2 & c_3 
-\end{bmatrix}  $$end
+\end{bmatrix}  $$
 
 
 ### Ops 
@@ -37,7 +40,7 @@ a+j & b+k & c+l \\
 d+m & e+n & f+o \\
 g+p & h+q & i+r 
 \end{pmatrix}
-$$end
+$$
 
 
 #### Multiply w/Scalar 
@@ -53,7 +56,7 @@ n \cdot j & n \cdot k & n \cdot l \\
 n \cdot m & n \cdot n & n \cdot o \\
 n \cdot p & n \cdot q & n \cdot r 
 \end{pmatrix}
-$$end
+$$
 
 #### Multiply w/Matrix 
 
@@ -77,25 +80,25 @@ j & k & l \\
 m & n & o 
 \end{pmatrix} 
 
-$$end
+$$
 
 - each row is a vector in LHS, each col a vector in RHS  
 
-- $$LHS (2x3)= \begin{pmatrix} (a,b,c)\\ (d,e,f)\end{pmatrix} $$end
+- $$LHS (2x3)= \begin{pmatrix} (a,b,c)\\ (d,e,f)\end{pmatrix} $$
 
-- $$ \times $$end
+- $$ \times $$
 
 - $$RHS (3x3)= \begin{pmatrix} 
 \begin{pmatrix}g\\h\\i\\\end{pmatrix} 
 \begin{pmatrix}j\\k\\l\\\end{pmatrix} 
 \begin{pmatrix}m\\n\\o\\\end{pmatrix} 
-\end{pmatrix} $$end
-- $$ = $$end
+\end{pmatrix} $$
+- $$ = $$
 
 - $$\begin{pmatrix} 
 (a,b,c)\cdot(g,h,i),(a,b,c)\cdot(j,k,l),(a,b,c)\cdot(m,n,o)\\ 
 (d,e,f)\cdot(g,h,i),(d,e,f)\cdot(j,k,l),(d,e,f)\cdot(m,n,o) 
-\end{pmatrix} $$end
+\end{pmatrix} $$
 
 - where each element is basically dot product of corresponding [[vectors]]
 
