@@ -6,7 +6,5 @@
 * 📄 [image-6.png](image-6.png)
 * 📄 [image-7.png](image-7.png)
 * 📄 [image.png](image.png)
-* 📄 [matrices.html](matrices.html)
 * 📄 [matrices.md](matrices.md)
-* 📄 [vectors.html](vectors.html)
 * 📄 [vectors.md](vectors.md)

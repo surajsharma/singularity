@@ -1,3 +1,16 @@
+- [Points](#points)
+- [Vectors](#vectors)
+  - [Vector Magnitude (aka length aka norm)](#vector-magnitude-aka-length-aka-norm)
+- [Point and Vector Ops](#point-and-vector-ops)
+  - [Subtracting Points](#subtracting-points)
+  - [Adding a Point and Vector](#adding-a-point-and-vector)
+  - [Adding Vectors](#adding-vectors)
+  - [Scalar Product / Multiplying Vector with Number](#scalar-product--multiplying-vector-with-number)
+    - [normalize a vector](#normalize-a-vector)
+  - [Multiplying Vectors](#multiplying-vectors)
+    - [Dot Product](#dot-product)
+    - [Cross Product](#cross-product)
+
 ## Points 
 
 ![Alt text](image.png)
