@@ -1,6 +1,8 @@
 ---
 layout: code
 ---
+
+{% raw %} 
 <pre>
     <code class="language-lua">
         local HM_type = {}
@@ -68,3 +70,4 @@ layout: code
         print(HM_type.can_call(functions, numbers_table)) -- prints "false"
     </code>
 </pre>
+{% endraw %}
