@@ -1,23 +1,39 @@
-# a meditation gone wrong
+- I was not always the tantrik Atmaram Dutt, just as Vishnu was not always Hari, but causal creases and tumult labelled us so. While Hari, who also suffered any number of ordeals on this miserly planet, found neither the time nor the inclination to pen down his journeys, I invariably find myself leaving opalescent trails behind, if only to trace through them later. 
 
-// prose : sounds contrived, needs overall tightening up
-// story : komsi komsa, not enough punch for the first few paras
-// subtext: nonexistent
-// in case of missing sync: delete everything and start where you left off
+- So, this time, I write after having gone stark raving mad and because my condition, I have reason to believe, might not outlast the lucidity needed to clearly tell the story. 
 
-// sounds too contrived
-// too rehearsed 
-// shorter sentences, short paras
-// fewer words, make it crispier
-// long sentences, shorter paras
+- From behind a thin, loose, shimmering, and multicolored veil of modern euphemisms for an ancient ennui, with such seductive, exotic, esoteric, psychological handles such as CPTSD, PTSD, schitzophrenia, narcissistic personality disorder, seasonal affective disorder, bipolar disorder, you name it - from behind this grave and pallid veneer I address and invite the reader in.
 
-# 1 - A Meditation Gone Wrong
+- Indeed a veil as piss-soaked and technicolor as Joseph's amazing coat, or was it a raincoat? I forget which, but my guess is it ought to have been a raincoat, if his journey was half the shitstorm mine is. I don't think there is a word in human psychology for what I have, let a alone a medicine, to say nothing of a cure.
+  
+- And I write because it has come to a point where I would give anything for actual, physical pain. An accident perhaps, or even a bout of irreason enough to give me a nudge off a balcony, turn me into a nice, folded splat of meat on the ground - if only it wasn't for the covenant, I would have ejected myself out by now.
 
-   Time out of mind the sand started coming in, first with gentle, slienced sweeps of particles rolling over the sunroofed and cobblestoned courtyard I sat meditating in, then, suddenly, like doubt morphing into a paranoid faith of the cockroach so full of potential its only desire - to burst into flames under the light from the refrigerator door late some fateful friday night - it invited itself into the sanctum sanctorum with ever greater magnitude, shivering intentfully with a singular and orchestrated volition. 
+- So yes, without wasting any time, there is a covenant, a mural, a crypt, a manuscript etc., the whole nine yards in my story, but let us begin at the very beginning, wherein I, much like the fabled ghost Betaal, sat meditating (albeit not upside down like our famished friend) in my comepletely virginal, virtual, recursively constituted cave located at the very center of the planet known in english as 'Saturn'.
 
-   Its purpose seemed to defy, at once, its inanimate nature, the orders it was following to appear inanimate, and the seeds of the rotting empire its odor represented as it made home in weeping heaps of itself around me.
+-  Time out of mind, the sand started coming in. First with gentle, slienced sweeps of particles rolling over like tiny tumbleweeds along the sunroofed and cobblestoned courtyard I sat centered in. 
+ 
+-  Then, like doubt turning into paranoid faith of a cockroach that wants to immolate itself under the light from the refrigerator door - it invited itself into the sanctum sanctorum in ever greater magnitude, frequency and force, its each grain shivering intentfully with a singular and oddly orchestrated volition that was saw-toothed, like the ring from a red rotary telephone, clandestine as a witch's knock on a poor brahmin's door some fateful and stormy night, urgent as thunder that follows the sound of its own arrival and sad as a damsel in a distress of galactic proportions, I watched it (from my mind's eye, since I was, after all, still in deep meditation) pour in and  arrange itself in melancholic, silent heaps around my cross-legged and motionless countenance - until my hallowed cave (and the temple within) were beset with it "as a lion's mane swarms with fleas".
 
-   Already, I could hear from deep within my meditation someone pleading for an insanity defense. 
+-  Beginnings are heroism's only recompense. "No wonder", I remember thinking, "this must be yet another fruit of an ongoing meditation. Another iteration of maya to conquer in my never-ending journey". 
+
+-  But beginnings are hard to sustain and soon enough, the entire surroundings started smelling of the seeds of decay, of that bend in the shadow world wherein entropy folds upon itself. It came from the birthplace of all evils that cannot be named in any of the N dimensions of the polyhedra known as Adwaita, but must be referred to by signifiers of pure negation. 
+
+- From the ward of not, the constituency of never, the creche of no, the school of the negative, the college of sarcasm, the office of violence, and the retirement home of pure unadulterated pain. The lower half of difference itself, for those who can fathom, from far far far beyond Dante's 9th circle no doubt.
+
+- Already, I could hear from deep within my meditation someone pleading for an insanity defense. Little did I know, it was my own insanity this was a prelude to.
+
+- Days turned to months, years to decades, centuries to millennias, the silica kept raining, pouring in with the determination of a gold-digger trophy wife looking for a divorce. 
+  
+- `When your samadhi starts to deepen, novel distractions appear, and I had witnessed my fair share of them, it was already too late for this nuisance`, must I engage with the entities present?, all 6.6 trillion of them that stood there with the shameless perversity of a child enjoying its own rape, not only disturbing my sannyas and samadhi, but also desecrating my cave and temple with the stench of hell.
+
+
+
+--- 
+
+
+
+
+
 
    It soon started pouring in from the hole above the small pond besides which I sat. I could hear it turning the clear water into quicksand with a light, defiant drizzle that kept pace with the grains being blown over the floor. 
 
@@ -38,8 +54,6 @@
 [With only wet whistles and dry whispers shared  between them, like a secret language of their own, these foot soldiers were, before i could realize it, dancing for decades in my old stone temple without completely disappearing.]
 
    For the first few years I entertained it yet another distraction, more evidence of my ever deepening samadhi was this seductive display of mara, but at the same time, I was measuring it, parsing it in all its granular glory, combing through its attitude, sizing it up while wishing it away.
-
-   `When your samadhi starts to deepen, novel distractions appear, and I had witnessed my fair share of them, it was already too late for this nuisance`, so i realized i wanted to engage with the entities present, all 6.6 trillion of them that stood there with the shamelessness of a child enjoying its own rape.
 
    "I have a compulsion, dear sojourner", I felt like addressing the grains from my posture, "to discount cries seeking help and attention, I offer no duels here, go away.", but I didnt, and not on a singular occasion. For to indulge in power play with intergalatic stuff was not my intention.
 
