@@ -1,4 +1,4 @@
-* 📄 [a meditation gone wrong.md](a meditation gone wrong.md)
+* 📄 [01- as a lion's mane swarms with fleas.md](01- as a lion's mane swarms with fleas.md)
 * 📄 [a treasure map to nowhere.md](a treasure map to nowhere.md)
 * 📄 [a wife for every conspiracy.md](a wife for every conspiracy.md)
 * 📄 [dedication day.md](dedication day.md)
