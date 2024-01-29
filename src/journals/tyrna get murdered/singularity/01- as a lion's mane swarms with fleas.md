@@ -20,11 +20,15 @@
 
 - From the ward of not, the constituency of never, the creche of no, the school of the negative, the college of sarcasm, the office of violence, and the retirement home of pure unadulterated pain. The lower half of difference itself, for those who can fathom, from far far far beyond Dante's 9th circle no doubt.
 
-- Already, I could hear from deep within my meditation someone pleading for an insanity defense. Little did I know, it was my own insanity this was a prelude to.
-
-- Days turned to months, years to decades, centuries to millennias, the silica kept raining, pouring in with the determination of a gold-digger trophy wife looking for a divorce. 
+- Days turned to months, years to decades, centuries to millennias, the silica kept raining, pouring in with the dogged determination of a gold-digger trophy wife seeking a divorce. 
   
-- `When your samadhi starts to deepen, novel distractions appear, and I had witnessed my fair share of them, it was already too late for this nuisance`, must I engage with the entities present?, all 6.6 trillion of them that stood there with the shameless perversity of a child enjoying its own rape, not only disturbing my sannyas and samadhi, but also desecrating my cave and temple with the stench of hell.
+- By now I could  hear from deep within my meditation someone pleading for an insanity defense. Thus alerted to that presence which,  had no reason left to conclude wasn't benign, I I was triggered and had started leafing through my transcendental rolodex of known adversaries.
+
+- Could it be the aghori Vibhatsanath, the one who, at every chance affored to him merges into my shadows and orbits my psyche only to crack open my skull for he seeks the jewel within it. Surely the hoax that had presented itself had elements of his mischief, but lacked the disciple, the orchestration, and sheer scale of the apparition. 
+
+- It could also be the work of the demon king 
+
+- must I engage with the entities present?, all 6.6 trillion of them that stood there with the shameless perversity of a child enjoying its own rape, not only disturbing my sannyas and samadhi, but also desecrating my cave and temple with the stench of hell.
 
 
 
