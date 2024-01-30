@@ -26,28 +26,31 @@
 
 - Could it be the aghori Vibhatsanath, the one who, at every chance affored to him merges into my shadows and orbits my psyche only to crack open my skull for he seeks the jewel within it. Surely the hoax that had presented itself had elements of his mischief, but lacked the disciple, the orchestration, and sheer scale of the apparition. 
 
-- It could also be the work of the demon king 
+- It could also be the work of the demon Dil, who, in eons past had fought many battles with me, and unfortunately had never won a single one. Though the whole orchestration of the pouring sand seemed way out of character for the simple minded fool. 
 
-- must I engage with the entities present?, all 6.6 trillion of them that stood there with the shameless perversity of a child enjoying its own rape, not only disturbing my sannyas and samadhi, but also desecrating my cave and temple with the stench of hell.
+- The next usual suspect was the rakshasa Binduma - accustomed as he was of keeping his distance, it did not deter him from crawling up my skin and feel my pulse every now and then, and could manifest as anything between a water boil to a long lasting malaise of natural or supernatural order. yet, the dark energy that surrounded me was oddly too feminine, so unless it was doing his bidding, I could not be sure.
 
+- Of course, Binduma travels with his own retinue and chief among those was the pishacha named Teel ... warmer. Surely, the whole perverted orchestration bore his signature. It was stinky, loud, obnoxious, and disorienting. 
+
+- It was a production alright, magic that could not be performed over distances greater than twelve light years, and I did not want to be a part of it, but it stuck to me like a lover scorned - coiled around me without a trace of self esteem, let alone self respect. This narrowed down my search for a solution quite a bit, and I started another journey within my meditation in search for an answer. 
+
+- My doomed journey was of course, to start in the most likely of the places I could find the pishacha, planet Earth. And no sooner had I embarked upon it, the mountains of sand that had by now come to be a desert, started shifting and vibrating, arranging themselves into code and hieroglyphics I could not decipher. Surely, I had found a clue!
+
+- But why earth? Why would Teel leave his rather idyllic abode on Neptune and give me such grief again? Three reasons. Firstly, the only place with sand in a twelve light-year radius is the planet Earth. secondly, his legend on earth is imprinted on the planet's history and he has sanctuary there, and lastly, the history of the planet finds a new lack in his presence, which he needs to fill - and who better than myself to fill it with? 
+
+- The legend is the simple part, the pishacha is known by the earthlings as the snake, worshipped in some cultures, reviled in others, but present in all. 
+
+- The history is where it gets complex, at least for earthlings.
+
+- Now we, of the tantrik order know that every journey to the third planet is a destructive, negating, and horrible one. I would rather jump on the orbit to the Kuiper belt and get slapped by every passing rock than go to earth, and he knows it. Precisely choose it as a theater for this skirmish? Surely, the sand itself was a clue, perhaps a great upheaval was upon the humans. 
+
+- Perhaps, yes, the humans had found a new mode of strife. Which made my journey all the more dangerous, both for me and the earthlings - to say nothing of Teel, who had invited his violent and gruesome death by my hands and mouth once again.
 
 
 --- 
 
 
-
-
-
-
-   It soon started pouring in from the hole above the small pond besides which I sat. I could hear it turning the clear water into quicksand with a light, defiant drizzle that kept pace with the grains being blown over the floor. 
-
-   Grain by grain it marched in like free radicals announcing the decay of some entity I had perhaps accidentally pissed off, pleased, or otherwise asked cover over on my way to nirvana.
-
-[Obviously this was highly abnormal, I would think every break I would get. During winters the same areas would be covered with snow, and I knew we were not in a desert for the monsoon would still roll by every year like clockwork in a museum.]
-
-   Before long, it started arranging itself on the pillars and temple walls  into a heiroglyphic script I was not yet familiar with. Surely, I figured, someone was trying to mess up my samadhi again. 
-
-    But even with eyes three quarters shut and mind still as a citadel, I could see through its machinations. A face drawn in ripples on the bog that once was my only source of drinking water was gurning so obscenely at the sky that even the lonely waxing crescent seemed like it was trying to hide itself behind a veil of clouds and fireflies. 
+   But even with eyes three quarters shut and mind still as a citadel, I could see through its machinations. A face drawn in ripples on the bog that once was my only source of drinking water was gurning so obscenely at the sky that even the lonely waxing crescent seemed like it was trying to hide itself behind a veil of clouds and fireflies. 
 
    No wonder the feathered trinity perched on their designated spot on the bough of the Crape myrtle - that had erupted from underneath the ground before me on the moment of my first satori, and now stood as tall as a metaphysical souvenir after all these years at the edge of my pond -  had gone eerily silent as if trying to honor its presence.
 
