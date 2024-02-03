@@ -4,7 +4,7 @@
 * 📂 [languages](languages)
 * 📂 [mobile](mobile)
 * 📂 [networking](networking)
-* 📂 [projects](projects)
+* 📂 [re](re)
 * 📂 [system design](system design)
 * 📂 [web](web)
 * 📂 [web3](web3)
