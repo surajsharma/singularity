@@ -6,6 +6,8 @@ layout: default
 
 <script>
   //Navigation
+  let title = document.getElementsByTagName("h1")[0];
+  title.appendChild(navbar);
   let navbar = document.createElement("div");
   navbar.setAttribute("class", "nav");
   const u = new URL(window.location);
@@ -31,9 +33,6 @@ layout: default
   document.querySelectorAll(".markdown-body a[title]").forEach((a) => {
     a.innerText = a.title;
   });
-
-  let title = document.getElementsByTagName("h1")[0];
-  title.appendChild(navbar);
 
   // Hack: Remove .md extension from wikilinks to get the html in jekyll
   document.querySelectorAll("a").forEach((l) => {
