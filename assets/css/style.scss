@@ -15,12 +15,13 @@
   padding: 2px;
   cursor: pointer;
   &:hover {
-    background-color: lightgreen;
+    background-color: paleturquoise;
   }
 }
 
 .nav {
   display: flex;
+  flex-wrap: wrap;
   font-family: sans-serif;
   font-size: x-small;
   font-weight: bolder;
