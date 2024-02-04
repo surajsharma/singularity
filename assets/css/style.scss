@@ -3,6 +3,35 @@
 
 @import "{{ site.theme }}";
 
+@mixin not-last-child($selector) {
+  & #{$selector}:not(:last-child) {
+    @content;
+  }
+}
+
+.nav-item {
+  color: cornflowerblue;
+  width: fit-content;
+  padding: 2px;
+  cursor: pointer;
+  &:hover {
+    background-color: lightgreen;
+  }
+}
+
+.nav {
+  display: flex;
+  font-family: sans-serif;
+  font-size: x-small;
+  font-weight: bolder;
+  gap: 1px;
+  @include not-last-child("div") {
+    &:after {
+      content: " ➡️ ";
+    }
+  }
+}
+
 .markdown-body {
   max-width: 800px;
   font-size: 16px;

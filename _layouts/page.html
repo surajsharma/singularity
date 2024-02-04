@@ -9,6 +9,30 @@ layout: default
   document.querySelectorAll(".markdown-body a[title]").forEach((a) => {
     a.innerText = a.title;
   });
+
+  let navbar = document.createElement("div");
+  navbar.setAttribute("class", "nav");
+
+  const u = new URL(window.location);
+
+  u.pathname.split("/").forEach((n) => {
+    if (n != "") {
+      const navitem = document.createElement("div");
+      navitem.setAttribute("class", "nav-item");
+
+      const link = document.createElement("a");
+      link.setAttribute("href", `/${n}`);
+
+      navitem.innerText = n.substring(0, n.lastIndexOf(".")) || n;
+      link.appendChild(navitem);
+
+      navbar.appendChild(navitem);
+    }
+  });
+
+  let title = document.getElementsByTagName("h1")[0];
+  title.appendChild(navbar);
+
   // Hack: Remove .md extension from wikilinks to get the html in jekyll
   document.querySelectorAll("a").forEach((l) => {
     if (l.href.endsWith(".md")) {

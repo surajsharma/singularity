@@ -2,7 +2,7 @@
   "editor.minimap.enabled": false,
   "editor.wrappingIndent": "indent",
   "editor.overviewRulerBorder": false,
-  "editor.lineHeight": 24,
+  "editor.lineHeight": 23,
   "[markdown]": {
     "editor.quickSuggestions": {
       "comments": "on",
@@ -26,6 +26,6 @@
   "pasteImage.path": "${projectRoot}/attachments",
   "pasteImage.showFilePathConfirmInputBox": true,
   "prettier.singleQuote": false,
-  "editor.fontSize": 18,
+  "editor.fontSize": 16,
   "GitHooks.hooksDirectory": "/root/portfolios/singularity/.git/hooks"
 }
