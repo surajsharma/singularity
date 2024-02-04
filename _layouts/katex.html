@@ -30,8 +30,6 @@ layout: default
 
 <script>
   //Navigation
-  let title = document.getElementsByTagName("h1")[0];
-  title.appendChild(navbar);
   let navbar = document.createElement("div");
   navbar.setAttribute("class", "nav");
   const u = new URL(window.location);
@@ -51,4 +49,7 @@ layout: default
     navitem.appendChild(link);
     navbar.appendChild(navitem);
   });
+
+  let title = document.getElementsByTagName("h1")[0];
+  title.appendChild(navbar);
 </script>
