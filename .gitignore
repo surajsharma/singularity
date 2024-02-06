@@ -9,3 +9,4 @@ target
 debug
 *.swp
 .jekyll-metadata
+.out/

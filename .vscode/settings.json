@@ -27,5 +27,6 @@
   "pasteImage.showFilePathConfirmInputBox": true,
   "prettier.singleQuote": false,
   "editor.fontSize": 16,
-  "GitHooks.hooksDirectory": "/root/portfolios/singularity/.git/hooks"
+  "GitHooks.hooksDirectory": "/root/portfolios/singularity/.git/hooks",
+  "C_Cpp.errorSquiggles": "disabled"
 }
