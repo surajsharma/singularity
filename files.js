@@ -9,11 +9,11 @@ if (!directoryPath) {
 }
 
 function createIndexes(dirPath) {
-  const excluded = ['target', '.', '.ipynb_checkpoints'];
+  const excludedDirs = ["target", ".", ".ipynb_checkpoints", ".out"];
 
-  const excludedFiles = ['.DS_Store', 'index.md'];
+  const excludedFiles = [".DS_Store", "index.md"];
 
-  const excludedExts = ['.png', '.jpg', '.gif'];
+  const excludedExts = [".png", ".jpg", ".gif"];
 
   const results = {};
   let items;
@@ -23,32 +23,31 @@ function createIndexes(dirPath) {
       items = fs.readdirSync(dirPath);
 
       items.forEach((item) => {
-
         const itemPath = path.join(dirPath, item);
         const itemStats = fs.lstatSync(itemPath);
 
-        if (!dirPath.split('/').some(ex => excluded.includes(ex))) {
-          if (itemStats.isDirectory()) {
-            const dirName = item.split('/')[item.split('/').length - 1];
+        if (itemStats.isDirectory()) {
+          const dirName = item.split("/")[item.split("/").length - 1];
+          if (!excludedDirs.includes(dirName)) {
             const dirStr = `* 📂 [${item}](${dirName})\n`;
             fs.appendFileSync(`${dirPath}/index.md`, dirStr, function (err) {
               if (err) throw err;
             });
             createIndexes(itemPath);
-            Object.keys(results).forEach(subDir => {
-              createIndexes(itemPath)
-            })
-          } else {
-            const fileName = item.split('/')[item.split('/').length - 1];
+            Object.keys(results).forEach((subDir) => {
+              createIndexes(itemPath);
+            });
+          }
+        } else {
+          const fileName = item.split("/")[item.split("/").length - 1];
 
-            if (!excludedFiles.includes(fileName)) {
-              const fileStr = `* 📄 [${item}](${fileName})\n`;
+          if (!excludedFiles.includes(fileName)) {
+            const fileStr = `* 📄 [${item}](${fileName})\n`;
 
-              if(!excludedExts.includes(path.extname(fileName))){
-                fs.appendFileSync(`${dirPath}/index.md`, fileStr, function (err) {
-                  if (err) throw err;
-                });  
-              }
+            if (!excludedExts.includes(path.extname(fileName))) {
+              fs.appendFileSync(`${dirPath}/index.md`, fileStr, function (err) {
+                if (err) throw err;
+              });
             }
           }
         }
