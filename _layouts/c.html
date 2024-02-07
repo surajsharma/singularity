@@ -1,0 +1,46 @@
+---
+layout: default
+---
+
+<pre>
+  <code class="language-c">
+    {{ content }}
+  </code>
+</pre>
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css"
+/>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+
+<!-- and it's easy to individually load additional languages -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/go.min.js"></script>
+
+<script>
+  hljs.highlightAll();
+</script>
+<script>
+  //Navigation
+  let navbar = document.createElement("div");
+  navbar.setAttribute("class", "nav");
+  const u = new URL(window.location);
+  const depth = u.pathname.split("/").filter((d) => d != "");
+  depth.forEach((n, index) => {
+    const navitem = document.createElement("div");
+    const link = document.createElement("a");
+    link.innerText = decodeURIComponent(
+      n.substring(0, n.lastIndexOf(".")) || n
+    );
+    navitem.setAttribute("class", "nav-item");
+    let nurl = u.origin;
+    for (let i = 0; i <= index; i++) {
+      nurl += `/${depth[i]}`;
+    }
+    link.setAttribute("href", nurl);
+    navitem.appendChild(link);
+    navbar.appendChild(navitem);
+  });
+
+  let title = document.getElementsByTagName("h1")[0];
+  title.appendChild(navbar);
+</script>

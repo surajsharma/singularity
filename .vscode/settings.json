@@ -20,7 +20,7 @@
   "foam.edit.linkReferenceDefinitions": "withoutExtensions",
   "foam.openDailyNote.directory": "journal",
   "foam.openDailyNote.titleFormat": "fullDate",
-  "git.enableSmartCommit": true,
+  "git.enableSmartCommit": false,
   "git.postCommitCommand": "sync",
   "markdown.preview.breaks": true,
   "pasteImage.path": "${projectRoot}/attachments",

@@ -1,3 +1,9 @@
+---
+layout: c
+---
+
+
+{% raw %}
 #include <stdio.h>
 
 int display(nums) // no implicit declarations
@@ -19,3 +25,4 @@ int main()
     display(nums);
     return 0;
 }
+{% endraw %}
