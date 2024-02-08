@@ -1,1 +1,2 @@
-* 📄 [web3_metrics.ipynb](web3_metrics.ipynb)
+* 📂 [01 - Basic Metrics](01 - Basic Metrics)
+* 📂 [02](02)
