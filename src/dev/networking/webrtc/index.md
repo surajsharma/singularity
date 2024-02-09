@@ -1,2 +1,2 @@
-* 📄 [webrtcdemo-client.js](webrtcdemo-client.js)
-* 📄 [webrtcdemo-server.js](webrtcdemo-server.js)
+* 📄 [webrtcdemo-client.js](webrtcdemo-client.md)
+* 📄 [webrtcdemo-server.js](webrtcdemo-server.md)

@@ -1,11 +1,21 @@
+---
+layout: js
+---
+
+{% raw %} 
+
 const lc = new RTCPeerConnection()
 undefined
+
 const dc = lc.createDataChannel("channel")
 undefined
+
 dc.onmessage = e  => console.log("msg received", e.data);
 e  => console.log("msg received", e.data)
+
 dc.onopen = e => console.log("connection open");
 e => console.log("connection open")
+
 lc.onicecandidate = e => console.log("New Ice Candidate! reprinting SDP", JSON.stringify(lc.localDescription));
 e => console.log("New Ice Candidate! reprinting SDP", JSON.stringify(lc.localDescription))
 lc.createOffer().then(offer => lc.setLocalDescription(offer)).then(a=>console.log("set successfully"))
@@ -28,3 +38,4 @@ VM509:1 connection open
 dc.send("hello from chrome");
 undefined
 VM385:1 msg received hello from ff
+{% endraw %} 

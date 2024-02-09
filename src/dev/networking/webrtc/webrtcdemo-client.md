@@ -1,3 +1,8 @@
+---
+layout: js
+---
+
+{% raw %} 
 const offer = {"type":"offer","sdp":"v=0\r\no=- 5565229606022261744 2 IN IP4 127.0.0.1\r\ns=-\r\nt=0 0\r\na=group:BUNDLE 0\r\na=extmap-allow-mixed\r\na=msid-semantic: WMS\r\nm=application 53529 UDP/DTLS/SCTP webrtc-datachannel\r\nc=IN IP4 172.30.192.1\r\na=candidate:2697046791 1 udp 2122260223 172.30.192.1 53529 typ host generation 0 network-id 1\r\na=candidate:2943896220 1 udp 2122063615 192.168.29.242 53530 typ host generation 0 network-id 2 network-cost 10\r\na=candidate:1048604279 1 udp 2122197247 2405:201:5012:510e:35c4:49b8:a9b2:58ab 53531 typ host generation 0 network-id 3 network-cost 10\r\na=candidate:2836137395 1 udp 2122131711 2405:201:5012:510e:77cc:13c7:25e6:bfb1 53532 typ host generation 0 network-id 4 network-cost 10\r\na=candidate:3725478303 1 tcp 1518280447 172.30.192.1 9 typ host tcptype active generation 0 network-id 1\r\na=candidate:3518474244 1 tcp 1518083839 192.168.29.242 9 typ host tcptype active generation 0 network-id 2 network-cost 10\r\na=candidate:1078955247 1 tcp 1518217471 2405:201:5012:510e:35c4:49b8:a9b2:58ab 9 typ host tcptype active generation 0 network-id 3 network-cost 10\r\na=candidate:3619940139 1 tcp 1518151935 2405:201:5012:510e:77cc:13c7:25e6:bfb1 9 typ host tcptype active generation 0 network-id 4 network-cost 10\r\na=ice-ufrag:NSiw\r\na=ice-pwd:/cXkYeL4kTBiHxJGjmekThDi\r\na=ice-options:trickle\r\na=fingerprint:sha-256 01:08:4A:81:35:93:A2:5D:8E:04:A3:F3:A3:8E:72:AC:59:63:D2:47:60:FB:D8:0A:DA:E6:C3:A4:07:E7:1C:CD\r\na=setup:actpass\r\na=mid:0\r\na=sctp-port:5000\r\na=max-message-size:262144\r\n"}
 undefined
 const rc = new RTCPeerConnection();
@@ -25,3 +30,5 @@ connection opened! debugger eval code:1:147
 new message from client:  hello from chrome debugger eval code:1:77
 rc.dc.send("hello from ff")
 undefined
+
+{% endraw %}
