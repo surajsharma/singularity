@@ -1,6 +1,7 @@
 * 📄 [Desiderata.md](Desiderata.md)
 * 📄 [Ezra Pound.md](Ezra Pound.md)
 * 📄 [HRB.md](HRB.md)
+* 📄 [Hafiz.md](Hafiz.md)
 * 📄 [Heinrich Heine.md](Heinrich Heine.md)
 * 📄 [Henry Austin.md](Henry Austin.md)
 * 📄 [Kabir.md](Kabir.md)
