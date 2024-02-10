@@ -5,7 +5,7 @@
 ### February
 
 
-
+- racist child abusers and peeping toms now expect "good vibes", that is not how this works, batten the hatches.
 
 - what is #war, why it is nothing but a #revolution supressed. a status-quo purchased at a cost equal to what it is worth.
 

@@ -8,3 +8,4 @@
 * 📄 [resources.md](resources.md)
 * 📂 [rust](rust)
 * 📂 [slip](slip)
+* 📂 [ts](ts)
