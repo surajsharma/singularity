@@ -4,12 +4,14 @@
 
 ### February
 
+- before i came on the scene everyone hated capitalism, after i came, they hated me and forgot capitalism. #ssf
 
 - racist child abusers and peeping toms now expect "good vibes", that is not how this works, batten the hatches.
 
 - what is #war, why it is nothing but a #revolution supressed. a status-quo purchased at a cost equal to what it is worth.
 
-- the closer i got to the truth, the more it started to appear that sense data was almost wholly a case of disorder, an aberration, a chaos. to be precise it isn't random, for randomness needs a context, it is #chaos ex-nihil, unqualified and absolute. what made it appear orderly, or to use a better word "senseworthy" was a habitus - an inward, self-referential momentum sometimes called "energy". to say nothing of time, the paragon of illusions. time will have you believe things are going somewhere, whereas nothing is going anywhere. indeed, there is very little of anything to go anywhere - the whole contraption is about as complicated as a fart in a box - and we take it all so seriously - to continue the analogy, there aren't many moving parts in the penultimate reality and none in the ultimate. the objective of "life" was this, to tend to this "energy" and keep it as "motionless" and inert as the ultimate, and as far away from the penultimate, lest the whole thing come to a literal resemblance of the aforementioned petulant contraption.
+- the closer i got to the truth, the more it started to appear that sense data was almost wholly a 
+- case of disorder, an aberration, a chaos. to be precise it isn't random, for randomness needs a context, it is #chaos ex-nihil, unqualified and absolute. what made it appear orderly, or to use a better word "senseworthy" was a habitus - an inward, self-referential momentum sometimes called "energy". to say nothing of time, the paragon of illusions. time will have you believe things are going somewhere, whereas nothing is going anywhere. indeed, there is very little of anything to go anywhere - the whole contraption is about as complicated as a fart in a box - and we take it all so seriously - to continue the analogy, there aren't many moving parts in the penultimate reality and none in the ultimate. the objective of "life" was this, to tend to this "energy" and keep it as "motionless" and inert as the ultimate, and as far away from the penultimate, lest the whole thing come to a literal resemblance of the aforementioned petulant contraption.
 
 - unless you transcend language, you can never transcend society. you will be stuck in social mores, values and value systems (like money, rat-race etc).. your biggest prison is language itself. i wonder how many SJWs protested the invention of English. society is by and large an on-going, real-time trial in a universal courthouse, you have the right to remain silent, within and without, anything you say, or even plan to say, will be used to crucify you eventually.
 
