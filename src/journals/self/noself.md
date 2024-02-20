@@ -4,6 +4,8 @@
 
 ### February
 
+- #mentalmodels #ssf "when the disease is unreal, diagnosis is the cure"
+
 - before i came on the scene everyone hated capitalism, after i came, they hated me and forgot capitalism. #ssf
 
 - racist child abusers and peeping toms now expect "good vibes", that is not how this works, batten the hatches.
