@@ -1,4 +1,5 @@
 * 📄 [Desiderata.md](Desiderata.md)
+* 📄 [Emily Dickinson.md](Emily Dickinson.md)
 * 📄 [Ezra Pound.md](Ezra Pound.md)
 * 📄 [Ghalib.md](Ghalib.md)
 * 📄 [HRB.md](HRB.md)
