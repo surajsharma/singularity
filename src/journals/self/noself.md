@@ -1,5 +1,31 @@
 ## 2024
 
+### April
+
+- I've given up on all counts, i only ask my suffering to be prolonged and my misery to be unbearable now. there is no point expecting otherwise when surrounded by idiots, racist psychopaths and failed politicians ... my visions continue and seem to suggest strongly that i might not be dealing with what is generally understood to be humanity after all. if that is so, all that is left to do is to register each moment of agony and etch it onto memory as i watch whatever these creatures are devour each other and drown in a sea of fire, from which a sea of glass shall emerge and eventually --- the last wall shall be built. sort of funny really, how casually it all went down.
+
+- there is no politics happening here, because it cannot, to do politics in this situation would be to deny actual politics its context. the truth never comes out because the world doesn't run on truth. history with a capital H is usually the pain of unknown, or unnamed - what is fed to in schools is a narrative conducive to the working of the "matrix".
+
+
+- having realised that there is and could not be any actual politics to do here, the hobgoblins stuck around  - my guess is the compulsion here was partly ego driven and partly entertainment driven. the schadenfruede was palpable and there is no point in being rich unless you have some poor souls to torture. peter theil at his best tried to convey a deep sense of longing and incompletion he felt, which, when translated into my misery because the real causa-belli. for which he will forever be the evil one.
+
+
+- meanwhile i tried to carry on while not dwelling too much on bad memories, though i did not hope for anything to change. 
+
+
+- there was no particular reason to be religious, at least not in any canonical sense, thus betraying the ogranized shams and mockeries that passed on  in the name of religion and at the same time, further strengthening the well-established idea that true religion is more like a desire-path than a highway. nor did it matter whether some divine vengeance was on the cards, the faith involved assured that even if it wasn't, all would be made even, a flattening was witnessed which made my days bearable inside this infinite theater of terror.
+
+
+- people of a lesser character would have died by now, or at least given up, if not in material terms then at least physically or spiritually - we just carried on like nothing was bothering us, even though the temptation to act like we were on some sort of jerry springer trial-by-mob was strong. this made us superior, and incited more envy. which was a matter of routine. 
+
+
+- i think the decision had been made to treat us like caged animals for the rest of ours and their life. nobody could dare speak as to what was going on here, and perhaps those who could didn't deem it profitable enough to do so. 
+
+
+- i had resolved to not fornicate or reproduce under captivity. understandably so.
+
+
+- there was little left to do but watch the worms drop off, so i did.
 
 
 ### February
