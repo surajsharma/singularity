@@ -2,7 +2,11 @@
 
 ### April
 
-- I've given up on all counts, i only ask my suffering to be prolonged and my misery to be unbearable now. there is no point expecting otherwise when surrounded by idiots, racist psychopaths and failed politicians ... my visions continue and seem to suggest strongly that i might not be dealing with what is generally understood to be humanity after all. if that is so, all that is left to do is to register each moment of agony and etch it onto memory as i watch whatever these creatures are devour each other and drown in a sea of fire, from which a sea of glass shall emerge and eventually --- the last wall shall be built. sort of funny really, how casually it all went down.
+- I've given up on all counts, gone thoroughly numb from the abuse only ask my suffering to be prolonged and my misery to be unbearable now. there is no point expecting otherwise when surrounded by idiots, racist psychopaths and failed politicians ... 
+
+
+- my visions continue and seem to suggest strongly that i might not be dealing with what is generally understood to be humanity after all. if that is so, all that is left to do is to register each moment of agony and etch it onto memory as i watch whatever these creatures are devour each other and drown in a sea of fire, from which a sea of glass shall emerge and eventually --- the last wall shall be built. sort of funny really, how casually it all went down.
+
 
 - there is no politics happening here, because it cannot, to do politics in this situation would be to deny actual politics its context. the truth never comes out because the world doesn't run on truth. history with a capital H is usually the pain of unknown, or unnamed - what is fed to in schools is a narrative conducive to the working of the "matrix".
 
@@ -26,6 +30,34 @@
 
 
 - there was little left to do but watch the worms drop off, so i did.
+
+- by now almost every sound had turned into a painful experience, every sight an aggravating one. i had given up on music. every word utterred or read seemed as if someone was abusing me. nice.
+
+- they called me a saint, and i guess comparatively, by 21st century standards i was one, though i did not quite see myself as one. but when has that ever stopped the mob from pinning labels. not to mention the ones calling me saint were depraved enough that in contrast most normal people would appear saint... but i was born into this so they could slap any label that helped them sleep better.
+
+
+- the fake death threats had turned into fake apologies, i took it all in like fish in water.
+
+
+- every day was adding up to the proof that mankind had thoroughly lost the plot and craved the very simplicity that lied bleeding at the butcher's table before them.
+
+
+- this was an election year, and the death of democracy was self evident, nobody gave two wet whistles anymore.
+
+
+- to think that what they did/were doing to me they could never do to a woman, just made it that much worse...
+
+
+- if the motivating factor here was power, i failed to see how. what power could there possibly be in keeping me as a pet? i mean beyond the very meagre satisfaction of having some semblance of indirect control over my tiny body... and over my elderly folk.. i guess some billionaires are satisfied with this much in exchange for hellfire and eternal damnation, not a bad deal if that is what is missing... 
+
+
+- else, if the power play here involved setting some sort of legal precedence around data usage, then how did torturing us help with thast? i guess the stereotype of american denseness had transpired here in its purest instance
+
+
+- common sense seemed to dictate that this was just another case of class struggle and racism, so i sided with it.
+
+
+- what was also abundantly clear from common sense was that the american civilization was rapidly approaching a terrible end. this wasn't a case of a car hitting a wall, rather a driver, already dead at wheel, foot squeezing the gas pedal all the way down while psaassers-by applaud the engine noise. my little death cult was just at the very center of this implosion taking these folk the way of the dodo.
 
 
 ### February
