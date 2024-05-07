@@ -1,27 +1,130 @@
 ## 1.1 Android: An Overview  
-
-### 1.1.1 Android System Architecture  
-![](../../../attachments/android-overview.png)
-
+### 1.1.1 Android System Architecture
+![overview of arch](../../../attachments/android-overview.png)
 ### 1.3.4 Analyzing Your First Android Project  
-![](../../../attachments/android-fs.png)
-![](../../../attachments/android-app.png)
-
+![file structure](../../../attachments/android-fs.png)
+![app structure](../../../attachments/android-app.png)
 ## AndroidManifest.xml 
-![](../../../attachments/android-manifest.png)
+![manifest](../../../attachments/android-manifest.png)
+### 1.3.5 Resources in a Project  
+### 1.3.6 File of build.gradle
 
-1.3.5 Resources in a Project  
-1.3.6 File of build.gradle
-1.4 Mastering the Use of Logging Tools  
-1.4.1 Using Android Log Tool  
+Unlike Eclipse, Android Studio uses Gradle to build the project. Gradle is an advanced tool to build the project which uses a DSL (Domain Specific Language) based on Groovy to configure the project and avoids the complicated configuration with XML-based tools like Ant and Maven.
+
+From Sect. 1.3.4, we can see that there are two build.gradle files in HelloWorld project. One is at the outer layer and another one is under the app directory. These two files are instrumental to build the Android Studio projects and let us take a deep dive into these two files.
+
+#### First look at the build.gradle file at the outer layer as shown below:
+
+
+```
+/* outer layer build.gradle */
+
+buildscript {
+    ext.kotlin_version = '1.3.61'
+    repositories {
+        google()
+        jcenter()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.5.2'
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$
+        kotlin_version"
+    }
+}
+    allprojects {
+        repositories {
+            google()
+            jcenter()
+        }
+}
+```
+
+
+First, the two repository closures all use google() and jcenter() methods. These two methods are used to specify the code repository that this project is going to use.
+
+The google repo is Google’s Maven repo and jcenter is the repo mainly for thirdparty open sources libs. With these two methods, we can easily use any libs in the google and jcenter repo.
+
+Next, in the dependencies closure, classpath specifies Gradle plugin and Kotlin plugin. Why need to specify Gradle plugin? This is because Gradle wasn’t specifically created for building Android projects but for other types of projects written in Java, C++, etc. If we want to use it to build the Android project, we need to specify in Gradle to use com.android.tools.build:gradle:3.5.2 plugin. The series number at the end is the plugin version number and should be the same as the current Android Studio version number. The Kotlin plugin just means that the current project is written with Kotlin. If you use Java to develop Android project, then there is no need to use this plugin. When I wrote this book the latest version of Kotlin plugin was 1.3.61.
+
+#### Next, let us look at the build.gradle under the app directory, code should be the same as follows:
+
+
+```
+apply plugin: 'com.android.application'
+
+/*  
+The first line applies a plugin which has two values to choose from: com.android.application means this is an application module; com.android.library means this is a lib module. application module can run independently while lib module will need to be loaded in other apps so that it can run
+*/
+
+apply plugin: 'kotlin-android'
+// If you want to use Kotlin to develop Android app, then you must add this
+
+apply plugin: 'kotlin-android-extensions'
+//  some useful extensions of Kotlin which you will
+find out in later chapters.
+
+
+android {
+    compileSdkVersion 29
+    buildToolsVersion "29.0.2"
+
+    defaultConfig {
+        applicationId "com.example.helloworld"
+        minSdkVersion 21
+        targetSdkVersion 29
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "androidx.test.runner.
+        AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-androidoptimize.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+/* There are three types of dependency: local binary dependency, local library module dependency, and remote binary dependency. Local binary dependency can add dependency to local jars or directories; local library dependency can be used to add dependency to local lib modules; remote dependency can be used to add dependency to the open-source projects in jcenter.    
+*/
+
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation"org.jetbrains.kotlin:kotlin-stdlib-jdk7:$
+    kotlin_version"
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation 'androidx.core:core-ktx:1.1.0'
+    implementation 'androidx.constraintlayout:
+    constraintlayout:1.1.3'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.1'
+    androidTestImplementation 'androidx.test.espresso:espressocore:3.2.0'
+}
+
+```
+
+### 1.4.1 Using Android Log Tool  
+
+The log class in Android is Log(android.util.Log) which provides the following 5 methods to print logs in the console. Here the verbosity is in descending order for these methods.
+
+- `Log.v()`: used for the least meaningful information with the highest level of verbosity.
+
+- `Log.d()`: used for the debugging information which should help you debug the app and investigate issues.
+
+- `Log.i()`: used for important information like data that can help analyze the user behavior.
+
+- `Log.w()`: used to print some warnings which means there is potential risks and need some attention to investigate into the issue.
+
+- `Log.e()`: used to print error information such as the error info in the catch statement. When there are error info logs, it usually means your app has some serious issue that needs to get fixed immediately. This should have the least verbosity.
+
 1.4.2 Log Vs Println()
 1.5 Summary
 
 --- 
 
-[[kotlin]]
+# 2. [[kotlin]] reference
 
----
 
 3 Start with the Visible: Explore Activity  
 3.1 What Is Activity?    
@@ -94,885 +197,8 @@
 4.8.1 Lateinit Variables . . . . . . . . . . . . . . . . . . . . . . . . . . . 214
 4.8.2 Optimization with Sealed Class . . . . . . . . . . . . . . . . . 216
 4.9 Summary and Comment . . . . . . . . . . . . . . . . . . . . . . . . . . . . 218
-Support Phones and Tablets with Fragment 221
 
-What Is Fragment? 221
-
-How to Use Fragment 223
-
-Basic Use of Fragment 223
-
-Add Fragment Dynamically 227
-
-Back Stack for Fragment 230
-
-Interaction Between Fragment and Activity 230
-
-Lifecycle of Fragment 231
-
-Fragment State and Callbacks 231
-
-Experiment with Fragment Lifecycle 232
-
-Dynamically Load Layout 236
-
-Use Qualifier 236
-
-Use Smallest-Width Qualifier 237
-
-Fragment Best Practice: A Basic News App 240
-
-Kotlin Class: Extension Function and Operator Overloading 249
-
-Extension Function 249
-
-Operator Overloading 252
-
-Summary and Comment 256
-
-Broadcasts in Details 259
-
-Introduction to Broadcast Mechanism 259
-
-Receive System Broadcast 261
-
-Dynamically Register BroadcastReceiver for Time
-
-Change 261
-
-Open App After Booting with Static Receiver 262
-
-Send Customized Broadcast 267
-
-Send Normal Broadcast 267
-
-Send Ordered Broadcast 270
-
-Best Practice of Broadcast: Force Logout 274
-
-Kotlin Class: Higher-Order Function 280
-
-Define Higher-Order Function 280
-
-Inline Functions 286
-
-Noinline and Crossinline 289
-
-Git Time: The First Look of Version Control Tools 293
-
-Git Installation 293
-
-Create Code Repository 293
-
-Commit Local Code 295
-
-Summary and Comment 296
-
-Data Persistence 297
-
-Introduction to Data Persistence 297
-
-Persisting Through File 298
-
-Persisting Data in File 298
-
-Read Data from File 301
-
-SharedPreferences 304
-
-Save Data in SharedPreferences 304
-
-Read Data from SharedPreferences 307
-
-Implement Remembering Password 308
-
-SQLite Database 311
-
-Create Database 312
-
-Upgrade Database 317
-
-Add Data 322
-
-Update Data 324
-
-Delete Data 326
-
-Query Data 328
-
-Use SQL 331
-
-SQLite Database Best Practice 333
-
-Transaction 333
-
-Best Practice to Upgrade Database 335
-
-Kotlin Class: Application of Higher-Order Function 338
-
-Simplify Use of SharedPreferences 338
-
-Simplify Use of ContentValues 340
-
-Summary and Comment 343
-
-Share Data Between Apps with ContentProvider 345
-
-Introduction to ContentProvider 345
-
-Runtime Permissions 346
-
-Android Runtime Permissions in Depth 346
-
-Request Permission at Runtime 349
-
-Access Data in Other Apps 354
-
-Basic Use of ContentResolver 354
-
-Read System Contact 358
-
-Create Your Own ContentProvider 362
-
-Create ContentProvider 362
-
-Share Data Between Apps 368
-
-Kotlin Class: Generics and Delegate 377
-
-Basic Use of Generics 377
-
-Class Delegation and Delegated Properties 379
-
-Implement Lazy Function 382
-
-Summary and Comment 384
-
-Enrich Your App with Multimedia 387
-
-Run Application on Phone 387
-
-Notification 388
-
-Create Notification Channel 389
-
-Basic Use of Notification 392
-
-Advanced Topics in Notification 399
-
-Camera and Album 403
-
-Take Photos with Camera 404
-
-Select Images from Album 408
-
-Play Multi-Media Files 411
-
-Play Audio 412
-
-Play Video 416
-
-Kotlin Class: Use Infix to Improve Readability 420
-
-Git Time: Advanced Topics in Version Control 423
-
-
-
-9.6.1 Ignore Files   . .
-
-423
-
-9.6.2 Inspect Modified Content  
-
-424
-
-9.6.3 Revert the Uncommitted Changes  
-
-426
-
-9.6.4 Check Commit History  
-
-427
-
-9.7 Summary and Comment   .
-
-428
-
-10 Work on the Background Service  .
-
-431
-
-10.1
-
-What Is
-
-Service?    
-
-431
-
-10.2
-
-Android
-
-Multithreading  
-
-432
-
-
-
-10.2.1
-
-Basic Use of Thread  
-
-432
-
-
-
-10.2.2
-
-Update UI in Worker Thread  
-
-433
-
-
-
-10.2.3
-
-Async Message Handling Mechanism  
-
-435
-
-
-
-10.2.4
-
-Use AsyncTask   .
-
-437
-
-
-
-10.3 Basic Use of Service   . .
-
-440
-
-
-
-10.3.1 Define a Service   .
-
-440
-
-
-
-10.3.2 Start and Stop Service  
-
-442
-
-
-
-10.3.3 Communication Between Activity and Service  
-
-445
-
-
-
-10.4 Service Life Cycle    
-
-450
-
-
-
-10.5 More Techniques on Service  
-
-450
-
-
-
-10.5.1 Use Foreground Service  
-
-451
-
-
-
-10.5.2 Use IntentService  
-
-453
-
-
-
-10.6 Kotlin Class: Advanced Topics in Generics  
-
-456
-
-
-
-10.6.1 Reify Generic Types  
-
-457
-
-
-
-10.6.2 Application of Reified Type in Android  
-
-459
-
-
-
-10.6.3 Covariance and Contravariance  
-
-461
-
-
-
-10.6.4 Contravariance  
-
-464
-
-
-
-10.7 Summary and Comment   .
-
-467
-
-11
-
-Exploring New World with Network Technologies  
-
-469
-
-
-
-11.1 WebView    
-
-469
-
-
-
-11.2 Use HTTP to Access Network  
-
-471
-
-
-
-11.2.1 Use HttpURLConnection  
-
-472
-
-
-
-11.2.2 Use OkHttp   . .
-
-476
-
-
-
-11.3 Parse XML Data    
-
-478
-
-
-
-11.3.1 Pull Parser   . . .
-
-481
-
-
-
-11.3.2 SAX Parser   . .
-
-484
-
-
-
-11.4 Parse JSON Data    
-
-487
-
-
-
-11.4.1 JSONObject   . .
-
-488
-
-
-
-11.4.2 GSON    
-
-489
-
-
-
-11.5 Implementing Network Callback  
-
-491
-
-
-
-11.6 The Best Network Lib: Retrofit  
-
-494
-
-
-
-11.6.1 Basic Use of Retrofit  
-
-494
-
-
-
-11.6.2 Process Complex Interface Address  
-
-499
-
-
-
-11.6.3 Best Practice for Retrofit Builder  
-
-502
-
-
-
-
-
-11.7 Kotlin Class: Use Coroutine for Performant Concurrent App . .
-
-504
-
-11.7.1 Basic Use of Coroutine  
-
-504
-
-11.7.2 More on Coroutine Scope Builder  
-
-510
-
-11.7.3 Simplifying Callback with Coroutine  
-
-514
-
-11.8 Summary and Comment   .
-
-517
-
-12
-
-Best UI Experience: Material Design in Action  
-
-519
-
-
-
-12.1 What Is Material Design?  
-
-519
-
-
-
-12.2 Toolbar    
-
-520
-
-
-
-12.3 Navigation Drawer   . . .
-
-527
-
-
-
-12.3.1 DrawerLayout  
-
-527
-
-
-
-12.3.2 NavigationView   .
-
-530
-
-
-
-12.4 FloatingActionButton and Snackbar  
-
-534
-
-
-
-12.4.1 FloatingActionButton  
-
-535
-
-
-
-12.4.2 Snackbar    
-
-539
-
-
-
-12.4.3 CoordinatorLayout  .
-
-540
-
-
-
-12.5 CardView Layout    
-
-542
-
-
-
-12.5.1 MaterialCardView  .
-
-542
-
-
-
-12.5.2 AppBarLayout  
-
-548
-
-
-
-12.6 Pull to Refresh    
-
-551
-
-
-
-12.7 Collapsible Toolbar   . . .
-
-553
-
-
-
-12.7.1 CollapsingToolbarLayout  
-
-553
-
-
-
-12.7.2 Optimizing Using of System Status Bar  
-
-560
-
-
-
-12.8 Kotlin Class: Creating Utils  .
-
-564
-
-
-
-12.8.1 Find Max and Min in N Numbers  
-
-565
-
-
-
-12.8.2 Simplifying Use of Toast  
-
-566
-
-
-
-12.8.3 Simplifying Use of Snackbar  
-
-568
-
-
-
-12.9 Git Time: Advanced Topics in Version Control  
-
-570
-
-
-
-12.9.1 Branch    
-
-570
-
-
-
-12.9.2 Work with Remote Repo  
-
-572
-
-
-
-12.10 Summary and Comment   .
-
-573
-
-13
-
-High-Quality Developing Components: Exploring Jetpack  
-
-575
-
-
-
-13.1 Introduction to Jetpack  
-
-575
-
-
-
-13.2 ViewModel    
-
-576
-
-
-
-13.2.1 ViewModel Basics  .
-
-577
-
-
-
-13.2.2 Pass Param to ViewModel  
-
-579
-
-
-
-13.3 Lifecycles    
-
-583
-
-
-
-13.4 LiveData    
-
-587
-
-
-
-13.4.1 LiveData Basics   .
-
-587
-
-
-
-13.4.2 map and switchMap  
-
-590
-
-
-
-13.5 Room    
-
-596
-
-
-
-13.5.1 Use Room to CRUD  
-
-596
-
-
-
-13.5.2 Room Database Upgrade  
-
-603
-
-
-
-13.6 WorkManager    
-
-606
-
-
-
-13.6.1 WorkManager Basics  
-
-607
-
-13.6.2 Handling Complex Task with WorkManager  
-
-608
-
-13.7 Kotlin Class: Use DSL to Construct Specific Syntax  
-
-610
-
-13.8 Summary and Comment   .
-
-617
-
-14 Keep Stepping Up: More Skills You Need to Know  
-
-619
-
-14.1
-
-Obtaining Context Globally  .
-
-619
-
-14.2
-
-Passing Objects with Intent  .
-
-622
-
-
-
-14.2.1 Serializable   . .
-
-622
-
-
-
-14.2.2 Parcelable   . . .
-
-623
-
-14.3
-
-Creating Your Own Logging Tool  
-
-624
-
-14.4
-
-Debug Android Apps   .
-
-626
-
-14.5
-
-Dark Mode    
-
-630
-
-14.6
-
-Kotlin Class: Conversion Between Java and Kotlin Code  
-
-636
-
-14.7
-
-Summary    
-
-640
-
-15 Real
-
-Project Practice: Creating a Weather App  
-
-641
-
-15.1
-
-Analysis Before Start   . .
-
-641
-
-15.2
-
-Git Time: Host Code on GitHub  
-
-645
-
-15.3
-
-Introduction to MVVM  
-
-651
-
-15.4
-
-Search City Data    
-
-655
-
-
-
-15.4.1 Business Logic Implementation  
-
-656
-
-
-
-15.4.2 UI Implementation  .
-
-661
-
-15.5
-
-Display Weather Data   .
-
-667
-
-
-
-15.5.1 Business Logic Implement  
-
-668
-
-
-
-15.5.2 Implement UI Layer  
-
-674
-
-
-
-15.5.3 Record City Selection  
-
-685
-
-15.6
-
-Manual Refresh and Switch City  
-
-688
-
-
-
-15.6.1 Manual Refreshing Weather  
-
-688
-
-
-
-15.6.2 Switching Cities   .
-
-690
-
-15.7
-
-Create App Icon    
-
-695
-
-15.8
-
-Generate Signed APK   .
-
-700
-
-
-
-15.8.1 Generating with Android Studio  
-
-701
-
-
-
-15.8.2 Generating with Gradle  
-
-702
-
-15.9
-
-More To Do    
-
-707
-
-
+---
 
 
 

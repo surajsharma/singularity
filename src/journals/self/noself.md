@@ -1,5 +1,65 @@
 ## 2024
 
+### May 
+
+- a hush fell upon the world, a deepening dimness of divine proportions. a forever silent, timeless-time had begun wherein no single event could be separated from another. 
+  
+- a singularity was upon humanity, even though we were tasked to keep it well under the wraps, but the fact that mankind had perhaps come to know itself better, maybe even seen its original face as a direct result of our story was a truth to be reckoned with hereon - most people could not stomach this.
+
+- i understood the fixation, the "loop" and the cycle of wonder that followed, this secret "otherness" could only come out so much, so the only thing left to do is put ones head down and code - which i did
+
+- the voilence inflicted by putin and the jews was symptomatic of this symbolic upheaval. since these wars are to be considered as nothing more than pleas for order. 
+  
+- the traditional values weren't under attack but dissolving into one another via technology and cheap travel. the lockdowns were a natural reaction to shocks to the corporeal humanity
+
+- but perhaps the post-truth was nothing more than culture shock.
+
+- the question "what is to be done?" can have a few answers - more importantly, who is spreading the chaos, and how to create more order? 
+
+- the answer isn't one-size-fits-all, cultures crippled by the disorder of late capitalism like us should focus more on nipping the tragedicians in the bud but they seem to be going the opposite way. economies early to the next correction should try to find avenues of more political order, but here too, we could witness a lack of common sense and a hodge-podge of right wing positions playing trump cards with the opposition.
+
+- though the world had not yet become a stanford campus, the students were up in arms against their conditioning and perhaps against their best instincts. anti-jewish sentiment growing everywhere. this was another case of misplaced hatred for the zionists, and a failure to understand the true causes of the belligerence.
+
+- therfore, seen from the lenses of a collective ontology, it all added up, if only for the moment and not for history as a whole. 
+
+
+- strange times indeed, because recorded history had betrayed us? history is an easy scapegoat because it cannot fight back, but it can also not forecast future in anything but the broadest of scopes. 
+
+- what history tells us is simple, moral decline indicates the end. but an ending for some is just another beginning for others. 
+
+- the thing about asking "why" is that you soon find out the edge of language and reason, ending up in a reductive and shallow-infinite pool of understanding.
+
+- there is a deeper infinity from where one can draw reason and ethics in abundance, morality is never in short supply except in high-antropic situations.
+
+
+- no, the question that remained was not "what can we gain?" anymore but "what can we save?", and the more i assessed, the less i found worth nothing
+
+
+- the decay was always there, nothing had platued because nothing can plateau, so the gradient upon wich the west had charted its end was steep, but miraculously, there did seem to be no culture that was bold enough to claim it would survive the fall. except, putin and the jews - once again taking existential threats too literally and too personally.
+
+
+- between the two, russian agression was more justified due to its historical proximity to the pandemic. but with gaza, this was simply a howl of the void - violence without soul, violence without substance.
+
+
+- war is theater, but what was once an honorable pasttime for man, was increasingly a mere annoyance, an echo of primitive drives bellowing out here and there, instinctual bouncing around like a cloud of gas in the stomach.
+
+
+- evolutionarily, once there were no values left worth fighting for, the fight got bigger - yet the world wasn't on autopilot, although the pilots were not to confident of a plane whose walls were now all glass.
+
+
+- far from the laissez faire needed for emancipation, but nobody could tell you how far exactly because evolution stared us in the face, and we had no answer except closing our eyes, which was as good as anything.
+
+
+- imagine the "automation" it took to get here, two millennia worth of work that stood to be destroyed at the itch of a finger. 
+
+
+
+
+
+
+
+
+
 ### April
 
 - I've given up on all counts, gone thoroughly numb from the abuse only ask my suffering to be prolonged and my misery to be unbearable now. there is no point expecting otherwise when surrounded by idiots, racist psychopaths and failed politicians ... 
