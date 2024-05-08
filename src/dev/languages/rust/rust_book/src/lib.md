@@ -1,3 +1,10 @@
+---
+layout: rust
+---
+
+{% raw %} 
+
+
 #![allow(dead_code, unused_variables, unused_imports)]
 
 // ch 10
@@ -147,3 +154,7 @@ pub use crate::front_of_house::hosting;
 		
 	}
 //}
+
+
+
+{% endraw %}

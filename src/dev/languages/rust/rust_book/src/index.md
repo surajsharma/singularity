@@ -1,2 +1,2 @@
-* 📄 [lib.rs](lib.rs)
-* 📄 [main.rs](main.rs)
+* 📄 [lib.md](lib.md)
+* 📄 [main.md](main.md)

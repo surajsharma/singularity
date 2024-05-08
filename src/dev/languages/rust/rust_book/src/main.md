@@ -1,3 +1,9 @@
+---
+layout: rust
+---
+
+{% raw %} 
+
 #![allow(dead_code, unused_variables, unused_imports)]
 
 //ch_2
@@ -407,3 +413,6 @@ fn ch_2(){
 		}
 	}
 }
+
+
+{% endraw %}
