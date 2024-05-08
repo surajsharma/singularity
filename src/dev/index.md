@@ -1,6 +1,5 @@
 * 📂 [AMND](AMND)
-* 📄 [All Programming Philosophies Are About State.md](All Programming Philosophies Are About State.md)
-* 📄 [alan perlis.md](alan perlis.md)
+* 📂 [cs_phil](cs_phil)
 * 📂 [devops](devops)
 * 📂 [languages](languages)
 * 📂 [re](re)
