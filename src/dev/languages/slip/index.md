@@ -1,3 +1,4 @@
 * 📄 [chomsky hierarchy.md](chomsky hierarchy.md)
 * 📄 [grammar.md](grammar.md)
+* 📄 [optimizations.md](optimizations.md)
 * 📄 [slip.md](slip.md)
