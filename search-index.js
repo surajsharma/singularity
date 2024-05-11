@@ -63,11 +63,9 @@ async function createSearchIndex(dirPath) {
         });
       }, this);
 
-      await fs.appendFileSync(`search.json`, JSON.stringify(idx), function (err) {
+      fs.appendFileSync(`search.json`, JSON.stringify(idx), function (err) {
         if (err) throw err;
       });
-      console.log(JSON.stringify(idx));
-
     }
   } catch (err) {
     console.error(`Error processing ${dirPath}:`, err);

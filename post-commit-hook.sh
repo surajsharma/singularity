@@ -7,3 +7,5 @@ echo ⚙️ rebuilding file indexes...
 find . -name "index.md" -type f -delete  
 node files-index.js archives && node files-index.js src
 echo ✅ src/ and archives/ indexed
+
+DIRTY=false
