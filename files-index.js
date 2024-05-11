@@ -8,7 +8,7 @@ if (!directoryPath) {
   process.exit(1);
 }
 
-function createIndexes(dirPath) {
+function createFileIndices(dirPath) {
   const excludedDirs = ["target", ".", ".ipynb_checkpoints", ".out"];
 
   const excludedFiles = [".DS_Store", "index.md"];
@@ -33,9 +33,9 @@ function createIndexes(dirPath) {
             fs.appendFileSync(`${dirPath}/index.md`, dirStr, function (err) {
               if (err) throw err;
             });
-            createIndexes(itemPath);
+            createFileIndices(itemPath);
             Object.keys(results).forEach((subDir) => {
-              createIndexes(itemPath);
+              createFileIndices(itemPath);
             });
           }
         } else {
@@ -60,4 +60,4 @@ function createIndexes(dirPath) {
   }
 }
 
-createIndexes(directoryPath);
+createFileIndices(directoryPath);
