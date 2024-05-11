@@ -1,3 +1,5 @@
 * 📂 [design](design)
 * 📂 [dev](dev)
 * 📂 [journals](journals)
+* 📂 [maths](maths)
+* 📂 [scripture](scripture)
