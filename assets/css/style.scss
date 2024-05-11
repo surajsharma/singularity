@@ -81,4 +81,11 @@ blockquote {
 #search{
   font-size: 21px;
   cursor: pointer;
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+#search-input{
+  width: 100%;
 }

@@ -6,8 +6,8 @@ layout: default
 {{ content }}
 {% include navigation.html %}
 
-<input id="search" placeholder="type to search..."></input>
+<input id="search-input" placeholder="type to search..."></input>
 
 <div id="search-results"></div>
 
-<script src="{{ site.baseurl }}{% link assets/js/search.js %}"></script>
+<script src="{{ site.baseurl }}{% link assets/js/lunr.js %}"></script>
