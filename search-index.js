@@ -44,26 +44,26 @@ async function createSearchIndex(dirPath) {
 
       while (stack.length > 0) {
         const currentPath = stack.pop();
-        const id = generateUniqueId();
+        const d_id = generateUniqueId();
         const contents = fs.readdirSync(currentPath);
-        const item = path.basename(currentPath);
-        console.log({ id, itemPath: currentPath, item, content: '' });
-        this.add({ id, itemPath: currentPath, item, content: '' });
 
         contents.forEach(async itemName => {
           const itemPath = path.join(currentPath, itemName);
           const stats = fs.statSync(itemPath);
-          const id = generateUniqueId();
 
           if (stats.isDirectory()) {
+            const item = path.basename(currentPath);
             if (!excludedDirs.includes(item)) {
               stack.push(itemPath);
+              console.log({ id: d_id, itemPath, item, content: '' });
+              this.add({ id: d_id, itemPath, item, content: '' });
             }
           } else {
             const item = path.basename(itemPath);
             if (!excludedFiles.includes(item)) {
               if (!excludedExts.includes(path.extname(item))) {
                 const content = await readFileAsString(itemPath);
+                const id = generateUniqueId();
                 this.add({ id, itemPath, item, content });
                 console.log({ id, itemPath, item, content });
               }
