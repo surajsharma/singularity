@@ -2,54 +2,18 @@
 layout: default
 ---
 
+{% include header.html %}
+{% include navigation.html %}
 {{ content }}
 
-<link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
-  integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
-  crossorigin="anonymous"
-/>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+  integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV" crossorigin="anonymous" />
 
 <!-- The loading of KaTeX is deferred to speed up page rendering -->
-<script
-  defer
-  src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
-  integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
-  crossorigin="anonymous"
-></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+  integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8" crossorigin="anonymous"></script>
 
 <!-- To automatically render math in text elements, include the auto-render extension: -->
-<script
-  defer
-  src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
-  integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
-  crossorigin="anonymous"
-  onload="renderMathInElement(document.body);"
-></script>
-
-<script>
-  //Navigation
-  let navbar = document.createElement("div");
-  navbar.setAttribute("class", "nav");
-  const u = new URL(window.location);
-  const depth = u.pathname.split("/").filter((d) => d != "");
-  depth.forEach((n, index) => {
-    const navitem = document.createElement("div");
-    const link = document.createElement("a");
-    link.innerText = decodeURIComponent(
-      n.substring(0, n.lastIndexOf(".")) || n
-    );
-    navitem.setAttribute("class", "nav-item");
-    let nurl = u.origin;
-    for (let i = 0; i <= index; i++) {
-      nurl += `/${depth[i]}`;
-    }
-    link.setAttribute("href", nurl);
-    navitem.appendChild(link);
-    navbar.appendChild(navitem);
-  });
-
-  let title = document.getElementsByTagName("h1")[0];
-  title.appendChild(navbar);
-</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+  integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05" crossorigin="anonymous"
+  onload="renderMathInElement(document.body);"></script>
