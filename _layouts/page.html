@@ -2,32 +2,10 @@
 layout: default
 ---
 
+{% include header.html %}
 {{ content }}
-<script>
-  //Navigation
-  let navbar = document.createElement("div");
-  navbar.setAttribute("class", "nav");
-  const u = new URL(window.location);
-  const depth = u.pathname.split("/").filter((d) => d != "");
-  depth.forEach((n, index) => {
-    const navitem = document.createElement("div");
-    const link = document.createElement("a");
-    link.innerText = decodeURIComponent(
-      n.substring(0, n.lastIndexOf(".")) || n
-    );
-    navitem.setAttribute("class", "nav-item");
-    let nurl = u.origin;
-    for (let i = 0; i <= index; i++) {
-      nurl += `/${depth[i]}`;
-    }
-    link.setAttribute("href", nurl);
-    navitem.appendChild(link);
-    navbar.appendChild(navitem);
-  });
+{% include navigation.html %}
 
-  let title = document.getElementsByTagName("h1")[0];
-  title.appendChild(navbar);
-</script>
 <script type="text/javascript">
   // Hack: Replace page-link with "Page Title"
   document.querySelectorAll(".markdown-body a[title]").forEach((a) => {
@@ -41,5 +19,4 @@ layout: default
     }
   });
 </script>
-
 <script src="{{ site.baseurl }}{% link assets/js/search.js %}"></script>

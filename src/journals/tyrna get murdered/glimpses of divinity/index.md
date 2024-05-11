@@ -1,4 +1,4 @@
-* 📂 [0. Introduction](0. Introduction)
+* 📂 [00 - Introduction](00 - Introduction)
 * 📂 [01 - why](01 - why)
 * 📄 [10 common inequality and the brahminical UNequality.md](10 common inequality and the brahminical UNequality.md)
 * 📄 [11 why hemingway didn't die of cancer.md](11 why hemingway didn't die of cancer.md)

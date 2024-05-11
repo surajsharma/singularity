@@ -26,6 +26,11 @@
   font-size: x-small;
   font-weight: bolder;
   gap: 1px;
+  margin-top: -25px;
+  margin-bottom: 20px;
+  width: 100%;
+  border-bottom: 1px solid #eaecef;
+
   @include not-last-child("div") {
     &:after {
       content: " ➡️ ";
@@ -36,6 +41,10 @@
 .markdown-body {
   max-width: 800px;
   font-size: 16px;
+}
+
+.markdown-body h1 {
+  border:0;
 }
 
 .markdown-body p {
@@ -60,4 +69,16 @@ h5,
 blockquote {
   font-family: Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida,
     "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
+}
+
+#header{
+  display: flex;
+  flex-direction:row;
+  width: 100% !important;
+  flex-wrap: wrap;  
+}
+
+#search{
+  font-size: 21px;
+  cursor: pointer;
 }

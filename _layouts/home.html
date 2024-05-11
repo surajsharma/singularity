@@ -2,7 +2,9 @@
 layout: default
 ---
 
+{% include header.html %}
 {{ content }}
+
 
 <script type="text/javascript">
   // Hack: Replace page-link with "Page Title"
@@ -12,7 +14,8 @@ layout: default
   // Hack: Remove .md extension from wikilinks to get the html in jekyll
   document.querySelectorAll("a").forEach(l => {
     if (l.href.endsWith('.md')) {
-      l.href = l.href.substring(0, l.href.length-3)
+      l.href = l.href.substring(0, l.href.length - 3)
     }
   })
+
 </script>
