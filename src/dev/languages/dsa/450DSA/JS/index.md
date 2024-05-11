@@ -1,0 +1,5 @@
+* 📂 [algos](algos)
+* 📂 [arrays](arrays)
+* 📂 [graphs](graphs)
+* 📂 [linked_lists](linked_lists)
+* 📂 [trees](trees)

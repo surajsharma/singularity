@@ -1,0 +1,7 @@
+* 📂 [calculus](calculus)
+* 📄 [category-theory.md](category-theory.md)
+* 📂 [creative](creative)
+* 📂 [linear algebra](linear algebra)
+* 📂 [ncert](ncert)
+* 📄 [number systems.md](number systems.md)
+* 📄 [probability.md](probability.md)

@@ -1,0 +1,7 @@
+* 📂 [AMND](AMND)
+* 📂 [cs_phil](cs_phil)
+* 📂 [devops](devops)
+* 📂 [languages](languages)
+* 📂 [re](re)
+* 📂 [web](web)
+* 📂 [web3](web3)
