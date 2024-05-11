@@ -1,6 +1,0 @@
-* 📄 [Bubble_sort.py](Bubble_sort.py)
-* 📄 [Selection_Sort.py](Selection_Sort.py)
-* 📄 [Selection_Sort_Recursive.py](Selection_Sort_Recursive.py)
-* 📄 [Sort_Three_States.py](Sort_Three_States.py)
-* 📄 [Sorts.ipynb](Sorts.ipynb)
-* 📄 [insertion_sort.py](insertion_sort.py)

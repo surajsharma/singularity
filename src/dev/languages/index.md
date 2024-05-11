@@ -1,8 +1,0 @@
-* 📂 [c](c)
-* 📂 [compiler](compiler)
-* 📂 [dsa](dsa)
-* 📂 [graphics](graphics)
-* 📂 [mobile](mobile)
-* 📂 [rust](rust)
-* 📂 [slip](slip)
-* 📂 [ts](ts)

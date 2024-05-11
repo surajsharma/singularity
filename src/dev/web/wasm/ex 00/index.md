@@ -1,5 +1,0 @@
-* 📄 [00.wasm](00.wasm)
-* 📄 [00.wat](00.wat)
-* 📄 [helloworld.js](helloworld.js)
-* 📄 [helloworld.wasm](helloworld.wasm)
-* 📄 [helloworld.wat](helloworld.wat)

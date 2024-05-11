@@ -1,8 +1,0 @@
-* 📄 [Ashtavakra Gita.md](Ashtavakra Gita.md)
-* 📄 [Quran.md](Quran.md)
-* 📄 [acim.md](acim.md)
-* 📄 [bible.md](bible.md)
-* 📄 [gita.md](gita.md)
-* 📂 [meditations](meditations)
-* 📂 [osho](osho)
-* 📂 [sayings and parables](sayings and parables)
