@@ -13,7 +13,7 @@ function createFileIndices(dirPath) {
 
   const excludedFiles = [".DS_Store", "index.md"];
 
-  const excludedExts = [".png", ".jpg", ".gif"];
+  const excludedExts = [".png", ".jpg", ".gif", ".lock"];
 
   const results = {};
   let items;
