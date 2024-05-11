@@ -3,3 +3,4 @@
 * 📂 [journals](journals)
 * 📂 [maths](maths)
 * 📂 [scripture](scripture)
+* 📄 [search.md](search.md)
