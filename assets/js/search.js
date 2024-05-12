@@ -1,6 +1,6 @@
 console.log('loading search indices...');
 
-const baseUrl = 'https://github.com/surajsharma/singularity/tree/master/assets/search/';
+const baseUrl = 'https://raw.githubusercontent.com/surajsharma/singularity/master/assets/search/';
 
 const SRC = baseUrl + 'src-search.json';
 const ARCHIVES = baseUrl + 'archives-search.json';
