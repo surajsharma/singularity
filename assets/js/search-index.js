@@ -1,6 +1,8 @@
 const fs = require("fs");
 const path = require("path");
 const lunr = require("lunr");
+const readline = require('readline');
+
 
 const directoryPath = process.argv[2];
 const excludedDirs = ["target", ".", ".ipynb_checkpoints", ".out"];
@@ -28,7 +30,7 @@ function createSearchIndexDirs(dirPath) {
     const stack = [dirPath];
     items = fs.readdirSync(dirPath);
 
-    var idx = lunr(function () {
+    const idx = lunr(function () {
       this.ref('id');
       this.field('item');
       this.field('content');
@@ -36,7 +38,8 @@ function createSearchIndexDirs(dirPath) {
       while (stack.length > 0) {
         const currentPath = stack.pop();
         const contents = fs.readdirSync(currentPath);
-        process.stdout.write('\x1B[2K\x1B[0G');
+
+        readline.cursorTo(process.stdout, 0);
 
         contents.forEach(async itemName => {
           const itemPath = path.join(currentPath, itemName);
