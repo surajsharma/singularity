@@ -1,5 +1,3 @@
-console.log('loading search indices...');
-
 const baseUrl = 'https://raw.githubusercontent.com/surajsharma/singularity/master/assets/search/';
 
 const SRC = baseUrl + 'src-search.json';
@@ -11,19 +9,18 @@ let archIndexData = null;
 
 // search modifiers
 let archives = false;
-let fuzzy = false;
 let titles = false;
-let exact = false;
 
 const searchInput = document.getElementById('search-input');
 const searchArchives = document.getElementById('search-archives');
 const searchTitles = document.getElementById('search-titles');
-const searchFuzzy = document.getElementById('search-fuzzy');
-const searchExact = document.getElementById('search-exact');
 const searchStatus = document.getElementById('search-status');
 const searchResults = document.getElementById('search-results-container');
 
 function debouncedSearch(searchTerm) {
+    searchInput.style.backgroundColor = "rgb(227, 255, 255)";
+    searchStatus.style.color = "black";
+
     if (searchResults) searchResults.innerHTML = '';
     searchStatus.innerText = 'Searching...'
 
@@ -37,29 +34,35 @@ function debouncedSearch(searchTerm) {
         console.log('Debounced search:', searchTerm, search);
         displaySearch(search, searchTerm);
     } catch (error) {
-        console.log("🚀 ~ debouncedSearch ~ error:", error.message)
-        searchStatus.innerText = '❌' + error.message;
+        searchStatus.innerText = "search error: " + error.message;
+        searchStatus.style.color = "red";
+        searchInput.style.backgroundColor = "rgba(255, 227, 227, 0.5)";
     }
 }
 
 function displaySearch(search, searchTerm) {
     searchStatus.innerText = `Found ${search.length} results for ${searchTerm}`;
 
-    search.forEach(item => {
+    search.forEach((item, idx) => {
         const searchResultDiv = document.createElement('div');
         searchResultDiv.id = `${archives ? 'search-result-arch' : 'search-result'}`;
+
+        const searchResultDivItems = document.createElement('div');
+        searchResultDivItems.id = "search-result-div-items";
+
+        const titleidx = idx < 10 ? "0" + idx : idx;
+        const searchTitleIndex = document.createElement('div');
+        searchTitleIndex.id = 'index';
+        searchTitleIndex.innerText = titleidx;
+        searchResultDiv.appendChild(searchTitleIndex);
 
         const searchResultTitleTop = document.createElement('div');
         searchResultTitleTop.id = 'search-result-title-top';
 
+        const title = item.ref.match(/\/([^/]*)$/)[0].replace('/', '').replace('.md', '');
         const searchTitleLink = document.createElement('a');
         searchTitleLink.id = "search-result-title";
         searchTitleLink.href = `/singularity/${item.ref.replace('.md', '.html')}`;
-
-        const title = item.ref.match(/\/([^/]*)$/)[0]
-            .replace('/', '')
-            .replace('.md', '');
-
         searchTitleLink.textContent = title.length > 40 ?
             title.substring(0, 40 - '...'.length) + '...' :
             title;
@@ -83,16 +86,17 @@ function displaySearch(search, searchTerm) {
         searchResultScore.appendChild(searchTitleLinkNewTab);
         searchResultScore.appendChild(searchTitleLinkRaw);
 
-        const searchResultLoc = document.createElement('pre');
+        const searchResultLoc = document.createElement('p');
         searchResultLoc.id = "search-result-loc";
         searchResultLoc.textContent = item.ref;
 
         searchResultTitleTop.appendChild(searchTitleLink);
         searchResultTitleTop.appendChild(searchResultScore);
 
+        searchResultDivItems.appendChild(searchResultTitleTop);
+        searchResultDivItems.appendChild(searchResultLoc);
 
-        searchResultDiv.appendChild(searchResultTitleTop);
-        searchResultDiv.appendChild(searchResultLoc);
+        searchResultDiv.appendChild(searchResultDivItems);
 
         searchResults.appendChild(searchResultDiv);
     });
@@ -129,19 +133,11 @@ function handleToggle(event) {
             }
             if (!archives) {
                 loadSearchIndex(srcIndexData);
-            }
-            break;
-        case 'search-fuzzy':
-            fuzzy = target.checked;
-            break;
-        case 'search-exact':
-            exact = target.checked;
-            searchInput.value = '';
-            searchResults.innerHTML = '';
-            break
+            } break;
         case 'search-titles':
             titles = target.checked;
-            break;
+            searchInput.value = '';
+            searchResults.innerHTML = ''; break;
         default:
             break;
     }
@@ -162,8 +158,6 @@ async function initSearch() {
         //event-listeners
         searchArchives.addEventListener('change', handleToggle);
         searchTitles.addEventListener('change', handleToggle);
-        searchFuzzy.addEventListener('change', handleToggle);
-        searchExact.addEventListener('change', handleToggle);
 
         // Debounce implementation with timeout
         let timeout;

@@ -101,7 +101,6 @@ blockquote {
   outline: none;
 }
 
-
 #search-results{
   width: 100%;
   height: 100%;
@@ -132,20 +131,41 @@ blockquote {
 }
 
 #search-result-arch{
-  border-left: 4px solid #fbff00;
   padding: 5px;
   margin: 5px;
   display: flex;
-  flex-direction: column;
 
+  #index{
+    background-color: #fbff00;
+    color:white;
+    padding: 5px;
+    font-weight: 700;
+  }
+
+  #search-result-div-items{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
 }
 
 #search-result{
-  border-left: 4px solid #88ff00;
   padding: 5px;
   margin: 5px;
   display: flex;
-  flex-direction: column;
+
+  #index{
+    background-color: #88ff00;
+    color:white;
+    padding: 5px;
+    font-weight: 700;
+  }
+
+  #search-result-div-items{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
 }
 
 
@@ -169,5 +189,6 @@ blockquote {
 #search-result-loc{
   font-size: small;
   overflow: hidden;
+  margin:5px;
 }
 
