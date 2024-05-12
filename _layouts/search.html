@@ -8,12 +8,20 @@ layout: default
 
 <div id="search-controls">
     <input id="search-input" placeholder="type to search..."></input>
-    <label for="search-archives">
-        <input type="checkbox" id="search-archives"> Search archives
-    </label>
-    <label for="search-titles">
-        <input type="checkbox" id="search-titles"> Search titles
-    </label>
+    <div id="search-options">
+        <label for="search-archives">
+            <input type="checkbox" id="search-archives"> Archives only
+        </label>
+        <label for="search-titles">
+            <input type="checkbox" id="search-titles"> Titles only
+        </label>
+        <label for="search-fuzzy">
+            <input type="checkbox" id="search-fuzzy"> Fuzzy
+        </label>
+        <label for="search-exact">
+            <input type="checkbox" id="search-exact"> All terms
+        </label>
+    </div>
 </div>
 
 <div id="search-results">
