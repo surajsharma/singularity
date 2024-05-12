@@ -12,8 +12,8 @@ let archIndexData = null;
 // search modifiers
 let archives = false;
 let fuzzy = false;
+let titles = false;
 let exact = false;
-let all = false;
 
 const searchInput = document.getElementById('search-input');
 const searchArchives = document.getElementById('search-archives');
@@ -32,10 +32,14 @@ function debouncedSearch(searchTerm) {
         return;
     }
 
-    const search = index.search(searchTerm);
-    console.log('Debounced search:', searchTerm, search);
-
-    displaySearch(search, searchTerm);
+    try {
+        const search = titles ? index.search(`item:` + searchTerm) : index.search(searchTerm);
+        console.log('Debounced search:', searchTerm, search);
+        displaySearch(search, searchTerm);
+    } catch (error) {
+        console.log("🚀 ~ debouncedSearch ~ error:", error.message)
+        searchStatus.innerText = '❌' + error.message;
+    }
 }
 
 function displaySearch(search, searchTerm) {
@@ -132,6 +136,8 @@ function handleToggle(event) {
             break;
         case 'search-exact':
             exact = target.checked;
+            searchInput.value = '';
+            searchResults.innerHTML = '';
             break
         case 'search-titles':
             titles = target.checked;
