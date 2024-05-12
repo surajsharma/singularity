@@ -34,7 +34,6 @@ function createSearchIndexDirs(dirPath) {
 
     var idx = lunr(function () {
       this.ref('id');
-      this.field('itemPath');
       this.field('item');
       this.field('content');
 
@@ -51,7 +50,7 @@ function createSearchIndexDirs(dirPath) {
             const item = path.basename(currentPath);
             if (!excludedDirs.includes(item)) {
               stack.push(itemPath);
-              const entry = { id: d_id, itemPath, item, content: 'dir' };
+              const entry = { id: itemPath, item, content: 'dir' };
               this.add(entry);
               console.log(`Search index for directory: ${item}`);
             }
@@ -61,7 +60,7 @@ function createSearchIndexDirs(dirPath) {
               if (!excludedExts.includes(path.extname(item))) {
                 let content = readFileAsStringSync(itemPath);
                 const id = generateUniqueId();
-                const entry = { id, itemPath, item, content };
+                const entry = { id: itemPath, item, content };
                 this.add(entry);
                 console.log(`Search index created for file: ${item}`);
               }
