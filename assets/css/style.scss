@@ -123,9 +123,51 @@ blockquote {
   justify-content: center;
   align-items: center;
   text-align: center;
+  font-weight: 700;
 }
 
 #search-options{
   display: flex;
   gap: 20px;
 }
+
+#search-result-arch{
+  border-left: 4px solid #fbff00;
+  padding: 5px;
+  margin: 5px;
+  display: flex;
+  flex-direction: column;
+
+}
+
+#search-result{
+  border-left: 4px solid #88ff00;
+  padding: 5px;
+  margin: 5px;
+  display: flex;
+  flex-direction: column;
+}
+
+
+#search-result-title-top{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+#search-result-title{
+  font-size: medium;
+  margin: 5px;
+}
+
+#search-result-score{
+  font-size:small;
+  display: flex;
+  gap: 5px;
+}
+
+#search-result-loc{
+  font-size: small;
+  overflow: hidden;
+}
+
