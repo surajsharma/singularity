@@ -36,6 +36,7 @@ function createSearchIndexDirs(dirPath) {
       while (stack.length > 0) {
         const currentPath = stack.pop();
         const contents = fs.readdirSync(currentPath);
+        process.stdout.write('\x1B[2K');
 
         contents.forEach(async itemName => {
           const itemPath = path.join(currentPath, itemName);
