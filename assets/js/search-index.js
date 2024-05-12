@@ -47,7 +47,7 @@ function createSearchIndexDirs(dirPath) {
               stack.push(itemPath);
               const entry = { id: itemPath, item, content: 'dir' };
               this.add(entry);
-              console.log(`Search index for directory: ${item}`);
+              process.stdout.write(`Search index for directory: ${item}`);
             }
           } else {
             const item = path.basename(itemPath).replace('.md', '');
@@ -56,7 +56,7 @@ function createSearchIndexDirs(dirPath) {
                 let content = readFileAsStringSync(itemPath);
                 const entry = { id: itemPath, item, content };
                 this.add(entry);
-                console.log(`Search index created for file: ${item}`);
+                process.stdout.write(`Search index created for file: ${item}`);
               }
             }
           }
