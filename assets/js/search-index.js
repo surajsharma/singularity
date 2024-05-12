@@ -65,7 +65,7 @@ function createSearchIndexDirs(dirPath) {
 
     }, this);
 
-    const filePath = path.join(directoryPath, `../search/${directoryPath}-search.json`);
+    const filePath = path.join('..', 'search', `${directoryPath}-search.json`);
     fs.appendFileSync(filePath, JSON.stringify(idx), function (err) {
       if (err) throw err;
     });
