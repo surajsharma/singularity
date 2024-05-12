@@ -72,7 +72,7 @@ function createSearchIndexDirs(dirPath) {
 
     }, this);
 
-    fs.appendFileSync(`search.json`, JSON.stringify(idx), function (err) {
+    fs.appendFileSync(`${directoryPath}-search.json`, JSON.stringify(idx), function (err) {
       if (err) throw err;
     });
 
