@@ -38,9 +38,6 @@ function createSearchIndexDirs(dirPath) {
       while (stack.length > 0) {
         const currentPath = stack.pop();
         const contents = fs.readdirSync(currentPath);
-
-        readline.cursorTo(process.stdout, 0);
-
         contents.forEach(async itemName => {
           const itemPath = path.join(currentPath, itemName);
           const stats = fs.statSync(itemPath);
@@ -51,6 +48,8 @@ function createSearchIndexDirs(dirPath) {
               stack.push(itemPath);
               const entry = { id: itemPath, item, content: 'dir' };
               this.add(entry);
+              readline.clearLine(process.stdout, 0);
+              readline.cursorTo(process.stdout, 0, null);
               process.stdout.write(`Search index for directory: ${item}`);
             }
           } else {
@@ -60,6 +59,8 @@ function createSearchIndexDirs(dirPath) {
                 let content = readFileAsStringSync(itemPath);
                 const entry = { id: itemPath, item, content };
                 this.add(entry);
+                readline.clearLine(process.stdout, 0);
+                readline.cursorTo(process.stdout, 0, null);
                 process.stdout.write(`Search index created for file: ${item}`);
               }
             }
