@@ -6,8 +6,21 @@ layout: default
 {{ content }}
 {% include navigation.html %}
 
-<input id="search-input" placeholder="type to search..."></input>
+<div id="search-controls">
+    <input id="search-input" placeholder="type to search..."></input>
+    <label for="search-archives">
+        <input type="checkbox" id="search-archives"> Search archives
+    </label>
+    <label for="search-titles">
+        <input type="checkbox" id="search-titles"> Search titles
+    </label>
+</div>
 
-<div id="search-results"></div>
+<div id="search-results">
+    <div id="search-status">
+    </div>
+    <div id="search-results-container">
+    </div>
+</div>
 
 <script src="{{ site.baseurl }}{% link assets/js/lunr.js %}"></script>
