@@ -17,21 +17,17 @@ function generateUniqueId() {
   return Math.floor(Math.random() * 1000000000) + Date.now().toString(36);
 }
 
-function readFileAsString(filePath, encoding = 'utf8') {
-  return new Promise((resolve, reject) => {
-    fs.readFile(filePath, encoding, (err, data) => {
-      if (err) {
-        reject(err);
-      } else {
-        const content = JSON.stringify(data);
-        resolve(content);
-      }
-    });
-  });
+function readFileAsStringSync(filePath, encoding = 'utf8') {
+  //using async throws lunr off
+  try {
+    const data = fs.readFileSync(filePath, encoding);
+    return JSON.stringify(data);
+  } catch (err) {
+    throw err;
+  }
 }
 
-async function createSearchIndex(dirPath) {
-
+function createSearchIndexDirs(dirPath) {
   try {
     const stack = [dirPath];
     items = fs.readdirSync(dirPath);
@@ -55,32 +51,35 @@ async function createSearchIndex(dirPath) {
             const item = path.basename(currentPath);
             if (!excludedDirs.includes(item)) {
               stack.push(itemPath);
-              console.log({ id: d_id, itemPath, item, content: '' });
-              this.add({ id: d_id, itemPath, item, content: '' });
+              const entry = { id: d_id, itemPath, item, content: 'dir' };
+              this.add(entry);
+              console.log(`Search index for directory: ${item}`);
             }
           } else {
             const item = path.basename(itemPath);
             if (!excludedFiles.includes(item)) {
               if (!excludedExts.includes(path.extname(item))) {
-                const content = await readFileAsString(itemPath);
+                let content = readFileAsStringSync(itemPath);
                 const id = generateUniqueId();
-                this.add({ id, itemPath, item, content });
-                console.log({ id, itemPath, item, content });
+                const entry = { id, itemPath, item, content };
+                this.add(entry);
+                console.log(`Search index created for file: ${item}`);
               }
             }
           }
         });
       }
+
     }, this);
 
     fs.appendFileSync(`search.json`, JSON.stringify(idx), function (err) {
       if (err) throw err;
     });
+
   } catch (err) {
     console.error(`Error processing ${dirPath}:`, err);
     process.exitCode = 1;
   }
 }
 
-
-createSearchIndex(directoryPath);
+createSearchIndexDirs(directoryPath);
