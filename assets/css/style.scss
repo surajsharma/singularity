@@ -140,6 +140,9 @@ blockquote {
     color:white;
     padding: 5px;
     font-weight: 700;
+    #text{
+      transform: rotate(-90deg);
+    }    
   }
 
   #search-result-div-items{
@@ -158,6 +161,9 @@ blockquote {
     background-color: #88ff00;
     color:white;
     padding: 5px;
+    #text{
+      transform: rotate(-90deg);
+    }
     font-weight: 700;
   }
 
@@ -167,7 +173,6 @@ blockquote {
     width: 100%;
   }
 }
-
 
 #search-result-title-top{
   display: flex;

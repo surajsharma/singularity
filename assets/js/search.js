@@ -50,10 +50,13 @@ function displaySearch(search, searchTerm) {
         const searchResultDivItems = document.createElement('div');
         searchResultDivItems.id = "search-result-div-items";
 
-        const titleidx = idx < 10 ? "0" + idx : idx;
+        const titleidx = idx < 9 ? "0" + (idx + 1) : (idx + 1);
         const searchTitleIndex = document.createElement('div');
         searchTitleIndex.id = 'index';
-        searchTitleIndex.innerText = titleidx;
+        const searchTitleIndexText = document.createElement('div');
+        searchTitleIndexText.id = "text";
+        searchTitleIndexText.innerText = titleidx;
+        searchTitleIndex.appendChild(searchTitleIndexText);
         searchResultDiv.appendChild(searchTitleIndex);
 
         const searchResultTitleTop = document.createElement('div');
@@ -116,13 +119,10 @@ async function getSearchIndexRemote(loc) {
 function loadSearchIndex(data) {
     index = lunr.Index.load(data);
     console.log('search index loaded!');
-    searchStatus.innerText = '';
 }
 
 function handleToggle(event) {
     const target = event.target;
-    console.log(`${target.id} was toggled (checked: ${target.checked})`);
-
     switch (`${target.id}`) {
         case 'search-archives':
             archives = target.checked;
@@ -133,11 +133,15 @@ function handleToggle(event) {
             }
             if (!archives) {
                 loadSearchIndex(srcIndexData);
-            } break;
+            }
+            searchStatus.innerText = '';
+            break;
         case 'search-titles':
             titles = target.checked;
             searchInput.value = '';
-            searchResults.innerHTML = ''; break;
+            searchResults.innerHTML = '';
+            searchStatus.innerText = '';
+            break;
         default:
             break;
     }
@@ -151,6 +155,7 @@ async function initSearch() {
 
         srcIndexData = await getSearchIndexRemote(SRC);
         archIndexData = await getSearchIndexRemote(ARCHIVES);
+        searchStatus.innerText = '';
 
         // load main index
         loadSearchIndex(srcIndexData);
@@ -158,6 +163,8 @@ async function initSearch() {
         //event-listeners
         searchArchives.addEventListener('change', handleToggle);
         searchTitles.addEventListener('change', handleToggle);
+        searchTitles.checked = false;
+        searchArchives.checked = false;
 
         // Debounce implementation with timeout
         let timeout;
