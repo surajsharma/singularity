@@ -1,7 +1,9 @@
-const baseUrl = 'https://raw.githubusercontent.com/surajsharma/singularity/master/assets/search/';
 
-const SRC = baseUrl + 'src-search.json';
-const ARCHIVES = baseUrl + 'archives-search.json';
+let dbName = "singularity-search";
+
+const SRC = '/assets/search/src-search.json';
+const ARCHIVES = '/assets/search/archives-search.json';
+const DB = '/assets/search/db.json';
 
 let iddbVersionsPresent = false;
 
@@ -188,6 +190,13 @@ function setupEventListeners() {
 
 async function initSearchWorker() {
     console.log('get iddb indices and load')
+    let request = self.indexedDB.open(dbName, dbVersion);
+
+    request.onsuccess = function (event) {
+        console.log("Database opened successfully.");
+        store = db.transaction("release", "readwrite").objectStore("release");
+    };
+
     return;
     // if here sync-search already has something in iddb, just check and load the indices into memory, set flags for other existing functions and call setupEventListeners
 }

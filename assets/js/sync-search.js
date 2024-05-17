@@ -1,11 +1,10 @@
 const worker = new Worker('/assets/js/search-worker.js');
 
-const support = typeof (Worker) !== "undefined" && (window.indexedDB);
+const support = typeof (Worker) !== "undefined" && (window.indexedDB || window.mozIndexedDB || window.webkitIndexedDB || window.msIndexedDB || window.shimIndexedDB);
 
 if (support) {
     worker.postMessage("iddb-check");
-    // returns version number or null
-
+    //returns version number or null
     //worker.postMessage("sync-src");
     //worker.postMessage("sync-archives");
 
