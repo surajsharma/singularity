@@ -3,6 +3,8 @@ const baseUrl = 'https://raw.githubusercontent.com/surajsharma/singularity/maste
 const SRC = baseUrl + 'src-search.json';
 const ARCHIVES = baseUrl + 'archives-search.json';
 
+let iddbVersionsPresent = false;
+
 let index = null;
 let srcIndexData = null;
 let archIndexData = null;
@@ -72,7 +74,7 @@ function displaySearch(search, searchTerm) {
 
         const searchResultScore = document.createElement('div');
         searchResultScore.id = "search-result-score";
-        searchResultScore.textContent = `⭐ ${item.score}`;
+        searchResultScore.textContent = `⭐ ${item.score.toFixed(2)}`;
 
         const searchTitleLinkNewTab = document.createElement('a');
         searchTitleLinkNewTab.id = "search-result-title-newtab";
@@ -147,39 +149,52 @@ function handleToggle(event) {
     }
 }
 
-async function initSearch() {
+async function initSearchWorkerless() {
     if (typeof lunr == 'undefined') {
         return;
     } else {
-        // TODO: check local storage, otherwise fetch remote and update local
-
         srcIndexData = await getSearchIndexRemote(SRC);
         archIndexData = await getSearchIndexRemote(ARCHIVES);
         searchStatus.innerText = '';
 
         // load main index
         loadSearchIndex(srcIndexData);
-
-        //event-listeners
-        searchArchives.addEventListener('change', handleToggle);
-        searchTitles.addEventListener('change', handleToggle);
-        searchTitles.checked = false;
-        searchArchives.checked = false;
-
-        // Debounce implementation with timeout
-        let timeout;
-        if (searchInput) {
-            searchInput.focus();
-            searchInput.value = '';
-            searchInput.addEventListener('input', () => {
-                clearTimeout(timeout);
-                timeout = setTimeout(() => {
-                    debouncedSearch(searchInput.value);
-                }, 500); // Adjust delay as needed (in milliseconds)
-            });
-
-        }
+        setupEventListeners();
     }
 }
 
-initSearch();
+function setupEventListeners() {
+    //event-listeners
+    searchArchives.addEventListener('change', handleToggle);
+    searchTitles.addEventListener('change', handleToggle);
+    searchTitles.checked = false;
+    searchArchives.checked = false;
+
+    // Debounce implementation with timeout
+    let timeout;
+    if (searchInput) {
+        searchInput.focus();
+        searchInput.value = '';
+        searchInput.addEventListener('input', () => {
+            clearTimeout(timeout);
+            timeout = setTimeout(() => {
+                debouncedSearch(searchInput.value);
+            }, 500); // Adjust delay as needed (in milliseconds)
+        });
+
+    }
+
+}
+
+async function initSearchWorker() {
+    console.log('get iddb indices and load')
+    return;
+    // if here sync-search already has something in iddb, just check and load the indices into memory, set flags for other existing functions and call setupEventListeners
+}
+
+if (support) {
+    initSearchWorker();
+} else {
+    console.log("This browser does not support Web Workers and/or IndexedDB");
+    initSearchWorkerless();
+}

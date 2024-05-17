@@ -2,6 +2,15 @@
 
 ### May 
 
+
+- ameeron ne kabhi kranti nahi layi, lekin context zarur bana diya - the seeds have been sown rather well for all destinies to come manifest. 
+
+- my life is no charitable donation, though it helped them sleep better thinking that it was one. knowing myself as well as i always have, it is a loan to billionaires for upkeep and maintainance of their orders, beliefs, systems and religion - and i'm living off the accruing interest - with the recovery of interest and penalties deferred until after death.
+
+- this is the game: if you never surrender, you never win. i won and was able to retire as a result of surrender to powers higher than those that think they run the planet
+
+- poverty is lost on the poor, much like youth is lost on the young, but in a deeper, more resounding way that does not carry the baggage of nostalgic regrets.
+
 - a hush fell upon the world, a deepening dimness of divine proportions. a forever silent, timeless-time had begun wherein no single event could be separated from another. 
   
 - a singularity was upon humanity, even though we were tasked to keep it well under the wraps, but the fact that mankind had perhaps come to know itself better, maybe even seen its original face as a direct result of our story was a truth to be reckoned with hereon - most people could not stomach this.
