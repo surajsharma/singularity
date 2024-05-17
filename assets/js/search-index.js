@@ -2,7 +2,7 @@ const fs = require("fs");
 const path = require("path");
 const lunr = require("lunr");
 const readline = require('readline');
-
+//TODO: const CRC32 = require("crc-32");
 
 const directoryPath = process.argv[2];
 const excludedDirs = ["target", ".", ".ipynb_checkpoints", ".out"];

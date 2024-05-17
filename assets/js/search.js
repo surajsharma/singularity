@@ -109,12 +109,11 @@ function displaySearch(search, searchTerm) {
     });
 }
 
-async function getSearchIndexRemote(loc) {
+async function fetchRemoteJson(loc, t = false) {
     searchStatus.innerText = 'Loading...'
     try {
-        const response = await fetch(loc);
-        const data = await response.json();
-        return data;
+        const resp = await fetch(loc);
+        return t ? resp.text() : resp.json();
     } catch (error) {
         console.error('Error fetching search index:', error);
     }
@@ -133,10 +132,10 @@ function handleToggle(event) {
             searchInput.value = '';
             searchResults.innerHTML = '';
             if (archives) {
-                loadSearchIndex(archIndexData);
+                archIndexData && loadSearchIndex(archIndexData);
             }
             if (!archives) {
-                loadSearchIndex(srcIndexData);
+                srcIndexData && loadSearchIndex(srcIndexData);
             }
             searchStatus.innerText = '';
             break;
@@ -155,8 +154,8 @@ async function initSearchWorkerless() {
     if (typeof lunr == 'undefined') {
         return;
     } else {
-        srcIndexData = await getSearchIndexRemote(SRC);
-        archIndexData = await getSearchIndexRemote(ARCHIVES);
+        srcIndexData = await fetchRemoteJson(SRC);
+        archIndexData = await fetchRemoteJson(ARCHIVES);
         searchStatus.innerText = '';
 
         // load main index
@@ -189,16 +188,24 @@ function setupEventListeners() {
 }
 
 async function initSearchWorker() {
-    console.log('get iddb indices and load')
-    let request = self.indexedDB.open(dbName, dbVersion);
+    if (typeof lunr == 'undefined') {
+        return;
+    } else {
+        searchStatus.innerText = 'Loading...';
 
-    request.onsuccess = function (event) {
-        console.log("Database opened successfully.");
-        store = db.transaction("release", "readwrite").objectStore("release");
-    };
+        while (!srcSIJson && !arcSIJson) {
+            await wait(1);
+        }
 
+        srcIndexData = srcSIJson;
+        archIndexData = arcSIJson;
+
+        // load main index
+        loadSearchIndex(srcIndexData);
+        setupEventListeners();
+        searchStatus.innerText = '';
+    }
     return;
-    // if here sync-search already has something in iddb, just check and load the indices into memory, set flags for other existing functions and call setupEventListeners
 }
 
 if (support) {
@@ -206,4 +213,10 @@ if (support) {
 } else {
     console.log("This browser does not support Web Workers and/or IndexedDB");
     initSearchWorkerless();
+}
+
+
+async function wait(ms) {
+    const delay = ms;
+    await new Promise(resolve => setTimeout(resolve, delay));
 }

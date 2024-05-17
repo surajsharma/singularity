@@ -8,6 +8,7 @@ const SRC = '/assets/search/src-search.json';
 const ARCHIVES = '/assets/search/archives-search.json';
 const DB = '/assets/search/db.json';
 
+
 async function fetchRemoteJson(loc, t = false) {
     const resp = await fetch(loc);
     return t ? resp.text() : resp.json();
@@ -28,7 +29,9 @@ async function createVersionedIddb(db, version, schecksum, achecksum) {
 async function setVersionedIddb(db, version, schecksum, achecksum) {
     try {
 
-        let store = db.transaction("release", "readwrite").objectStore("release");
+        let tx = db.transaction("release", "readwrite")
+        let store = tx.objectStore("release");
+
         const ver = await store.get("ver");
         const src = await store.get("src");
         const arc = await store.get("arc");
@@ -41,12 +44,22 @@ async function setVersionedIddb(db, version, schecksum, achecksum) {
             }
         }
 
+        arc.onerror = async (evt) => {
+            console.log("🚀 ~ arc.onerror= ~ evt:", evt)
+
+        }
+
         src.onsuccess = async (evt) => {
             if (!evt.target.result) { //init
                 const srcdata = await fetchRemoteJson(ARCHIVES);
                 store = db.transaction("release", "readwrite").objectStore("release");
                 store.put({ id: "src", value: srcdata });
             }
+        }
+
+        src.onerror = async (evt) => {
+            console.log("🚀 ~ arc.onerror= ~ evt:", evt)
+
         }
 
         ver.onsuccess = async (event) => {
@@ -86,6 +99,10 @@ async function setVersionedIddb(db, version, schecksum, achecksum) {
             }
         }
 
+        ver.onerror = async (evt) => {
+            console.log("~ arc.onerror= ~ evt:", evt)
+        }
+
     } catch (error) {
         console.log("~ setVersionedIddb ~ error:", error)
     }
@@ -93,7 +110,7 @@ async function setVersionedIddb(db, version, schecksum, achecksum) {
 
 async function checkDBexists() {
     const { version, schecksum, achecksum } = await fetchRemoteJson(DB);
-    let request = self.indexedDB.open(dbName, dbVersion);
+    const request = self.indexedDB.open(dbName, dbVersion);
 
     request.onupgradeneeded = function (event) {
         console.log("Database didn't exist, creating now.");
@@ -101,31 +118,55 @@ async function checkDBexists() {
     };
 
     request.onsuccess = function (event) {
-        console.log("Database opened successfully.");
-        setVersionedIddb(request.result, version, schecksum, achecksum);
+        const db = event.target.result;
+        const release = "release";
+        if (db.objectStoreNames.contains(release)) {
+            // Object store exists
+            setVersionedIddb(db, version, schecksum, achecksum);
+        } else {
+            // TODO: somehow object store is lost, drop db and refresh
+        }
     };
 
     request.onerror = function (event) {
         console.error("Error opening database:", event.target.error);
         return false;
     };
-
-    return request;
 }
 
-onmessage = ev => {
-    if (ev.data == 'iddb-check') {
-        checkDBexists();
-        postMessage({ "result": "ok" })
+onmessage = async (ev) => {
+    if (ev.data == 'iddb-sync') {
+        await checkDBexists();
+        sendFromIDDB("ver");
     }
 
     if (ev.data == 'sync-src') {
-        console.log('worker got msg: ', ev.data);
-        postMessage('src data');
+        sendFromIDDB("src");
     }
 
     if (ev.data == 'sync-archives') {
-        console.log('worker got msg: ', ev.data);
-        postMessage('archive data');
+        sendFromIDDB("arc");
     }
+}
+
+async function sendFromIDDB(key) {
+    const request = self.indexedDB.open(dbName, dbVersion);
+
+    request.onsuccess = (event) => {
+        const db = event.target.result;
+        const store = db.transaction("release", "readonly").objectStore("release");
+        const query = store.get(key);
+
+        query.onsuccess = e => {
+            postMessage(e.target.result);
+        }
+
+        query.onerror = e => {
+            postMessage(e.target.error);
+        }
+    };
+
+    request.onerror = function (event) {
+        postMessage(event.target.error);
+    };
 }
