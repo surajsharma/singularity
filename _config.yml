@@ -1,1 +1,2 @@
 exclude: ["src-search.json", "archives-search.json"]
+baseurl: /singularity
