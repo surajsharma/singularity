@@ -154,7 +154,6 @@ async function sendFromIDDB(key) {
     };
 }
 
-
 onmessage = async (ev) => {
     if (ev.data == 'iddb-sync') {
         await checkDBexists();

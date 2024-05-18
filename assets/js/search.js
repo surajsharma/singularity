@@ -197,7 +197,10 @@ async function initSearchWorker() {
     } else {
         searchStatus.innerText = 'Loading...';
 
-        while (!srcSIJson && !arcSIJson) {
+        while (!srcSIJson) {
+            while (!arcSIJson) {
+                await wait(1);
+            }
             await wait(1);
         }
 
@@ -221,6 +224,5 @@ if (support) {
 
 
 async function wait(ms) {
-    const delay = ms;
-    await new Promise(resolve => setTimeout(resolve, delay));
+    await new Promise(resolve => setTimeout(resolve, ms));
 }

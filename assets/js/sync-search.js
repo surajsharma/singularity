@@ -22,11 +22,9 @@ if (support) {
                     break;
                 case "src":
                     srcSIJson = ev.data.value;
-                    console.log("🚀 ~ srcSIJson:", srcSIJson)
                     break;
                 case "arc":
                     arcSIJson = ev.data.value;
-                    console.log("🚀 ~ arcSIJson:", arcSIJson)
                     break;
                 default: break;
             };
