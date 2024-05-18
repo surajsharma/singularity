@@ -52,7 +52,7 @@ async function setVersionedIddb(db, version, schecksum, achecksum) {
 
         src.onsuccess = async (evt) => {
             if (!evt.target.result) { //init
-                const srcdata = await fetchRemoteJson(ARCHIVES);
+                const srcdata = await fetchRemoteJson(SRC);
                 store = db.transaction("release", "readwrite").objectStore("release");
                 store.put({ id: "src", value: srcdata });
             }
