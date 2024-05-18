@@ -3,19 +3,12 @@ let archVersion = 1;
 let dbVersion = 1;
 
 let dbName = "singularity-search";
-const parameters = {}
 
-location.search.slice(1)
-    .split("&")
-    .forEach(function (key_value) {
-        const kv = key_value.split("="); parameters[kv[0]] = kv[1];
-    });
+const baseUrl = "https://raw.githubusercontent.com/surajsharma/singularity/master";
 
-const urlprefix = parameters['prod'];
-
-const SRC = `${urlprefix}/assets/search/src-search.json`;
-const ARCHIVES = `${urlprefix}/assets/search/archives-search.json`;
-const DB = `${urlprefix}/assets/search/db.json`;
+const SRC = `${baseUrl}/assets/search/src-search.json`;
+const ARCHIVES = `${baseUrl}/assets/search/archives-search.json`;
+const DB = `${baseUrl}/assets/search/db.json`;
 
 async function fetchRemoteJson(loc, t = false) {
     const resp = await fetch(loc);
@@ -129,32 +122,14 @@ async function checkDBexists() {
         const db = event.target.result;
         const release = "release";
         if (db.objectStoreNames.contains(release)) {
-            // Object store exists
             setVersionedIddb(db, version, schecksum, achecksum);
-        } else {
-            // TODO: somehow object store is lost, drop db and refresh
         }
-    };
+    }
 
     request.onerror = function (event) {
         console.error("Error opening database:", event.target.error);
         return false;
     };
-}
-
-onmessage = async (ev) => {
-    if (ev.data == 'iddb-sync') {
-        await checkDBexists();
-        sendFromIDDB("ver");
-    }
-
-    if (ev.data == 'sync-src') {
-        sendFromIDDB("src");
-    }
-
-    if (ev.data == 'sync-archives') {
-        sendFromIDDB("arc");
-    }
 }
 
 async function sendFromIDDB(key) {
@@ -177,4 +152,20 @@ async function sendFromIDDB(key) {
     request.onerror = function (event) {
         postMessage(event.target.error);
     };
+}
+
+
+onmessage = async (ev) => {
+    if (ev.data == 'iddb-sync') {
+        await checkDBexists();
+        sendFromIDDB("ver");
+    }
+
+    if (ev.data == 'sync-src') {
+        sendFromIDDB("src");
+    }
+
+    if (ev.data == 'sync-archives') {
+        sendFromIDDB("arc");
+    }
 }

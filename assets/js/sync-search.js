@@ -1,4 +1,4 @@
-const workerUrl = `/assets/js/search-worker.js?prod=${urlprefix}`;
+const workerUrl = `/assets/js/search-worker.js`;
 
 console.log("🚀 ~ workerUrl:", workerUrl)
 
