@@ -2,10 +2,21 @@
     <div id="header" style="width: 100%; display: flex; flex-direction: row; margin-top: -90px;">
         <div style="width: 100%; display: flex; flex-direction:column;">
             <h1 style="width: 100%; display: flex; justify-content:space-between; align-items: center;">
-                <a href="/singularity">{{ site.title }}</a>
+                <a href="/">{{ site.title }}</a>
                 <a id="search" href="/singularity/src/search">🔎</a>
             </h1>
         </div>
     </div>
 </div>
-<script defer src="{{ site.baseurl }}{% link assets/js/search.js %}"></script>
+
+<script>let urlprefix = "";</script>
+
+{% if jekyll.environment == "production" %}
+<script>
+    urlprefix = "singularity"
+</script>
+{% endif %}
+
+<script defer src="{{ site.baseurl }}{% link assets/js/sync-search.js %}"></script>
+
+<!-- TODO: double title issue -->

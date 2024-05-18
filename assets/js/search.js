@@ -1,9 +1,8 @@
-
 let dbName = "singularity-search";
 
-const SRC = '/assets/search/src-search.json';
-const ARCHIVES = '/assets/search/archives-search.json';
-const DB = '/assets/search/db.json';
+const SRC = `${urlprefix}/assets/search/src-search.json`;
+const ARCHIVES = `${urlprefix}/assets/search/archives-search.json`;
+const DB = `${urlprefix}/assets/search/db.json`;
 
 let iddbVersionsPresent = false;
 
@@ -45,6 +44,8 @@ function debouncedSearch(searchTerm) {
 }
 
 function displaySearch(search, searchTerm) {
+
+
     searchStatus.innerText = `Found ${search.length} results for ${searchTerm}`;
 
     search.forEach((item, idx) => {
@@ -67,12 +68,15 @@ function displaySearch(search, searchTerm) {
         searchResultTitleTop.id = 'search-result-title-top';
 
         const title = item.ref.match(/\/([^/]*)$/)[0].replace('/', '').replace('.md', '');
+
         const searchTitleLink = document.createElement('a');
         searchTitleLink.id = "search-result-title";
-        searchTitleLink.href = `/singularity/${item.ref.replace('.md', '.html')}`;
+        searchTitleLink.href = `${urlprefix}/${item.ref.replace('.md', '.html')}`;
+
         searchTitleLink.textContent = title.length > 40 ?
             title.substring(0, 40 - '...'.length) + '...' :
             title;
+        // TODO: single line
 
         const searchResultScore = document.createElement('div');
         searchResultScore.id = "search-result-score";

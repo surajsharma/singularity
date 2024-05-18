@@ -3,11 +3,19 @@ let archVersion = 1;
 let dbVersion = 1;
 
 let dbName = "singularity-search";
+const parameters = {}
 
-const SRC = '/assets/search/src-search.json';
-const ARCHIVES = '/assets/search/archives-search.json';
-const DB = '/assets/search/db.json';
+location.search.slice(1)
+    .split("&")
+    .forEach(function (key_value) {
+        const kv = key_value.split("="); parameters[kv[0]] = kv[1];
+    });
 
+const urlprefix = parameters['prod'];
+
+const SRC = `${urlprefix}/assets/search/src-search.json`;
+const ARCHIVES = `${urlprefix}/assets/search/archives-search.json`;
+const DB = `${urlprefix}/assets/search/db.json`;
 
 async function fetchRemoteJson(loc, t = false) {
     const resp = await fetch(loc);

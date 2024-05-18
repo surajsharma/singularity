@@ -1,7 +1,8 @@
 const fs = require("fs");
 const path = require("path");
-
 const directoryPath = process.argv[2];
+
+//TODO: cleanup
 
 if (!directoryPath) {
   console.log("Please specify the directory path as a command line parameter.");
