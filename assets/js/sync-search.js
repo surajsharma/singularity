@@ -1,4 +1,4 @@
-const worker = new Worker(`${urlprefix}/assets/js/search-worker.js?prod=${urlprefix}`);
+const worker = new Worker(`/assets/js/search-worker.js?prod=${urlprefix}`);
 
 let srcSIJson, arcSIJson;
 
