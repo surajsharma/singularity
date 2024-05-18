@@ -71,7 +71,7 @@ function displaySearch(search, searchTerm) {
 
         const searchTitleLink = document.createElement('a');
         searchTitleLink.id = "search-result-title";
-        searchTitleLink.href = `${urlprefix}/${item.ref.replace('.md', '.html')}`;
+        searchTitleLink.href = urlprefix == "" ? `/${item.ref.replace('.md', '.html')}` : `/singularity/${item.ref.replace('.md', '.html')}`;
 
         searchTitleLink.textContent = title.length > 40 ?
             title.substring(0, 40 - '...'.length) + '...' :
@@ -84,7 +84,8 @@ function displaySearch(search, searchTerm) {
 
         const searchTitleLinkNewTab = document.createElement('a');
         searchTitleLinkNewTab.id = "search-result-title-newtab";
-        searchTitleLinkNewTab.href = `/singularity/${item.ref.replace('.md', '.html')}`
+        searchTitleLinkNewTab.href = urlprefix == "" ? `/${item.ref.replace('.md', '.html')}` : `/singularity/${item.ref.replace('.md', '.html')}`;
+
         searchTitleLinkNewTab.textContent = "↗️";
         searchTitleLinkNewTab.target = '_blank';
 
