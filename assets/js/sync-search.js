@@ -1,4 +1,4 @@
-const worker = new Worker('singularity/assets/js/search-worker.js');
+const worker = new Worker('/assets/js/search-worker.js');
 
 let srcSIJson, arcSIJson;
 
