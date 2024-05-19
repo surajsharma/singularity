@@ -114,12 +114,14 @@ async function syncIddb() {
     request.onupgradeneeded = (event) => {
         console.log("Database didn't exist, creating now.");
         createVersionedIddb(request.result, version, schecksum, achecksum);
+        postMessage({ thread: { msg: 'release', count: 1 } });
     };
 
     request.onsuccess = (event) => {
         const db = event.target.result;
         if (db.objectStoreNames.contains("release")) {
             setVersionedIddb(db, version, schecksum, achecksum);
+            postMessage({ thread: { msg: 'src', count: 4 } });
         }
     }
 
@@ -132,6 +134,5 @@ async function syncIddb() {
 onmessage = async (ev) => {
     if (ev.data == 'iddb-sync') {
         await syncIddb();
-        postMessage({ sync: true });
     }
 }

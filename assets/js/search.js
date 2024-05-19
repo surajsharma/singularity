@@ -226,9 +226,6 @@ async function getIddb(key, ref, ver) {
         request.onsuccess = (event) => {
             const db = event.target.result;
             const tx = db.transaction("release", "readonly")
-
-            //TODO: what if release is not there?
-
             const store = tx.objectStore("release");
             const query = store.getAll(key);
 
@@ -254,8 +251,12 @@ async function getIddb(key, ref, ver) {
 
 if (support) {
     document.addEventListener('thread_sync', (event) => {
-        thread_sync = event.detail.thread_sync;
-        initSearchWorker();
+        // thread_sync legend: 
+        // 0) no db 1) db created 2) release -> ver created 3) arc 4) src
+
+        if (thread_sync.count == 4) {
+            initSearchWorker();
+        }
     });
 
 } else {
@@ -263,3 +264,7 @@ if (support) {
     initSearchWorkerless();
 }
 
+
+const threadSyncEvent = new CustomEvent('thread_sync', {
+    detail: { ...thread_sync }
+});
