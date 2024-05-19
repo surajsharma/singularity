@@ -10,6 +10,8 @@ let index = null;
 let srcIndexData = null;
 let archIndexData = null;
 
+let indices = { "src": null, "arc": null, "ver": null }
+
 // search modifiers
 let archives = false;
 let titles = false;
@@ -34,7 +36,6 @@ function debouncedSearch(searchTerm) {
 
     try {
         const search = titles ? index.search(`item:` + searchTerm) : index.search(searchTerm);
-        console.log('Debounced search:', searchTerm, search);
         displaySearch(search, searchTerm);
     } catch (error) {
         searchStatus.innerText = "search error: " + error.message;
@@ -114,16 +115,6 @@ function displaySearch(search, searchTerm) {
     });
 }
 
-async function fetchRemoteJson(loc, t = false) {
-    searchStatus.innerText = 'Loading...'
-    try {
-        const resp = await fetch(loc);
-        return t ? resp.text() : resp.json();
-    } catch (error) {
-        console.error('Error fetching search index:', error);
-    }
-}
-
 function loadSearchIndex(data) {
     index = lunr.Index.load(data);
     console.log('search index loaded!');
@@ -155,20 +146,6 @@ function handleToggle(event) {
     }
 }
 
-async function initSearchWorkerless() {
-    if (typeof lunr == 'undefined') {
-        return;
-    } else {
-        srcIndexData = await fetchRemoteJson(SRC);
-        archIndexData = await fetchRemoteJson(ARCHIVES);
-        searchStatus.innerText = '';
-
-        // load main index
-        loadSearchIndex(srcIndexData);
-        setupEventListeners();
-    }
-}
-
 function setupEventListeners() {
     //event-listeners
     searchArchives.addEventListener('change', handleToggle);
@@ -185,45 +162,104 @@ function setupEventListeners() {
             clearTimeout(timeout);
             timeout = setTimeout(() => {
                 debouncedSearch(searchInput.value);
-            }, 500); // Adjust delay as needed (in milliseconds)
+            }, 500);
         });
 
     }
 
 }
 
-async function initSearchWorker() {
+async function initSearchWorker(corrupt = false) {
     if (typeof lunr == 'undefined') {
         return;
-    } else {
-        searchStatus.innerText = 'Loading...';
+    }
 
-        while (!srcSIJson) {
-            while (!arcSIJson) {
-                await wait(1);
-            }
-            await wait(1);
-        }
+    while (!thread_sync) {
+        break;
+    }
 
-        srcIndexData = srcSIJson;
-        archIndexData = arcSIJson;
+    if (thread_sync) {
+        searchStatus.innerText = corrupt ? 'Data corrupted, reloading. (Page will refresh)' : 'Loading...';
+        await getIddb("src", indices, version);
+        await getIddb("arc", indices, version);
+
+        indices.src.length && (srcIndexData = indices.src[0].value);
+        indices.arc.length && (archIndexData = indices.arc[0].value);
 
         // load main index
-        loadSearchIndex(srcIndexData);
+        indices.src && loadSearchIndex(srcIndexData);
         setupEventListeners();
         searchStatus.innerText = '';
+
     }
     return;
 }
 
+async function initSearchWorkerless() {
+    if (typeof lunr == 'undefined') {
+        return;
+    } else {
+        srcIndexData = await fetchRemoteJson(SRC);
+        archIndexData = await fetchRemoteJson(ARCHIVES);
+        searchStatus.innerText = '';
+
+        // load main index
+        loadSearchIndex(srcIndexData);
+        setupEventListeners();
+    }
+}
+
+async function fetchRemoteJson(loc, t = false) {
+    searchStatus.innerText = 'Loading...'
+    try {
+        const resp = await fetch(loc);
+        return t ? resp.text() : resp.json();
+    } catch (error) {
+        console.error('Error fetching search index:', error);
+    }
+}
+
+async function getIddb(key, ref, ver) {
+    await new Promise((resolve, reject) => {
+        const request = self.indexedDB.open(dbName, ver);
+
+        request.onsuccess = (event) => {
+            const db = event.target.result;
+            const tx = db.transaction("release", "readonly")
+
+            //TODO: what if release is not there?
+
+            const store = tx.objectStore("release");
+            const query = store.getAll(key);
+
+            query.onsuccess = async (e) => {
+                if (e.target.result.length == 0) {
+                    // fault-tolerance: we're here because somehow 
+                    // the local db wasn't there, the sync script has 
+                    // recreated it, but page needs to register
+                    await initSearchWorker(true);
+                    window.location.reload();
+                }
+
+                ref[key] = e.target.result;
+                resolve(ref);
+            }
+
+            query.onerror = e => {
+                reject(e.target.error);
+            }
+        }
+    });
+}
+
 if (support) {
-    initSearchWorker();
+    document.addEventListener('thread_sync', (event) => {
+        thread_sync = event.detail.thread_sync;
+        initSearchWorker();
+    });
+
 } else {
     console.log("This browser does not support Web Workers and/or IndexedDB");
     initSearchWorkerless();
 }
 
-
-async function wait(ms) {
-    await new Promise(resolve => setTimeout(resolve, ms));
-}

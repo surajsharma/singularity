@@ -1,7 +1,3 @@
-let srcVersion = 1;
-let archVersion = 1;
-let dbVersion = 1;
-
 let dbName = "singularity-search";
 
 const baseUrl = "https://raw.githubusercontent.com/surajsharma/singularity/master";
@@ -16,6 +12,7 @@ async function fetchRemoteJson(loc, t = false) {
 }
 
 async function createVersionedIddb(db, version, schecksum, achecksum) {
+    // creates the ver object store because it didn't exist
     if (!db) return;
     try {
         let store = db.createObjectStore("release", {
@@ -109,63 +106,32 @@ async function setVersionedIddb(db, version, schecksum, achecksum) {
     }
 }
 
-async function checkDBexists() {
-    const { version, schecksum, achecksum } = await fetchRemoteJson(DB);
-    const request = self.indexedDB.open(dbName, dbVersion);
+async function syncIddb() {
+    ({ version, achecksum, schecksum } = await fetchRemoteJson(DB));
 
-    request.onupgradeneeded = function (event) {
+    const request = self.indexedDB.open(dbName, version);
+
+    request.onupgradeneeded = (event) => {
         console.log("Database didn't exist, creating now.");
         createVersionedIddb(request.result, version, schecksum, achecksum);
     };
 
-    request.onsuccess = function (event) {
+    request.onsuccess = (event) => {
         const db = event.target.result;
-        const release = "release";
-        if (db.objectStoreNames.contains(release)) {
+        if (db.objectStoreNames.contains("release")) {
             setVersionedIddb(db, version, schecksum, achecksum);
         }
     }
 
-    request.onerror = function (event) {
+    request.onerror = (event) => {
         console.error("Error opening database:", event.target.error);
         return false;
     };
 }
 
-async function sendFromIDDB(key) {
-    const request = self.indexedDB.open(dbName, dbVersion);
-
-    request.onsuccess = (event) => {
-        const db = event.target.result;
-        const store = db.transaction("release", "readonly").objectStore("release");
-        const query = store.get(key);
-
-        query.onsuccess = e => {
-            postMessage(e.target.result);
-        }
-
-        query.onerror = e => {
-            postMessage(e.target.error);
-        }
-    };
-
-    request.onerror = function (event) {
-        postMessage(event.target.error);
-    };
-}
-
-
 onmessage = async (ev) => {
     if (ev.data == 'iddb-sync') {
-        await checkDBexists();
-        sendFromIDDB("ver");
-    }
-
-    if (ev.data == 'sync-src') {
-        sendFromIDDB("src");
-    }
-
-    if (ev.data == 'sync-archives') {
-        sendFromIDDB("arc");
+        await syncIddb();
+        postMessage({ sync: true });
     }
 }
