@@ -1,5 +1,4 @@
 let dbName = "singularity-search";
-console.log("🚀 ~ inner:", dbName)
 
 const baseUrl = "https://raw.githubusercontent.com/surajsharma/singularity/master";
 
