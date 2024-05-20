@@ -1,3 +1,13 @@
+function readFileAsStringSync(filePath, encoding = 'utf8') {
+    //using async throws lunr off
+    try {
+        const data = fs.readFileSync(filePath, encoding);
+        return JSON.stringify(data);
+    } catch (err) {
+        throw err;
+    }
+}
+
 function upgradeDbChecksums() {
     try {
         const src = readFileAsStringSync("assets/search/src-search.json");
