@@ -224,6 +224,7 @@ async function getIddb(key, ref, ver) {
                     // recreated it, but page needs to register
                     await initSearchWorker(true);
                     window.location.reload(true);
+                    //TODO: fix infinite loop on src/db gone
                 }
 
                 ref[key] = e.target.result;

@@ -4,12 +4,13 @@
   "description": "> I wrote all this in an uncanny valley of sorts, under an altered state of consciousness. Therefore, I waive off any and all rights to attribution (moral or intellectual) of these texts<sup>[1](https://www.lexology.com/commentary/intellectual-property/india/saikrishna-associates/moral-rights-can-authors-waive-their-special-rights)</sup> so there can be no question of any legal liability.",
   "main": "search-index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"  
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "crc-32": "https://cdn.sheetjs.com/crc-32-latest/crc-32-latest.tgz",
     "lunr": "^2.3.9"
   }
 }

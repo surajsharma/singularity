@@ -55,10 +55,4 @@ function createFileIndices(dirPath) {
   }
 }
 
-
-function upgradeDbChecksums() {
-  // TODO: upgrade db version
-  // TODO: calc search, archives json checksums crc32
-  // TODO: update search/db.json
-}
 createFileIndices(directoryPath);
