@@ -1,6 +1,2 @@
 * 📄 [functions.md](functions.md)
 * 📄 [match.md](match.md)
-* 📄 [functions.md](functions.md)
-* 📄 [match.md](match.md)
-* 📄 [functions.md](functions.md)
-* 📄 [match.md](match.md)
