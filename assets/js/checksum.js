@@ -1,3 +1,7 @@
+const fs = require("fs");
+const path = require("path"); 0
+
+
 function readFileAsStringSync(filePath, encoding = 'utf8') {
     //using async throws lunr off
     try {
