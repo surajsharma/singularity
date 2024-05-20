@@ -12,3 +12,6 @@ node assets/js/files-index.js archives
 node assets/js/files-index.js src
 echo ✅ nav indices created!
 echo
+node assets/js/checksum.js
+echo ✅ checksums/db version updated
+echo
