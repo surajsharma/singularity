@@ -1,5 +1,9 @@
 let version, achecksum, schecksum;
+
 const thread_sync = { msg: null, count: 0 };
+const threadSyncEvent = new CustomEvent('thread_sync', {
+    detail: { ...thread_sync }
+});
 
 const support = typeof (Worker) !== "undefined" &&
     (window.indexedDB

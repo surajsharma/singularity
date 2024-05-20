@@ -4,8 +4,6 @@ const SRC = `${urlprefix}/assets/search/src-search.json`;
 const ARCHIVES = `${urlprefix}/assets/search/archives-search.json`;
 const DB = `${urlprefix}/assets/search/db.json`;
 
-let iddbVersionsPresent = false;
-
 let index = null;
 let srcIndexData = null;
 let archIndexData = null;
@@ -45,8 +43,6 @@ function debouncedSearch(searchTerm) {
 }
 
 function displaySearch(search, searchTerm) {
-
-
     searchStatus.innerText = `Found ${search.length} results for ${searchTerm}`;
 
     search.forEach((item, idx) => {
@@ -170,28 +166,20 @@ function setupEventListeners() {
 }
 
 async function initSearchWorker(corrupt = false) {
-    if (typeof lunr == 'undefined') {
-        return;
-    }
+    if (typeof lunr == 'undefined') return;
 
-    while (!thread_sync) {
-        break;
-    }
+    searchStatus.innerText = corrupt ? 'Data corrupted, refreshing page...' : 'Loading...';
 
-    if (thread_sync) {
-        searchStatus.innerText = corrupt ? 'Data corrupted, reloading. (Page will refresh)' : 'Loading...';
-        await getIddb("src", indices, version);
-        await getIddb("arc", indices, version);
+    await getIddb("src", indices, version);
+    await getIddb("arc", indices, version);
 
-        indices.src.length && (srcIndexData = indices.src[0].value);
-        indices.arc.length && (archIndexData = indices.arc[0].value);
+    indices.src.length && (srcIndexData = indices.src[0].value);
+    indices.arc.length && (archIndexData = indices.arc[0].value);
 
-        // load main index
-        indices.src && loadSearchIndex(srcIndexData);
-        setupEventListeners();
-        searchStatus.innerText = '';
-
-    }
+    // load main index
+    indices.src && loadSearchIndex(srcIndexData);
+    setupEventListeners();
+    searchStatus.innerText = '';
     return;
 }
 
@@ -199,6 +187,8 @@ async function initSearchWorkerless() {
     if (typeof lunr == 'undefined') {
         return;
     } else {
+        searchStatus.innerText = 'Loading...';
+
         srcIndexData = await fetchRemoteJson(SRC);
         archIndexData = await fetchRemoteJson(ARCHIVES);
         searchStatus.innerText = '';
@@ -251,10 +241,13 @@ async function getIddb(key, ref, ver) {
 
 if (support) {
     document.addEventListener('thread_sync', (event) => {
+
         // thread_sync legend: 
-        // 0) no db 1) db created 2) release -> ver created 3) arc 4) src
+        // 0) no db 1) db/os created 2) release -> ver created 3) arc 4) src
 
         if (thread_sync.count == 4) {
+            searchStatus.innerText = 'Loading...';
+
             initSearchWorker();
         }
     });
@@ -263,8 +256,3 @@ if (support) {
     console.log("This browser does not support Web Workers and/or IndexedDB");
     initSearchWorkerless();
 }
-
-
-const threadSyncEvent = new CustomEvent('thread_sync', {
-    detail: { ...thread_sync }
-});
