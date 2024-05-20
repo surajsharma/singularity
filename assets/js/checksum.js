@@ -18,7 +18,7 @@ function upgradeDbChecksums() {
         const arc = readFileAsStringSync("assets/search/archives-search.json");
 
         const schecksum = CRC32C.str(src, "seed");
-        const achecksum = CRC32C.str(src, "seed");
+        const achecksum = CRC32C.str(arc, "seed");
 
         let db = fs.readFileSync("assets/search/db.json", "utf-8");
 
