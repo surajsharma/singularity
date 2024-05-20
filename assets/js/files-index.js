@@ -2,8 +2,6 @@ const fs = require("fs");
 const path = require("path");
 const directoryPath = process.argv[2];
 
-//TODO: cleanup
-
 if (!directoryPath) {
   console.log("Please specify the directory path as a command line parameter.");
   process.exit(1);
@@ -16,7 +14,6 @@ function createFileIndices(dirPath) {
 
   const excludedExts = [".png", ".jpg", ".gif", ".lock"];
 
-  const results = {};
   let items;
 
   try {
@@ -35,9 +32,6 @@ function createFileIndices(dirPath) {
               if (err) throw err;
             });
             createFileIndices(itemPath);
-            Object.keys(results).forEach((subDir) => {
-              createFileIndices(itemPath);
-            });
           }
         } else {
           const fileName = item.split("/")[item.split("/").length - 1];
@@ -53,7 +47,7 @@ function createFileIndices(dirPath) {
           }
         }
       });
-      return results;
+      return;
     }
   } catch (err) {
     console.error(`Error processing ${dirPath}:`, err);

@@ -1,2 +1,6 @@
 * 📄 [matrices.md](matrices.md)
 * 📄 [vectors.md](vectors.md)
+* 📄 [matrices.md](matrices.md)
+* 📄 [vectors.md](vectors.md)
+* 📄 [matrices.md](matrices.md)
+* 📄 [vectors.md](vectors.md)
