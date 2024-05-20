@@ -225,7 +225,7 @@ async function getIddb(key, ref, ver) {
                     // the local db wasn't there, the sync script has 
                     // recreated it, but page needs to register
                     await initSearchWorker(true);
-                    window.location.reload();
+                    window.location.reload(true);
                 }
 
                 ref[key] = e.target.result;
