@@ -1,8 +1,6 @@
-let dbName = "singularity-search";
-
-const SRC = `${urlprefix}/assets/search/src-search.json`;
-const ARCHIVES = `${urlprefix}/assets/search/archives-search.json`;
-const DB = `${urlprefix}/assets/search/db.json`;
+// const SRC = `${urlprefix}/assets/search/src-search.json`;
+// const ARCHIVES = `${urlprefix}/assets/search/archives-search.json`;
+// const DB = `${urlprefix}/assets/search/db.json`;
 
 let index = null;
 let srcIndexData = null;
