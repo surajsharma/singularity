@@ -4,21 +4,28 @@ const baseUrl = "https://raw.githubusercontent.com/surajsharma/singularity/maste
 
 const SRC = `${baseUrl}/assets/search/src-search.json`;
 const ARCHIVES = `${baseUrl}/assets/search/archives-search.json`;
-const DB = `${baseUrl}/assets/search/db.json`;
+const DB = `/assets/search/db.json`;
 
 async function fetchRemoteJson(loc, t = false) {
-    const resp = await fetch(loc);
-    return t ? resp.text() : resp.json();
+    try {
+        const resp = await fetch(loc);
+        return t ? resp.text() : resp.json();
+    } catch (error) {
+        console.log("~ fetchRemoteJson ~ error:", error);
+    }
 }
 
 async function createVersionedIddb(db, version, schecksum, achecksum) {
     // creates the ver object store because it didn't exist
     if (!db) return;
     try {
-        let store = db.createObjectStore("release", {
-            keyPath: "id"
-        });
-        store.put({ id: "ver", value: { version, schecksum, achecksum } });
+        let store;
+        if (!db.objectStoreNames.contains("release")) {
+            store = db.createObjectStore("release", {
+                keyPath: "id"
+            });
+        }
+
     } catch (error) {
         console.log("~ createVersionedIddb ~ error:", error)
     }
@@ -37,14 +44,14 @@ async function setVersionedIddb(db, version, schecksum, achecksum) {
         arc.onsuccess = async (evt) => {
             if (!evt.target.result) { //init
                 const arcdata = await fetchRemoteJson(ARCHIVES);
-                store = db.transaction("release", "readwrite").objectStore("release");
+                const tx = db.transaction("release", "readwrite");
+                const store = tx.objectStore("release");
                 store.put({ id: "arc", value: arcdata });
             }
         }
 
         arc.onerror = async (evt) => {
             console.log("🚀 ~ arc.onerror= ~ evt:", evt)
-
         }
 
         src.onsuccess = async (evt) => {
@@ -57,22 +64,30 @@ async function setVersionedIddb(db, version, schecksum, achecksum) {
 
         src.onerror = async (evt) => {
             console.log("🚀 ~ arc.onerror= ~ evt:", evt)
-
         }
 
         ver.onsuccess = async (event) => {
             if (!event.target.result) { //failsafe
-                store.put({ id: "ver", value: { version, schecksum, achecksum } });
+                store.put({
+                    id: "ver", value: {
+                        version, schecksum, achecksum
+                    }
+                });
+
                 return;
             }
 
             //--ver mismatch--
             if (event.target.result.value.version != version) {
-                //write fetched to store 
-                const newVersion = version
-                store.put({ id: "ver", value: { version: newVersion, schecksum, achecksum } })
-                return;
 
+                //write fetched to store 
+                const newVersion = version;
+
+                store.put({
+                    id: "ver", value: {
+                        version: newVersion, schecksum, achecksum
+                    }
+                });
             };
 
             //--arc checksum mismatch--
@@ -81,18 +96,24 @@ async function setVersionedIddb(db, version, schecksum, achecksum) {
                 store = db.transaction("release", "readwrite").objectStore("release");
                 store.put({ id: "arc", value: arcdata });
 
-                const newAchecksum = achecksum
-                store.put({ id: "ver", value: { version, schecksum, achecksum: newAchecksum } })
+                const newAchecksum = achecksum;
 
+                store.put({
+                    id: "ver", value: {
+                        version, schecksum, achecksum: newAchecksum
+                    }
+                });
             }
 
             //--src checksum mismatch--
             if (event.target.result.value.schecksum != schecksum) {
                 const srcdata = await fetchRemoteJson(SRC);
                 store = db.transaction("release", "readwrite").objectStore("release");
+
                 store.put({ id: "src", value: srcdata });
 
-                const newSchecksum = schecksum
+                const newSchecksum = schecksum;
+
                 store.put({ id: "ver", value: { version, schecksum: newSchecksum, achecksum } })
             }
         }
@@ -100,7 +121,6 @@ async function setVersionedIddb(db, version, schecksum, achecksum) {
         ver.onerror = async (evt) => {
             console.log("~ arc.onerror= ~ evt:", evt)
         }
-
     } catch (error) {
         console.log("~ setVersionedIddb ~ error:", error)
     }
@@ -109,26 +129,29 @@ async function setVersionedIddb(db, version, schecksum, achecksum) {
 async function syncIddb() {
     ({ version, achecksum, schecksum } = await fetchRemoteJson(DB));
 
-    const request = self.indexedDB.open(dbName, version);
+    try {
+        const request = self.indexedDB.open(dbName, version);
 
-    request.onupgradeneeded = (event) => {
-        console.log("Database didn't exist, creating now.");
-        createVersionedIddb(request.result, version, schecksum, achecksum);
-        postMessage({ thread: { msg: 'release', count: 1 } });
-    };
+        request.onupgradeneeded = (event) => {
+            console.log("Database didn't exist, creating now.");
+            createVersionedIddb(request.result, version, schecksum, achecksum);
+            postMessage({ thread: { msg: 'release', count: 1 } });
+        };
 
-    request.onsuccess = (event) => {
-        const db = event.target.result;
-        if (db.objectStoreNames.contains("release")) {
-            setVersionedIddb(db, version, schecksum, achecksum);
-            postMessage({ thread: { msg: 'src', count: 4 } });
+        request.onsuccess = (event) => {
+            if (request.result.objectStoreNames.contains("release")) {
+                setVersionedIddb(request.result, version, schecksum, achecksum);
+                postMessage({ thread: { msg: 'src', count: 4 } });
+            }
         }
-    }
 
-    request.onerror = (event) => {
-        console.error("Error opening database:", event.target.error);
-        return false;
-    };
+        request.onerror = (event) => {
+            console.error("Error opening database:", event.target.error);
+            return false;
+        };
+    } catch (error) {
+        console.log("🚀 ~ syncIddb ~ error:", error);
+    }
 }
 
 onmessage = async (ev) => {

@@ -1,7 +1,3 @@
-// const SRC = `${urlprefix}/assets/search/src-search.json`;
-// const ARCHIVES = `${urlprefix}/assets/search/archives-search.json`;
-// const DB = `${urlprefix}/assets/search/db.json`;
-
 let index = null;
 let srcIndexData = null;
 let archIndexData = null;
@@ -164,21 +160,31 @@ function setupEventListeners() {
 }
 
 async function initSearchWorker(corrupt = false) {
-    if (typeof lunr == 'undefined') return;
 
-    searchStatus.innerText = corrupt ? 'Data corrupted, refreshing page...' : 'Loading...';
+    await new Promise(async (resolve, reject) => {
+        if (typeof lunr == 'undefined') reject("Lunr not found!");
 
-    await getIddb("src", indices, version);
-    await getIddb("arc", indices, version);
+        try {
+            searchStatus.innerText = corrupt ?
+                'Data corrupted, reloading...' : 'Loading...';
 
-    indices.src.length && (srcIndexData = indices.src[0].value);
-    indices.arc.length && (archIndexData = indices.arc[0].value);
+            await getIddb("src", indices, version);
+            await getIddb("arc", indices, version);
 
-    // load main index
-    indices.src && loadSearchIndex(srcIndexData);
-    setupEventListeners();
-    searchStatus.innerText = '';
-    return;
+            indices.src.length && (srcIndexData = indices.src[0].value);
+            indices.arc.length && (archIndexData = indices.arc[0].value);
+
+            // load main index
+            indices.src && loadSearchIndex(srcIndexData);
+            setupEventListeners();
+            searchStatus.innerText = '';
+
+            resolve(0);
+        } catch (error) {
+            reject(error);
+        }
+
+    });
 }
 
 async function initSearchWorkerless() {
@@ -211,24 +217,22 @@ async function getIddb(key, ref, ver) {
     await new Promise((resolve, reject) => {
         const request = self.indexedDB.open(dbName, ver);
 
-        request.onsuccess = (event) => {
+        request.onsuccess = async (event) => {
             const db = event.target.result;
             const tx = db.transaction("release", "readonly")
             const store = tx.objectStore("release");
-            const query = store.getAll(key);
+            const query = await store.getAll(key);
 
             query.onsuccess = async (e) => {
-                if (e.target.result.length == 0) {
+                if (e.target.result.length < 1) {
                     // fault-tolerance: we're here because somehow 
                     // the local db wasn't there, the sync script has 
                     // recreated it, but page needs to register
                     await initSearchWorker(true);
-                    window.location.reload(true);
-                    //TODO: fix infinite loop on src/db gone
+                } else {
+                    ref[key] = e.target.result;
+                    resolve(ref);
                 }
-
-                ref[key] = e.target.result;
-                resolve(ref);
             }
 
             query.onerror = e => {
@@ -239,15 +243,14 @@ async function getIddb(key, ref, ver) {
 }
 
 if (support) {
-    document.addEventListener('thread_sync', (event) => {
+    document.addEventListener('thread_sync', async (event) => {
 
         // thread_sync legend: 
         // 0) no db 1) db/os created 2) release -> ver created 3) arc 4) src
 
         if (thread_sync.count == 4) {
             searchStatus.innerText = 'Loading...';
-
-            initSearchWorker();
+            await initSearchWorker();
         }
     });
 
