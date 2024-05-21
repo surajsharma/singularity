@@ -4,7 +4,7 @@ const baseUrl = "https://raw.githubusercontent.com/surajsharma/singularity/maste
 
 const SRC = `${baseUrl}/assets/search/src-search.json`;
 const ARCHIVES = `${baseUrl}/assets/search/archives-search.json`;
-const DB = `/assets/search/db.json`;
+const DB = `${baseUrl}/assets/search/db.json`;
 
 async function fetchRemoteJson(loc, t = false) {
     try {
