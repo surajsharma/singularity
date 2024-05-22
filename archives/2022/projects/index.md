@@ -1,3 +1,3 @@
-* 📄 [chor.md](chor.md)
-* 📄 [mp3-to-vis-vid.md](mp3-to-vis-vid.md)
-* 📄 [video-essays.md](video-essays.md)
+* 📄 [chor.md.replace(".md","")](chor.md)
+* 📄 [mp3-to-vis-vid.md.replace(".md","")](mp3-to-vis-vid.md)
+* 📄 [video-essays.md.replace(".md","")](video-essays.md)

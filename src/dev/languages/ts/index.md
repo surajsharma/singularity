@@ -1,1 +1,1 @@
-* 📄 [Conditional Types.md](Conditional Types.md)
+* 📄 [Conditional Types.md.replace(".md","")](Conditional Types.md)

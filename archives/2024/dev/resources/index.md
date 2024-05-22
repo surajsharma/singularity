@@ -1,3 +1,3 @@
-* 📄 [app ideas.md](app ideas.md)
-* 📄 [fonts.md](fonts.md)
-* 📄 [use case dictionary.md](use case dictionary.md)
+* 📄 [app ideas.md.replace(".md","")](app ideas.md)
+* 📄 [fonts.md.replace(".md","")](fonts.md)
+* 📄 [use case dictionary.md.replace(".md","")](use case dictionary.md)

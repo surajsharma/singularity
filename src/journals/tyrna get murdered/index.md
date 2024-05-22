@@ -1,4 +1,4 @@
-* 📄 [don't try this at home.md](don't try this at home.md)
+* 📄 [don't try this at home.md.replace(".md","")](don't try this at home.md)
 * 📂 [glimpses of divinity](glimpses of divinity)
 * 📂 [poems](poems)
 * 📂 [singularity](singularity)

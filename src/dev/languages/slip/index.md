@@ -1,4 +1,4 @@
-* 📄 [chomsky hierarchy.md](chomsky hierarchy.md)
-* 📄 [grammar.md](grammar.md)
-* 📄 [optimizations.md](optimizations.md)
-* 📄 [slip.md](slip.md)
+* 📄 [chomsky hierarchy.md.replace(".md","")](chomsky hierarchy.md)
+* 📄 [grammar.md.replace(".md","")](grammar.md)
+* 📄 [optimizations.md.replace(".md","")](optimizations.md)
+* 📄 [slip.md.replace(".md","")](slip.md)

@@ -1,4 +1,4 @@
-* 📄 [complexity.md](complexity.md)
-* 📄 [fucking algo.md](fucking algo.md)
-* 📄 [karatsuba.ipynb](karatsuba.ipynb)
-* 📄 [mergesort.ipynb](mergesort.ipynb)
+* 📄 [complexity.md.replace(".md","")](complexity.md)
+* 📄 [fucking algo.md.replace(".md","")](fucking algo.md)
+* 📄 [karatsuba.ipynb.replace(".md","")](karatsuba.ipynb)
+* 📄 [mergesort.ipynb.replace(".md","")](mergesort.ipynb)

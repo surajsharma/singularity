@@ -1,1 +1,1 @@
-* 📄 [django.md](django.md)
+* 📄 [django.md.replace(".md","")](django.md)

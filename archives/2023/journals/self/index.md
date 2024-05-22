@@ -1,1 +1,1 @@
-* 📄 [noself.md](noself.md)
+* 📄 [noself.md.replace(".md","")](noself.md)

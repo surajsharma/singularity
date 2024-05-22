@@ -1,3 +1,3 @@
-* 📄 [AddInt.js](AddInt.js)
-* 📄 [AddInt.wasm](AddInt.wasm)
-* 📄 [AddInt.wat](AddInt.wat)
+* 📄 [AddInt.js.replace(".md","")](AddInt.js)
+* 📄 [AddInt.wasm.replace(".md","")](AddInt.wasm)
+* 📄 [AddInt.wat.replace(".md","")](AddInt.wat)

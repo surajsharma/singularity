@@ -1,3 +1,3 @@
-* 📄 [loop.js](loop.js)
-* 📄 [loop.wasm](loop.wasm)
-* 📄 [loop.wat](loop.wat)
+* 📄 [loop.js.replace(".md","")](loop.js)
+* 📄 [loop.wasm.replace(".md","")](loop.wasm)
+* 📄 [loop.wat.replace(".md","")](loop.wat)

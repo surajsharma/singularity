@@ -1,2 +1,2 @@
-* 📄 [lib.md](lib.md)
-* 📄 [main.md](main.md)
+* 📄 [lib.md.replace(".md","")](lib.md)
+* 📄 [main.md.replace(".md","")](main.md)

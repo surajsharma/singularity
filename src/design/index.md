@@ -1,3 +1,3 @@
 * 📂 [experiments](experiments)
-* 📄 [resources.md](resources.md)
-* 📄 [software.md](software.md)
+* 📄 [resources.md.replace(".md","")](resources.md)
+* 📄 [software.md.replace(".md","")](software.md)

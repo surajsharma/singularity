@@ -1,2 +1,2 @@
-* 📄 [Cargo.toml](Cargo.toml)
+* 📄 [Cargo.toml.replace(".md","")](Cargo.toml)
 * 📂 [src](src)

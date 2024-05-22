@@ -1,2 +1,2 @@
-* 📄 [http.md](http.md)
-* 📄 [tcpip.md](tcpip.md)
+* 📄 [http.md.replace(".md","")](http.md)
+* 📄 [tcpip.md.replace(".md","")](tcpip.md)

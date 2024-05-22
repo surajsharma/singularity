@@ -1,1 +1,1 @@
-* 📄 [On Attainment.md](On Attainment.md)
+* 📄 [On Attainment.md.replace(".md","")](On Attainment.md)

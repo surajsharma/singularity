@@ -1,2 +1,2 @@
-* 📄 [functions.md](functions.md)
-* 📄 [match.md](match.md)
+* 📄 [functions.md.replace(".md","")](functions.md)
+* 📄 [match.md.replace(".md","")](match.md)
