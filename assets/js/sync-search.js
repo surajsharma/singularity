@@ -4,7 +4,7 @@ const thread_sync = { msg: null, count: 0 };
 const threadSyncEvent = new CustomEvent('thread_sync', {
     detail: { ...thread_sync },
     bubbles: true,
-    cancelable: true
+    cancelable: false
 });
 
 const support = typeof (Worker) !== "undefined" &&
@@ -14,14 +14,15 @@ const support = typeof (Worker) !== "undefined" &&
         || window.msIndexedDB
         || window.shimIndexedDB);
 
-if (support) {
-    worker.postMessage("iddb-sync");
-    worker.onmessage = ev => {
-        if (ev.data.thread.count) {
-            thread_sync.msg = ev.data.thread.msg;
-            thread_sync.count = ev.data.thread.count;
-            console.log('will dispatch event');
-            document.dispatchEvent(threadSyncEvent);
+document.addEventListener("DOMContentLoaded", function (event) {
+    if (support && worker) {
+        worker.postMessage("iddb-sync");
+        worker.onmessage = ev => {
+            if (ev.data.thread.count) {
+                thread_sync.msg = ev.data.thread.msg;
+                thread_sync.count = ev.data.thread.count;
+                document.dispatchEvent(threadSyncEvent);
+            }
         }
     }
-}
+});

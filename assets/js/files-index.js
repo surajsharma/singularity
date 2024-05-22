@@ -1,5 +1,3 @@
-//TODO: remove .md
-
 const fs = require("fs");
 const path = require("path");
 const directoryPath = process.argv[2];
@@ -39,7 +37,7 @@ function createFileIndices(dirPath) {
           const fileName = item.split("/")[item.split("/").length - 1];
 
           if (!excludedFiles.includes(fileName)) {
-            const fileStr = `* 📄 [${item}](${fileName})\n`;
+            const fileStr = `* 📄 [${item}.replace(".md","")](${fileName})\n`;
 
             if (!excludedExts.includes(path.extname(fileName))) {
               fs.appendFileSync(`${dirPath}/index.md`, fileStr, function (err) {

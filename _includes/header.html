@@ -2,7 +2,7 @@
     <div id="header" style="width: 100%; display: flex; flex-direction: row; margin-top: -90px;">
         <div style="width: 100%; display: flex; flex-direction:column;">
             <h1 style="width: 100%; display: flex; justify-content:space-between; align-items: center;">
-                <a href="/singularity">{{ site.title }}</a>
+                <a id="title" href="/">{{ site.title }}</a>
                 <a id="search" href="/singularity/src/search">🔎</a>
             </h1>
         </div>
@@ -17,13 +17,26 @@
 </script>
 {% endif %}
 
-
 <script src="{{ site.baseurl }}{% link assets/js/search-worker.js %}"></script>
 
 <script>
     const worker = new Worker("{{ site.baseurl }}{% link assets/js/search-worker.js %}");
+
+    const redundant_title = document.querySelector('h1');
+    if (redundant_title) {
+        redundant_title.style.opacity = 0;
+    }
+
+    const title = document.getElementById("title");
+    if (title) {
+        title.href = urlprefix == "" ? "/" : "/" + urlprefix;
+    }
+
+    const search = document.getElementById("search");
+
+    if (search) {
+        search.href = urlprefix == "" ? "/src/search" : "/" + urlprefix + "/src/search";
+    }
 </script>
 
 <script defer src="{{ site.baseurl }}{% link assets/js/sync-search.js %}"></script>
-
-<!-- TODO: double title issue -->
