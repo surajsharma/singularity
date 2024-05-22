@@ -13,7 +13,6 @@ const support = typeof (Worker) !== "undefined" &&
         || window.shimIndexedDB);
 
 if (support) {
-
     worker.postMessage("iddb-sync");
     worker.onmessage = ev => {
         if (ev.data.thread.count) {

@@ -1,3 +1,5 @@
+//TODO: for jupyter notebooks https://nbviewer.org/urls/evenzero.in/singularity/src/dev/web3/data%20for%20web3/01%20-%20Basic%20Metrics/web3_metrics.ipynb
+
 let index = null;
 let srcIndexData = null;
 let archIndexData = null;
@@ -38,7 +40,6 @@ function debouncedSearch(searchTerm) {
 
 function displaySearch(search, searchTerm) {
     searchStatus.innerText = `Found ${search.length} results for ${searchTerm}`;
-
     search.forEach((item, idx) => {
         const searchResultDiv = document.createElement('div');
         searchResultDiv.id = `${archives ? 'search-result-arch' : 'search-result'}`;
@@ -156,17 +157,14 @@ function setupEventListeners() {
         });
 
     }
-
 }
 
 async function initSearchWorker(corrupt = false) {
-
     await new Promise(async (resolve, reject) => {
         if (typeof lunr == 'undefined') reject("Lunr not found!");
-
         try {
             searchStatus.innerText = corrupt ?
-                'Data corrupted, reloading...' : 'Loading...';
+                'Search database damaged, healing...' : 'Loading...';
 
             await getIddb("src", indices, version);
             await getIddb("arc", indices, version);
@@ -176,11 +174,13 @@ async function initSearchWorker(corrupt = false) {
 
             // load main index
             indices.src && loadSearchIndex(srcIndexData);
+
             setupEventListeners();
             searchStatus.innerText = '';
 
             resolve(0);
         } catch (error) {
+            console.log("~ initSearchWorker ~ error:", error);
             reject(error);
         }
 
@@ -191,20 +191,23 @@ async function initSearchWorkerless() {
     if (typeof lunr == 'undefined') {
         return;
     } else {
-        searchStatus.innerText = 'Loading...';
+        try {
+            searchStatus.innerText = 'Loading...';
 
-        srcIndexData = await fetchRemoteJson(SRC);
-        archIndexData = await fetchRemoteJson(ARCHIVES);
-        searchStatus.innerText = '';
+            srcIndexData = await fetchRemoteJson(SRC);
+            archIndexData = await fetchRemoteJson(ARCHIVES);
+            searchStatus.innerText = '';
 
-        // load main index
-        loadSearchIndex(srcIndexData);
-        setupEventListeners();
+            // load main index
+            loadSearchIndex(srcIndexData);
+            setupEventListeners();
+        } catch (error) {
+            console.log("~ initSearchWorkerless ~ error:", error)
+        }
     }
 }
 
 async function fetchRemoteJson(loc, t = false) {
-    searchStatus.innerText = 'Loading...'
     try {
         const resp = await fetch(loc);
         return t ? resp.text() : resp.json();
@@ -215,39 +218,40 @@ async function fetchRemoteJson(loc, t = false) {
 
 async function getIddb(key, ref, ver) {
     await new Promise((resolve, reject) => {
-        const request = self.indexedDB.open(dbName, ver);
+        try {
+            const request = self.indexedDB.open(dbName, ver);
+            request.onsuccess = async (event) => {
+                const db = event.target.result;
+                const tx = db.transaction("release", "readonly")
+                const store = tx.objectStore("release");
+                const query = await store.getAll(key);
 
-        request.onsuccess = async (event) => {
-            const db = event.target.result;
-            const tx = db.transaction("release", "readonly")
-            const store = tx.objectStore("release");
-            const query = await store.getAll(key);
+                query.onsuccess = async (e) => {
+                    if (e.target.result.length < 1) {
+                        // fault-tolerance: we're here because somehow 
+                        // the local db wasn't there, the sync script has 
+                        // recreated it, but page needs to register
+                        await initSearchWorker(true);
+                    } else {
+                        ref[key] = e.target.result;
+                        resolve(ref);
+                    }
+                }
 
-            query.onsuccess = async (e) => {
-                if (e.target.result.length < 1) {
-                    // fault-tolerance: we're here because somehow 
-                    // the local db wasn't there, the sync script has 
-                    // recreated it, but page needs to register
-                    await initSearchWorker(true);
-                } else {
-                    ref[key] = e.target.result;
-                    resolve(ref);
+                query.onerror = e => {
+                    reject(e.target.error);
                 }
             }
-
-            query.onerror = e => {
-                reject(e.target.error);
-            }
+        } catch (error) {
+            console.log("~ awaitnewPromise ~ error:", error)
         }
     });
 }
 
 if (support) {
     document.addEventListener('thread_sync', async (event) => {
-
         // thread_sync legend: 
         // 0) no db 1) db/os created 2) release -> ver created 3) arc 4) src
-
         if (thread_sync.count == 4) {
             searchStatus.innerText = 'Loading...';
             await initSearchWorker();

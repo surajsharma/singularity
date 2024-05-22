@@ -1,3 +1,6 @@
+//TODO: fetch and write stream
+//TODO: db.json in localstorage or cookie, fetch only once per visit sitewide
+
 let dbName = "singularity-search";
 
 const baseUrl = "https://raw.githubusercontent.com/surajsharma/singularity/master";
@@ -15,7 +18,7 @@ async function fetchRemoteJson(loc, t = false) {
     }
 }
 
-async function createVersionedIddb(db, version, schecksum, achecksum) {
+async function createVersionedIddb(db) {
     // creates the ver object store because it didn't exist
     if (!db) return;
     try {
@@ -51,7 +54,7 @@ async function setVersionedIddb(db, version, schecksum, achecksum) {
         }
 
         arc.onerror = async (evt) => {
-            console.log("🚀 ~ arc.onerror= ~ evt:", evt)
+            console.log("~ arc.onerror= ~ evt:", evt)
         }
 
         src.onsuccess = async (evt) => {
@@ -63,7 +66,7 @@ async function setVersionedIddb(db, version, schecksum, achecksum) {
         }
 
         src.onerror = async (evt) => {
-            console.log("🚀 ~ arc.onerror= ~ evt:", evt)
+            console.log("~ arc.onerror= ~ evt:", evt)
         }
 
         ver.onsuccess = async (event) => {
@@ -127,14 +130,16 @@ async function setVersionedIddb(db, version, schecksum, achecksum) {
 }
 
 async function syncIddb() {
-    ({ version, achecksum, schecksum } = await fetchRemoteJson(DB));
-
     try {
+        ({ version, achecksum, schecksum } = await fetchRemoteJson(DB));
+
+        if (!version) return new Error("Could not load database metadata");
+
         const request = self.indexedDB.open(dbName, version);
 
         request.onupgradeneeded = (event) => {
             console.log("Database didn't exist, creating now.");
-            createVersionedIddb(request.result, version, schecksum, achecksum);
+            createVersionedIddb(request.result);
             postMessage({ thread: { msg: 'release', count: 1 } });
         };
 
@@ -150,7 +155,7 @@ async function syncIddb() {
             return false;
         };
     } catch (error) {
-        console.log("🚀 ~ syncIddb ~ error:", error);
+        console.log("~ syncIddb ~ error:", error);
     }
 }
 
