@@ -249,9 +249,12 @@ async function getIddb(key, ref, ver) {
 }
 
 if (support) {
+
     document.addEventListener('thread_sync', async (event) => {
         // thread_sync legend: 
         // 0) no db 1) db/os created 2) release -> ver created 3) arc 4) src
+        console.log("🚀 ~ document.addEventListener ~ thread_sync.count:", thread_sync.count)
+
         if (thread_sync.count == 4) {
             await initSearchWorker();
         }

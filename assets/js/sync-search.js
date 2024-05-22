@@ -2,7 +2,9 @@ let version, achecksum, schecksum;
 
 const thread_sync = { msg: null, count: 0 };
 const threadSyncEvent = new CustomEvent('thread_sync', {
-    detail: { ...thread_sync }
+    detail: { ...thread_sync },
+    bubbles: true,
+    cancelable: true
 });
 
 const support = typeof (Worker) !== "undefined" &&
@@ -18,6 +20,7 @@ if (support) {
         if (ev.data.thread.count) {
             thread_sync.msg = ev.data.thread.msg;
             thread_sync.count = ev.data.thread.count;
+            console.log('will dispatch event');
             document.dispatchEvent(threadSyncEvent);
         }
     }
