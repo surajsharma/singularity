@@ -161,6 +161,6 @@ async function syncIddb() {
 
 onmessage = async (ev) => {
     if (ev.data == 'iddb-sync') {
-        await syncIddb();
+        syncIddb();
     }
 }

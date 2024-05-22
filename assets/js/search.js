@@ -253,7 +253,6 @@ if (support) {
         // thread_sync legend: 
         // 0) no db 1) db/os created 2) release -> ver created 3) arc 4) src
         if (thread_sync.count == 4) {
-            searchStatus.innerText = 'Loading...';
             await initSearchWorker();
         }
     });
