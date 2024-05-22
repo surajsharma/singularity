@@ -1,2 +1,2 @@
-* 📄 [black stickies.md.replace(".md","")](black stickies.md)
-* 📄 [edit-binary.md.replace(".md","")](edit-binary.md)
+* 📄 [black stickies](black stickies.md)
+* 📄 [edit-binary](edit-binary.md)

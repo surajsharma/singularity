@@ -1,3 +1,3 @@
 * 📂 [protocols](protocols)
-* 📄 [resources.md.replace(".md","")](resources.md)
+* 📄 [resources](resources.md)
 * 📂 [webrtc](webrtc)

@@ -1,5 +1,5 @@
 * 📂 [data for web3](data for web3)
-* 📄 [resources.md.replace(".md","")](resources.md)
+* 📄 [resources](resources.md)
 * 📂 [solidity](solidity)
-* 📄 [web2-web3.md.replace(".md","")](web2-web3.md)
+* 📄 [web2-web3](web2-web3.md)
 * 📂 [web3js](web3js)

@@ -1,2 +1,2 @@
-* 📄 [solidity-0.md.replace(".md","")](solidity-0.md)
-* 📄 [solidity-1.md.replace(".md","")](solidity-1.md)
+* 📄 [solidity-0](solidity-0.md)
+* 📄 [solidity-1](solidity-1.md)

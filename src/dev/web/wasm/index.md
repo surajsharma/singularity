@@ -5,4 +5,4 @@
 * 📂 [ex 04](ex 04)
 * 📂 [ex 05](ex 05)
 * 📂 [ex 06](ex 06)
-* 📄 [wat.md.replace(".md","")](wat.md)
+* 📄 [wat](wat.md)

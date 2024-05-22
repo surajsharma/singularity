@@ -1,2 +1,2 @@
-* 📄 [android.md.replace(".md","")](android.md)
-* 📄 [kotlin.md.replace(".md","")](kotlin.md)
+* 📄 [android](android.md)
+* 📄 [kotlin](kotlin.md)

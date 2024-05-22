@@ -1,1 +1,1 @@
-* 📄 [game dev resources.md.replace(".md","")](game dev resources.md)
+* 📄 [game dev resources](game dev resources.md)

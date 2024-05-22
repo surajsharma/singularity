@@ -1,3 +1,3 @@
-* 📄 [Dispatches From Saturn.md.replace(".md","")](Dispatches From Saturn.md)
-* 📄 [Haikus.md.replace(".md","")](Haikus.md)
-* 📄 [New Independence.md.replace(".md","")](New Independence.md)
+* 📄 [Dispatches From Saturn](Dispatches From Saturn.md)
+* 📄 [Haikus](Haikus.md)
+* 📄 [New Independence](New Independence.md)

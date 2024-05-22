@@ -1,4 +1,4 @@
-* 📄 [THINK SLOWLY 🧠.md.replace(".md","")](THINK SLOWLY 🧠.md)
-* 📄 [meta.md.replace(".md","")](meta.md)
-* 📄 [nv.md.replace(".md","")](nv.md)
-* 📄 [questions.md.replace(".md","")](questions.md)
+* 📄 [THINK SLOWLY 🧠](THINK SLOWLY 🧠.md)
+* 📄 [meta](meta.md)
+* 📄 [nv](nv.md)
+* 📄 [questions](questions.md)

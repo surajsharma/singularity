@@ -1,1 +1,1 @@
-* 📄 [blooming flowers.md.replace(".md","")](blooming flowers.md)
+* 📄 [blooming flowers](blooming flowers.md)

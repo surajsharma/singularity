@@ -1,1 +1,1 @@
-* 📄 [Aditya Hriday Stotram.md.replace(".md","")](Aditya Hriday Stotram.md)
+* 📄 [Aditya Hriday Stotram](Aditya Hriday Stotram.md)

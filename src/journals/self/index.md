@@ -1,5 +1,5 @@
 * 📂 [llmlogs](llmlogs)
-* 📄 [noself.md.replace(".md","")](noself.md)
+* 📄 [noself](noself.md)
 * 📂 [principles](principles)
 * 📂 [psych](psych)
 * 📂 [rituals](rituals)

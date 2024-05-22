@@ -1,3 +1,3 @@
-* 📄 [Common Algorithms.ipynb.replace(".md","")](Common Algorithms.ipynb)
+* 📄 [Common Algorithms.ipynb](Common Algorithms.ipynb)
 * 📂 [Leetcode](Leetcode)
-* 📄 [bitwise.py.replace(".md","")](bitwise.py)
+* 📄 [bitwise.py](bitwise.py)

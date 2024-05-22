@@ -1,3 +1,3 @@
-* 📄 [hindley-milner.md.replace(".md","")](hindley-milner.md)
-* 📄 [ideas.md.replace(".md","")](ideas.md)
-* 📄 [resources.md.replace(".md","")](resources.md)
+* 📄 [hindley-milner](hindley-milner.md)
+* 📄 [ideas](ideas.md)
+* 📄 [resources](resources.md)

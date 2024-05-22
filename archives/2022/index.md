@@ -1,3 +1,3 @@
-* 📄 [done.md.replace(".md","")](done.md)
+* 📄 [done](done.md)
 * 📂 [journals](journals)
 * 📂 [projects](projects)

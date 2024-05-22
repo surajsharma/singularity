@@ -1,2 +1,2 @@
-* 📄 [book of man.md.replace(".md","")](book of man.md)
-* 📄 [book of wisdom.md.replace(".md","")](book of wisdom.md)
+* 📄 [book of man](book of man.md)
+* 📄 [book of wisdom](book of wisdom.md)

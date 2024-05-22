@@ -1,3 +1,3 @@
-* 📄 [basics.md.replace(".md","")](basics.md)
+* 📄 [basics](basics.md)
 * 📂 [rust in action](rust in action)
 * 📂 [rust_book](rust_book)

@@ -1,2 +1,2 @@
-* 📄 [matrices.md.replace(".md","")](matrices.md)
-* 📄 [vectors.md.replace(".md","")](vectors.md)
+* 📄 [matrices](matrices.md)
+* 📄 [vectors](vectors.md)

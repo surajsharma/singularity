@@ -1,2 +1,2 @@
-* 📄 [LC_509_nthFibonacci.js.replace(".md","")](LC_509_nthFibonacci.js)
-* 📄 [Validate Sequence.js.replace(".md","")](Validate Sequence.js)
+* 📄 [LC_509_nthFibonacci.js](LC_509_nthFibonacci.js)
+* 📄 [Validate Sequence.js](Validate Sequence.js)

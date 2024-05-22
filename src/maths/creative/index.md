@@ -1,1 +1,1 @@
-* 📄 [jigsaw.md.replace(".md","")](jigsaw.md)
+* 📄 [jigsaw](jigsaw.md)

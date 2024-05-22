@@ -1,2 +1,2 @@
-* 📄 [01 - Transactins.ipynb.replace(".md","")](01 - Transactins.ipynb)
-* 📄 [ba_abi.json.replace(".md","")](ba_abi.json)
+* 📄 [01 - Transactins.ipynb](01 - Transactins.ipynb)
+* 📄 [ba_abi.json](ba_abi.json)

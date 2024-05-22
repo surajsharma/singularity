@@ -1,2 +1,2 @@
-* 📄 [LinkedList.js.replace(".md","")](LinkedList.js)
-* 📄 [LinkedListNode.js.replace(".md","")](LinkedListNode.js)
+* 📄 [LinkedList.js](LinkedList.js)
+* 📄 [LinkedListNode.js](LinkedListNode.js)
