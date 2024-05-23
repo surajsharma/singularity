@@ -63,20 +63,19 @@ function displaySearch(search, searchTerm) {
 
         const searchTitleLink = document.createElement('a');
         searchTitleLink.id = "search-result-title";
-        searchTitleLink.href = urlprefix == "" ? `/${item.ref.replace('.md', '.html')}` : `/singularity/${item.ref.replace('.md', '.html')}`;
-
+        searchTitleLink.href = urlprefix == "" ?
+            `/${item.ref.replace('.md', '.html')}` : `/singularity/${item.ref.replace('.md', '.html')}`;
         searchTitleLink.textContent = title.length > 40 ?
             title.substring(0, 40 - '...'.length) + '...' :
             title;
-        // TODO: single line
 
-        const searchResultScore = document.createElement('div');
-        searchResultScore.id = "search-result-score";
-        searchResultScore.textContent = `⭐ ${item.score.toFixed(2)}`;
+        const searchTitleLinks = document.createElement('div');
+        searchTitleLinks.id = 'search-title-links';
 
         const searchTitleLinkNewTab = document.createElement('a');
         searchTitleLinkNewTab.id = "search-result-title-newtab";
-        searchTitleLinkNewTab.href = urlprefix == "" ? `/${item.ref.replace('.md', '.html')}` : `/singularity/${item.ref.replace('.md', '.html')}`;
+        searchTitleLinkNewTab.href = urlprefix == "" ?
+            `/${item.ref.replace('.md', '.html')}` : `/singularity/${item.ref.replace('.md', '.html')}`;
 
         searchTitleLinkNewTab.textContent = "↗️";
         searchTitleLinkNewTab.target = '_blank';
@@ -87,15 +86,16 @@ function displaySearch(search, searchTerm) {
         searchTitleLinkRaw.textContent = "📄";
         searchTitleLinkRaw.target = '_blank';
 
-        searchResultScore.appendChild(searchTitleLinkNewTab);
-        searchResultScore.appendChild(searchTitleLinkRaw);
 
-        const searchResultLoc = document.createElement('p');
+        const searchResultLoc = document.createElement('pre');
         searchResultLoc.id = "search-result-loc";
         searchResultLoc.textContent = item.ref;
 
+        searchTitleLinks.appendChild(searchTitleLinkRaw);
+        searchTitleLinks.appendChild(searchTitleLinkNewTab);
+
         searchResultTitleTop.appendChild(searchTitleLink);
-        searchResultTitleTop.appendChild(searchResultScore);
+        searchResultTitleTop.appendChild(searchTitleLinks);
 
         searchResultDivItems.appendChild(searchResultTitleTop);
         searchResultDivItems.appendChild(searchResultLoc);
