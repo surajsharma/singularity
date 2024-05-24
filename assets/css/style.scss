@@ -113,7 +113,7 @@ blockquote {
 #search-results-container{
   width: 100%;
   height: 100%;
-  padding: 10px;
+  padding: 5px;
   display: flex;
   flex-direction: column;
 }
@@ -200,10 +200,9 @@ blockquote {
   padding: 5px;
   margin: 5px;
   display: flex;
-  border-bottom: 1px dotted lightblue;
 
   #index{
-    background-color: #88ff00;
+    background-color: #88ffff;
     color:white;
     padding: 5px;
     #text{
