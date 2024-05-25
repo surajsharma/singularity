@@ -1,11 +1,11 @@
 ## 1.1 Android: An Overview  
 ### 1.1.1 Android System Architecture
-![overview of arch](../../../attachments/android-overview.png)
+![overview of arch](../../../../attachments/android-overview.png)
 ### 1.3.4 Analyzing Your First Android Project  
-![file structure](../../../attachments/android-fs.png)
-![app structure](../../../attachments/android-app.png)
+![file structure](../../../../attachments/android-fs.png)
+![app structure](../../../../attachments/android-app.png)
 ## AndroidManifest.xml 
-![manifest](../../../attachments/android-manifest.png)
+![manifest](../../../../attachments/android-manifest.png)
 ### 1.3.5 Resources in a Project  
 ### 1.3.6 File of build.gradle
 
@@ -146,7 +146,7 @@ The log class in Android is Log(android.util.Log) which provides the following 5
 3.4.2 Activity States  
 3.4.3 Activity Lifecycle  
 
-![](../../../attachments/android-activity-lc.png)
+![](../../../../attachments/android-activity-lc.png)
 
 3.4.4 Explore the Lifecycle of Activity  
 3.4.5 Recycling Activity  

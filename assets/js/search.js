@@ -46,7 +46,9 @@ function getLink(item) {
             `/${item.ref.replace('.md', '.html')}` : `/singularity/${item.ref.replace('.md', '.html')}`;
     }
 
+    return urlprefix == "" ? `/${item.ref}` : `/singularity/${item.ref}`;
 }
+
 function displaySearch(search, searchTerm) {
     searchStatus.innerText = `Found ${search.length} results for ${searchTerm}`;
     search.forEach((item, idx) => {
