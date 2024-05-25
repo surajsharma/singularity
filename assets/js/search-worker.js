@@ -10,7 +10,7 @@ const DB = `${baseUrl}/assets/search/db.json`;
 
 async function fetchRemoteJson(loc, t = false) {
     try {
-        const resp = await fetch(loc);
+        const resp = await fetch(loc, { cache: "no-cache" });
         return t ? resp.text() : resp.json();
     } catch (error) {
         console.log("~ fetchRemoteJson ~ error:", error);
