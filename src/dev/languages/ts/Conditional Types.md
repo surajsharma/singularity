@@ -1,6 +1,8 @@
 ---
-layout: ts
+layout: code
+lang: ts
 ---
+
 /*
 Conditional types are arguably the most unique feature to
 TypeScript’s type system. They allow us to introduce a level

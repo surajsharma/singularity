@@ -1,5 +1,4 @@
 //TODO: fetch and write stream
-//TODO: db.json in localstorage or cookie, fetch only once per visit sitewide
 
 let dbName = "singularity-search";
 

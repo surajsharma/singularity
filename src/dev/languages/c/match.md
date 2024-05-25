@@ -1,5 +1,6 @@
 ---
-layout : c
+layout: code
+lang: c
 ---
 
 {% raw %}

@@ -1,5 +1,3 @@
-//TODO: for jupyter notebooks https://nbviewer.org/urls/evenzero.in/singularity/src/dev/web3/data%20for%20web3/01%20-%20Basic%20Metrics/web3_metrics.ipynb
-
 let index = null;
 let srcIndexData = null;
 let archIndexData = null;
@@ -38,6 +36,17 @@ function debouncedSearch(searchTerm) {
     }
 }
 
+function getLink(item) {
+    if (item.ref.endsWith("ipynb")) {
+        return `https://nbviewer.org/urls/evenzero.in/singularity/${item.ref}`;
+    }
+
+    if (item.ref.endsWith("md")) {
+        return urlprefix == "" ?
+            `/${item.ref.replace('.md', '.html')}` : `/singularity/${item.ref.replace('.md', '.html')}`;
+    }
+
+}
 function displaySearch(search, searchTerm) {
     searchStatus.innerText = `Found ${search.length} results for ${searchTerm}`;
     search.forEach((item, idx) => {
@@ -48,8 +57,10 @@ function displaySearch(search, searchTerm) {
         searchResultDivItems.id = "search-result-div-items";
 
         const titleidx = idx < 9 ? "0" + (idx + 1) : (idx + 1);
+
         const searchTitleIndex = document.createElement('div');
         searchTitleIndex.id = 'index';
+
         const searchTitleIndexText = document.createElement('div');
         searchTitleIndexText.id = "text";
         searchTitleIndexText.innerText = titleidx;
@@ -62,9 +73,11 @@ function displaySearch(search, searchTerm) {
         const title = item.ref.match(/\/([^/]*)$/)[0].replace('/', '').replace('.md', '');
 
         const searchTitleLink = document.createElement('a');
+
+        const link = getLink(item, title);
+
         searchTitleLink.id = "search-result-title";
-        searchTitleLink.href = urlprefix == "" ?
-            `/${item.ref.replace('.md', '.html')}` : `/singularity/${item.ref.replace('.md', '.html')}`;
+        searchTitleLink.href = link;
         searchTitleLink.textContent = title.length > 40 ?
             title.substring(0, 40 - '...'.length) + '...' :
             title;
@@ -74,9 +87,7 @@ function displaySearch(search, searchTerm) {
 
         const searchTitleLinkNewTab = document.createElement('a');
         searchTitleLinkNewTab.id = "search-result-title-newtab";
-        searchTitleLinkNewTab.href = urlprefix == "" ?
-            `/${item.ref.replace('.md', '.html')}` : `/singularity/${item.ref.replace('.md', '.html')}`;
-
+        searchTitleLinkNewTab.href = link;
         searchTitleLinkNewTab.textContent = "↗️";
         searchTitleLinkNewTab.target = '_blank';
 

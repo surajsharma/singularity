@@ -1,5 +1,6 @@
 ---
-layout: js
+layout: code
+lang: js
 ---
 
 {% raw %} 

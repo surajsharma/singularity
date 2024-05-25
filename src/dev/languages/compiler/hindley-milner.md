@@ -1,5 +1,6 @@
 ---
-layout: lua
+layout: code
+lang: lua
 ---
 
 {% raw %} 

@@ -1,5 +1,6 @@
 ---
-layout: rust
+layout: code
+lang: rust
 ---
 
 {% raw %} 
