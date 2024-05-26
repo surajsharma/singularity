@@ -2,6 +2,46 @@
 
 ### May 
 
+- no success is  without its attendant jelousy, even the smallest step to the future is periled by its shadow  
+- i was poor that decided to live for the rich instead of dying for myself, death is not a punishment
+- quantum tradeoffs everywhere
+- my threshold for pain was immense, but i wondered...
+- i no longer fought with shadows
+- the libertarian's hatred towards me was completely justified, and welcome for i was everything he dreamt of being but "life" made them compromise.
+- my father is a kind of man who could hold your soul in your hands and you couldn't complain
+
+- #ip prediction-as-a-service a war predicting API endpoint serving a single probability of global mood for war, lets call it #inversepolarity #imminentthreatindex 
+  - input sources
+    - indices
+      - commodities
+      - money
+      - equity
+      - geopolitics
+      - entertainment
+      - sport
+      - meta indices and AI magic 
+  - output
+    - single float
+    - 🍻 0.3 -> me and billy drinking gunnies in the pub, 
+    - 😠 0.6 -> did you hear that?, 
+    - 🤯 0.9 -> uh-oh!
+  - technology
+    - node
+    - firebase
+    - puppeteer
+    - transformersjs
+    - 
+
+- war is the domain of morons in this environment, moreover starting a global conflict now would mean risk losing it all in the best case and gaining nothing at its worst. my assertion is that the current '?' that looms overhead is a perpetual phenomenon, the capital H of history and the real that hurts - in other words the persistent threat of (personal) insanity that feeds the engine of not.
+
+- jhuth-sach-jhuth #hegel
+
+- the eyes of all the world were on us, just waiting to see how this ends...
+
+- today i saw starlink pass overhead, it was cool, if not special given my condition
+
+- you ever think death is just another wave function collapsing? #zen #meditations
+
 - test: hawkeye mutex semaphore
 
 - test: albatross does not floss
