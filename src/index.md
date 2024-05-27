@@ -1,5 +1,6 @@
 * 📂 [design](design)
 * 📂 [dev](dev)
+* 📄 [inbox](inbox.md)
 * 📂 [journals](journals)
 * 📂 [maths](maths)
 * 📂 [scripture](scripture)
