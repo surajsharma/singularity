@@ -23,9 +23,9 @@
 
 - By this time I had already heard Osho's commentary on the Dhammapada, and had witnessed, along with the whole world, what I can only describe as supernatural events – supporting my decision to retreat within.
 
-- The idea of monkhood wasn't new, though it only strengthened with the passage of time and the psychological terror of being watched/fear of losing soverignty to big brother.
+- The idea of monkhood wasn't new, though it only strengthened with the passage of time and the psychological terror of being watched/fear of losing sovereignty to big brother.
 
-`Though the experiment itself was successful, the world perhaps wasn't ready for this kind of unification and perhaps won't be ready for another couple hundred years. I took the public humiliation in stride but the idea was too controversial and I felt ostracised and unwelcome in society for having suggested it, however tacitly.`
+`Though the experiment itself was successful, the world perhaps wasn't ready for this kind of unification and perhaps won't be ready for another couple hundred years. I took the public humiliation in stride but the idea was too controversial and I felt ostracized and unwelcome in society for having suggested it, however tacitly.`
 
 - I did not wish to be a bother to people anymore, so decided to slowly, carefully detach myself from the rat race and embrace buddhism as a humble monk, living the rest of my days in peace, not breathing a word about the bs to anyone. It was a matter of logistics and mental preparation.
 

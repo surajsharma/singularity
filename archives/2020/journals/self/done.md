@@ -1,10 +1,10 @@
-pivoted to a totally new career, cornered mutiple new skills
+pivoted to a totally new career, cornered multiple new skills
 maintained political balance while dipping the world into chaos
 improved productivity, perception, clarity of vision, moments of insight
 greater focus when needed and motivation to learn and improve
 improved spiritual understanding, childlike, choiceless awareness grows
 increased emotional quotient (10x)
-increased sexual quotient, more consious porn consumption
+increased sexual quotient, more conscious porn consumption
 setup a note taking / personal info management system, resulting in semi-consistent journaling, greater calendar use and planning 
 
 .org/2021

@@ -38,7 +38,7 @@ rather than
 not everything that looks like a transgression
 is a transgression, some are mere explorations
 
-GREGOR SAMSA COULDN'T ACCESS CERTAINS PARTS OF THE INTERNET?
+GREGOR SAMSA COULDN'T ACCESS CERTAIN PARTS OF THE INTERNET?
 
 decision time
 
@@ -366,7 +366,7 @@ but i understand why that's a ceiling for some women.
 
 i'm not heartless, just traumatised, and frankly the constant barrage of absentee communication is
 
-washing my brain in quite the opposite direction, you can't say i didn't warn yall
+washing my brain in quite the opposite direction, you can't say i didn't warn y'all
 
 so idk where it might lead us, please accept my deepest sympathies for the situation you have managed to 
 

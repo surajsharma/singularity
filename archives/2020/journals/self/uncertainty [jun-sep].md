@@ -16,7 +16,7 @@ me and bring me down, but all this witnessing is only strengthening my resolve t
 
 I do not wish to lie to myself, and whats more, I don't think I can. But what I do want is to be left
 
-alone. I don't think others realise just how sensitive I am, so they perpetuate their damage, not 
+alone. I don't think others realize just how sensitive I am, so they perpetuate their damage, not 
 
 realising they are only hurting themselves.
 
@@ -298,7 +298,7 @@ But that's not all, this feedback loop is also insidious for privacy also leads 
 
 To loose all privacy, then, is an act of rebellion against this complacent system and a call to perceive the present, difficult times as a  perpetual “beginning of the future” rather than an endless “end of history”.  But the road is of course, fraught with dangers for anyone who wants to try this.
 
-Part of the problem statement involves retaining sovereign control over one's decision making faculties in the face of blatant attempts at brainwashing. The goal is to wake up to the possibility of an etherial medium where humanity exists as a reflection of itself, without ignoring the fact most people are brainwashed and conditioned by decades of media consumption anyway.
+Part of the problem statement involves retaining sovereign control over one's decision making faculties in the face of blatant attempts at brainwashing. The goal is to wake up to the possibility of an ethereal medium where humanity exists as a reflection of itself, without ignoring the fact most people are brainwashed and conditioned by decades of media consumption anyway.
 
 This doesn't mean not giving people the benefit of the doubt but evaluating one's own choices more rationally and practically within the greater context of the situation. Not only discerning who is acting out of LOVE vs who is acting out of fear, but also accepting that though one might placate some fears, some of the time, not all the fears can be put to rest in each moment forever. Realising that there are very real limits to how far from their comfort zone people are willing to step at any given moment is essential. The key is to identify who can dare play a new game vs who is scared to leave the old ones behind are key to producing sustainable innovation.
 
@@ -326,7 +326,7 @@ from enlightenment to entertainment to ?
 
 the reason i hold my tongue, D
 
-leaving breadcumbs is a good strategy
+leaving breadcrumbs is a good strategy
 
 the subtext is the news from outside the bubble
 
@@ -527,7 +527,7 @@ Fuzzy discipline?
 
 ## The Art of Undecision
 
-ndecision = 2 decisions / duvidha
+indecision = 2 decisions / duvidha
 
 undecision  = 1 - 1 / we shall see
 

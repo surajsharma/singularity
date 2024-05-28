@@ -28,5 +28,25 @@
   "prettier.singleQuote": false,
   "editor.fontSize": 16,
   "GitHooks.hooksDirectory": "c:\\Users\\suraj\\ez\\inversepolarity\\portfolios\\singularity\\.git\\hooks",
-  "C_Cpp.errorSquiggles": "disabled"
+  "C_Cpp.errorSquiggles": "disabled",
+  "cSpell.words": [
+    "choiceless",
+    "Clippy",
+    "cryptojs",
+    "journaling",
+    "Metaprogramming",
+    "Newtype",
+    "println",
+    "PTSD",
+    "realise",
+    "realising",
+    "recognise",
+    "rustfix",
+    "rustfmt",
+    "rustup",
+    "Struct",
+    "Structs",
+    "Supertraits",
+    "trpl"
+  ]
 }
