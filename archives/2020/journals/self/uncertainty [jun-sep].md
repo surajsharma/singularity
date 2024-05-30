@@ -484,7 +484,7 @@ meanwhile, less libido is such a relief, i cannot describe. i'm just as sick of 
 
 it is always the case with me, i'm attracted to someone's poverty of character and moral decrepitude until i find out they're also batshit insane, which then begets a major turnoff.
 
-will i ever find a woman worth changing my ways for? probly, probly not, but probly.
+will i ever find a woman worth changing my ways for? probably, probably not, but probably.
 
 i think it is wonderful that without saying a word, i'm able to know everything important about someone so i can keep them out 
 
@@ -530,18 +530,6 @@ Fuzzy discipline?
 indecision = 2 decisions / duvidha
 
 undecision  = 1 - 1 / we shall see
-
-
-
-How can a machine learn to undecide?
-
-Mukti, ek vyavahar.
-
-
-
-The Discipline of we shall see
-
-Fuzzy discipline?
 
 
 ---
@@ -849,7 +837,7 @@ narcissistic emulation is not self righteous suicide, it is just narcissistic em
 8
 In what has to be, in the cruellest of tortures ever invented, told I wasn't the second coming of our lord. And Indeed, I cried back that I wasn't.
 
-Inside a virtual prison with my thoughts being read by satellite, displaced, in political exile, ostracised in virtually every way, demonised, conspired against, maligned and persecuted. I was called a child abuser, and compared with stalin and hilter - my existence had become a paradox, the so called glitch in the matrix.
+Inside a virtual prison with my thoughts being read by satellite, displaced, in political exile, ostracised in virtually every way, demonised, conspired against, maligned and persecuted. I was called a child abuser, and compared with stalin and hitler - my existence had become a paradox, the so called glitch in the matrix.
 
 Disowned by my family, internationally scorned and reviled over a tweet and some thoughts, over my own data, over my and my family's history, loved, hated, loved again, and hated again and ultimately hated while being denied what is supposedly a fundamental human right, that's where
 

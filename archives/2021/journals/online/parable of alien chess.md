@@ -1,6 +1,6 @@
 #chess
 
-# A parable on the Logical Postivist "interpretation" of scientific models. 
+# A parable on the Logical Positivist "interpretation" of scientific models.  
 
 ## The Parable
 
@@ -36,7 +36,7 @@ Since we, unlike the aliens, are not prevented by defect from observing chess, w
 
 The coin flip model is a scientific dead-end. Firstly, the coin flip model is constructed statistically, which presents the underlying mechanism to be randomness, and thus unworth of inquiry. This isn't statistics hoisted above random variation we know to exist, instead, it's utterly blind statistics that covers over whatever principles underlie it.
 
-Secondly and more importantly, in order to actually improve that model, it has to lose empirical solvency: embracing the abstractions of pieces means introducing mess and deviating in some way from the empircal generalization that half of all chess games are won by white and half by black.
+Secondly and more importantly, in order to actually improve that model, it has to lose empirical solvency: embracing the abstractions of pieces means introducing mess and deviating in some way from the empirical generalization that half of all chess games are won by white and half by black.
 
 ### This is not an abnormal circumstance.
 

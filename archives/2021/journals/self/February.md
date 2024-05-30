@@ -33,7 +33,7 @@ Ask yourself, "what is the simpler version of ___ ?" to whatever it is you want 
 
 1 New Habit / year. 2021 = morning lines.
 
-Lonliness is one of the worthy problems to solve for, but only once you have figured out companionship and friendship and what is meant by these words. Sorting people into foes and friends is a problem for competitive minds, solace lies in one's own company.
+Loneliness is one of the worthy problems to solve for, but only once you have figured out companionship and friendship and what is meant by these words. Sorting people into foes and friends is a problem for competitive minds, solace lies in one's own company.
 
 
 ---
@@ -59,7 +59,7 @@ The idea behind nudge, whether it comes from government or individuals, is that 
 
 Furthermore, any behaviour change induced by manipulative or upfront "nudging" cannot last long. TODO: Are there studies on this?
 
-Not only because things are this public, i must rememeber my standards and definitions, lest I be swayed towards revolution or populism.
+Not only because things are this public, i must remember my standards and definitions, lest I be swayed towards revolution or populism.
 
 Need to stop consuming scripted content and write instead.
 
@@ -92,7 +92,7 @@ Paradoxes happen not because the world wants them, nor because the mind invents 
 
 I don't mean revolution or status quo in a political sense here, it is way more primal than politics.
 
-History is more problematic than the future, because things emerge in this sort of levitating parallax modern human life has come to resemble. In this emergence, anyone can pick a boundary and start defending it, it can be any boundary, especially old ones and ones being proven worthy of being dissolved. One can even make a fight out of creating walls and boundaries where none hitherto existed. Boundaries facilitate disagreement, dissent, and anger and therefore, are excellent political tools. Because one is fairly certain inidivual understanding cannot permeate many such social boundaries (most people fail/refuse to understand all sides to a story), they become breeding ground for debate and the creation of social "paradoxes", moral dilemmas, existential crises etc.
+History is more problematic than the future, because things emerge in this sort of levitating parallax modern human life has come to resemble. In this emergence, anyone can pick a boundary and start defending it, it can be any boundary, especially old ones and ones being proven worthy of being dissolved. One can even make a fight out of creating walls and boundaries where none hitherto existed. Boundaries facilitate disagreement, dissent, and anger and therefore, are excellent political tools. Because one is fairly certain individual understanding cannot permeate many such social boundaries (most people fail/refuse to understand all sides to a story), they become breeding ground for debate and the creation of social "paradoxes", moral dilemmas, existential crises etc.
 
 You can't do this with the future in mind, with the future, you may only imagine the worst.
 
@@ -106,7 +106,7 @@ And yet, there will be people who will say i didn't have the balls. My balls are
 
 After a few years of torture, this is my finding, the jew is fine, the black man is fine, the problematic core of America is the WASPY middle class - and the economic disparities therein.
 
-I mean I call my parents heathens but some so called born christians are so much worse. There's no defending christianty without supporting the jew. I didn't know how anti-semetic America actually was, it's a real problem. I wish I could say that in the grand-er scheme of things the jew is irrelevant, but that is not the case. However, we should aim for irrelevance. I woudn't be writing this if it were'nt for a jew and you wouldn't be reading this, think we can all agree on that.
+I mean I call my parents heathens but some so called born christians are so much worse. There's no defending christianity without supporting the jew. I didn't know how anti-semetic America actually was, it's a real problem. I wish I could say that in the grand-er scheme of things the jew is irrelevant, but that is not the case. However, we should aim for irrelevance. I woudn't be writing this if it were'nt for a jew and you wouldn't be reading this, think we can all agree on that.
 
 I was born a hindu, which is the most irrelevant thing about all this i believe.
 
@@ -126,19 +126,19 @@ Too much snow make dumb, thats why we have seasons.
 ## 1. You cannot play chess with money
 
 
-This is what happens when a wholly apolitical class tries thier hand at politics.
+This is what happens when a wholly apolitical class tries their hand at politics.
 
 Inferior, populist, insecure "leaders" emerge, marking the decline of this civilisation.
 
-An Insecure moneyed class is fuelling their rise. This is what hurts the most, this is what compells me to do shit. This isn't individualism gone wrong, this is the onset of communism. Or at least feels like it.
+An Insecure moneyed class is fuelling their rise. This is what hurts the most, this is what compels me to do shit. This isn't individualism gone wrong, this is the onset of communism. Or at least feels like it.
 
-Not that I give two flying fucks about anyone and their mother here, but I feel a deep sense of gratitude for times and experiences that were afforded to me by virtue of my participation in cough, exported American culture and indentification with its values so I feel the need to pen down these thoughts.
+Not that I give two flying fucks about anyone and their mother here, but I feel a deep sense of gratitude for times and experiences that were afforded to me by virtue of my participation in cough, exported American culture and identification with its values so I feel the need to pen down these thoughts.
 
 SO what the fuck just happened here? My POV is as follows and trust me, I'm not trying to convince anyone of anything here, just recording this for posterity.
 
-As I see it, two patriotic, unconventional, politically incorrect guys, lets call them Rosencratz and Gildernstern - showed up on the scene and the world lost it's ballsack.
+As I see it, two patriotic, unconventional, politically incorrect guys, lets call them Rosencratz and Gildernstern - showed up on the scene and the world lost it's ball-sack.
 
-In randomness, people forget to ask basic questions, so let us do that for them - Why these two? Of all the people who could have discovered an obvious truth about the human condition, why did it have to be these two? The "accident" that brought them together, the innovation and savage buffoonry that followed, the hertbreak, anger and frustrations that were let out - all of it wasn't without reason.
+In randomness, people forget to ask basic questions, so let us do that for them - Why these two? Of all the people who could have discovered an obvious truth about the human condition, why did it have to be these two? The "accident" that brought them together, the innovation and savage buffoonery that followed, the heartbreak, anger and frustrations that were let out - all of it wasn't without reason.
 
 Let us first analyze the context in which they appeared:
 
@@ -146,11 +146,11 @@ A world upended? No, see these two believed the world had been upended long back
 
 Let us now analyze what happened after they showed up:
 
-Chaos. Pandemonium. Absolute insanity and not the kind you would want to take lightly. For this chaos led to war. An easily avoidable and highly unncessary war.
+Chaos. Pandemonium. Absolute insanity and not the kind you would want to take lightly. For this chaos led to war. An easily avoidable and highly unnecessary war.
 
 You see, I don't have to name names I don't have to shame people and I don't have to blackmail, extort, manipulate, confuse or cajole anyone into doing anything in order to do what I do. I'm totally transparent. But these two guys, man, were they ever mistreated!
 
-Now of course, my sense of injustice isn't all that's at stake here, and I mean, can I even call it injustice? I'm in Manali, it's a winter wonderland outside, and I'm cozy in my wooden cottage, typing this on a macbook I stil owe money for. Besides, I'm lazy AF, so I don't really have to type all of this out. But I think of you, dear reader, and wonder what it would mean to you to hold this confession of mine in your hands and be able to say that you were there too, when all of this was happening.
+Now of course, my sense of injustice isn't all that's at stake here, and I mean, can I even call it injustice? I'm in Manali, it's a winter wonderland outside, and I'm cozy in my wooden cottage, typing this on a macbook I still owe money for. Besides, I'm lazy AF, so I don't really have to type all of this out. But I think of you, dear reader, and wonder what it would mean to you to hold this confession of mine in your hands and be able to say that you were there too, when all of this was happening.
 
 But it helps, it is therapeutic, because, yes, as you may have guessed by now, I am one of the two names mentioned above, although I won't yet say which.
 
@@ -164,17 +164,17 @@ But it wasn't about singularity, nowhere close. No it doesn't matter. Lets forge
 
 It is a forgone conclusion, we can never have a technological singularity because people who upload their consciousness on the cloud seem to make other people jealous, people who aren't ready for uploading their consciousness to the cloud. It doesn't need to get more complicated than this, does it?
 
-And what about me? What am I trying to to do telling this story nobody wants told? I am simply arranging for my own assasination perhaps. Something worth doing I guess.
+And what about me? What am I trying to to do telling this story nobody wants told? I am simply arranging for my own assassination perhaps. Something worth doing I guess.
 
 But hold on, you will tell me, you will mention some internet conspiracy theory or the other about how there is a "case" in the works - against both these guys - or that Gildernstern is going to jail or to the United Nations, the other jail.
 
 But I think he will do no such thing, but even if he did, who cares right? As far as I know, Gildernstern isn't interested at all in going to the United Nations, so he will try everything he can to reach jail - but then, as I said in the beginning, the protagonists of our story are also big time losers, so it would be no wonder nor would it need a twist of fate to ensure he gets manipulated into joining the UN. If I know Gildernstern at all, and I do know them both to some degree, I think he'd shoot himself in the temple before he joins the UN, but then, time has a way with the will of most humans.
 
-Suicide, another theme we will be dealing with a lot in the coming pages. At least one of our protagonists is suicidal, and I'm not saying who, but it would be a major non-sequitir of an ending if it were to end in suicide.
+Suicide, another theme we will be dealing with a lot in the coming pages. At least one of our protagonists is suicidal, and I'm not saying who, but it would be a major non-sequitur of an ending if it were to end in suicide.
 
 But let us roll the boat back a bit, how did it all start? Ah yes, the tweet.
 
-There was a tweet, directed at Mumbai Police, sent one diwali night that got this ball rolling. Honestly, for someone on Modafinil, didn't seem that ominuous. Just a good comeback to put an end to an online spat. Who knew a tweet could splut the universe into two?
+There was a tweet, directed at Mumbai Police, sent one diwali night that got this ball rolling. Honestly, for someone on Modafinil, didn't seem that ominous. Just a good comeback to put an end to an online spat. Who knew a tweet could split the universe into two?
 
 The contents of the tweet are immaterial, nor do we care about who sent it, all we care about is that it someone's imagination aflame. Someone on the other side of the world.
 

@@ -614,7 +614,7 @@ history has a certain momentum which i defy and get noticed for doing so. do rec
 - more reason to believe in predestination of some sort:
 "software which coasts people through their deep metaphysical and existential crisis." - me @2014
 
-- if you say this is just racism and not politcally motivated hatred, then how do you know the difference between the two? does your body tell you "do it", if so, is it a pleasant experience?
+- if you say this is just racism and not politically motivated hatred, then how do you know the difference between the two? does your body tell you "do it", if so, is it a pleasant experience?
 
 - Agar ye log khud tatti na khate aur mujhe bhi na khilate to janta kya hi haal karti pata nahi
 

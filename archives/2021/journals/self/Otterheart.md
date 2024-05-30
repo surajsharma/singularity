@@ -2,7 +2,7 @@
 
 > The temperature outside is 11˚, which is cozy and there is a slight drizzle with an overcast sky which might last for a few days. I am enjoying my newfound status as a monk and am certain which way I want this tale to go. Nobody's gonna like it, but when has that ever stopped me?
 
-- We practice a lukewarm and tepid form of love which is irritating to all, i'd rather face society's unbridled wrath in fApril 5ollowing my own bliss rather than submit to money.
+- We practice a lukewarm and tepid form of love which is irritating to all, i'd rather face society's unbridled wrath in April following my own bliss rather than submit to money.
 
 - I'm all out of data which is nice for a change. Lying in Chitra's bed under this quilt and I miss her.
 
@@ -39,11 +39,11 @@ I think others and planning and plotting in vain, they should just read these no
 
 > Raining outside.
 
-- I dont think I am special in being yet another example of civilisational decline, dime a dozen
+- I don't think I am special in being yet another example of civilisational decline, dime a dozen
 
-> ☀️ I am not acting precious or morally superior when I say I am not to be touched, just excercising my right 
+> ☀️ I am not acting precious or morally superior when I say I am not to be touched, just exercising my right 
 
-- if something haapens or someone come with or without a video, just remember the only real thing is your poverty
+- if something happens or someone come with or without a video, just remember the only real thing is your poverty
 
 - A sannyas received from wall street is the most precious thing I own, can only get raped now and I dare anyone to
 

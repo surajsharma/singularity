@@ -82,27 +82,27 @@ Paṭikkūlamanasikāra meditation
 
 
 
-# Cold Showers - I cant stress this enough. my biggest streaks happend because of cold showers, you become so sharp, energetic and happy when you do this every morning. trust me, cold showers are a shortcut to success! 
+# Cold Showers - I cant stress this enough. my biggest streaks happened because of cold showers, you become so sharp, energetic and happy when you do this every morning. trust me, cold showers are a shortcut to success!  
     
-# Exercise - You dont have to go to the gym for 2 hours for this one. do wathever you like, go for a run, a walk, play basketball, soccer, swim, or wathever you want. Exercise gets that extra energy out of you instead of PMO, and it also helps clearing your mind as well as cold showers. so dont skip exercise! also, you dont have to exercise every day, you can if you want to but 3 times a week is enough. also forgot to mention, exercise will build you ALOT of confidence! 
+# Exercise - You don't have to go to the gym for 2 hours for this one. do whatever you like, go for a run, a walk, play basketball, soccer, swim, or whatever you want. Exercise gets that extra energy out of you instead of PMO, and it also helps clearing your mind as well as cold showers. so don't skip exercise! also, you don't have to exercise every day, you can if you want to but 3 times a week is enough. also forgot to mention, exercise will build you A LOT of confidence! 
     
-> Delete social media - Social media will destroy your streaks easily. just think about it, so many triggers, pictures of girls in bikini and wathever they post are every where in social media, plus, it wastes your time like a motherfucker. 
+> Delete social media - Social media will destroy your streaks easily. just think about it, so many triggers, pictures of girls in bikini and whatever they post are every where in social media, plus, it wastes your time like a motherfucker. 
     
 Eat healthy - You are what you eat. no need to say more than that, eating healthy will make you feel better, more energetic and focused. at least quit sugar, you can have junk maybe once week. sugar is the worst thing you can put in your body unless its from fruits. 
     
-Meditate - this one is kinda miss understood by most people, i also didnt understand it until i tried. meditation is just amazing in every aspect i can think of. when you meditate regularly you just feel bliss everyday, you become so much more focused, happy, mindfull and stress free, meditating is unbelieveably amazing. i reccomend trying the "6 phase meditation" from Mindvalley. 
+Meditate - this one is kinda miss understood by most people, i also didn't understand it until i tried. meditation is just amazing in every aspect i can think of. when you meditate regularly you just feel bliss everyday, you become so much more focused, happy, mindful and stress free, meditating is unbelievably amazing. i recommend trying the "6 phase meditation" from Mindvalley. 
     
-Work on a project - it could be whatever you want, start an online business, draw something, compose a song, write a poem, write for a blog, or watever comes to your mind. do something that makes you think and work for an hour or two. you will feel great when you finish. 
+Work on a project - it could be whatever you want, start an online business, draw something, compose a song, write a poem, write for a blog, or whatever comes to your mind. do something that makes you think and work for an hour or two. you will feel great when you finish. 
     
-Stay busy - this is really important, when you have more to do, you dont have time to even think about PMO, what i mean by staying busy is keep doing stuff, it doesnt have to be important. hang out with some friends ( really good in the first days of your streak), be with your family, watch a show that you like, do whatever. just do something. 
+Stay busy - this is really important, when you have more to do, you don't have time to even think about PMO, what i mean by staying busy is keep doing stuff, it doesn't have to be important. hang out with some friends ( really good in the first days of your streak), be with your family, watch a show that you like, do whatever. just do something. 
     
-Dont lie in your bed - this is kinda part 2 for staying busy. make sure that you dont just lie in your bed with your phone being lazy, because eventually you will start thinking about PMO and you have no time for that because you are a busy person remember? Make you bed every morning so its less inviting to lying around. 
+Don't lie in your bed - this is kinda part 2 for staying busy. make sure that you don't just lie in your bed with your phone being lazy, because eventually you will start thinking about PMO and you have no time for that because you are a busy person remember? Make you bed every morning so its less inviting to lying around. 
     
-Declutter - Be organized, that way you have less things to worry about, organize your room or work space, and where you spend alot of time, organize your computers files (its actually important), your google tabs and more, you get the idea. 
+De-clutter - Be organized, that way you have less things to worry about, organize your room or work space, and where you spend a lot of time, organize your computers files (its actually important), your google tabs and more, you get the idea. 
     
 Drink water - its good for you. 
     
-Learn - keep learning about things that interest you, wether its self growth, writing, dancing, business, or watever. make your brain work. 
+Learn - keep learning about things that interest you, wether its self growth, writing, dancing, business, or whatever. make your brain work. 
  
 
 
