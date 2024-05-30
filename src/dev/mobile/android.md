@@ -2,7 +2,7 @@
 
 1.1 Android: An Overview
 1.1.1 Android System Architecture
-![overview of arch](../../../attachments/android-overview.png)
+![overview of arch](../../../attachments/android/android-overview.png)
 
 1.1.2 Released Versions
 1.1.3 What´s Special for Android Development?
@@ -16,11 +16,11 @@
 1.3.2 Starting Emulator
 1.3.3 Running HelloWorld
 1.3.4 Analyzing Your First Android Project
-![file structure](../../../attachments/android-fs.png)
-![app structure](../../../attachments/android-app.png)
+![file structure](../../../attachments/android/android-fs.png)
+![app structure](../../../attachments/android/android-app.png)
 
 ## AndroidManifest.xml 
-![manifest](../../../attachments/android-manifest.png)
+![manifest](../../../attachments/android/android-manifest.png)
 
 
 1.3.5 Resources in a Project
@@ -137,38 +137,6 @@ The log class in Android is Log(android.util.Log) which provides the following 5
 
 # Chapter 2: Explore New Language: A Quick Introduction to [[kotlin]]
 
-2.1 Introduction to Kotlin
-
-2.2 How to Run Kotlin Code
-
-2.3 The Foundation of Programming: Variables and Functions
-2.3.1 Variables
-2.3.2 Functions
-
-2.4 Flow Control
-2.4.1 if Statement
-2.4.2 when Statement
-2.4.3 Loop Statement
-
-2.5 Object-Oriented Programming
-2.5.1 Class and Object
-2.5.2 Inheritance and Constructor Function
-2.5.3 Interface
-2.5.4 Data Class and Singleton
-
-2.6 Lambda Expression
-2.6.1 Creation and Iteration of Collection
-2.6.2 Functional APIs of Collections
-2.6.3 Java Functional API
-
-2.7 Null Safety
-2.7.1 Nullable Type
-2.7.2 Nullability Check Tools
-
-2.8 Kotlin Tricks
-2.8.1 String Interpolation
-2.8.2 Function Default Arguments
-2.9 Summary
 
 # Chapter 3: Start with the Visible: Explore Activity
 
@@ -193,7 +161,7 @@ The log class in Android is Log(android.util.Log) which provides the following 5
 3.4.1 Back Stack
 3.4.2 Activity States
 3.4.3 Activity Lifecycle
-![](../../../../attachments/android-activity-lc.png)
+![](../../../attachments/android/android-activity-lc.png)
 
 3.4.4 Explore the Lifecycle of Activity
 3.4.5 Recycling Activity
