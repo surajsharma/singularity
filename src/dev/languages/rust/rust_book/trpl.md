@@ -1,3 +1,5 @@
+# the rust programming lang
+
 # "Chapter 1: Getting Started" 32
 ##    "Creating a Project with Cargo" 41
             - TOML - tom's obvious, minimal lang
