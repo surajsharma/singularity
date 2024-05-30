@@ -1,1 +1,1 @@
-* 📄 [paarable of alien chess](paarable of alien chess.md)
+* 📄 [parable of alien chess](parable of alien chess.md)

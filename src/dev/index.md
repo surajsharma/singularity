@@ -2,6 +2,7 @@
 * 📂 [cs_phil](cs_phil)
 * 📂 [devops](devops)
 * 📂 [languages](languages)
+* 📂 [mobile](mobile)
 * 📂 [re](re)
 * 📂 [web](web)
 * 📂 [web3](web3)
