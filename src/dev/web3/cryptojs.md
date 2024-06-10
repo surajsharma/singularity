@@ -1,3 +1,5 @@
+# cryptojs
+- [cryptojs](#cryptojs)
 - [Part 1 – Getting Started](#part-1--getting-started)
   - [Chapter 1: Cryptography for Developers](#chapter-1-cryptography-for-developers)
   - [Chapter 2: Dealing with Binary and Random Data](#chapter-2-dealing-with-binary-and-random-data)
@@ -262,3 +264,8 @@ module: `randomBytes(size, callback)`
 - [ ]  Digital signatures with the WebCrypto APIs 
 - [ ] Calculating and verifying RSA signatures
 - [ ] Calculating and verifying ECDSA signatures 
+
+
+---
+
+- [ ] [Homomorphic Encryption in JavaScript](https://tinyurl.com/yvpnz2vj)
