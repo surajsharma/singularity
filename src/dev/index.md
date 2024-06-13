@@ -1,6 +1,7 @@
-* 📂 [AMND](AMND)
+* 📂 [ai ml nn dl](ai ml nn dl)
 * 📂 [cs_phil](cs_phil)
 * 📂 [devops](devops)
+* 📂 [dsa](dsa)
 * 📂 [languages](languages)
 * 📂 [mobile](mobile)
 * 📂 [re](re)

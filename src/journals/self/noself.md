@@ -1,5 +1,9 @@
 ## 2024
 
+### June
+
+- ___embutement___, __noun__, _the liminal state preceding embodiment, the quantum wave function right before the collapse, the physical state of schrodinger's cat a moment before observation_, a state of contexual superposition.
+
 ### May 
 
 - no success is  without its attendant jelousy, even the smallest step to the future is periled by its shadow  

@@ -1,8 +1,0 @@
-* 📂 [Arrays and Strings](Arrays and Strings)
-* 📂 [Assorted Algos](Assorted Algos)
-* 📂 [Linked Lists](Linked Lists)
-* 📂 [graphs](graphs)
-* 📂 [matrices](matrices)
-* 📂 [searches](searches)
-* 📂 [sorts](sorts)
-* 📂 [trees](trees)

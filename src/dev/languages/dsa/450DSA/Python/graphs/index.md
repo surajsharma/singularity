@@ -1,5 +1,0 @@
-* 📄 [bfs_queue.py](bfs_queue.py)
-* 📄 [boot.dev_graphs_py.py](boot.dev_graphs_py.py)
-* 📄 [dfs_recursive.py](dfs_recursive.py)
-* 📄 [dfs_stack.py](dfs_stack.py)
-* 📄 [has_path.py](has_path.py)

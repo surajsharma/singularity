@@ -25,6 +25,7 @@
     - [Lexical scope](#lexical-scope)
     - [Avoid polluting the global scope](#avoid-polluting-the-global-scope)
     - [Implicit globals](#implicit-globals)
+    - [HTML attributes](#html-attributes)
     - [Shadowing declarations](#shadowing-declarations)
     - [Function parameter scope](#function-parameter-scope)
     - [Function expression name scope](#function-expression-name-scope)
@@ -40,6 +41,20 @@
     - [Addition Operator](#addition-operator)
     - [Relational operators](#relational-operators)
   - [Closures](#closures)
+    - [What is a closure?](#what-is-a-closure)
+    - [How do closures work?](#how-do-closures-work)
+    - [How are different scopes linked?](#how-are-different-scopes-linked)
+    - [What causes this problem?](#what-causes-this-problem)
+    - [How to resolve this problem?](#how-to-resolve-this-problem)
+    - [How are objects linked?	Prototypes](#how-are-objects-linkedprototypes)
+    - [The \`\`prototype'' property](#the-prototype-property)
+    - [Getting prototype of any object](#getting-prototype-of-any-object)
+    - [Object.prototype - parent of all objects](#objectprototype---parent-of-all-objects)
+    - [\`\`Function'' function](#function-function)
+    - [Problems with __proto__](#problems-with-proto)
+    - [Object.create method](#objectcreate-method)
+    - [Null prototype object](#null-prototype-object)
+    - [ES2015 classes](#es2015-classes)
   - [\`this' keyword](#this-keyword)
   - [Asynchronous JavaScript](#asynchronous-javascript)
   - [Iterators and Generators](#iterators-and-generators)
@@ -61,7 +76,7 @@
 - i.e., the code that is not inside a function
 
 - global variables, functions, etc. 
-- It also contains the value for this
+- It also contains the value for `this`
 - and a reference to the outer environment, which, in the case of a global execution context, is null.
 
 ### 2. Function execution context
@@ -69,7 +84,7 @@
 - Just like the global execution context, the function
 - execution context contains:
   - variables and functions are declared inside the function.
-  - value of this inside the function
+  - value of `this` inside the function
   - reference to the outer environment
 
 - ___There is a third type of execution context that is created for the execution of code inside the eval¹⁸ function. Still, as the use of the eval function is discouraged due to security concerns, we will only discuss the types of execution context mentioned above.___
@@ -92,7 +107,7 @@ Execution contexts have following two phases:
 - Variables declared using `var` are assigned `undefined`
 as their value during this phase, while variables declared using `let` or constants declared using `const` are left __uninitialized__.
 
-- In the case of a global context, there is no outer environment, so reference to the outer environment is set to null, ___but in the case of a function context, the value of this depends on how the function is called, so the value of this is set appropriately___
+- In the case of a global context, there is no outer environment, so reference to the outer environment is set to null, ___but in the case of a function context, the value of `this` depends on how the function is called, so the value of `this` is set appropriately___
 
 
 #### Lexical and Variable environments
@@ -108,7 +123,7 @@ as their value during this phase, while variables declared using `let` or consta
 
 -  declared with the var keyword
 
-```
+```javascript
 let name = "Jane Doe";
 var age = 20;
 
@@ -116,6 +131,7 @@ function introduce(name, age) {
   console.log("Hello, I am " + name + " and I am " + age + " years old");
 }
 ```
+
 ![Lexical and Variable environments](../../../attachments/lexical_variable_env.png)
 
 ### Execution phase
@@ -206,7 +222,7 @@ function introduce(name, age) {
 - As TDZ also applies to the let and const, are the variables declared using let or constants using const also hoisted? Yes, they are also hoisted, but, like the class declarations, they are hoisted differently because of the TDZ.
 
 
-```
+```javascript
 var count = 5;
 {
   console.log(count); // hoisted but cannot access due to TDZ
@@ -223,41 +239,138 @@ var count = 5;
 
 ## Scope
 
+- scope of an identifier (variable, function, etc.) =  parts of the program where it can be accessed. 
+- Modern JavaScript has four main types of scopes that are mentioned below:
+  - Global scope
+  - Function scope
+  - Block scope
+  - Module scope
+
 ### Lexical scope	
+
+ - determined at compile time
+ - before the step-by-step execution
+ - scopes can be nested within other scopes, with each nested scope having access to the outer or parent scope.
+ - Lexical scope is also known as “static” scope. An alternative type of scope is Dynamic scope[³⁶](https://en.wikipedia.org/wiki/Scope_(computer_science)#Lexical_scope_vs._dynamic_scope).
+ - In JavaScript, the global scope is the browser window or, more accurately, a browser window tab. exposed to the JavaScript code using the `window` object.
+
+  ```javascript
+  var todoList = ["grocery", "exercise", "meeting"];
+
+  function emptyTodoList() {
+    todoList = [];
+  }
+
+  console.log(window.hasOwnProperty("todoList")); 
+  // true
+  console.log(window.hasOwnProperty("emptyTodoList")); 
+  // true
+  ```
+
+  ```javascript
+  const todoList = ["grocery", "exercise", "meeting"];
+
+  let emptyTodoList = function () {
+    todoList = [];
+  };
+
+  console.log(window.hasOwnProperty("todoList")); 
+  // false
+  console.log(window.hasOwnProperty("emptyTodoList")); 
+  // false
+  ```
+
 ### Avoid polluting the global scope	
 ### Implicit globals	
-### Shadowing declarations	
+
+- not in strict mode
+- _Whenever there is an assignment to an undeclared variable, JavaScript will declare that undeclared variable as a global variable_. 
+- This is most likely a mistake by the programmer, and instead of throwing an error, javaScript hides this by automatically declaring a global variable by the same name.
+
+```javascript
+function printSquare(num) {
+  result = num * num;
+  console.log(result);
+}
+
+printSquare(9);
+
+console.log("implicit global "+ result)
+```
+
+- In strict mode, as expected, JavaScript throws an error
+
+
+
+### HTML attributes
+
+- there is another way we get implicit global variables
+
+- value of the `id` attribute or the `name` attribute of HTML elements also gets added as a variable in the global scope of JavaScript.
+
+```html
+<h1 id="mainHeading">Hello World!</h1>
+```
+
+- Although this is supported by most browsers, this feature shouldn’t be relied upon, and we should always use standard mechanisms to target HTML elements because it can result in code that is hard to read and maintain
+
+### Shadowing declarations
+
 ### Function parameter scope	
+
 ### Function expression name scope	
+
 ### Block Scope	
+
 ### Module Scope	
+
 ### Scope Chain	
+
 ### ToPrimitive	
 
 ## Coercion
+
 ### ToNumber	
+
 ### ToString	
+
 ### ToBoolean	
+
 ### Summary of abstract equality operator	
+
 ### Addition Operator	
+
 ### Relational operators	
 
 ## Closures
 
-What is a closure?	
-How do closures work?	
-How are different scopes linked?	
-What causes this problem?	
-How to resolve this problem?	
-How are objects linked?	Prototypes
-The ``prototype'' property	
-Getting prototype of any object	
-Object.prototype - parent of all objects	
-``Function'' function	
-Problems with __proto__	
-Object.create method	
-Null prototype object	
-ES2015 classes	
+### What is a closure?	
+
+### How do closures work?	
+
+### How are different scopes linked?	
+
+### What causes this problem?	
+
+### How to resolve this problem?	
+
+### How are objects linked?	Prototypes
+
+### The ``prototype'' property	
+
+### Getting prototype of any object	
+
+### Object.prototype - parent of all objects	
+
+### ``Function'' function	
+
+### Problems with __proto__	
+
+### Object.create method	
+
+### Null prototype object	
+
+### ES2015 classes	
 
 ## `this' keyword
 

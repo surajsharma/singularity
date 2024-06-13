@@ -1,6 +1,5 @@
 * 📂 [c](c)
 * 📂 [compiler](compiler)
-* 📂 [dsa](dsa)
 * 📂 [graphics](graphics)
 * 📂 [rust](rust)
 * 📂 [slip](slip)

@@ -1,8 +1,0 @@
-* 📄 [LC_125_Valid_Palindrome 2.js](LC_125_Valid_Palindrome 2.js)
-* 📄 [LC_125_Valid_Palindrome.js](LC_125_Valid_Palindrome.js)
-* 📄 [LC_217_contains_duplicate.js](LC_217_contains_duplicate.js)
-* 📄 [LC_242_valid_anagram.js](LC_242_valid_anagram.js)
-* 📄 [LC_49_Group_Anagrams.js](LC_49_Group_Anagrams.js)
-* 📄 [max_contiguous_subarray_sum.js](max_contiguous_subarray_sum.js)
-* 📄 [second_highest.js](second_highest.js)
-* 📄 [smaller_to_the_right.js](smaller_to_the_right.js)
