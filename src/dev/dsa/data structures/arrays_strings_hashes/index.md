@@ -25,4 +25,4 @@
 * 📄 [Reverse_String_Recursive.py](Reverse_String_Recursive.py)
 * 📄 [second_highest](second_highest.md)
 * 📄 [smaller_to_the_right](smaller_to_the_right.md)
-* 📄 [string_reverse_and_palindrome](string_reverse_and_palindrome.md)
+* 📄 [string_reverse_and_palindrome](string-reverse-and-palindrome.md)

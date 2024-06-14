@@ -27,7 +27,7 @@
     - [Implicit globals](#implicit-globals)
     - [HTML attributes](#html-attributes)
     - [Shadowing declarations](#shadowing-declarations)
-    - [Function parameter scope](#function-parameter-scope)
+    - [Function (parameter) scope](#function-parameter-scope)
     - [Function expression name scope](#function-expression-name-scope)
     - [Block Scope](#block-scope)
     - [Module Scope](#module-scope)
@@ -56,16 +56,68 @@
     - [Null prototype object](#null-prototype-object)
     - [ES2015 classes](#es2015-classes)
   - [\`this' keyword](#this-keyword)
+    - [Function context](#function-context)
+    - [Global context](#global-context)
+    - [Constructor function context](#constructor-function-context)
+    - [Class context](#class-context)
+    - [DOM event handler context](#dom-event-handler-context)
+    - [Arrow functions to the rescue](#arrow-functions-to-the-rescue)
+    - [Borrowing methods](#borrowing-methods)
+    - [Chain constructor calls](#chain-constructor-calls)
+    - [Revisit \`\`this'' problem](#revisit-this-problem)
+    - [\`\`this'' vs globalThis](#this-vs-globalthis)
+    - [Symbols and privacy	Symbol](#symbols-and-privacysymbol)
+    - [Adding a description to symbols](#adding-a-description-to-symbols)
+    - [Symbol.toPrimitive](#symboltoprimitive)
+    - [Symbol.toStringTag](#symboltostringtag)
+    - [Symbol.isConcatSpreadable](#symbolisconcatspreadable)
   - [Asynchronous JavaScript](#asynchronous-javascript)
+    - [What does asynchronous mean?](#what-does-asynchronous-mean)
+    - [Asynchronous JavaScript](#asynchronous-javascript-1)
+    - [Problems with callbacks](#problems-with-callbacks)
+    - [What is an event loop?](#what-is-an-event-loop)
+    - [Promise states](#promise-states)
+    - [Promise instance methods](#promise-instance-methods)
+    - [Creating promises](#creating-promises)
+    - [Using promises with callback-based API](#using-promises-with-callback-based-api)
+    - [Promise specification](#promise-specification)
+    - [Promise vs thenable](#promise-vs-thenable)
+    - [then promise](#then-promise)
+    - [catch promise](#catch-promise)
+    - [finally promise](#finally-promise)
+    - [Making sense of promise chaining](#making-sense-of-promise-chaining)
+    - [Rejection handler in then vs catch](#rejection-handler-in-then-vs-catch)
+    - [Concurrent requests](#concurrent-requests)
+    - [Request timeout](#request-timeout)
+    - [async functions](#async-functions)
+    - [await keyword](#await-keyword)
+    - [Multiple await expressions](#multiple-await-expressions)
+    - [Error handling](#error-handling)
+    - [Returning vs awaiting promise](#returning-vs-awaiting-promise)
+    - [Awaiting non-promise value](#awaiting-non-promise-value)
+    - [Unnecessary use of the Promise Constructor](#unnecessary-use-of-the-promise-constructor)
+    - [Incorrect Error Handling](#incorrect-error-handling)
+    - [Converting promise rejection into fulfillment](#converting-promise-rejection-into-fulfillment)
+    - [Async executor function](#async-executor-function)
   - [Iterators and Generators](#iterators-and-generators)
+    - [Iterables](#iterables)
+    - [Iterators](#iterators)
+    - [Iterator prototype](#iterator-prototype)
+    - [Making custom iterable objects](#making-custom-iterable-objects)
+    - [Infinite sequence](#infinite-sequence)
+    - [Implementing iterators](#implementing-iterators)
+    - [Consuming values](#consuming-values)
+    - [Delegating to other iterators](#delegating-to-other-iterators)
+    - [Further reading](#further-reading)
 
 
 ## JIT Compiler
 - Crankshaft
 - Turbofan 
 
-## JavaScript Engine	
-![v8process](../../../attachments/v8-process.png)
+## JavaScript Engine
+
+- ![v8process](../../../attachments/v8-process.png)
 
 ## Execution contexts	
 
@@ -89,7 +141,6 @@
 
 - ___There is a third type of execution context that is created for the execution of code inside the eval¹⁸ function. Still, as the use of the eval function is discouraged due to security concerns, we will only discuss the types of execution context mentioned above.___
 
-
 ## Execution context phases	
 
 Execution contexts have following two phases:
@@ -111,6 +162,7 @@ as their value during this phase, while variables declared using `let` or consta
 
 
 #### Lexical and Variable environments
+
 - holds the key-value mappings of variables
 
 ##### Lexical environment
@@ -200,7 +252,6 @@ function introduce(name, age) {
 
 ### Function declarations inside blocks	
 
-
 - In ES2015, the ECMAScript specification defined ___standard and legacy rules___ for handling function declarations
 
 - the function declarations inside blocks are hoisted to the top of the block, converted into a function expression, and assigned to a variable declared with the let keyword.
@@ -239,7 +290,8 @@ var count = 5;
 
 ## Scope
 
-- scope of an identifier (variable, function, etc.) =  parts of the program where it can be accessed. 
+- scope of an identifier (variable, function, etc.) =  parts of the program where it can be accessed.
+
 - Modern JavaScript has four main types of scopes that are mentioned below:
   - Global scope
   - Function scope
@@ -281,6 +333,7 @@ var count = 5;
   ```
 
 ### Avoid polluting the global scope	
+
 ### Implicit globals	
 
 - not in strict mode
@@ -301,7 +354,6 @@ console.log("implicit global "+ result)
 - In strict mode, as expected, JavaScript throws an error
 
 
-
 ### HTML attributes
 
 - there is another way we get implicit global variables
@@ -316,9 +368,45 @@ console.log("implicit global "+ result)
 
 ### Shadowing declarations
 
-### Function parameter scope	
+- is possible at all levels
+
+### Function (parameter) scope	
+
+- It is a common misconception that the function parameters are defined in the function’s local scope or that the parameters behave as if they are defined in the function’s local scope, but that is not always true.
+- differentiate between “simple” and “non-simple” parameter lists
+ES2015+ features like Default parameters⁴⁰, Destructuring⁴¹, or Rest parameters⁴², = ___non-simple parameters___
+- If the parameters are simple, they behave like they are declared in the function’s local scope 
+- non-simple, they are declared in their own scope.
+- Non-simple parameter scope can be thought of as between the function scope and the scope containing the function
+- ![alt text](../../../attachments/js-fun-param-scope.png)
+
+
+```js
+function paramScope(arr=["initial array"], buff=()=>arr) {
+var arr = [1, 2, 3];
+console.log(arr); // [1, 2, 3]
+console.log(buff()); // ["initial array"]
+}
+
+paramScope();
+```
+
+- remove `var`, scopes collapse 
+
+```js 
+
+function paramScope(arr=["initial array"], buff=()=> arr) {
+  arr = [1, 2, 3];
+  console.log(arr); // [1, 2, 3]
+  console.log(buff()); // [1, 2, 3]
+}
+
+paramScope();
+```
 
 ### Function expression name scope	
+
+- 
 
 ### Block Scope	
 
@@ -374,63 +462,111 @@ console.log("implicit global "+ result)
 
 ## `this' keyword
 
-Function context	
-Global context	
-Constructor function context	
-Class context	
-DOM event handler context	
-Arrow functions to the rescue	
-Borrowing methods	
-Chain constructor calls	
-Revisit ``this'' problem	
-``this'' vs globalThis	
-Symbols and privacy	Symbol
-Adding a description to symbols	
-Symbol.toPrimitive	
-Symbol.toStringTag	
-Symbol.isConcatSpreadable	
+### Function context
+
+### Global context	
+
+### Constructor function context	
+
+### Class context	
+
+### DOM event handler context	
+
+### Arrow functions to the rescue	
+
+### Borrowing methods	
+
+### Chain constructor calls	
+
+### Revisit ``this'' problem	
+
+### ``this'' vs globalThis	
+
+### Symbols and privacy	Symbol
+
+### Adding a description to symbols	
+
+### Symbol.toPrimitive	
+
+### Symbol.toStringTag	
+
+### Symbol.isConcatSpreadable	
 
 ## Asynchronous JavaScript
 
-What does asynchronous mean?	
-Asynchronous JavaScript	
-Problems with callbacks	
-What is an event loop?	
-Promise states	
-Promise instance methods	
-Creating promises	
-Using promises with callback-based API	
-Promise specification	
-Promise vs thenable	
-then promise	
-catch promise	
-finally promise	
-Making sense of promise chaining	
-Rejection handler in then vs catch	
-Concurrent requests	
-Request timeout	
-async functions	
-await keyword	
-Multiple await expressions	
-Error handling	
-Returning vs awaiting promise	
-Awaiting non-promise value	
-Unnecessary use of the Promise Constructor	
-Incorrect Error Handling	
-Converting promise rejection into fulfillment	
-Async executor function	
+### What does asynchronous mean?	
+
+### Asynchronous JavaScript	
+
+### Problems with callbacks	
+
+### What is an event loop?	
+
+### Promise states	
+
+### Promise instance methods	
+
+### Creating promises	
+
+### Using promises with callback-based API	
+
+### Promise specification	
+
+### Promise vs thenable	
+
+### then promise	
+
+### catch promise	
+
+### finally promise	
+
+### Making sense of promise chaining	
+
+### Rejection handler in then vs catch	
+
+### Concurrent requests	
+
+### Request timeout	
+
+### async functions	
+
+### await keyword	
+
+### Multiple await expressions	
+
+### Error handling	
+
+### Returning vs awaiting promise	
+
+### Awaiting non-promise value	
+
+### Unnecessary use of the Promise Constructor	
+
+### Incorrect Error Handling	
+
+### Converting promise rejection into fulfillment	
+
+### Async executor function	
 
 ## Iterators and Generators
 
-Iterables	
-Iterators	
-Iterator prototype	
-Making custom iterable objects	
-Infinite sequence	
-Implementing iterators	
-Consuming values	
-Delegating to other iterators	
-Further reading	
+### Iterables
+
+### Iterators	
+
+### Iterator prototype	
+
+### Making custom iterable objects	
+
+### Infinite sequence	
+
+### Implementing iterators	
+
+### Consuming values	
+
+### Delegating to other iterators	
+
+### Further reading	
 
 for await…of loop	
 Debugging JavaScript
