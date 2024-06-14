@@ -1,3 +1,5 @@
+* 📄 [binary trees](binary trees.md)
 * 📄 [complexity](complexity.md)
 * 📄 [fucking algo](fucking algo.md)
+* 📄 [heap aka priority queue](heap aka priority queue.md)
 * 📄 [karatsuba.ipynb](karatsuba.ipynb)

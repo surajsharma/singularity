@@ -1,4 +1,4 @@
-* 📄 [Basic_Binary_Search.py](Basic_Binary_Search.py)
-* 📄 [Binary_Search_First_Bad_Version_LC278.py](Binary_Search_First_Bad_Version_LC278.py)
-* 📄 [Binary_Search_Reverse_Sorted_List.py](Binary_Search_Reverse_Sorted_List.py)
-* 📄 [Search_Insert_Position_LC35.py](Search_Insert_Position_LC35.py)
+* 📄 [LC-278-binary-search-first-bad-version.py](LC-278-binary-search-first-bad-version.py)
+* 📄 [LC-35-search-insert-position.py](LC-35-search-insert-position.py)
+* 📄 [basic-binary-search.py](basic-binary-search.py)
+* 📄 [binary-search-reverse-sorted-list.py](binary-search-reverse-sorted-list.py)
