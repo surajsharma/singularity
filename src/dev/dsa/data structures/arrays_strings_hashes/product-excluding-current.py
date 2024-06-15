@@ -40,7 +40,7 @@ def productExcludingIndex(arr):
 
 def peiSinglePass(arr):
 	newArr=[]
-	curr =1
+	curr = 1
 	for x in range(len(arr)):
 		ex = [arr[a] for a in range(len(arr)) if arr.index(arr[a]) != x]
 		newArr.append(product(ex)) 

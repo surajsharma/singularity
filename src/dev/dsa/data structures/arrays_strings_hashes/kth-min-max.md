@@ -1,7 +1,8 @@
+```python
+#!/usr/bin/env python3
 # find the kth minimum number in array
 
 A = [9, 1, 0, 8, 1, 0, 3, 2, 9, 5]
-
 
 def sortArray(a):
     if len(a) <= 1:
@@ -20,4 +21,4 @@ def kthMin(array, k):
     dedup = list(set(sorted))
     print(dedup[k], k, dedup)
 
-kthMin(A, 4)
+kthMin(A, 4)```

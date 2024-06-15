@@ -1,3 +1,7 @@
+- https://leetcode.com/problems/valid-parentheses/
+- O(n*n)
+
+```python
 #!/usr/bin/env python3
 
 def isValid(s) -> bool:
@@ -33,3 +37,4 @@ def isValid(s) -> bool:
 	return True
 	
 print(isValid("(())"))
+```

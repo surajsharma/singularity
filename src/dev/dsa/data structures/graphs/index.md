@@ -1,4 +1,4 @@
-* 📄 [bfs-queue.py](bfs-queue.py)
+* 📄 [bfs-queue.py](bfs-queue.md)
 * 📄 [dfs-recursive](dfs-recursive.md)
 * 📄 [dfs-recursive.py](dfs-recursive.py)
 * 📄 [dfs-stack](dfs-stack.md)

@@ -18,7 +18,6 @@ var twoSum = function (nums, target) {
 
 
 ```python
-
 class Solution(object):
     def twoSum(self, nums, target):
         """

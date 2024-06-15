@@ -1,5 +1,5 @@
+#!/usr/bin/env python3
 A = [1, 2, 3, 0, -1, -2, -3]
-
 
 def shiftNegs(A, i):
     if i >= len(A):

@@ -1,3 +1,4 @@
+```python
 #!/usr/bin/env python3
 
 def insertion_sort(arr):
@@ -13,3 +14,4 @@ def insertion_sort(arr):
 
 tosort = [3,1,2,4]	
 print('final:',insertion_sort(tosort))
+```

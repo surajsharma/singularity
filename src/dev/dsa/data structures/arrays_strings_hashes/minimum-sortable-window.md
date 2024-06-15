@@ -1,3 +1,4 @@
+```python
 #!/usr/bin/env python3
 
 def  smallestSortableRange(arr):
@@ -22,4 +23,4 @@ def  smallestSortableRange(arr):
 
 
 arr = [3,7,5,6,9]
-print(smallestSortableRange(arr))
+print(smallestSortableRange(arr))```

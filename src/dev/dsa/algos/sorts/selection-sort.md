@@ -1,3 +1,5 @@
+```python
+
 A = [99, 0, 23, 3, 45, 4, 56, 4, 5, 6, 5, 6, 7, 8, -1]
 
 def sortAnArray(A):
@@ -24,4 +26,4 @@ def ssort(nums):
     n.pop(n.index(min(n)))
   return sorted
 
-print(ssort(A))
+print(ssort(A))```

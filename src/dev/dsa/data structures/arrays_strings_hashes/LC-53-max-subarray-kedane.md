@@ -1,3 +1,6 @@
+- https://leetcode.com/problems/maximum-subarray/
+- O(n)
+
 ```js
 function maxContiguousSum (arr) {
 	let length = arr.length

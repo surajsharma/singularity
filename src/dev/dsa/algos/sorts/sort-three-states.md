@@ -1,3 +1,5 @@
+```python
+
 low = [0]
 mid = [1]
 high = [2]
@@ -23,3 +25,4 @@ def sortThreeStates(A, i,):
 A = [0, 2, 1, 2, 0, 0, 0, 1, 1, 2, 1, 2, 0, 1, 0, 1]
 
 sorted = sortThreeStates(A, len(A)-1)
+```

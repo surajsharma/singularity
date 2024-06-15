@@ -1,3 +1,8 @@
+- https://leetcode.com/problems/merge-two-sorted-lists/description/
+- O(n)
+
+```python
+
 # Definition for singly-linked list.
 # class ListNode:
 #     def __init__(self, val=0, next=None):
@@ -21,3 +26,4 @@ class Solution:
         if list2:
             dummyHead.next = list2
         return newHead.next
+```

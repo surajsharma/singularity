@@ -1,3 +1,5 @@
+```python
+
 A = [0, 1, 2, 0, 1]
 
 
@@ -13,3 +15,4 @@ def select_sort_rec(a):
 
 sorted = select_sort_rec(A)
 print(sorted)
+```

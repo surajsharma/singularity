@@ -1,3 +1,4 @@
+```python
 #!/usr/bin/env python3
 arr = [9,8,7,6,5,4,3,2,1]
 
@@ -18,4 +19,4 @@ def bs(arr, search):
 print(bs(arr,9))
 print(bs(arr,8))
 print(bs(arr,5))
-print(bs(arr,2))
+print(bs(arr,2))```

@@ -1,3 +1,5 @@
+```python
+
 import time
 
 def bubble_sort(array):
@@ -39,4 +41,4 @@ arr1 = [9,5,3,2,4,0,1,6,8,7,5,7,0.1]
 sorted = [1,2,3,4,5,6,7,8,9,0]
 print(bubble_sort(arr1), '\n', bubble_sort(sorted))
 print(bubble_sort2(arr1), '\n', bubble_sort2(sorted))
-print(bubble_sort_noswaps(arr1), '\n', bubble_sort_noswaps(sorted))
+print(bubble_sort_noswaps(arr1), '\n', bubble_sort_noswaps(sorted))```

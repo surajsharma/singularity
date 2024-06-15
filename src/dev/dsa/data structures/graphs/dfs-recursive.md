@@ -1,5 +1,4 @@
 ```js
-
 graph = {
     "a": ["b", "c"],
     "b": ["d"],
@@ -16,6 +15,24 @@ function dfs_print(graph, node) {
 }
 
 dfs_print(graph, 'a')
+```
+- python 
 
+```python
+#!/usr/bin/env python3
+graph = {
+    'a': ['b', 'c'],
+    'b': ['d'],
+    'c': ['e'],
+    'd': ['f'],
+    'e': [],
+    'f': []
+}
 
+def depthFirstPrint(graph, source):
+    print(source)
+    for neighbour in graph[source]:
+        depthFirstPrint(graph, neighbour)
+
+depthFirstPrint(graph, 'a')
 ```

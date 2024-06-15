@@ -1,4 +1,6 @@
-S = ["h", "e", "l", "l", "o"]
+```python
+#!/usr/bin/env python3
+S = "hello"
 
 
 def reverseString(S):
@@ -7,8 +9,9 @@ def reverseString(S):
     while l >= 0:
         rev.append(S[l])
         l -= 1
-    return rev
+    return "".join(rev)
 
 
 U = reverseString(S)
 print(U)
+```

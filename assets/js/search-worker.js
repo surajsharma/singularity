@@ -1,4 +1,5 @@
 //TODO: fetch and write stream
+//TODO: exclude "index" from results
 
 let dbName = "singularity-search";
 

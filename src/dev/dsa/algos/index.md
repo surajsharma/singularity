@@ -1,6 +1,6 @@
-* 📄 [LC-509-nthFibonacci](LC-509-nthFibonacci.md)
+* 📄 [LC-509-nthFibonacci](recursion/LC-509-nthFibonacci.md)
 * 📄 [LC-843-guessTheWord](LC-843-guessTheWord.md)
-* 📄 [bitwise.py](bitwise.py)
+* 📄 [bitwise.py](bitwise ops.md)
 * 📄 [common algos.ipynb](common algos.ipynb)
 * 📄 [reverse-number](reverse-number.md)
 * 📂 [searches](searches)
