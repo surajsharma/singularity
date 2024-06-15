@@ -2,4 +2,4 @@
 * 📂 [graphs](graphs)
 * 📂 [linked_lists](linked_lists)
 * 📂 [matrices](matrices)
-* 📂 [trees](trees)
+* 📂 [trees(indexing)](trees(indexing))

@@ -1,7 +1,5 @@
-* 📄 [bfs-queue.py](bfs-queue.md)
+* 📄 [bfs-queue](bfs-queue.md)
 * 📄 [dfs-recursive](dfs-recursive.md)
-* 📄 [dfs-recursive.py](dfs-recursive.py)
 * 📄 [dfs-stack](dfs-stack.md)
-* 📄 [dfs-stack.py](dfs-stack.py)
 * 📄 [graphs.py](graphs.py)
 * 📄 [has-path.py](has-path.py)
