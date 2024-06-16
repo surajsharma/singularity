@@ -2,6 +2,7 @@
 - O(log n)
 
 ```python
+
 def BinarySearch(target, sortedLyst):
     left = 0
     right = len(sortedLyst)-1
@@ -17,4 +18,5 @@ def BinarySearch(target, sortedLyst):
             
     return -1
 print(BinarySearch(11,[-2, -1,1,2,3,4,5,11,19,22,90]))
+
 ```

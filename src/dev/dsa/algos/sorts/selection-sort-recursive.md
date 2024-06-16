@@ -15,4 +15,5 @@ def select_sort_rec(a):
 
 sorted = select_sort_rec(A)
 print(sorted)
+
 ```

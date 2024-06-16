@@ -2,6 +2,7 @@
 - O(log n)
 
 ```python
+
 # The isBadVersion API is already defined for you.
 # def isBadVersion(version: int) -> bool:
 
@@ -21,4 +22,5 @@ class Solution:
             else:
                 left = mid + 1
         return lbv
+
 ```

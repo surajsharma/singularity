@@ -1,7 +1,9 @@
+- Find if two given strings are anagrams of each other
+- Complexity: o(n)
+
 ```python
+
 #!/usr/bin/env python3
-# Find if two given strings are anagrams of each other
-# Complexity: o(n)
 
 import time
 
@@ -17,9 +19,11 @@ def isAnagram(s,t):
 	ttable.sort();	
 	end = time.time()
 	return stable == ttable and len(s) == len(t), end-start
+
 ```
 
 ```python
+
 def anagram(s,t):
 	start = time.time()
 	if len(s) != len(t):
@@ -34,4 +38,5 @@ def anagram(s,t):
 #result = anagram("abcd", "cba")
 #print(result)
 result = anagram("acacbac", "bbbbbac")
-print(result)```
+print(result)
+```

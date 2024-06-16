@@ -26,4 +26,6 @@ def ssort(nums):
     n.pop(n.index(min(n)))
   return sorted
 
-print(ssort(A))```
+print(ssort(A))
+
+```

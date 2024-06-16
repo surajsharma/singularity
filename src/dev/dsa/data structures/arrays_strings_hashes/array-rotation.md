@@ -14,4 +14,6 @@ def rotate_array(a,k):
 		
 arr=[7,2,8,3,5]
 rotated = rotate_array(arr, 1)
-print('',arr,'\n=>\n',rotated)```
+print('',arr,'\n=>\n',rotated)
+
+```

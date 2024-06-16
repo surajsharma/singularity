@@ -25,4 +25,5 @@ def sortThreeStates(A, i,):
 A = [0, 2, 1, 2, 0, 0, 0, 1, 1, 2, 1, 2, 0, 1, 0, 1]
 
 sorted = sortThreeStates(A, len(A)-1)
+
 ```

@@ -2,7 +2,7 @@
 - LC 242 - https://leetcode.com/problems/valid-anagram/
 
 
-```js
+```javascript
 var isAnagram = function (s, t) {
 	if (t.length !== s.length) return false;
 	const counts = {};
@@ -21,7 +21,7 @@ var isAnagram = function (s, t) {
 ```
 
 
-```js
+```javascript
 const isAnagram218ms = (s, t) => {
 	s = s.split('').sort().join('')
 	t = t.split('').sort().join('')

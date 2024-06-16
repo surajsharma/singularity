@@ -54,4 +54,6 @@ print('Count Bits\t\t\t\t\t--->', b.count_bits(900000))
 
 print('Parity Check Brute Force\t--->', b.parity_naive(121))
 
-print('Parity Check Optimised\t\t--->', b.parity_op(1111))```
+print('Parity Check Optimised\t\t--->', b.parity_op(1111))
+
+```

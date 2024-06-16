@@ -2,6 +2,7 @@
 - O(n) worst case
 
 ```python
+
 #!/usr/bin/env python3
 
 def searchInsert(nums:[int], target: int) -> int:
@@ -16,4 +17,5 @@ def searchInsert(nums:[int], target: int) -> int:
 
 
 print(searchInsert([1,3,5,6],7))
+
 ```

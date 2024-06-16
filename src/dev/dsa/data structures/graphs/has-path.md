@@ -1,3 +1,5 @@
+```python
+
 #!/usr/bin/env python3
 
 g = {
@@ -29,3 +31,5 @@ def has_path(graph, src, dst):
 				
 print(has_path(g, 'f', 'k'))
 print(has_path(g, 'j', 'f'))
+
+```

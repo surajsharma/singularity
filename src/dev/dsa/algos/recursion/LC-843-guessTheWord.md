@@ -1,8 +1,9 @@
-//https://leetcode.com/problems/guess-the-word/description/
-
-//HARD
+- https://leetcode.com/problems/guess-the-word/description/
+- HARD
 
 ```javascript
+
+
 var findSecretWord = function (words, master) {
     const randomWord = words[Math.floor(Math.random() * words.length)]
     const response = master.guess(randomWord)
@@ -44,4 +45,6 @@ function isThereSimilerChars(word1, word2, similarityNumber) {
     }
 
     return preSimilarityNumber >= similarityNumber ? true : false
-}```
+}
+
+```
