@@ -1,6 +1,6 @@
-* 📄 [bitwise ops](bitwise ops.md)
 * 📂 [recursion](recursion)
-* 📄 [reverse-number](reverse-number.md)
 * 📂 [searches](searches)
 * 📂 [sorts](sorts)
+* 📄 [bitwise ops](bitwise ops.md)
+* 📄 [reverse-number](reverse-number.md)
 * 📄 [sum-of-digits](sum-of-digits.md)

@@ -1,3 +1,3 @@
-* 📄 [Cargo.toml](Cargo.toml)
 * 📂 [src](src)
+* 📄 [Cargo.toml](Cargo.toml)
 * 📄 [trpl](trpl.md)

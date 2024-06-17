@@ -1,6 +1,6 @@
-* 📄 [don't try this at home](don't try this at home.md)
 * 📂 [glimpses of divinity](glimpses of divinity)
 * 📂 [poems](poems)
 * 📂 [singularity](singularity)
 * 📂 [the program](the program)
 * 📂 [the underworld](the underworld)
+* 📄 [don't try this at home](don't try this at home.md)

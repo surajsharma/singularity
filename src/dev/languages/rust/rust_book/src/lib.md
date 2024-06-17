@@ -1,10 +1,4 @@
----
-layout: code
-lang: rust
----
-
-{% raw %} 
-
+```rust
 
 #![allow(dead_code, unused_variables, unused_imports)]
 
@@ -158,4 +152,4 @@ pub use crate::front_of_house::hosting;
 
 
 
-{% endraw %}
+```

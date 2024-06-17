@@ -1,5 +1,5 @@
 * 📂 [llmlogs](llmlogs)
-* 📄 [noself](noself.md)
 * 📂 [principles](principles)
 * 📂 [psych](psych)
 * 📂 [rituals](rituals)
+* 📄 [noself](noself.md)

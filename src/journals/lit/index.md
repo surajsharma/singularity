@@ -1,5 +1,5 @@
-* 📄 [German and Dutch words](German and Dutch words.md)
-* 📄 [Latin Phrases](Latin Phrases.md)
 * 📂 [books](books)
 * 📂 [poetry](poetry)
 * 📂 [quotes](quotes)
+* 📄 [German and Dutch words](German and Dutch words.md)
+* 📄 [Latin Phrases](Latin Phrases.md)

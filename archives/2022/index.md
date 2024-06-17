@@ -1,3 +1,3 @@
-* 📄 [done](done.md)
 * 📂 [journals](journals)
 * 📂 [projects](projects)
+* 📄 [done](done.md)

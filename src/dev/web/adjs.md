@@ -32,12 +32,13 @@
     - [Block Scope](#block-scope)
     - [Module Scope](#module-scope)
     - [Scope Chain](#scope-chain)
-    - [ToPrimitive](#toprimitive)
   - [Coercion](#coercion)
+    - [ToPrimitive](#toprimitive)
+      - [valueOf](#valueof)
     - [ToNumber](#tonumber)
     - [ToString](#tostring)
     - [ToBoolean](#toboolean)
-    - [Summary of abstract equality operator](#summary-of-abstract-equality-operator)
+    - [Summary of abstract equality operator	==](#summary-of-abstract-equality-operator)
     - [Addition Operator](#addition-operator)
     - [Relational operators](#relational-operators)
   - [Closures](#closures)
@@ -196,7 +197,7 @@ function introduce(name, age) {
  
 - simply a stack²² data structure that aids in the execution of the JavaScript code by keeping track of currently executing code 
   
-- __a collection of [execution contexts](#types-of-execution-contexts)__
+- __a collection of [execution contexts](#execution-contexts)__
 
 - Before executing any JavaScript code, a global execution context is created and pushed on the call stack. 
 
@@ -406,17 +407,67 @@ paramScope();
 
 ### Function expression name scope	
 
-- 
+```
+let fn = function namedFn() {
+  // code ...
+};
+```
+
+- In the code example above, the name of the function expression `namedFn` is only accessible inside the function body. 
+
+- As a result, some might incorrectly believe that the name of a named function expression is declared inside the function body, but that is not correct; the name is declared in a different scope. The following code proves this claim:
+
+```
+let fn = function namedFn() {
+  let namedFn = 123;
+  console.log(namedFn); // 123
+};
+```
+
+- The `nameFn` inside the function body is actually shadowing the name of the function expression.
 
 ### Block Scope	
+
+- scope that exists between blocks of code, such as if blocks or loops.
+
+- Prior to the addition of block-scoped `let` and `const` in the JavaScript language, variables defined with the `var` keyword in a block were accessible outside that block. 
+
+- This is because the variables declared with the `var` keyword have function scope.
+
 
 ### Module Scope	
 
 ### Scope Chain	
 
-### ToPrimitive	
+- Different scopes can be nested inside other scopes, creating a chain of scopes. This is known as a scope chain.
+
+- process of traversing the scope chain will continue until the global scope is reached and there are no other scopes to look into for the declaration
+
+- ![scope chain](../../../attachments/js-scope-chain.png)
+
 
 ## Coercion
+
+- conversion of one type of value into another type of value.
+- if the conversion of values is implicit, then it is coercion, whereas type conversion can either be __implicit__ or __explicit__.
+- an example of an explicit type ___conversion___
+- `const age = Number(ageStr)`
+- where the developer expressed no intention to convert, example of ___coercion___
+- `const result = "50" - 20; // 30`
+
+
+### ToPrimitive	
+
+#### valueOf 
+
+- default implementation of this method, like the toString method is useless
+
+-  returns the object on which this method is called.
+
+- It is meant to be overridden by other objects. 
+- Many built-in objects override this method. 
+- For example, for the Date objects, this method returns the number of milliseconds since midnight 01 January 1, 1970 UTC.
+- `new Date().valueOf(); // 1675526929129`
 
 ### ToNumber	
 
@@ -424,7 +475,7 @@ paramScope();
 
 ### ToBoolean	
 
-### Summary of abstract equality operator	
+### Summary of abstract equality operator	==
 
 ### Addition Operator	
 

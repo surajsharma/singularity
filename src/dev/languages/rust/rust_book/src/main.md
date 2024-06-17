@@ -1,9 +1,4 @@
----
-layout: code
-lang: rust
----
-
-{% raw %} 
+```rust
 
 #![allow(dead_code, unused_variables, unused_imports)]
 
@@ -415,5 +410,4 @@ fn ch_2(){
 	}
 }
 
-
-{% endraw %}
+```

@@ -9,21 +9,30 @@ if (!directoryPath) {
 
 function createFileIndices(dirPath) {
   const excludedDirs = ["target", ".", ".ipynb_checkpoints", ".out"];
-
   const excludedFiles = [".DS_Store", "index.md", "search.md", "search-worker.js"];
-
   const excludedExts = [".png", ".jpg", ".gif", ".lock"];
-
   let items;
 
   try {
     if (fs.lstatSync(dirPath).isDirectory()) {
-      items = fs.readdirSync(dirPath);
+      items = fs.readdirSync(dirPath).sort((a, b) => {
+        const isFileA = fs.statSync(path.join(dirPath, a)).isFile();
+        const isFileB = fs.statSync(path.join(dirPath, b)).isFile();
+
+        // Folders first
+        if (isFileA && !isFileB) {
+          return 1;
+        } else if (!isFileA && isFileB) {
+          return -1;
+        }
+
+        // Then sort alphabetically
+        return a.localeCompare(b);
+      });;
 
       items.forEach((item) => {
         const itemPath = path.join(dirPath, item);
         const itemStats = fs.lstatSync(itemPath);
-
         if (itemStats.isDirectory()) {
           const dirName = item.split("/")[item.split("/").length - 1];
           if (!excludedDirs.includes(dirName)) {
@@ -35,10 +44,8 @@ function createFileIndices(dirPath) {
           }
         } else {
           const fileName = item.split("/")[item.split("/").length - 1];
-
           if (!excludedFiles.includes(fileName)) {
             const fileStr = `* 📄 [${item.replace(".md", "")}](${fileName})\n`;
-
             if (!excludedExts.includes(path.extname(fileName))) {
               fs.appendFileSync(`${dirPath}/index.md`, fileStr, function (err) {
                 if (err) throw err;

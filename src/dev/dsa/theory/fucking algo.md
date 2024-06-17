@@ -1,6 +1,8 @@
 - https://labuladong.gitbook.io/algo-en/
 - https://labuladong.gitbook.io/algo-en/ii.-data-structure/framework-and-thoughts-about-learning-data-structure-and-algorithm
 
+- ![classification](../../../../attachments/data%20structures.png)
+
 # 1.Storage mode of data structure
    2️⃣ There are only two ways to store data structure: 
 >        1. array (sequential storage) 
