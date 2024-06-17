@@ -1,3 +1,5 @@
+* 📄 [chomsky hierarchy](chomsky hierarchy.md)
 * 📄 [hindley-milner](hindley-milner.md)
 * 📄 [ideas](ideas.md)
+* 📄 [optimizations](optimizations.md)
 * 📄 [resources](resources.md)
