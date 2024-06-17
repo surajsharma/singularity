@@ -1,7 +1,4 @@
----
-layout: code
-lang: ts
----
+```ts
 
 /*
 Conditional types are arguably the most unique feature to
@@ -30,3 +27,5 @@ const arrOrNot2: ArrayOrNot<typeof arr2> = arr2;
 const arrOrNot3: ArrayOrNot<typeof num> = num; 
 // Type is number
 
+
+```

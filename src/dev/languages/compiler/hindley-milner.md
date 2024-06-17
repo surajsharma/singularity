@@ -1,4 +1,5 @@
-```lua 
+{% raw %}
+```lua
 
 local HM_type = {}
 
@@ -65,3 +66,4 @@ print(HM_type.can_call(functions, functions)) -- prints "true"
 print(HM_type.can_call(functions, numbers_table)) -- prints "false"
 
 ```
+{% endraw %}

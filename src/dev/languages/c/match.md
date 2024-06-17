@@ -1,9 +1,4 @@
----
-layout: code
-lang: c
----
-
-{% raw %}
+```c
 
 // gcc -Wall match.c -o .out/match && .out/.match
 #include <stdio.h>
@@ -30,4 +25,5 @@ int main()
     else
         printf("no match found ");
 }
-{% endraw %}
+
+```
