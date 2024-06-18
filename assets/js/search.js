@@ -234,7 +234,7 @@ async function initSearchWorkerless() {
 
 async function fetchRemoteJson(loc, t = false) {
     try {
-        const resp = await fetch(loc);
+        const resp = await fetch(loc, { cache: "no-cache" });
         return t ? resp.text() : resp.json();
     } catch (error) {
         console.error('Error fetching search index:', error);
