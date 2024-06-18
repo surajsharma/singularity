@@ -135,6 +135,8 @@ async function syncIddb() {
 
         if (!version) return new Error("Could not load database metadata");
 
+        postMessage({ thread: { msg: 'version', count: 1, data: { version: version } } });
+
         const request = self.indexedDB.open(dbName, version);
 
         request.onupgradeneeded = (event) => {
@@ -154,6 +156,7 @@ async function syncIddb() {
             console.error("Error opening database:", event.target.error);
             return false;
         };
+
     } catch (error) {
         console.log("~ syncIddb ~ error:", error);
     }

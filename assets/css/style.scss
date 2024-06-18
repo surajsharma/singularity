@@ -196,6 +196,13 @@ blockquote {
   }
 }
 
+
+#search-version{
+  text-align: right;
+  font-size: 8px;
+  width: 100%;
+}
+
 #search-result{
   padding: 5px;
   margin: 5px;
@@ -254,4 +261,5 @@ blockquote {
       display: none;
     }    
   }
+
 }

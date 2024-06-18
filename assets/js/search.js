@@ -13,16 +13,17 @@ const searchArchives = document.getElementById('search-archives');
 const searchTitles = document.getElementById('search-titles');
 const searchStatus = document.getElementById('search-status');
 const searchResults = document.getElementById('search-results-container');
+const searchVersion = document.getElementById('search-version');
 
 function debouncedSearch(searchTerm) {
     searchInput.style.backgroundColor = "rgb(227, 255, 255)";
     searchStatus.style.color = "black";
 
     if (searchResults) searchResults.innerHTML = '';
-    searchStatus.innerText = 'Searching...'
+    says(searchStatus, 'Searching...');
 
     if (searchTerm == "") {
-        searchStatus.innerText = ``;
+        says(searchStatus, '');
         return;
     }
 
@@ -30,7 +31,7 @@ function debouncedSearch(searchTerm) {
         const search = titles ? index.search(`item:` + searchTerm) : index.search(searchTerm);
         displaySearch(search, searchTerm);
     } catch (error) {
-        searchStatus.innerText = "search error: " + error.message;
+        says(searchStatus, "search error: " + error.message);
         searchStatus.style.color = "red";
         searchInput.style.backgroundColor = "rgba(255, 227, 227, 0.5)";
     }
@@ -50,8 +51,18 @@ function getLink(item) {
 }
 
 function displaySearch(search, searchTerm) {
-    searchStatus.innerText = `Found ${search.length} results for ${searchTerm}`;
-    search.forEach((item, idx) => {
+    const sortedSearch = search.sort((a, b) => {
+        const hasIndexMD_a = a.ref.toLowerCase().endsWith("/index.md");
+        const hasIndexMD_b = b.ref.toLowerCase().endsWith("/index.md");
+
+        if (!hasIndexMD_a && hasIndexMD_b) return -1;
+        if (hasIndexMD_a && !hasIndexMD_b) return 1;
+
+        return a.ref.localeCompare(b.ref);
+    });
+
+    says(searchStatus, `Found ${search.length} results for ${searchTerm}`);
+    sortedSearch.forEach((item, idx) => {
         const searchResultDiv = document.createElement('div');
         searchResultDiv.id = `${archives ? 'search-result-arch' : 'search-result'}`;
 
@@ -65,7 +76,7 @@ function displaySearch(search, searchTerm) {
 
         const searchTitleIndexText = document.createElement('div');
         searchTitleIndexText.id = "text";
-        searchTitleIndexText.innerText = titleidx;
+        says(searchTitleIndexText, titleidx);
         searchTitleIndex.appendChild(searchTitleIndexText);
         searchResultDiv.appendChild(searchTitleIndex);
 
@@ -137,13 +148,13 @@ function handleToggle(event) {
             if (!archives) {
                 srcIndexData && loadSearchIndex(srcIndexData);
             }
-            searchStatus.innerText = '';
+            says(searchStatus, '');
             break;
         case 'search-titles':
             titles = target.checked;
             searchInput.value = '';
             searchResults.innerHTML = '';
-            searchStatus.innerText = '';
+            says(searchStatus, '');
             break;
         default:
             break;
@@ -172,28 +183,30 @@ function setupEventListeners() {
     }
 }
 
-async function initSearchWorker(corrupt = false, offline = false) {
+async function loadSearchIndices(corrupt = false, offline = false) {
     await new Promise(async (resolve, reject) => {
         if (typeof lunr == 'undefined') reject("Lunr not found!");
         try {
-            searchStatus.innerText = corrupt ?
-                'Search database damaged, healing...' : 'Loading...';
+            corrupt ?
+                says(searchStatus, 'Search database damaged, healing...') :
+                says(searchStatus, 'Loading...');
 
             await getIddb("src", indices, version);
-            await getIddb("arc", indices, version);
 
             indices.src.length && (srcIndexData = indices.src[0].value);
-            indices.arc.length && (archIndexData = indices.arc[0].value);
 
             // load main index
             indices.src && loadSearchIndex(srcIndexData);
 
             setupEventListeners();
-            searchStatus.innerText = '';
+            says(searchStatus, '');
+
+            await getIddb("arc", indices, version);
+            indices.arc.length && (archIndexData = indices.arc[0].value);
 
             resolve(0);
         } catch (error) {
-            console.log("~ initSearchWorker ~ error:", error);
+            console.log("~ loadSearchIndices ~ error:", error);
             reject(error);
         }
 
@@ -205,11 +218,10 @@ async function initSearchWorkerless() {
         return;
     } else {
         try {
-            searchStatus.innerText = 'Loading...';
-
+            says(searchStatus, 'Loading...');
             srcIndexData = await fetchRemoteJson(SRC);
             archIndexData = await fetchRemoteJson(ARCHIVES);
-            searchStatus.innerText = '';
+            says(searchStatus, '');
 
             // load main index
             loadSearchIndex(srcIndexData);
@@ -244,7 +256,7 @@ async function getIddb(key, ref, ver) {
                         // fault-tolerance: we're here because somehow 
                         // the local db wasn't there, the sync script has 
                         // recreated it, but page needs to register
-                        await initSearchWorker(true);
+                        await loadSearchIndices(true);
                     } else {
                         ref[key] = e.target.result;
                         resolve(ref);
@@ -261,22 +273,23 @@ async function getIddb(key, ref, ver) {
     });
 }
 
+function says(el, txt) {
+    el.innerText = txt;
+}
+
 if (support) {
     document.addEventListener('thread_sync', async (event) => {
-        // thread_sync legend: 
-        // -1) offline 
-        // 0) no db 
-        // 1) db/os created 
-        // 2) release -> ver created 
-        // 3) arc 
-        // 4) src
-        if (thread_sync.count == 4) {
-            await initSearchWorker();
-        }
-
-        if (thread_sync.count == -1) {
-            console.log("sync failed, trying offline...");
-            await initSearchWorker(false, true);
+        switch (thread_sync.count) {
+            case 1:
+                says(searchVersion, `search db version: 0.0.${thread_sync.data.version}`);
+                break;
+            case 4:
+                await loadSearchIndices();
+                break;
+            case -1:
+                await loadSearchIndices(false, true);
+                break;
+            default: break;
         }
     });
 } else {

@@ -1,6 +1,6 @@
 let version, achecksum, schecksum;
 
-const thread_sync = { msg: null, count: 0 };
+const thread_sync = { msg: null, count: 0, data: {} };
 const threadSyncEvent = new CustomEvent('thread_sync', {
     detail: { ...thread_sync },
     bubbles: true,
@@ -21,6 +21,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
             if (ev.data.thread.count) {
                 thread_sync.msg = ev.data.thread.msg;
                 thread_sync.count = ev.data.thread.count;
+                thread_sync.data = ev.data.thread.data;
                 document.dispatchEvent(threadSyncEvent);
             }
         }
