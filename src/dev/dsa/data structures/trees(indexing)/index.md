@@ -2,4 +2,5 @@
 * 📄 [bst-closest.py](bst-closest.py)
 * 📄 [bst-node-depths.py](bst-node-depths.py)
 * 📄 [closest-value-in-bst](closest-value-in-bst.md)
+* 📄 [LC-110-balanced-binary-tree](LC-110-balanced-binary-tree.md)
 * 📄 [LC-703-kth-largest-element-in-a-stream](LC-703-kth-largest-element-in-a-stream.md)
