@@ -7,6 +7,9 @@
     const depth = u.pathname.split("/").filter((d) => d != "");
 
     depth.forEach((n, index) => {
+
+        if (n == "index.html") return;
+
         const navitem = document.createElement("div");
         const link = document.createElement("a");
         link.innerText = decodeURIComponent(

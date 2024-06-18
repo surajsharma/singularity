@@ -39,6 +39,7 @@
     - [ToString](#tostring)
     - [ToBoolean](#toboolean)
     - [Summary of abstract equality operator	==](#summary-of-abstract-equality-operator)
+      - [rules of ==](#rules-of-)
     - [Addition Operator](#addition-operator)
     - [Relational operators](#relational-operators)
   - [Closures](#closures)
@@ -475,11 +476,74 @@ let fn = function namedFn() {
 
 ### ToBoolean	
 
+- simply a lookup of whether a value is a falsy
+- falsy values are:
+  - null
+  - undefined
+  - NaN
+  - 0,-0,0n
+  - false 
+  - ""
+
 ### Summary of abstract equality operator	==
+
+- This operator is infamous because many resources online
+
+- JavaScript developers, in general, discourage its use because of its coercive behavior.
+
+#### rules of ==
+
+1. If the values being compared are of the same type, then perform the strict equality comparison⁶⁶ ===
+
+2. If one value is undefined or null and the other value is also undefined or null, return true `console.log(null === undefined); // false` ___so only check for either null or undf___
+
+3. If one or both values are objects, they are converted into primitive types, preferring the number type
+
+4. If both values are primitives but are of different types, convert the types until they match, preferring the number type for coercing values
+
+
+```js 
+
+const someVal = {};
+
+if (someVal == true) {
+  console.log("true");
+} else {
+  console.log("false");
+}
+
+// else 
+
+// 1. rule 4: someVal == 1
+// 2. rule 4: "[obj Obj]" == 1
+// 3. rule 4: "NaN" == 1
+// 4. rule 4: NaN == 1
+
+
+```
+
+- __NaN value is not equal to any other value, including itself.__
+
+
+```js 
+
+const someVal = {};
+
+if (someVal) {
+  console.log("true");
+} else {
+  console.log("false");
+}
+
+// true
+
+```
 
 ### Addition Operator	
 
 ### Relational operators	
+
+
 
 ## Closures
 

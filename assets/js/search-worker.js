@@ -1,5 +1,4 @@
 //TODO: fetch and write stream
-//TODO: exclude "index" from results
 
 let dbName = "singularity-search";
 
@@ -15,6 +14,7 @@ async function fetchRemoteJson(loc, t = false) {
         return t ? resp.text() : resp.json();
     } catch (error) {
         console.log("~ fetchRemoteJson ~ error:", error);
+        postMessage({ thread: { msg: 'offline', count: -1 } });
     }
 }
 

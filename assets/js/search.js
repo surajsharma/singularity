@@ -172,7 +172,7 @@ function setupEventListeners() {
     }
 }
 
-async function initSearchWorker(corrupt = false) {
+async function initSearchWorker(corrupt = false, offline = false) {
     await new Promise(async (resolve, reject) => {
         if (typeof lunr == 'undefined') reject("Lunr not found!");
         try {
@@ -264,9 +264,19 @@ async function getIddb(key, ref, ver) {
 if (support) {
     document.addEventListener('thread_sync', async (event) => {
         // thread_sync legend: 
-        // 0) no db 1) db/os created 2) release -> ver created 3) arc 4) src
+        // -1) offline 
+        // 0) no db 
+        // 1) db/os created 
+        // 2) release -> ver created 
+        // 3) arc 
+        // 4) src
         if (thread_sync.count == 4) {
             await initSearchWorker();
+        }
+
+        if (thread_sync.count == -1) {
+            console.log("sync failed, trying offline...");
+            await initSearchWorker(false, true);
         }
     });
 } else {
