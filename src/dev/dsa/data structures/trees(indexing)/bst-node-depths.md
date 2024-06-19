@@ -1,3 +1,4 @@
+```python
 #!/usr/bin/env python3
 
 import queue
@@ -38,4 +39,4 @@ class BinaryTree:
 		self.value = value
 		self.left = None
 		self.right = None
-		
+```

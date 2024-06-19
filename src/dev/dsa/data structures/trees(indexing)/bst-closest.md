@@ -1,3 +1,4 @@
+```python
 class BST:
     def __init__(self, value):
         self.value = value
@@ -64,3 +65,4 @@ test_tree = BST(100).insert(5).insert(15).insert(5).insert(2).insert(1).insert(2
 
 closest_val = findClosestValueInBst(test_tree, 20)
 print(str(closest_val) + " is the Closest Value")
+```

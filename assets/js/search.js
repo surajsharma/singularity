@@ -1,3 +1,5 @@
+//TODO: android chrome cache invalidation
+
 let index = null;
 let srcIndexData = null;
 let archIndexData = null;
@@ -249,7 +251,7 @@ async function getIddb(key, ref, ver) {
                 const db = event.target.result;
                 const tx = db.transaction("release", "readonly")
                 const store = tx.objectStore("release");
-                const query = await store.getAll(key);
+                const query = store.getAll(key);
 
                 query.onsuccess = async (e) => {
                     if (e.target.result.length < 1) {

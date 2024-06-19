@@ -1,3 +1,4 @@
+```python
 #!/usr/bin/env python3
 
 m = [[1,2],[3,4],[5,6]]
@@ -20,3 +21,4 @@ print("\n\n--")
 
 for row in rez:
 	print(row)
+```

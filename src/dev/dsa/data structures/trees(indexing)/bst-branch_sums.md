@@ -1,4 +1,4 @@
-
+```python
 # This is the class of the input root. Do not edit it.
 class BinaryTree:
     def __init__(self, value):
@@ -28,3 +28,4 @@ def branchSumsHelper(root, runningSum, sums):
         runningSum += root.right.value
         branchSumsHelper(root.right, runningSum, sums)
         runningSum -= root.right.value
+```

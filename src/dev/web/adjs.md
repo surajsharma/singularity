@@ -40,8 +40,8 @@
     - [ToBoolean](#toboolean)
     - [Summary of abstract equality operator	==](#summary-of-abstract-equality-operator)
       - [rules of ==](#rules-of-)
-    - [Addition Operator](#addition-operator)
     - [Relational operators](#relational-operators)
+      - [Operator Precedence](#operator-precedence)
   - [Closures](#closures)
     - [What is a closure?](#what-is-a-closure)
     - [How do closures work?](#how-do-closures-work)
@@ -49,13 +49,13 @@
     - [What causes this problem?](#what-causes-this-problem)
     - [How to resolve this problem?](#how-to-resolve-this-problem)
     - [How are objects linked?	Prototypes](#how-are-objects-linkedprototypes)
-    - [The \`\`prototype'' property](#the-prototype-property)
+    - [The `prototype` property](#the-prototype-property)
     - [Getting prototype of any object](#getting-prototype-of-any-object)
-    - [Object.prototype - parent of all objects](#objectprototype---parent-of-all-objects)
-    - [\`\`Function'' function](#function-function)
-    - [Problems with __proto__](#problems-with-proto)
-    - [Object.create method](#objectcreate-method)
-    - [Null prototype object](#null-prototype-object)
+    - [`Object.prototype` - parent of all objects](#objectprototype---parent-of-all-objects)
+    - [`Function` function](#function-function)
+    - [Problems with `__proto__`](#problems-with-__proto__)
+    - [`Object.create` method](#objectcreate-method)
+    - [`Null` prototype object](#null-prototype-object)
     - [ES2015 classes](#es2015-classes)
   - [\`this' keyword](#this-keyword)
     - [Function context](#function-context)
@@ -202,7 +202,7 @@ function introduce(name, age) {
 
 - Before executing any JavaScript code, a global execution context is created and pushed on the call stack. 
 
-- label “global” is not important Google Chrome browser shows “(anonymous)” instead of “global.” 
+- label "global" is not important Google Chrome browser shows "(anonymous)" instead of "global." 
 
 - After pushing the global execution context on the call stack, any function calls encountered during the execution of the code will lead to more entries in the call stack. 
 
@@ -218,7 +218,7 @@ function introduce(name, age) {
 
 - JavaScript engines may allocate most values on the heap but could use the stack for optimization and store temporary values that might not last longer than a function call.
 
-- different JavaScript engines may handle memory differently, and “primitives in javaScript simply go on the stack” is a misconception.
+- different JavaScript engines may handle memory differently, and "primitives in javaScript simply go on the stack" is a misconception.
 
 #### Automatic garbage collection	
 
@@ -228,7 +228,7 @@ function introduce(name, age) {
 
 - Currently, modern JavaScript engines use a Mark-and-sweep algorithm[²⁸](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Memory_Management#mark-and-sweep_algorithm).
 
-- This algorithm determines which blocks of memory are “unreachable”
+- This algorithm determines which blocks of memory are "unreachable"
 
 - This algorithm is an improvement over the reference counting algorithm[²⁹](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Memory_Management#reference-counting_garbage_collection), which has its limitations.
 
@@ -236,15 +236,15 @@ function introduce(name, age) {
 
 ### ``var'' declarations	
 
-- variables and functions can be accessed before their actual declaration, and the term used to describe this in JavaScript is “Hoisting.”
+- variables and functions can be accessed before their actual declaration, and the term used to describe this in JavaScript is "Hoisting."
   
-- term “hoisting” is mostly associated with function declarations and variables declared with the
+- term "hoisting" is mostly associated with function declarations and variables declared with the
 
-- “var” keyword
+- "var" keyword
 
 ### Function declarations
 
-- Function declarations, just like variables declared using the “var” keyword, are also hoisted.
+- Function declarations, just like variables declared using the "var" keyword, are also hoisted.
 
 - the function’s name is registered as a variable in the scope containing the function declaration, and it is initialized with the function itself.
 
@@ -265,7 +265,7 @@ function introduce(name, age) {
 ### Class declarations	
 
 - if class declarations are hoisted, then why can’t we access them before their declaration? 
-- The answer to this question is the “Temporal Dead Zone (TDZ)”
+- The answer to this question is the "Temporal Dead Zone (TDZ)"
 
 ### Temporal Dead Zone (TDZ)	
 
@@ -288,7 +288,7 @@ var count = 5;
 - The function and class expression are not hoisted
 - a misconception about the concept of hoisting, and that is that the JavaScript engine moves the hoisted declarations to the top of the file. Although this makes it easy to understand the concept of hoisting, that is not the reality
 - In the case of `var` variables, they are assigned the value of `undefined` until their declaration is executed. 
-- In the case of blockscoped variables, they are marked as `“uninitialized”`.
+- In the case of blockscoped variables, they are marked as `"uninitialized"`.
 
 ## Scope
 
@@ -305,7 +305,7 @@ var count = 5;
  - determined at compile time
  - before the step-by-step execution
  - scopes can be nested within other scopes, with each nested scope having access to the outer or parent scope.
- - Lexical scope is also known as “static” scope. An alternative type of scope is Dynamic scope[³⁶](https://en.wikipedia.org/wiki/Scope_(computer_science)#Lexical_scope_vs._dynamic_scope).
+ - Lexical scope is also known as "static" scope. An alternative type of scope is Dynamic scope[³⁶](https://en.wikipedia.org/wiki/Scope_(computer_science)#Lexical_scope_vs._dynamic_scope).
  - In JavaScript, the global scope is the browser window or, more accurately, a browser window tab. exposed to the JavaScript code using the `window` object.
 
   ```javascript
@@ -375,7 +375,7 @@ console.log("implicit global "+ result)
 ### Function (parameter) scope	
 
 - It is a common misconception that the function parameters are defined in the function’s local scope or that the parameters behave as if they are defined in the function’s local scope, but that is not always true.
-- differentiate between “simple” and “non-simple” parameter lists
+- differentiate between "simple" and "non-simple" parameter lists
 ES2015+ features like Default parameters⁴⁰, Destructuring⁴¹, or Rest parameters⁴², = ___non-simple parameters___
 - If the parameters are simple, they behave like they are declared in the function’s local scope 
 - non-simple, they are declared in their own scope.
@@ -472,18 +472,38 @@ let fn = function namedFn() {
 
 ### ToNumber	
 
+- "" -> 0
+- "0" -> 0
+- "-0" -> -0
+- " 123 " -> 123
+- "45" -> 45
+- "abc" -> NaN
+- false -> 0
+- true -> 1
+- undefined -> NaN
+- null -> 0
+
 ### ToString	
+
+- null -> "null"
+- undefined -> "undefined"
+- 0 -> "0"
+- -0 -> "0"
+- true -> "true"
+- false -> "false"
+- 123 -> "123"
+- NaN -> "NaN"
 
 ### ToBoolean	
 
 - simply a lookup of whether a value is a falsy
-- falsy values are:
-  - null
-  - undefined
-  - NaN
-  - 0,-0,0n
-  - false 
-  - ""
+- ___falsy values are___:
+  - `null`
+  - `undefined`
+  - `NaN`
+  - `0`,`-0`,`0n`
+  - `false` 
+  - `""`
 
 ### Summary of abstract equality operator	==
 
@@ -539,41 +559,90 @@ if (someVal) {
 
 ```
 
-### Addition Operator	
-
 ### Relational operators	
+
+```js
+
+    console.log([13] == 13);
+    // single element coerced -> "13", true
+
+```
+
+```js
+
+    console.log([1] < [2]);
+    // true
+
+```
+
+```js 
+
+    console.log([undefined] == 0);
+    //"" == 0 -> 0 = 0 -> true
+
+```
+
+#### [Operator Precedence](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Operator_precedence#table)
+
+```js
+
+    console.log([] == ![]);
+    // Not operator takes precedence over ==
+    // 1) [] -> true -> ! -> false
+    // 2) [] == false -> [] == 0 -> "" == 0
+    // 3) 0 == 0 = true
+
+
+```
+
+```js 
+
+    console.log(!!"true" == !!"false");
+    //!!+string == !!+string
+    //!!true == !!true -> true
+
+```
+
 
 
 
 ## Closures
 
-### What is a closure?	
+### What is a closure?
 
-### How do closures work?	
+- ___closure: a function along with a reference to the environment in which it is created.___
 
-### How are different scopes linked?	
+- Closures allow a nested function to access the declarations inside the containing functio
 
-### What causes this problem?	
+### How do closures work?
 
-### How to resolve this problem?	
+- once again briefly go over how the [lexical scope](#lexical-scope) is resolved.
+
+### How are different scopes linked?
+
+- At this point, we know how the scope is resolved, and the different scopes are linked together, forming a chain that is known as the __"scope chain."__ But have you wondered how different scopes are linked?
+
+### What causes this problem?
+
+### How to resolve this problem?
 
 ### How are objects linked?	Prototypes
 
-### The ``prototype'' property	
+### The `prototype` property
 
-### Getting prototype of any object	
+### Getting prototype of any object
 
-### Object.prototype - parent of all objects	
+### `Object.prototype` - parent of all objects
 
-### ``Function'' function	
+### `Function` function
 
-### Problems with __proto__	
+### Problems with `__proto__`
 
-### Object.create method	
+### `Object.create` method
 
-### Null prototype object	
+### `Null` prototype object	
 
-### ES2015 classes	
+### ES2015 classes
 
 ## `this' keyword
 
