@@ -4,4 +4,3 @@
 * 📂 [graphics](graphics)
 * 📂 [lisp&co](lisp&co)
 * 📂 [rust](rust)
-* 📂 [ts](ts)
