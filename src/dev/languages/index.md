@@ -2,7 +2,6 @@
 * 📂 [c](c)
 * 📂 [compiler](compiler)
 * 📂 [graphics](graphics)
-* 📂 [haskell](haskell)
+* 📂 [lisp&co](lisp&co)
 * 📂 [rust](rust)
-* 📂 [slip](slip)
 * 📂 [ts](ts)
