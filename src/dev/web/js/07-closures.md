@@ -29,7 +29,7 @@
 
 ### How are different scopes linked?
 
-- At this point, we know how the scope is resolved, and the different scopes are linked together, forming a chain that is known as the __"scope chain."__ But have you wondered how different scopes are linked?
+- At this point, we know how the scope is resolved, and the different scopes are linked together, forming a chain that is known as the [__"scope chain."__](05-scope#scope-chain) But have you wondered how different scopes are linked?
 
 ### What causes this problem?
 
