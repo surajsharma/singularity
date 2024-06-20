@@ -5,3 +5,4 @@
 * 📄 [LC-110-balanced-binary-tree](LC-110-balanced-binary-tree.md)
 * 📄 [LC-543-diameter-binary-tree](LC-543-diameter-binary-tree.md)
 * 📄 [LC-703-kth-largest-element-in-a-stream](LC-703-kth-largest-element-in-a-stream.md)
+* 📄 [LC-94-binary-tree-inorder-traversal](LC-94-binary-tree-inorder-traversal.md)
