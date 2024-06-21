@@ -3,6 +3,7 @@
 * 📄 [find-avg-of-subarray](find-avg-of-subarray.md)
 * 📄 [kth-min-max](kth-min-max.md)
 * 📄 [LC-1-two-sum](LC-1-two-sum.md)
+* 📄 [LC-121-best-time-to-buy-and-sell-stock](LC-121-best-time-to-buy-and-sell-stock.md)
 * 📄 [LC-125-valid-palindrome 2](LC-125-valid-palindrome 2.md)
 * 📄 [LC-125-valid-palindrome](LC-125-valid-palindrome.md)
 * 📄 [LC-13-roman-to-int](LC-13-roman-to-int.md)
