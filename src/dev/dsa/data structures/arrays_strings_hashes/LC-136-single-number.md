@@ -31,3 +31,19 @@
 
     return result;
 ```
+
+
+```rust 
+
+impl Solution {
+    pub fn single_number(nums: Vec<i32>) -> i32 {
+    let mut result = 0;
+    for num in nums.iter() {
+        // Use bitwise XOR for efficient single number detection
+        result ^= *num;
+    }
+    result        
+    }
+}
+
+```

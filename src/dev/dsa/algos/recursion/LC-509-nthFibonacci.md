@@ -44,3 +44,82 @@ class Solution:
         return f[n]
 
 ```
+
+
+```py
+
+# fib memoized
+
+def _fib(n, memo):
+    
+    if n == 1:
+        return 1
+
+    if n == 0:
+        return 0
+
+    if n in memo:
+        return memo[n]
+
+    memo[n] = _fib(n-1, memo) + _fib(n-2, memo)
+    return memo[n]
+
+print(_fib(9,{}))
+print(_fib(90,{}))
+print(_fib(2,{}))
+print(_fib(4,{}))
+
+```
+
+
+```py
+
+# tribonacci
+
+def trib(n):
+    return _trib(n, {})
+
+def _trib(n, memo):
+    if n == 0:
+        return 0
+
+    if n == 1:
+        return 1
+
+    if n == 2:
+        return 1
+
+    if n in memo:
+        return memo[n]
+
+    memo[n] = _trib(n-1, memo) + _trib(n-2, memo) + _trib(n-3, memo)
+    return memo[n]
+
+print(trib(2), trib(3), trib(4), trib(10))
+
+
+```
+
+
+```py 
+
+# tribonacci with lists
+
+def fib(n):
+    f = [0,1,2]
+#     take the first two fibs so we have f[0] and f[1]
+
+    for i in range(3,n+2):
+#         loop from f[2] to f[n+1]
+
+        f.append(f[i-1]+f[i-2]+f[i-3])
+#     append to the lost the sum of last two f
+
+    return f[n]
+# return the sum at n
+
+# 0, 1, 1, 2, 3
+print(trib(2), trib(3), trib(4), trib(10))
+
+
+```
