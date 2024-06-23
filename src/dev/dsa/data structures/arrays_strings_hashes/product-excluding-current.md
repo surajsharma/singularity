@@ -1,3 +1,5 @@
+```py
+
 #!/usr/bin/env python3
 
 arr  = [1,2,3,4,5]
@@ -52,3 +54,5 @@ def peiSinglePass(arr):
 #print(result, control)
 	
 print(peiSinglePass(arr2))
+
+```

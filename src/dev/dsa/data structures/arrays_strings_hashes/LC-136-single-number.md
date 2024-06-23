@@ -1,7 +1,7 @@
-- https://leetcode.com/problems/single-number/
+# 136. [Single Number](https://leetcode.com/problems/single-number/)
 
-
-# Naive O(n)
+## O(n)
+-  Naive 
 
 ```javascript
     let counter = {};
@@ -20,7 +20,7 @@
 ```
 
 
-# XOR O(n)
+- XOR
 
 ```javascript
     let result = 0;

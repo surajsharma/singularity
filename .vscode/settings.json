@@ -27,6 +27,6 @@
   "pasteImage.showFilePathConfirmInputBox": true,
   "prettier.singleQuote": false,
   "editor.fontSize": 16,
-  "GitHooks.hooksDirectory": "c:\\Users\\suraj\\ez\\inversepolarity\\portfolios\\singularity\\.git\\hooks",
+  "GitHooks.hooksDirectory": "\\\\wsl.localhost\\Ubuntu\\home\\suraj\\singularity\\.git\\hooks",
   "C_Cpp.errorSquiggles": "disabled"
 }
