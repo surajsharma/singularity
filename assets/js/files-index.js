@@ -9,7 +9,7 @@ if (!directoryPath) {
 
 function createFileIndices(dirPath) {
   const excludedDirs = ["target", ".", ".ipynb_checkpoints", ".out"];
-  const excludedFiles = [".DS_Store", "index.md", "search.html", "search-worker.js"];
+  const excludedFiles = [".DS_Store", "index.md", "search.md", "search-worker.js"];
   const excludedExts = [".png", ".jpg", ".gif", ".lock"];
   let items;
 
