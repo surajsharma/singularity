@@ -2,3 +2,4 @@
 * 📂 [data structures](data structures)
 * 📂 [patterns](patterns)
 * 📂 [theory](theory)
+* 📄 [resources](resources.md)
