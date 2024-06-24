@@ -28,5 +28,9 @@
   "prettier.singleQuote": false,
   "editor.fontSize": 16,
   "GitHooks.hooksDirectory": "\\\\wsl.localhost\\Ubuntu\\home\\suraj\\singularity\\.git\\hooks",
-  "C_Cpp.errorSquiggles": "disabled"
+  "C_Cpp.errorSquiggles": "disabled",
+  "cSpell.enableFiletypes": [
+    "markdown_latex_combined"
+  ],
+  "cSpell.language": "en-GB"
 }

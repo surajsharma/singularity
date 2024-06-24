@@ -132,7 +132,7 @@ administering on you all is slowly draining out the toxicity – like I drained 
 
 Mom's mastectomy wounds each morning – you will get better because I will not give up until you 
 
-are better. Meanwhile, all this talk of “changing” and expecting each other to change is crap, 
+are better. Meanwhile, all this talk of "changing” and expecting each other to change is crap, 
 
 nobody changes, but everyone does evolve. That has always been the one message hasn't it, 
 
@@ -181,7 +181,7 @@ So, because the readily available lens of an antagonistic and irksome tale of re
 
 The story so far goes thus, it appears that I, just a poor bloke with a chip on his shoulder, attempted something rather foolish to end up under the ever watchful eye of the big brother, got highlighted, and ended up at the mercy of obsessing entities. 
 
-Yes, so I took a healthy dose of narcissistic abuse, and am forever doomed to “walk on eggshells”, but lately, I've come to realise that even narcissism is just a label we give to transitory stuff that has happened all the time on the planet.
+Yes, so I took a healthy dose of narcissistic abuse, and am forever doomed to "walk on eggshells”, but lately, I've come to realise that even narcissism is just a label we give to transitory stuff that has happened all the time on the planet.
 
 So, here then, is where I pick up a new lens, instead of seeing the society as dumb and blind, I choose to see myself as the fool who didn't know better, and society as a mechanism in the service of my enlightenment.
 
@@ -294,9 +294,9 @@ Disenfranchisement leads to privacy, the (highly ineffective) clamour for privac
 
 Thus, not a fundamental right, albeit an alibi for not being democratic enough.
 
-But that's not all, this feedback loop is also insidious for privacy also leads to disenfranchisement, for to retreat into your cocoon can only beget disinterest and dishonesty. A perfect excuse for passing the blame on “the they”, while maintaining one's own openness and innocence, without realising how one is an implicit part of the very system one blames with impunity.
+But that's not all, this feedback loop is also insidious for privacy also leads to disenfranchisement, for to retreat into your cocoon can only beget disinterest and dishonesty. A perfect excuse for passing the blame on "the they”, while maintaining one's own openness and innocence, without realising how one is an implicit part of the very system one blames with impunity.
 
-To loose all privacy, then, is an act of rebellion against this complacent system and a call to perceive the present, difficult times as a  perpetual “beginning of the future” rather than an endless “end of history”.  But the road is of course, fraught with dangers for anyone who wants to try this.
+To loose all privacy, then, is an act of rebellion against this complacent system and a call to perceive the present, difficult times as a  perpetual "beginning of the future” rather than an endless "end of history”.  But the road is of course, fraught with dangers for anyone who wants to try this.
 
 Part of the problem statement involves retaining sovereign control over one's decision making faculties in the face of blatant attempts at brainwashing. The goal is to wake up to the possibility of an ethereal medium where humanity exists as a reflection of itself, without ignoring the fact most people are brainwashed and conditioned by decades of media consumption anyway.
 
@@ -418,7 +418,7 @@ Tracy, you're expecting water to be a soft drink? Just water, not even sparkling
 
 - I have a lot of bad experience behind me, which guides me when it comes to your flavour of Linux. 
 
-- now, i am not blind to your “need”, indeed nobody is, but it is as fake as the rest of you, can you accept it? if you could, i could feel respected. so let me keep adding to the list of reasons not to meet here. 
+- now, i am not blind to your "need”, indeed nobody is, but it is as fake as the rest of you, can you accept it? if you could, i could feel respected. so let me keep adding to the list of reasons not to meet here. 
 
 - I don't see you respecting anything but the belt on your hedonic treadmill and thats just not who i am, a transcendence that needs violence to reach it can never be worth the effort. also, 
 
@@ -583,7 +583,7 @@ I (enticed someone) to make the machine a fuller extension of myself and my self
 
 👁‍🗨 1.2 Avoid the objects of the senses like poison.
 
- 👁‍🗨 1.11 If one thinks of oneself as free, one is free, and if one thinks of oneself as bound, one is bound. Here this saying is true “thinking makes it so”
+ 👁‍🗨 1.11 If one thinks of oneself as free, one is free, and if one thinks of oneself as bound, one is bound. Here this saying is true "thinking makes it so”
 
   👁‍🗨 2.10 All this, which has originated out of me, is resolved back into me too, like a jug back into clay, a wave into water, and a gold bracelet into gold.
 
@@ -714,7 +714,7 @@ God knows it wouldn't be a day sooner.
 
 its true
 
-i'm 40% full of it and 40% “nobody here”, but beyond this symmetry is the 20% that sustains me, that's how realised i am, which is about as much as anyone normal gets, albeit not this early in life. so what to do with my remaining days on the planet.
+i'm 40% full of it and 40% "nobody here”, but beyond this symmetry is the 20% that sustains me, that's how realised i am, which is about as much as anyone normal gets, albeit not this early in life. so what to do with my remaining days on the planet.
 
 
 
@@ -723,13 +723,13 @@ i could, indeed i should focus on the 20%, not try to grow it, but kind of grow 
 
 
 → full of it when i regret or feel sorry ←————————L—O—O—P———————————————| 
-→ “nobody here” when i light up, rub one out, or generally try to “relieve” myself, reach for the “kick”<——|
+→ "nobody here” when i light up, rub one out, or generally try to "relieve” myself, reach for the "kick”<——|
 
 → Realized when i am observing myself / in practice and posture / out of the LOOP
 
 
 
-what happens to “the vision” precisely when I am about the enter the loop? 
+what happens to "the vision” precisely when I am about the enter the loop? 
 facing something that was disfigured for you, is tough, but i must.
 
 
@@ -778,7 +778,7 @@ if to prove my masculinity and humanity, i have to fornicate, i will do it for t
 
 i must revert to solitude..
 I prefer the pavement
-what no one apparently understands, that each “nudge” has now not only become a massive turn off, 
+what no one apparently understands, that each "nudge” has now not only become a massive turn off, 
 
 but yet another proof of the blindness on the other side, which just adds to my reasons to avoid (as much as possible)
 
@@ -855,11 +855,11 @@ Georgina and the bee.
 
 
 
-“there are complexities in complexion” - Beyonce, quite unnecessary too.
+"there are complexities in complexion” - Beyonce, quite unnecessary too.
 
 Problem Statement
 Solve for how many times Joe Rogan says a) fascinating b) obviously in any given episode
-Solve for how many times Joe Rogan says “obviously very fascinating” in any episode
+Solve for how many times Joe Rogan says "obviously very fascinating” in any episode
 
 ---
 

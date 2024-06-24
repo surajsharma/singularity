@@ -1,4 +1,4 @@
-“IT” is one of the most pernicious concerns around computer science and the way it's taught these days, Info Tech is an oxymoron.
+"IT” is one of the most pernicious concerns around computer science and the way it's taught these days, Info Tech is an oxymoron.
 
 "IT" is a subset of tech which may be spawned using screens and data
 

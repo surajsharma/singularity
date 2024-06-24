@@ -245,7 +245,7 @@ the unique melancholy and sadness around my parents helped wake me up and turned
 
 ## Mar 24
 
-- if “the degree of civilization in a society can be judged by entering its prisons.” , surely the decline of a civilisation can be measured by the invention of new kinds of prisons and new kinds of state-sponsored tortures
+- if "the degree of civilization in a society can be judged by entering its prisons.” , surely the decline of a civilisation can be measured by the invention of new kinds of prisons and new kinds of state-sponsored tortures
 
 - was trying to turn the world into US until i met some folks trying to turn US into pakistan
 

@@ -29,7 +29,7 @@ Bathed in dark water, like any blade of grass.
 
 ▪ Every part of our personality that we do not love will become hostile to us.
 
-▪ ‘You are projecting’ becomes among Jungians an accusation. Sometimes projection is helpful and the right thing.” Her
+▪ ‘You are projecting’ becomes among Jungians an accusation. Sometimes projection is helpful and the right thing." Her
 
 ▪ No single human being can carry so many projections—that is, so much unconsciousness—and survive. So
 
@@ -47,19 +47,19 @@ Bathed in dark water, like any blade of grass.
 
 ▪ moral intelligence redefines gross human abuse as an act of love.
 
-▪ The soft male often doesn’t have enough of the witch left to say, “Enough!” When
+▪ The soft male often doesn’t have enough of the witch left to say, "Enough!" When
 
 ▪ When one gives the negative, one gives the positive also.
 
 ▪ ambiguously weak
 
-▪ In Europe the children discipline themselves so that the parents can have a good time; in America the parents discipline themselves so the children can have a good time.”
+▪ In Europe the children discipline themselves so that the parents can have a good time; in America the parents discipline themselves so the children can have a good time."
 
 ▪ ting the shadow
 
 ▪ Eating our shadow is a very slow process.
 
-▪ said, “I have had to eat many of my own words, and I found the diet very nourishing.”
+▪ said, "I have had to eat many of my own words, and I found the diet very nourishing."
 
 ▪ How does one go about eating the shadow or retrieving a projection, practically
 
@@ -109,9 +109,9 @@ Bathed in dark water, like any blade of grass.
 
 ▪ some shift, however small, would have occurred in the whole American psyche in the direction of an ability to admit our dark side. It’s clear that no such change has taken place
 
-▪ Some gentle Krishnamurti people asked Joseph Campbell, at one of his lectures, about the spiritual seed brought from India to California in the 1920s by Vivekananda and others. Didn’t he think that this seed was already working, and that a new stage in world culture had already begun? Joseph said, “I can’t assure you of that. As a matter of fact, it is my opinion that the popular culture never gets above the power chakra.”
+▪ Some gentle Krishnamurti people asked Joseph Campbell, at one of his lectures, about the spiritual seed brought from India to California in the 1920s by Vivekananda and others. Didn’t he think that this seed was already working, and that a new stage in world culture had already begun? Joseph said, "I can’t assure you of that. As a matter of fact, it is my opinion that the popular culture never gets above the power chakra."
 
-▪ Another way to put it is that people under thirty-five cannot teach themselves or others to eat the shadow. The initiation rituals hinted at in “Iron John” imply and suppose old men who teach younger men how to eat the shadow.
+▪ Another way to put it is that people under thirty-five cannot teach themselves or others to eat the shadow. The initiation rituals hinted at in "Iron John" imply and suppose old men who teach younger men how to eat the shadow.
 
 ▪ expressing is not any more admirable then repressing.
 
@@ -133,7 +133,7 @@ Bathed in dark water, like any blade of grass.
 
 ▪ A guy comes slinking in and the bosses pay him fifty bucks to do a job for them. Then when he comes back they can’t even remember that they told him to do anything, and what’s worse, if anyone goes to the pen, he’s the one.
 
-▪ The anger is angry with us for not honoring it, for treating it shabbily, for getting out of it what we want without ever bringing it in and introducing it to our friends, saying, “This is my friend Anger here. He’s a lowly-paid assistant of mine.”
+▪ The anger is angry with us for not honoring it, for treating it shabbily, for getting out of it what we want without ever bringing it in and introducing it to our friends, saying, "This is my friend Anger here. He’s a lowly-paid assistant of mine."
 
 ▪ shadow is not to be identified with evil, but how does evil fit in?
 

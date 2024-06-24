@@ -10,7 +10,7 @@ Knowing which kind of decision you face is key.
 
 > Invert, always invert: Turn a situation or problem upside down. Look at it backward. What happens if all our plans go wrong? Where don't we want to go, and how do you get there? Instead of looking for success, make a list of how to fail instead - through sloth, envy, resentment, self-pity, entitlement, all the mental habits of self-defeat. Avoid these qualities and you will succeed. Tell me where I'm going to die, that is, so I don't go there. - Charlie Munger
 
-> “It's not greed that drives the world, but envy.” - charlie munger
+> "It's not greed that drives the world, but envy.” - charlie munger
 
 ~~~
 
@@ -25,7 +25,7 @@ Choice is the act of hesitation that we make before making a decision, it is a m
 
 - > "The essence of ultimate decision remains impenetrable to the observer - often, indeed, to the decider himself." — JFK
 
-- > “People will do anything, no matter how absurd, in order to avoid facing their own soul. One does not become enlightened by imagining figures of light, but by making the darkness conscious.” — Jung
+- > "People will do anything, no matter how absurd, in order to avoid facing their own soul. One does not become enlightened by imagining figures of light, but by making the darkness conscious.” — Jung
 
 - > "Most people don't have the guts to make the tough decisions cuz they wanna make the right decision so they make no decisions, and that's a decision."  — Tony Robbins
 

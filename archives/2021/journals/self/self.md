@@ -117,7 +117,7 @@ skip a war, invite a peace
 folks need to understand that they are most definitely the oppressed and not the oppressors here
 they see what they want to see, not what is
 they have shown you how to treat them, so treat them better than that
-“your insanity is my clarity”
+"your insanity is my clarity”
 also, i don't care how big of slut you are, but i need someone more reliable than this-- can't be  seen around people who decide who to be loyal to based on how sweet their dick tastes – add to that the mental illness and early signs of schizophrenia, i'm sorry if it seems disrespectful i'm only trying to save my ass, and let this not be a generalization towards all women, i stepped into this trash because my mind was full of trash and nothing else.. i had a messed  up understanding of beauty i suppose but i realize the folly of my ways now.. still orders of magnitude better as a human being and improving,  i have no reason not to do everything in power to keep folks at bay and if i can't at least maintain an arm's length for their safety
 i expected the kind of opposition faced by someone trying to democratize human evolution itself
 the idea that an innocent man might do well without any privacy started to form in my head around early 2012, although frankly, the opposition caught me by surprise so i couldn't ever let that happen again, unless they resorted to physical violence
@@ -151,9 +151,9 @@ Dear Lucy, I don't think i know how big of a ticking time bomb this thing is any
 you guys are in the moving dead weight in the morning business
 what should i do next with the remaining apetite? consume death itself
 if these guys were truly evil, they'd have already moved my family to australia and then made them video call me, what a bunch of moron amatuers
-any human under the misconception that they are “protecting” me are to be watched out for, as tomorrow they may create a context for some sort of allegiance, where there is in-fact none.
+any human under the misconception that they are "protecting” me are to be watched out for, as tomorrow they may create a context for some sort of allegiance, where there is in-fact none.
 let my policy be : if you don't have anything nice to say, then do n't say anything
-before, my decision making heuristic was was very one dimensional, which is to say it stretched on an axis from “hell yes” to “no”; after: i have a new dimension to making decisions stretching from “no” to “fuck no”
+before, my decision making heuristic was was very one dimensional, which is to say it stretched on an axis from "hell yes” to "no”; after: i have a new dimension to making decisions stretching from "no” to "fuck no”
 you saw some stuff on a screen and it impacted you in a profound and meaningful way
 not something was taken from me or some potential in me got activated, but that i disappeared entirely, vanished off the face of the earth for a while
 sleeping on hardwood floors is key
@@ -165,7 +165,7 @@ thoughts can be classified in a hierarchy
 base -  believes free will exists, has no brakes
 absent - is all brakes in a predetermined universe
 i helped create the tech for constantly watching my thoughts, it's all i could have hoped for
-the truth may be “out there” but there's more of it in here
+the truth may be "out there” but there's more of it in here
 maybe its not really a medium unless someone has sex in it
 why hug a cactus in the first place?
 there's a way to behave, even within conspiracies and cults
@@ -173,7 +173,7 @@ there's a way to behave, even within conspiracies and cults
 
 ## July 20
 
-once you start being perceived as “Fallen” you might be presented new lows to fall to, and depths of depravity might be offered to you, resist, in order to be risen again
+once you start being perceived as "Fallen” you might be presented new lows to fall to, and depths of depravity might be offered to you, resist, in order to be risen again
 genius is 99% perspiration, whether that 99% happens before, during or after the 1% inspiration is immaterial
 
 perspiration is 99% inspiration and 1% action
@@ -681,7 +681,7 @@ history has a certain momentum which i defy and get noticed for doing so. do rec
 
 - i'm too old for this shit P
 
-- Complacency? Ok, I have a problem with defining meditation as a kind of medicine, because it quantifies, substituting the verb with a thing. It is nice because you get sth you can relate with, but it isn’t a stretch to imagine minds that would run the metaphor to extremes, even to the point of making themselves sick for the medicine. Why not call it “cure” instead? Celebrating the symptom used to be the logic, so I did it to the point of wanting to enjoy the cure instead.
+- Complacency? Ok, I have a problem with defining meditation as a kind of medicine, because it quantifies, substituting the verb with a thing. It is nice because you get sth you can relate with, but it isn’t a stretch to imagine minds that would run the metaphor to extremes, even to the point of making themselves sick for the medicine. Why not call it "cure” instead? Celebrating the symptom used to be the logic, so I did it to the point of wanting to enjoy the cure instead.
 
 - life is meant to be lived real time, suprising if it wasn't considered a sin by at least some
 

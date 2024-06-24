@@ -52,19 +52,19 @@ https://kk.org/thetechnium/103-bits-of-advice-i-wish-i-had-known/
 
 • Be strict with yourself and forgiving of others. The reverse is hell for everyone.
 
-• Your best response to an insult is “You’re probably right.” Often they are.
+• Your best response to an insult is "You’re probably right.” Often they are.
 
 • The worst evils in history have always been committed by those who truly believed they were combating evil. Beware of combating evil.
 
 • If you can avoid seeking approval of others, your power is limitless.
 
-• When a child asks an endless string of “why?” questions, the smartest reply is, “I don’t know, what do you think?”
+• When a child asks an endless string of "why?” questions, the smartest reply is, "I don’t know, what do you think?”
 
 • To be wealthy, accumulate all those things that money can’t buy.
 
 • Be the change you wish to see.
 
-• When brainstorming, improvising, jamming with others, you’ll go much further and deeper if you build upon each contribution with a playful “yes — and” example instead of a deflating “no — but” reply.
+• When brainstorming, improvising, jamming with others, you’ll go much further and deeper if you build upon each contribution with a playful "yes — and” example instead of a deflating "no — but” reply.
 
 • Work to become, not to acquire.
 
@@ -146,7 +146,7 @@ https://kk.org/thetechnium/103-bits-of-advice-i-wish-i-had-known/
 
 • I have never met a person I admired who did not read more books than I did.
 
-• The greatest teacher is called “doing”.
+• The greatest teacher is called "doing”.
 
 • Finite games are played to win or lose. Infinite games are played to keep the game going. Seek out infinite games because they yield infinite rewards.
 
@@ -160,7 +160,7 @@ https://kk.org/thetechnium/103-bits-of-advice-i-wish-i-had-known/
 
 • To succeed, get other people to pay you; to become wealthy, help other people to succeed.
 
-• Children totally accept — and crave — family rules. “In our family we have a rule for X” is the only excuse a parent needs for setting a family policy. In fact, “I have a rule for X” is the only excuse you need for your own personal policies.
+• Children totally accept — and crave — family rules. "In our family we have a rule for X” is the only excuse a parent needs for setting a family policy. In fact, "I have a rule for X” is the only excuse you need for your own personal policies.
 
 • All guns are loaded.
 
@@ -184,7 +184,7 @@ https://kk.org/thetechnium/103-bits-of-advice-i-wish-i-had-known/
 
 • Don’t let your email inbox become your to-do list.
 
-• The best way to untangle a knotty tangle is not to “untie” the knots, but to keep pulling the loops apart wider and wider. Just make the mess as big, loose and open as possible. As you open up the knots they will unravel themselves. Works on cords, strings, hoses, yarns, or electronic cables.
+• The best way to untangle a knotty tangle is not to "untie” the knots, but to keep pulling the loops apart wider and wider. Just make the mess as big, loose and open as possible. As you open up the knots they will unravel themselves. Works on cords, strings, hoses, yarns, or electronic cables.
 
 • Be a good ancestor. Do something a future generation will thank you for. A simple thing is to plant a tree.
 
@@ -192,7 +192,7 @@ https://kk.org/thetechnium/103-bits-of-advice-i-wish-i-had-known/
 
 • Take one simple thing — almost anything — but take it extremely seriously, as if it was the only thing in the world, or maybe the entire world is in it — and by taking it seriously you’ll light up the sky.
 
-• History teaches us that in 100 years from now some of the assumptions you believed will turn out to be wrong. A good question to ask yourself today is “What might I be wrong about?”
+• History teaches us that in 100 years from now some of the assumptions you believed will turn out to be wrong. A good question to ask yourself today is "What might I be wrong about?”
 
 • Be nice to your children because they are going to choose your nursing home.
 
@@ -206,7 +206,7 @@ https://kk.org/thetechnium/103-bits-of-advice-i-wish-i-had-known/
 
 • Don’t be afraid to ask a question that may sound stupid because 99% of the time everyone else is thinking of the same question and is too embarrassed to ask it.
 
-• Being able to listen well is a superpower. While listening to someone you love keep asking them “Is there more?”, until there is no more.
+• Being able to listen well is a superpower. While listening to someone you love keep asking them "Is there more?”, until there is no more.
 
 • A worthy goal for a year is to learn enough about a subject so that you can’t believe how ignorant you were a year earlier.
 
@@ -238,9 +238,9 @@ https://kk.org/thetechnium/103-bits-of-advice-i-wish-i-had-known/
 
 • Promptness is a sign of respect.
 
-• When you are young spend at least 6 months to one year living as poor as you can, owning as little as you possibly can, eating beans and rice in a tiny room or tent, to experience what your “worst” lifestyle might be. That way any time you have to risk something in the future you won’t be afraid of the worst case scenario.
+• When you are young spend at least 6 months to one year living as poor as you can, owning as little as you possibly can, eating beans and rice in a tiny room or tent, to experience what your "worst” lifestyle might be. That way any time you have to risk something in the future you won’t be afraid of the worst case scenario.
 
-• Trust me: There is no “them”.
+• Trust me: There is no "them”.
 
 • The more you are interested in others, the more interesting they find you. To be interesting, be interested.
 
@@ -326,7 +326,7 @@ https://kk.org/thetechnium/103-bits-of-advice-i-wish-i-had-known/
 
 • Learn how to take a 20-minute power nap without embarrassment.
 
-• Following your bliss is a recipe for paralysis if you don’t know what you are passionate about. A better motto for most youth is “master something, anything”. Through mastery of one thing, you can drift towards extensions of that mastery that bring you more joy, and eventually discover where your bliss is.
+• Following your bliss is a recipe for paralysis if you don’t know what you are passionate about. A better motto for most youth is "master something, anything”. Through mastery of one thing, you can drift towards extensions of that mastery that bring you more joy, and eventually discover where your bliss is.
 
 • I’m positive that in 100 years much of what I take to be true today will be proved to be wrong, maybe even embarrassingly wrong, and I try really hard to identify what it is that I am wrong about today.
 
@@ -349,7 +349,7 @@ https://kk.org/thetechnium/103-bits-of-advice-i-wish-i-had-known/
 
 • If you stop to listen to a musician or street performer for more than a minute, you owe them a dollar.
 
-• Anything you say before the word “but” does not count.
+• Anything you say before the word "but” does not count.
 
 • When you forgive others, they may not notice, but you will heal. Forgiveness is not something we do for others; it is a gift to ourselves.
 
@@ -375,7 +375,7 @@ https://kk.org/thetechnium/103-bits-of-advice-i-wish-i-had-known/
 
 • Immediately pay what you owe to vendors, workers, contractors. They will go out of their way to work with you first next time.
 
-• The biggest lie we tell ourselves is “I dont need to write this down because I will remember it.”
+• The biggest lie we tell ourselves is "I dont need to write this down because I will remember it.”
 
 • Your growth as a conscious being is measured by the number of uncomfortable conversations you are willing to have.
 
@@ -393,7 +393,7 @@ https://kk.org/thetechnium/103-bits-of-advice-i-wish-i-had-known/
 
 • When public speaking, pause frequently. Pause before you say something in a new way, pause after you have said something you believe is important, and pause as a relief to let listeners absorb details.
 
-• There is no such thing as being “on time.” You are either late or you are early. Your choice.
+• There is no such thing as being "on time.” You are either late or you are early. Your choice.
 
 • Ask anyone you admire: Their lucky breaks happened on a detour from their main goal. So embrace detours. Life is not a straight line for anyone.
 
@@ -405,7 +405,7 @@ https://kk.org/thetechnium/103-bits-of-advice-i-wish-i-had-known/
 
 • Don’t wait for the storm to pass; dance in the rain.
 
-• When checking references for a job applicant, employers may be reluctant or prohibited from saying anything negative, so leave or send a message that says, “Get back to me if you highly recommend this applicant as super great.” If they don’t reply take that as a negative.
+• When checking references for a job applicant, employers may be reluctant or prohibited from saying anything negative, so leave or send a message that says, "Get back to me if you highly recommend this applicant as super great.” If they don’t reply take that as a negative.
 
 • Use a password manager: Safer, easier, better.
 
@@ -433,7 +433,7 @@ https://kk.org/thetechnium/103-bits-of-advice-i-wish-i-had-known/
 
 • You cannot get smart people to work extremely hard just for money.
 
-• When you don’t know how much to pay someone for a particular task, ask them “what would be fair” and their answer usually is.
+• When you don’t know how much to pay someone for a particular task, ask them "what would be fair” and their answer usually is.
 
 • 90% of everything is crap. If you think you don’t like opera, romance novels, TikTok, country music, vegan food, NFTs, keep trying to see if you can find the 10% that is not crap.
 
@@ -451,7 +451,7 @@ https://kk.org/thetechnium/103-bits-of-advice-i-wish-i-had-known/
 
 • You can be whatever you want, so be the person who ends meetings early.
 
-• A wise man said, “Before you speak, let your words pass through three gates. At the first gate, ask yourself, “Is it true?” At the second gate ask, “Is it necessary?” At the third gate ask, “Is it kind?”
+• A wise man said, "Before you speak, let your words pass through three gates. At the first gate, ask yourself, "Is it true?” At the second gate ask, "Is it necessary?” At the third gate ask, "Is it kind?”
 
 • Take the stairs.
 
@@ -459,7 +459,7 @@ https://kk.org/thetechnium/103-bits-of-advice-i-wish-i-had-known/
 
 • When you arrive at your room in a hotel, locate the emergency exits. It only takes a minute.
 
-• The only productive way to answer “what should I do now?” is to first tackle the question of “who should I become?”
+• The only productive way to answer "what should I do now?” is to first tackle the question of "who should I become?”
 
 • Average returns sustained over an above-average period of time yield extraordinary results. Buy and hold.
 
@@ -489,13 +489,13 @@ https://kk.org/thetechnium/103-bits-of-advice-i-wish-i-had-known/
 
 • At a restaurant do you order what you know is great, or do you try something new? Do you make what you know will sell or try something new? Do you keep dating new folks or try to commit to someone you already met? The optimal balance for exploring new things vs exploiting them once found is: 1/3. Spend 1/3 of your time on exploring and 2/3 time on deepening. It is harder to devote time to exploring as you age because it seems unproductive, but aim for 1/3.
 
-• Actual great opportunities do not have “Great Opportunities” in the subject line.
+• Actual great opportunities do not have "Great Opportunities” in the subject line.
 
 • When introduced to someone make eye contact and count to 4. You’ll both remember each other.
 
-• Take note if you find yourself wondering “Where is my good knife? Or, where is my good pen?” That means you have bad ones. Get rid of those.
+• Take note if you find yourself wondering "Where is my good knife? Or, where is my good pen?” That means you have bad ones. Get rid of those.
 
-• When you are stuck, explain your problem to others. Often simply laying out a problem will present a solution. Make “explaining the problem” part of your troubleshooting process.
+• When you are stuck, explain your problem to others. Often simply laying out a problem will present a solution. Make "explaining the problem” part of your troubleshooting process.
 
 • When buying a garden hose, an extension cord, or a ladder, get one substantially longer than you think you need. It’ll be the right size.
 
@@ -507,7 +507,7 @@ https://kk.org/thetechnium/103-bits-of-advice-i-wish-i-had-known/
 
 • You are as big as the things that make you angry.
 
-• When speaking to an audience it’s better to fix your gaze on a few people than to “spray” your gaze across the room. Your eyes telegraph to others whether you really believe what you are saying.
+• When speaking to an audience it’s better to fix your gaze on a few people than to "spray” your gaze across the room. Your eyes telegraph to others whether you really believe what you are saying.
 
 • Habit is far more dependable than inspiration. Make progress by making habits. Dont focus on getting into shape. Focus on becoming the kind of person who never misses a workout.
 

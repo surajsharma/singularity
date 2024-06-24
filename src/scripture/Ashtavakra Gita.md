@@ -38,13 +38,13 @@ You are the witness
 
 ## 1.8
 
-- Since you have been bitten by the black snake, the opinion about yourself that “I am the doer,” drink the antidote of faith in the fact that “I am not the doer,” and be happy. 1.8
+- Since you have been bitten by the black snake, the opinion about yourself that "I am the doer,” drink the antidote of faith in the fact that "I am not the doer,” and be happy. 1.8
 
 Black snake
 
 ## 1.9
 
-- Burn down the forest of ignorance with the fire of the understanding that “I am the one pure awareness,” and be happy and free from distress. 1.9
+- Burn down the forest of ignorance with the fire of the understanding that "I am the one pure awareness,” and be happy and free from distress. 1.9
 
 I am the one pure awareness
 
@@ -56,7 +56,7 @@ The snake and the rope
 
 ## 1.11 ��
 
-- If one thinks of oneself as free, one is free, and if one thinks of oneself as bound, one is bound. Here this saying is true, “Thinking makes it so.” 1.11
+- If one thinks of oneself as free, one is free, and if one thinks of oneself as bound, one is bound. Here this saying is true, "Thinking makes it so.” 1.11
 
 ## 1.12
 
@@ -68,7 +68,7 @@ The snake and the rope
 
 ## 1.14
 
-- You have long been trapped in the snare of identification with the body. Sever it with the knife of knowledge that “I am awareness,” and be happy, my son. 1.14
+- You have long been trapped in the snare of identification with the body. Sever it with the knife of knowledge that "I am awareness,” and be happy, my son. 1.14
 
 ## 1.15
 
@@ -210,7 +210,7 @@ Truly, when one does not know oneself, one takes pleasure in the objects of mist
 
 3.3
 
-All this wells up like waves in the sea. Recognising, “I am That,” why run around like someone in need? 3.3
+All this wells up like waves in the sea. Recognising, "I am That,” why run around like someone in need? 3.3
 
 3.4
 
@@ -368,7 +368,7 @@ Bondage is when the mind is tangled in one of the senses, and liberation is when
 
 8.4
 
-When there is no “me,” that is liberation, and when there is “me” there is bondage. Consider this carefully, and neither hold on to anything nor reject anything. 8.4
+When there is no "me,” that is liberation, and when there is "me” there is bondage. Consider this carefully, and neither hold on to anything nor reject anything. 8.4
 
 9
 
@@ -470,11 +470,11 @@ Realising that suffering arises from nothing other than thought, dropping all de
 
 11.6
 
-Realising, “I am not the body, nor is the body mine. I am awareness,” one attains the supreme state and no longer remembers things done or undone. 11.6
+Realising, "I am not the body, nor is the body mine. I am awareness,” one attains the supreme state and no longer remembers things done or undone. 11.6
 
 11.7
 
-Realising, “I alone exist, from Brahma down to the last clump of grass,” one becomes free from uncertainty, pure, at peace, and unconcerned about what has been attained or not. 11.7
+Realising, "I alone exist, from Brahma down to the last clump of grass,” one becomes free from uncertainty, pure, at peace, and unconcerned about what has been attained or not. 11.7
 
 11.8
 
@@ -598,7 +598,7 @@ Desire and anger are objects of the mind, but the mind is not yours, nor ever ha
 
 15.6
 
-Recognising oneself in all beings, and all beings in oneself, be happy, free from the sense of responsibility and free from preoccupation with “me.” 15.6
+Recognising oneself in all beings, and all beings in oneself, be happy, free from the sense of responsibility and free from preoccupation with "me.” 15.6
 
 15.7
 
@@ -634,7 +634,7 @@ Whatever you see, it is you alone manifest in it. How can bracelets, armlets and
 
 15.15
 
-Giving up such distinctions as “He is what I am,” and “I am not that,” recognise that “Everything is myself,” and be without distinction and happy. 15.15
+Giving up such distinctions as "He is what I am,” and "I am not that,” recognise that "Everything is myself,” and be without distinction and happy. 15.15
 
 15.16
 
@@ -680,7 +680,7 @@ Happiness belongs to no one but that supremely lazy man for whom even opening an
 
 16.5
 
-When the mind is freed from such pairs of opposites as, “I have done this,” and “I have not done that,” it becomes indifferent to merit, wealth, sensuality and liberation. 16.5
+When the mind is freed from such pairs of opposites as, "I have done this,” and "I have not done that,” it becomes indifferent to merit, wealth, sensuality and liberation. 16.5
 
 16.6
 
@@ -788,7 +788,7 @@ One established in the Absolute state with an empty mind does not know the alter
 
 17.19
 
-A man free of “me” and “mine” and of a sense of responsibility, aware that “Nothing exists,” with all desires extinguished within, does not act even in acting. 17.19
+A man free of "me” and "mine” and of a sense of responsibility, aware that "Nothing exists,” with all desires extinguished within, does not act even in acting. 17.19
 
 17.20
 
@@ -832,7 +832,7 @@ Knowing himself to be God, and being and non-being just imagination, what should
 
 18.9
 
-Considerations like “I am this” or “I am not this” are finished for the yogi who has gone silent realising “Everything is myself.” 18.9
+Considerations like "I am this” or "I am not this” are finished for the yogi who has gone silent realising "Everything is myself.” 18.9
 
 18.10
 
@@ -844,7 +844,7 @@ The dominion of heaven or beggary, gain or loss, life among men or in the forest
 
 18.12
 
-There are no religious obligations, wealth, sensuality, or discrimination for a yogi free from such opposites as “I have done this,” and “I have not done that.” 18.12
+There are no religious obligations, wealth, sensuality, or discrimination for a yogi free from such opposites as "I have done this,” and "I have not done that.” 18.12
 
 18.13
 
@@ -860,7 +860,7 @@ He by whom all this is seen may well make out it doesn’t exist, but what is th
 
 18.16
 
-He by whom the Supreme Brahma is seen may think “I am Brahma,” but what is he to think who is without thought, and who sees no duality? 18.16
+He by whom the Supreme Brahma is seen may think "I am Brahma,” but what is he to think who is without thought, and who sees no duality? 18.16
 
 18.17
 
@@ -896,7 +896,7 @@ For the man with a naturally empty mind, doing just as he pleases, there is no s
 
 18.25
 
-“This action was done by the body but not by me.” The pure-natured person thinking like this is not acting even when acting. 18.25
+"This action was done by the body but not by me.” The pure-natured person thinking like this is not acting even when acting. 18.25
 
 18.26
 
@@ -1144,7 +1144,7 @@ The wise man has the joy of being complete in himself and without possessions, a
 
 18.88
 
-The wise man excels in being without the sense of “me”. Earth, a stone, or gold are the same to him. The knots of his heart have been rent asunder, and he is freed from greed and blindness. 18.88
+The wise man excels in being without the sense of "me”. Earth, a stone, or gold are the same to him. The knots of his heart have been rent asunder, and he is freed from greed and blindness. 18.88
 
 18.89
 
@@ -1156,7 +1156,7 @@ Who but the upright man without desire knows without knowing, sees without seein
 
 18.91
 
-Beggar or king, he excels who is without desire, and whose opinion of things is rid of “good” and “bad.” 18.91
+Beggar or king, he excels who is without desire, and whose opinion of things is rid of "good” and "bad.” 18.91
 
 18.92
 
@@ -1184,7 +1184,7 @@ Not distracted in distraction, in mental stillness not poised, in stupidity not 
 
 18.98
 
-The liberated man is self-possessed in all circumstances and free from the idea of “done” and “still to do.” He is the same wherever he is and without greed. He does not dwell on what he has done or not done. 18.98
+The liberated man is self-possessed in all circumstances and free from the idea of "done” and "still to do.” He is the same wherever he is and without greed. He does not dwell on what he has done or not done. 18.98
 
 18.99
 
@@ -1244,7 +1244,7 @@ For me, free from the sense of dualism, there are no scriptures, no self-knowled
 
 20.3
 
-There is no knowledge or ignorance, no “me,” “this,” or “mine,” no bondage, no liberation, and no property of self-nature. 20.3
+There is no knowledge or ignorance, no "me,” "this,” or "mine,” no bondage, no liberation, and no property of self-nature. 20.3
 
 20.4
 

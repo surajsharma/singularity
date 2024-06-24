@@ -128,7 +128,7 @@ Saturn: A New Look at an Old Devil - Greene, Liz (Highlight: 145; Note: 0)
 
 ▪ The world of feeling lies directly behind the world of events, and it is this world with which the watery signs and houses are concerned.
 
-▪ astral plane symbolises the“wish life”or feeling nature of humanity
+▪ astral plane symbolises the"wish life"or feeling nature of humanity
 
 ▪ the astral body—or feeling nature—of an individual man is often the world of causes for everything which happens to him in external life.
 
@@ -136,7 +136,7 @@ Saturn: A New Look at an Old Devil - Greene, Liz (Highlight: 145; Note: 0)
 
 ▪ emphasis is placed on external behaviour rather than on the quality of desire.
 
-▪ As long as something is not“done”, the individual will convince himself that he has no desire to do it;
+▪ As long as something is not"done", the individual will convince himself that he has no desire to do it;
 
 ▪ the power of the feelings increases because they are forced underground
 

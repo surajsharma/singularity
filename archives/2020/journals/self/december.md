@@ -35,7 +35,7 @@
 
 ## Premeditatio Malorum
 
-> “What is quite unlooked for is more crushing in its effect, and unexpectedness adds to the weight of a disaster. This is a reason for ensuring that nothing ever takes us by surprise. We should project our thoughts ahead of us at every turn and have in mind every possible eventuality instead of only the usual course of events… `Rehearse them in your mind: exile, torture, war, shipwreck. All the terms of our human lot should be before our eye`.” — Seneca #stoicism
+> "What is quite unlooked for is more crushing in its effect, and unexpectedness adds to the weight of a disaster. This is a reason for ensuring that nothing ever takes us by surprise. We should project our thoughts ahead of us at every turn and have in mind every possible eventuality instead of only the usual course of events… `Rehearse them in your mind: exile, torture, war, shipwreck. All the terms of our human lot should be before our eye`.” — Seneca #stoicism
 
 
 ## The book's title appears halfway...

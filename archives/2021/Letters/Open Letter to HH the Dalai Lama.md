@@ -10,7 +10,7 @@ As such, participation in normal life has been made impossible due to difference
 
 Even though these people are not worth it, I intend to see them through because I was taught that is the way of the dharma. 
 
-I could stay and “fight” in the rat race, but I have different needs now. And I believe I can serve my captors just as well from anywhere.
+I could stay and "fight” in the rat race, but I have different needs now. And I believe I can serve my captors just as well from anywhere.
 
 My humble appeal to HH is if he is aware of my situation to please let me join as a monk and live out the rest of my days in the service of Buddha in total silence at Namgyal Monastery in Dharamshala. Thus giving this sorry tale a peaceful end.
 

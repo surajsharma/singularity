@@ -112,7 +112,7 @@
 
 
 
-🌵 bible thumper for all the “wrong” reasons
+🌵 bible thumper for all the "wrong" reasons
 
 
 🌵 the tantrik had never seen so many sad, broken people in one place at a time, and each of them at least a millionaire. and as the gathering grew, he felt more and more unsure.
@@ -132,18 +132,18 @@ the tantrik destroyed the new roman empire, one song and one breath at a time
 🌵 the single source of truth in a post truth world, obviously this holy man had enemies and they were nothing to sneeze at
 
 
-🌵 Original sin of the godless and unholy, sat reading Kierkegaard in a train compartment overflowing with aghoris and necromancers of varied persuasion, when the one in the next seat decided to have a epileptic fit while screaming “you only think you're winning”, squirming on the sheet metal between rows of anxious, avoidant shoes. His cringe-worthy performance of a disease winning him the attention of other aghoris, who were no sooner convinced that his possession was real, and that this was what a man under a visitation from the divine looked like, but the young hyperreal haberdasher would have none of the malarkey, and continued gazing right out the window into to ravine-combed, acidic and nocturnal landscape, thinking about the job at hand.
+🌵 Original sin of the godless and unholy, sat reading Kierkegaard in a train compartment overflowing with aghoris and necromancers of varied persuasion, when the one in the next seat decided to have a epileptic fit while screaming "you only think you're winning", squirming on the sheet metal between rows of anxious, avoidant shoes. His cringe-worthy performance of a disease winning him the attention of other aghoris, who were no sooner convinced that his possession was real, and that this was what a man under a visitation from the divine looked like, but the young hyperreal haberdasher would have none of the malarkey, and continued gazing right out the window into to ravine-combed, acidic and nocturnal landscape, thinking about the job at hand.
 
 
 🌵 hyperreal haberdasher
-🌵 the difficult cult also had a band, the difficults, their first single, “very difficult”, topped the charts
+🌵 the difficult cult also had a band, the difficults, their first single, "very difficult", topped the charts
 
 
 
 - race isn't one the reasons i wanted to piss people off, nor is money 
 
 
-- not “`nothing worth having comes easy`” but “`if it doesn't come easily, it's not worth having`”
+- not "`nothing worth having comes easy`" but "`if it doesn't come easily, it's not worth having`"
 
 
 

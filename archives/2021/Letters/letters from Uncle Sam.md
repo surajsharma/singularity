@@ -8,7 +8,7 @@ I am watching you still. And I see nothing but a self-serving moron, much like y
 
 
 
-How does it feel? You're eating shit and playing at corruption thinking that it is “healing” that you do…. I see no healing being done, I only see war being substituted for war, hatred being replaced with hatred and the passive aggression you seem to have mixed into the mess is leaving everyone less and less satisfied as time passes.
+How does it feel? You're eating shit and playing at corruption thinking that it is "healing” that you do…. I see no healing being done, I only see war being substituted for war, hatred being replaced with hatred and the passive aggression you seem to have mixed into the mess is leaving everyone less and less satisfied as time passes.
 
 
 
@@ -30,7 +30,7 @@ You wrote in your last correspondence that there is a thin line between stupidit
 
 
 
-You said I was in need for a new face, which was especially upsetting. Yet I shall reserve my wrath for a rainy day, for not everyone is “running on empty”, as you're so fond of saying.
+You said I was in need for a new face, which was especially upsetting. Yet I shall reserve my wrath for a rainy day, for not everyone is "running on empty”, as you're so fond of saying.
 
 
 
@@ -78,7 +78,7 @@ DEAR DEAD TANTRIK,
 
 HOW'S IT BEEN GOING? I CAN SEE YOU ARE STILL POOR, AND STILL FORCING ME TO SHAME YOU INTO SOME FORM BASIC HUMILITY AND CLOAK YOU.
 
-YOU ARE NOTHING BUT DEAD WEIGHT TO ME. HEY LISTEN, WHY DON'T YOU COME OVER TO THE DARK SIDE, ALL THE CUCKOLDRY YOU CAN AFFORD, I PROMISE. LET'S SEE WHAT ELSE CAN I PROMISE, OH YES, A BULLET EXACTLY WHERE CLAIM TO BE “TOUCHED” WHEN YOU LEAST EXPECT IT.
+YOU ARE NOTHING BUT DEAD WEIGHT TO ME. HEY LISTEN, WHY DON'T YOU COME OVER TO THE DARK SIDE, ALL THE CUCKOLDRY YOU CAN AFFORD, I PROMISE. LET'S SEE WHAT ELSE CAN I PROMISE, OH YES, A BULLET EXACTLY WHERE CLAIM TO BE "TOUCHED” WHEN YOU LEAST EXPECT IT.
 
 
 

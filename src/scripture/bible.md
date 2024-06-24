@@ -16,7 +16,7 @@ The acronym "INRI" are initials for the Latin title that Pontius Pilate had writ
 The words were "Iesvs Nazarenvs Rex Ivdaeorvm." Latin uses "I" instead of the English "J", and "V" instead of "U" (i.e., Jesus Nazarenus Rex Judaeorum). The English translation is "Jesus of Nazareth, the King of the Jews."
 ---
 
-“If two men are fighting and the wife of one of them comes to rescue her husband from his assailant, and she reaches out and seizes him by his private parts, 12 you shall cut off her hand. Show her no pity” (Deut. 25:11-12).
+"If two men are fighting and the wife of one of them comes to rescue her husband from his assailant, and she reaches out and seizes him by his private parts, 12 you shall cut off her hand. Show her no pity” (Deut. 25:11-12).
 ---
 
 14 Woe unto you, scribes and Pharisees, hypocrites! for ye devour widows' houses, and for a pretence make long prayer: therefore ye shall receive the greater damnation.

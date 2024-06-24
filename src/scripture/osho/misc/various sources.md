@@ -1,7 +1,7 @@
 #shravan matreyn
 ---
 
-> “Now everywhere you will feel a gap. You will feel that your efficiency is lost. You will feel that your utility is reduced. You will feel that everywhere you are an outsider. One has to pass through this period. You will become attuned again. You have changed, not the world, so you will not fit. So remember the third thing: When the technique fits you, you will not fit into the world.”
+> "Now everywhere you will feel a gap. You will feel that your efficiency is lost. You will feel that your utility is reduced. You will feel that everywhere you are an outsider. One has to pass through this period. You will become attuned again. You have changed, not the world, so you will not fit. So remember the third thing: When the technique fits you, you will not fit into the world.”
 
 `adhikar sirf dukh laata hai, jahan bhi adhikaar hai wahan dukh ka bhav hai`
 

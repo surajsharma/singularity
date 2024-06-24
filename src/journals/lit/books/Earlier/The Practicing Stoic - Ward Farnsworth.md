@@ -109,7 +109,7 @@ The Practicing Stoic - Ward Farnsworth (Highlight: 169; Note: 0)
 "Man is not the master of man, but death and life and pleasure and pain."
 (Chapter:Chapter Two Externals)
 
-"In short, if you hear him say, “Wretched me, the things I have to endure!” call him a slave. If you see him wailing, or complaining, or in misery, call him a slave"
+"In short, if you hear him say, "Wretched me, the things I have to endure!" call him a slave. If you see him wailing, or complaining, or in misery, call him a slave"
 (Chapter:Chapter Two Externals)
 
 "Show me who is not a slave. One is a slave to lust, another to avarice, another to ambition, and all are slaves to fear"

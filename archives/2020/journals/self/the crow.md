@@ -1,4 +1,4 @@
-- not “`nothing worth having comes easy`” but “`if it doesn't come easily, it's not worth having`” 
+- not "`nothing worth having comes easy`” but "`if it doesn't come easily, it's not worth having`” 
 
 - race isn't one the reasons i wanted to piss people off, nor is money 
 

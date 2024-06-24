@@ -20,7 +20,7 @@ vigilant -anyone trying to play mind games is trying to distract from the missio
 
 take no small favors, if your life is spared, be content
 
-“as you were”
+"as you were”
 
 there's going to more anger created in you by others, dissolve it and the moment you cannot dissolve it, exit
 
@@ -102,11 +102,11 @@ check all boxes
 
 self-diagnosis?
 
-“avoid or undermine pleasurable experiences” → not really
+"avoid or undermine pleasurable experiences” → not really
 
 be drawn to situations or relationships in which they will suffer → not anymore
 
-prevent others from helping them → circular reasoning, if it is self defeating, why defeatist about this and only about the rest of one's epistemology. for example, a self defeating ideology could, once it clearly recognized that smoking is a vestige of ego, would then attempt to destroy this “self”. such distinction is clearly not the work of a self-defeating entity.
+prevent others from helping them → circular reasoning, if it is self defeating, why defeatist about this and only about the rest of one's epistemology. for example, a self defeating ideology could, once it clearly recognized that smoking is a vestige of ego, would then attempt to destroy this "self”. such distinction is clearly not the work of a self-defeating entity.
 
 how about (mild) masochism being a creative expression of the death drive [check papers]
 

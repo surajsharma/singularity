@@ -12,5 +12,5 @@
     Signifying nothing. 
    - Macbeth
    
-   “O! beware, my lord, of jealousy; it is the green-eyed monster which doth mock the meat it feeds on.” 
+   "O! beware, my lord, of jealousy; it is the green-eyed monster which doth mock the meat it feeds on.” 
        - (Othello by Shakespeare).

@@ -14,7 +14,7 @@ There are more varieties of greed than you can imagine. Some of them more non-vi
 
 An anthropocentric model of the universe is fact until proven otherwise, and is the ultimate self-assertion of human consciousness. it is a falsifiable hypothesis.
 
-Glad to be the only person alive whose existence could not acknowledged by the so called “masters of the universe”, was eating fine before you came along, sir. Don't push it, but do continue to blame me without naming me.
+Glad to be the only person alive whose existence could not acknowledged by the so called "masters of the universe”, was eating fine before you came along, sir. Don't push it, but do continue to blame me without naming me.
 
 
 

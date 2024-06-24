@@ -2,7 +2,7 @@
 
 
 
-“privacy might well be a very recent fetish” - will self
+"privacy might well be a very recent fetish” - will self
 
 
 
@@ -10,12 +10,12 @@ total privacy leads to the samprivacye place zero privacy does
 
 
 
-“Whether or not it draws on new scientific research, technology is a branch of moral philosophy, not of science. 
+"Whether or not it draws on new scientific research, technology is a branch of moral philosophy, not of science. 
 PAUL GOODMAN, New Reformation”
 
 
 
-Excerpt From: Neil Postman. “Technopoly: The Surrender of Culture to Technology”. Apple Books. 
+Excerpt From: Neil Postman. "Technopoly: The Surrender of Culture to Technology”. Apple Books. 
 
 
 

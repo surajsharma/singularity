@@ -19,10 +19,10 @@ Marshall McLuhan: You Know Nothing of My Work! - Coupland, Douglas
 > "To bring order into this jangled sphere man must find its centre. M.M"
 (Chapter:… return)
 
-"“Terror,” he went on to say, is the normal state of any oral society, for in it everything affects everything all the time… In our long striving to recover for the Western world a unity of sensibility and of thought and feeling we have no more been prepared to accept the tribal consequences of such unity than we were ready for the fragmentation of the human psyche by print culture. "
+""Terror," he went on to say, is the normal state of any oral society, for in it everything affects everything all the time… In our long striving to recover for the Western world a unity of sensibility and of thought and feeling we have no more been prepared to accept the tribal consequences of such unity than we were ready for the fragmentation of the human psyche by print culture. "
 (Chapter:… return)
 
-> "The thing about a genius idea is that, the moment someone hears it, they say, “Well that’s obvious.” "
+> "The thing about a genius idea is that, the moment someone hears it, they say, "Well that’s obvious." "
 (Chapter:… return)
 
 "So here is Bill Gates and all those people going off to sweat lodge retreats and Davos forums, all the while trying to figure out what happens next."
@@ -34,16 +34,16 @@ Marshall McLuhan: You Know Nothing of My Work! - Coupland, Douglas
 > "Environments are invisible. Their ground rules, pervasive structure, and overall patterns elude easy perception. M.M"
 (Chapter:… return)
 
-"McLuhan is pegged for two ideas that went on to become clichés: “the medium is the message” and “the global village.”"
+"McLuhan is pegged for two ideas that went on to become clichés: "the medium is the message" and "the global village.""
 (Chapter:… return)
 
-> "The medium is the message” means that the ostensible content of all electronic media is insignificant; it is the medium itself that has the greater impact on the environment"
+> "The medium is the message" means that the ostensible content of all electronic media is insignificant; it is the medium itself that has the greater impact on the environment"
 (Chapter:… return)
 
 "All that matters is that you’re watching the TV itself, at the expense of some other technology—probably books or the internet"
 (Chapter:… return)
 
-> "Marshall’s other cliché, “the global village,” is a way of paraphrasing the fact that electronic technologies are an extension of the human central nervous system"
+> "Marshall’s other cliché, "the global village," is a way of paraphrasing the fact that electronic technologies are an extension of the human central nervous system"
 (Chapter:… return)
 
 "the man who bangs a drum so large that it’s only beaten once every hundred years."

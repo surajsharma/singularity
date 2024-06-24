@@ -4,7 +4,7 @@ https://nav.al/rich
 
 People creating wealth will always be attacked by people playing status games
 
-There’s always a subtle competition going on between status and wealth. For example, when journalists attack rich people or the tech industry, they’re really bidding for status. They’re saying, “No, the people are more important. And I, the journalist, represent the people, and therefore I am more important.”
+There’s always a subtle competition going on between status and wealth. For example, when journalists attack rich people or the tech industry, they’re really bidding for status. They’re saying, "No, the people are more important. And I, the journalist, represent the people, and therefore I am more important.”
 
 The problem is, to win at a status game you have to put somebody else down. That’s why you should avoid status games in your life—because they make you into an angry combative person. You’re always fighting to put other people down and elevate yourself and the people you like.
 

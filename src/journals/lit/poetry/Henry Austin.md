@@ -13,12 +13,12 @@ How many a struggler has thrown up the sponge!
 As the tide goes clear out, it comes clear in;
 In business ’tis at turns the wisest win.
 And oh! how true, when shades of doubt dismay,
-“’Tis often darkest just before the day,”
+"’Tis often darkest just before the day,”
 
 A little more persistence, courage, vim!
 Success will dawn o’er fortune’s cloudy rim.
 Then take this honey for the bitterest cup:
-“There is no failure, save in giving up,—
+"There is no failure, save in giving up,—
 
 No real fall as long as one still tries,—
 For seeming setbacks make the strong man wise.

@@ -1,4 +1,4 @@
-# “Magia Posthuma” (of C. F. de Schertz)
+# "Magia Posthuma" (of C. F. de Schertz)
 A short treatise on the vampire published at Olmutz (now
 in the Czech Republic) in 1706 and written by Charles Ferdi¬
 nand de Schertz. Reviewing it, Dom Antoine Augustin Calmet

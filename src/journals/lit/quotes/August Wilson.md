@@ -1,1 +1,1 @@
-“Confront the dark parts of yourself, and work to banish them with illumination and forgiveness. Your willingness to wrestle with your demons will cause your angels to sing. Use the pain as fuel, as a reminder of your strength.” August Wilson
+"Confront the dark parts of yourself, and work to banish them with illumination and forgiveness. Your willingness to wrestle with your demons will cause your angels to sing. Use the pain as fuel, as a reminder of your strength.” August Wilson

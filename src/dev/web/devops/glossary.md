@@ -44,7 +44,7 @@ Relational Databases and Non-Relational Databases ensure different types of comp
 
 ##### ACID: Atomicity, Consistency, Isolation, Durability
 
-Atomicity comprises one or more operations and ensures that if any of these operations fail, then the entire transaction fails. It’s like “All or Nothing,” which is vital in the case of transactions.
+Atomicity comprises one or more operations and ensures that if any of these operations fail, then the entire transaction fails. It’s like "All or Nothing,” which is vital in the case of transactions.
 
 Consistency ensures that each transaction must be valid according to a given set of rules. Whenever database states change, it won’t corrupt the data, and transactions move from one valid state to another.
 

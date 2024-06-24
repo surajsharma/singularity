@@ -1,6 +1,6 @@
 A series of youtube video essays on technological singularity.
 
-This is a series of video essays inquiring on the nature of the event known colloquially as “singularity”. 
+This is a series of video essays inquiring on the nature of the event known colloquially as "singularity”. 
  
 
 PART 1 - The Pleroma Cult

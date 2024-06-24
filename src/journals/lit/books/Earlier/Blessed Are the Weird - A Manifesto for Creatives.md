@@ -3,7 +3,7 @@
 
 ◆ Dedication
 
-▪ Without deviation from the norm, progress is not possible.”
+▪ Without deviation from the norm, progress is not possible."
 – Frank Zappa
 
 ◆ Introduction
@@ -18,7 +18,7 @@
 
 ▪ People who fill the space of their lives with their own creations tend to live longer, have more sex, and actually improve life on this planet
 
-▪ When you make a world tolerable for yourself, you make a world tolerable for others.”
+▪ When you make a world tolerable for yourself, you make a world tolerable for others."
 
 ▪ Beatitudes for the Weird
 Blessed are the weird people
@@ -65,12 +65,12 @@ for they are the resplendent cracks through which the light shines
 
 ▪ All dreamers and poets are pirates navigating by the stars, raiding the private places of inner worlds for the gold hidden there
 
-▪ we are in a world that says, “Just pick something and do it.”
+▪ we are in a world that says, "Just pick something and do it."
 
 ◆ Chapter Two - The Poets
 
 ▪ Poetry is a life-cherishing force.
-For poems are not words, after all, but fires for the cold, ropes let down to the lost, something as necessary as bread in the pockets of the hungry.”
+For poems are not words, after all, but fires for the cold, ropes let down to the lost, something as necessary as bread in the pockets of the hungry."
 — Mary Oliver
 
 ▪ My king, something has been created that no one has created before
@@ -100,7 +100,7 @@ Listen to this music.
 
 ▪ inconvenient people to have around
 
-▪ “Behold the field in which I grow my fucks and see that it is barren
+▪ "Behold the field in which I grow my fucks and see that it is barren
 
 ▪ Weird people are especially susceptible to feeling alone in the world
 
@@ -114,18 +114,18 @@ Listen to this music.
 
 ◆ Chapter Five - The Mystics
 
-▪ “Sell your cleverness and buy bewilderment.”
+▪ "Sell your cleverness and buy bewilderment."
 – Rumi
 
 ▪ little use for the way most people see the world
 
 ▪ Mystics have a simplicity about their vision that is almost too pure for this world
 
-▪ Meister Eckhart wrote, “If the only prayer you said in your whole life was, ‘thank you,’ that would suffice.”
+▪ Meister Eckhart wrote, "If the only prayer you said in your whole life was, ‘thank you,’ that would suffice."
 
 ▪ When we reach beyond the realm of common reason, we connect with the vast energetic matrix of information
 
-▪ Mysticism keeps men sane. As long as you have mystery, you have health; when you destroy mystery, you create morbidity. The ordinary man has always been sane because the ordinary man has always been a mystic. He has permitted the twilight. He has always had one foot in earth and the other in fairyland. He has always left himself free to doubt his gods; but (unlike the agnostic of today) free also to believe in them. He has always cared more for truth than for consistency. If he saw two truths that seemed to contradict each other, he would take the two truths and the contradiction along with them. His spiritual sight is stereoscopic, like his physical sight: he sees two different pictures at once and yet sees all the better for that. Thus he has always believed that there was such a thing as fate, but such a thing as free will also.”
+▪ Mysticism keeps men sane. As long as you have mystery, you have health; when you destroy mystery, you create morbidity. The ordinary man has always been sane because the ordinary man has always been a mystic. He has permitted the twilight. He has always had one foot in earth and the other in fairyland. He has always left himself free to doubt his gods; but (unlike the agnostic of today) free also to believe in them. He has always cared more for truth than for consistency. If he saw two truths that seemed to contradict each other, he would take the two truths and the contradiction along with them. His spiritual sight is stereoscopic, like his physical sight: he sees two different pictures at once and yet sees all the better for that. Thus he has always believed that there was such a thing as fate, but such a thing as free will also."
 
 ◆ Chapter Six - The Heretics
 
@@ -155,7 +155,7 @@ Listen to this music.
 
 ◆ Chapter Eleven - This Is Personal
 
-▪ “An artist is someone who uses bravery, insight, creativity, and boldness to challenge the status quo. And an artist takes it personally.”
+▪ "An artist is someone who uses bravery, insight, creativity, and boldness to challenge the status quo. And an artist takes it personally."
 – Seth Godin
 
 ▪ Surrounded by so much luxury, almost no one knows how to luxuriate
@@ -168,12 +168,12 @@ Listen to this music.
 
 ◆ Chapter Twelve - It’s Not Optional
 
-▪ “We’re not on our journey to save the world but to save ourselves.
+▪ "We’re not on our journey to save the world but to save ourselves.
 But in doing that you save the world.
-The influence of a vital person vitalizes.”
+The influence of a vital person vitalizes."
 — Joseph Campbell
 
-▪ If you bring forth what is within you, what you bring forth will save you. If you do not bring forth what is within you, what you do not bring forth will destroy you.”
+▪ If you bring forth what is within you, what you bring forth will save you. If you do not bring forth what is within you, what you do not bring forth will destroy you."
 
 ▪ Listen to the call of your authentic self; that part of you that lives just outside of your own skin
 
@@ -182,7 +182,7 @@ The influence of a vital person vitalizes.”
 ▪ culture that values the worth of something by how popular it becomes, how much money it generates, or how famous its creator is.
 
 ▪ Hunter S. Thompson wrote a prescription for the antidote:
-“As things stand now, I am going to be a writer. I’m not sure that I’m going to be a good one or even a self-supporting one, but until the dark thumb of fate presses me to the dust and says ‘you are nothing,’ I will be a writer.”
+"As things stand now, I am going to be a writer. I’m not sure that I’m going to be a good one or even a self-supporting one, but until the dark thumb of fate presses me to the dust and says ‘you are nothing,’ I will be a writer."
 
 ▪ noblesse oblige
 
@@ -190,14 +190,14 @@ The influence of a vital person vitalizes.”
 
 ◆ Chapter Thirteen - Making Potential Real
 
-▪ “Never forget that you are one of a kind. Never forget that if there weren’t any need for you in all your uniqueness to be on this earth, you wouldn’t be here in the first place. And never forget, no matter how overwhelming life’s challenges and problems seem to be, that one person can make a difference in the world. In fact, it is always because of one person that all the changes that matter in the world come about. So be that one person. ”
+▪ "Never forget that you are one of a kind. Never forget that if there weren’t any need for you in all your uniqueness to be on this earth, you wouldn’t be here in the first place. And never forget, no matter how overwhelming life’s challenges and problems seem to be, that one person can make a difference in the world. In fact, it is always because of one person that all the changes that matter in the world come about. So be that one person. "
 ― Buckminster Fuller
 
 ▪ The goal of life is to make your heartbeat match the beat of the universe, to match your nature with Nature.
 
-▪ The plain fact is that the planet does not need more successful people. But it does desperately need more peacemakers, healers, restorers, storytellers, and lovers of every kind. It needs people who live well in their places. It needs people of moral courage willing to join the fight to make the world habitable and humane. And these qualities have little to do with success as we have defined it.”
+▪ The plain fact is that the planet does not need more successful people. But it does desperately need more peacemakers, healers, restorers, storytellers, and lovers of every kind. It needs people who live well in their places. It needs people of moral courage willing to join the fight to make the world habitable and humane. And these qualities have little to do with success as we have defined it."
 
-▪ Pierre Teilhard de Chardin was a Jesuit priest, philosopher, and true renaissance man (and a heretic whose books were censored by the Catholic Church). He wrote, “Someday, after mastering the winds, the waves, the tides and gravity, we shall harness for God the energies of love, and then, for a second time in the history of the world, man will have discovered fire.” 
+▪ Pierre Teilhard de Chardin was a Jesuit priest, philosopher, and true renaissance man (and a heretic whose books were censored by the Catholic Church). He wrote, "Someday, after mastering the winds, the waves, the tides and gravity, we shall harness for God the energies of love, and then, for a second time in the history of the world, man will have discovered fire." 
 
 ◆ Chapter Fourteen - The Call of Soul
 
@@ -221,7 +221,7 @@ To Create
 
 ▪ The cave you fear to enter holds the treasure you seek
 
-▪ “At any given moment, you have the power to say, ‘This is not how the story is going to end.’”
+▪ "At any given moment, you have the power to say, ‘This is not how the story is going to end.’"
 
 ▪ optimism is a by-product of creating
 
@@ -245,7 +245,7 @@ To Create
 
 ◆ Chapter Nineteen - Leading the New Renaissance
 
-▪ The world is crying out for grounded mystics and earthly new mythmakers right now. We have mostly emptied our basket of the old, but yearn for real magic to guide us into a different paradigm.”
+▪ The world is crying out for grounded mystics and earthly new mythmakers right now. We have mostly emptied our basket of the old, but yearn for real magic to guide us into a different paradigm."
 
 ▪ A man’s character is always his destiny
 

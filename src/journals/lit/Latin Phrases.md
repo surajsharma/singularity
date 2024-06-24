@@ -8,9 +8,9 @@ Non dolet ipse Dolet, sed pia turba dolet
 
 
 The second definition of God in The Book of the 24 Philosophers in Latin is 
-“Deus est sphaera intelligibilis cuius centrum ubique circumferential nusquam”, which can be translated into English as 
+"Deus est sphaera intelligibilis cuius centrum ubique circumferential nusquam”, which can be translated into English as 
 
->“God is the intellectually knowable sphere whose center is everywhere and whose circumference is nowhere”.
+>"God is the intellectually knowable sphere whose center is everywhere and whose circumference is nowhere”.
 
 
 

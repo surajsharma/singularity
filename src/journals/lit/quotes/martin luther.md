@@ -1,4 +1,4 @@
-“Reason is the Devil’s greatest whore; by nature and manner of being she is a noxious whore; she is a prostitute, the Devil’s appointed whore; whore eaten by scab and leprosy who ought to be trodden under foot and destroyed, she and her wisdom … Throw dung in her face to make her ugly. She is and she ought to be drowned in baptism… She would deserve, the wretch, to be banished to the filthiest place in the house, to the closets.” 
+"Reason is the Devil’s greatest whore; by nature and manner of being she is a noxious whore; she is a prostitute, the Devil’s appointed whore; whore eaten by scab and leprosy who ought to be trodden under foot and destroyed, she and her wisdom … Throw dung in her face to make her ugly. She is and she ought to be drowned in baptism… She would deserve, the wretch, to be banished to the filthiest place in the house, to the closets.” 
 
 
 [Martin Luther, Erlangen Edition v. 16, pp. 142-148 ]

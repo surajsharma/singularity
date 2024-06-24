@@ -1,6 +1,6 @@
 Life is matter's spiritual gym.
 
-Wrap this around your gin addled brains, i am “together” with no one on this, each person to themselves is a utopia so i accept i am highlighted against a mob, which makes it all the more important to stand up as an individual, no matter the cost.
+Wrap this around your gin addled brains, i am "together” with no one on this, each person to themselves is a utopia so i accept i am highlighted against a mob, which makes it all the more important to stand up as an individual, no matter the cost.
 
 
 

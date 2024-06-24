@@ -82,16 +82,16 @@ will be started first.
 
 - MainActivity inherits AppCompatActivity. AppCompatActivity is a backward compatible activity provided in AndroidX and can ensure the same functionality in different versions of OS
 
-- onCreate() method will be called when an activity is being created. But we cannot see “Hello World” at
+- onCreate() method will be called when an activity is being created. But we cannot see "Hello World” at
 all. Where is this string?
 
-- setContentView() method gets called in onCreate() and it is this method that imported the activity_main layout for the current activity. So “Hello World” must be in this file! Let’s open it and take a look.
+- setContentView() method gets called in onCreate() and it is this method that imported the activity_main layout for the current activity. So "Hello World” must be in this file! Let’s open it and take a look.
 
 - layout files are all under res/layout folder, so you should be able to find activity_main.xml there
 
 ### 1.3.5 Resources in a Project
 
--  folders start with “drawable” are used for images; “mipmap” directories are used for app icons; “values” directories are for strings, colors, etc.; and “layout” directories are used for layouts.
+-  folders start with "drawable” are used for images; "mipmap” directories are used for app icons; "values” directories are for strings, colors, etc.; and "layout” directories are used for layouts.
 
 - • Use R.string.app_name in Kotlin, Java code to get the reference of this string.
 - • Use @string/app_name in XML file

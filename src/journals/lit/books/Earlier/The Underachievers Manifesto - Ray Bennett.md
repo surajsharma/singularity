@@ -25,9 +25,9 @@
 
 > - bad idea to be in a relationship with someone who expects you to keep upping the ante.
 
-- A snack is only a failure if you measure success by the stress-inducing standard of total deprivation”
+- A snack is only a failure if you measure success by the stress-inducing standard of total deprivation"
 
-- No pain, no gain” = no brain
+- No pain, no gain" = no brain
 - Index funds are typically more successful
 
 > The key is the wealth ratio: What you HAVE ÷ What you WANT
@@ -49,4 +49,4 @@
 
 - If you can handle ten, then handle only five.
 
-Notes From: Ray Bennett. “The Underachiever's Manifesto”. Apple Books. 
+Notes From: Ray Bennett. "The Underachiever's Manifesto". Apple Books. 

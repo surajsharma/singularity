@@ -12,7 +12,7 @@ Ride the Tiger - Julius Evola (Highlight: 26; Note: 0)
 
 ▪ René Guénon
 
-▪ civilization or a society is “traditional” when it is ruled by principles that transcend what is merely human and individual, and when all its sectors are formed and ordered from above, and directed to what is above
+▪ civilization or a society is "traditional" when it is ruled by principles that transcend what is merely human and individual, and when all its sectors are formed and ordered from above, and directed to what is above
 
 ▪ little group seems willing to fight on, even in lost positions.
 
@@ -30,25 +30,25 @@ Ride the Tiger - Julius Evola (Highlight: 26; Note: 0)
 
 ▪ It is good to sever every link with all that which is destined sooner or later to collapse.
 
-▪ Don’t go to the place of defense, but to the place of attack,” might be adopted by the group of differentiated men, late children of the Tradition, who are in question here
+▪ Don’t go to the place of defense, but to the place of attack," might be adopted by the group of differentiated men, late children of the Tradition, who are in question here
 
 ▪ The basic ideas to be drawn from what has been said so far can be summarized as follows
 
-▪ Consequently the crisis of the modern world could represent, in Hegel’s terms, a “negation of a negation,”
+▪ Consequently the crisis of the modern world could represent, in Hegel’s terms, a "negation of a negation,"
 
-◆ Chapter 2. The End of a Cycle—“Ride the Tiger”
+◆ Chapter 2. The End of a Cycle—"Ride the Tiger"
 
 ▪ ride the tiger
 
 ▪ if one succeeds in riding a tiger, not only does one avoid having it leap on one, but if one can keep one’s seat and not fall off, one may eventually get the better of it.
 
-▪ the “ox-herding” episodes of Japanese Zen;
+▪ the "ox-herding" episodes of Japanese Zen;
 
 ▪ Mithras, who lets himself be dragged by the bull and will not let go until the animal stops, whereupon Mithras kills it.
 
 ▪ Kali Yuga
 
-▪ We shall now examine the principle of “riding the tiger”
+▪ We shall now examine the principle of "riding the tiger"
 
 ▪ When a cycle of civilization is reaching its end, it is difficult to achieve anything by resisting it and by directly opposing the forces in motion.
 

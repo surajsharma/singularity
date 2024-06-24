@@ -12,7 +12,7 @@ how can i survive on less than what i have?
 what am i avoiding to do, which, if i did, would be helpful?
 if anything can be made sadhana, why stop at spiritual success?
 how can i serve others better w/o betraying myself?
-what “rights” did you give up when you decided to pick up that phone? drive that car? put on that uniform?
+what "rights” did you give up when you decided to pick up that phone? drive that car? put on that uniform?
 what is a human if not something to be deeply observed by other humans?, deeper the better. self observation is the essence of being human.
 why fit in when you were born to stand out
 why do you have so many critics?

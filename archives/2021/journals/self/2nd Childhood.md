@@ -6,7 +6,7 @@ While in my political infancy and mendicancy, I meditated upon these things:
 
 
 Repetition and Difference
-The transient nature of all things, including the illusion of “human nature”
+The transient nature of all things, including the illusion of "human nature”
 Boundaries and Borders
 
 individual sovereignty, self respect and ego

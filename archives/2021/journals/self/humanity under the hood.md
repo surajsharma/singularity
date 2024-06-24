@@ -84,7 +84,7 @@ people were parochial and narrow minded as ever, not being able to see beyond mo
 
 
 
-people were unable to love, especially the “other”, not in the least someone like me who chose to proactively become an “other”, however insignificantly
+people were unable to love, especially the "other”, not in the least someone like me who chose to proactively become an "other”, however insignificantly
 
 
 
@@ -104,11 +104,11 @@ a measure of disdain against females was brewed in me, not that one cared about 
 
 
 
-in other words, where one once saw a human, one now saw mere “property” and it made one more indifferent towards my cause
+in other words, where one once saw a human, one now saw mere "property” and it made one more indifferent towards my cause
 
 
 
-if one wondered whether this is a disease, then one made it one, same for the concept of “sin” or other definitions of what was happening to one that were offered - people dared ask why and all one had to say was - why not - one just wanted to take a peek under the hood and just sort of stand there, stupefied, amazed, terrified - bewildered while one decided what to do next
+if one wondered whether this is a disease, then one made it one, same for the concept of "sin” or other definitions of what was happening to one that were offered - people dared ask why and all one had to say was - why not - one just wanted to take a peek under the hood and just sort of stand there, stupefied, amazed, terrified - bewildered while one decided what to do next
 
 
 

@@ -72,7 +72,7 @@
 
 ▪ Western thinking has lost touch with human experience in almost schizophrenic self-denial 
 
-▪ Objective knowledge requires a conceptual, third-person view of the world, but nobody has ever met a “third person.” 
+▪ Objective knowledge requires a conceptual, third-person view of the world, but nobody has ever met a "third person." 
 
 ▪ Western world has forgotten what being truly rational means 
 
@@ -93,7 +93,7 @@
 ▪ scientific method leads to rational knowledge, not objective knowledge 
 ▪ reason can also help find a consensus where the scientific method doesn’t apply 
 
-▪ Existential rationalism isn’t the West’s first “subjective” philosophy, but it seeks to be a more comprehensive one 
+▪ Existential rationalism isn’t the West’s first "subjective" philosophy, but it seeks to be a more comprehensive one 
 ▪ Hume’s challenge to rationalism is finally met 
 ▪ inevitable conclusion is that quantum computers will never actually compute 
 
@@ -133,4 +133,4 @@
 
 ▪ Present immediacy essentially defines the ontic knowledge of phenomenal experience. This condition has a consequence: all phenomenal experience must be private
 
- ▪ The subject who has the experience is no longer our first-person conscious mind, but an imagined “other person,” possibly a projection of our conscious mind in the past or future.
+ ▪ The subject who has the experience is no longer our first-person conscious mind, but an imagined "other person," possibly a projection of our conscious mind in the past or future.

@@ -29,11 +29,11 @@ what appears to others is twice as unreal as what appears to you
 youtube
 instead of locating meaning in real time, find it in history
 
-“what was the artist/creator thinking when he made this”
+"what was the artist/creator thinking when he made this”
 
 rather than
 
-“what are they trying to tell me”
+"what are they trying to tell me”
 
 not everything that looks like a transgression
 is a transgression, some are mere explorations
@@ -106,7 +106,7 @@ The essence of greatness is the perception that virtue is enough. Poverty is its
 How to discover America in 4 easy steps
 find erica
 commit "crime"
-make erica “partner” in “crime”
+make erica "partner” in "crime”
 jump off a cliff BOOM
 gun
 the real problem of keeping a weapon is the temptation of using it on yourself
@@ -261,7 +261,7 @@ the singularity signifier, one individual -  me
 
 # location  #aphorisms
 
-“soul” kahin nahin hai / 
+"soul” kahin nahin hai / 
 
 aur kahin bhi, nahin hi hai
 

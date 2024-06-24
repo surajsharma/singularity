@@ -78,7 +78,7 @@ According to the most popular version of the singularity hypothesis, called inte
 ## Law of accelerating returns
 - moore's law, dna sequencing
 
-Does the singularity hypothesis deserve to be taken seriously, or is it just an imaginative fiction? One argument for taking it seriously is based on what Ray Kurzweil calls the “law of accelerating returns.” An area of technology is subject to the law of accelerating returns if the rate at which the technology improves is proportional to how
+Does the singularity hypothesis deserve to be taken seriously, or is it just an imaginative fiction? One argument for taking it seriously is based on what Ray Kurzweil calls the "law of accelerating returns." An area of technology is subject to the law of accelerating returns if the rate at which the technology improves is proportional to how
 good the technology is. In other words, the better the technology is, the faster it gets better, yielding exponential improvement over time.
 
 Some authors confidently predict that this watershed will occur in the middle of the 21st century

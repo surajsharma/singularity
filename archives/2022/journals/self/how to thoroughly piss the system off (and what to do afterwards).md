@@ -41,15 +41,15 @@ if you're not dead immediately, you will at least be ostracized, it will feel li
 
 if you survive, your only reward will be the unpleasant confessions of people who will continue to try to kill you (by osctracism, if nothing else) while pleading for you to be their savior, this is just their narcissism, don't bite.
 
-if you survive for long after thoroughly pissing the system off, the system will try to fuse with you, this will hurt a lot, not in the least because it is a dilemma, if you merge with the system, you lose your identity, if you hold out, you don't do much better. the system willn play with your, in the words of Ye, “rent, food, water, and lights”, but also your internet connection, obviously. bear witness.
+if you survive for long after thoroughly pissing the system off, the system will try to fuse with you, this will hurt a lot, not in the least because it is a dilemma, if you merge with the system, you lose your identity, if you hold out, you don't do much better. the system willn play with your, in the words of Ye, "rent, food, water, and lights”, but also your internet connection, obviously. bear witness.
 
-in so far as the system is nothing but a mob, it's job is to leave you alone in direct proportion to how disgusted it is with you, understand that it will do everything in its power to leave you suicidal, if you are willing to put yourself out, the system will have won, you will get praised for a while and the “people under the microscope” will have moved on, without any fundamental change to their constitution.
+in so far as the system is nothing but a mob, it's job is to leave you alone in direct proportion to how disgusted it is with you, understand that it will do everything in its power to leave you suicidal, if you are willing to put yourself out, the system will have won, you will get praised for a while and the "people under the microscope” will have moved on, without any fundamental change to their constitution.
 
 think chester bennington, don't fall for the oldest trick in the book.
 
 if you piss the system off in full public view, and refuse to merge with it, this will lead to identity politics. you will need to be above all that in order to survive.
 
-remember that pissing the system thoroughly off is the only act of political freedom, and as such, greater than any politics. if it wasn't above politics, politics wouldn't envvy it, and the pisser-offer (hereafter known as the “party”) would get along. however, that's not the idea. to get along with humanity that has led the planet in a square ditch is no measure of being human.
+remember that pissing the system thoroughly off is the only act of political freedom, and as such, greater than any politics. if it wasn't above politics, politics wouldn't envvy it, and the pisser-offer (hereafter known as the "party”) would get along. however, that's not the idea. to get along with humanity that has led the planet in a square ditch is no measure of being human.
 
 pissing the system off is an act of defiance and an invitation to death. style matters. once the death threats start, you can start to consider yourself a winner, regardless of whether the system means them or not.
 

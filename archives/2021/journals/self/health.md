@@ -44,7 +44,7 @@
 
 - Between sardines, wild-caught salmon, and a few teaspoons of cod liver oil a week, I get plenty of long-chain omega 3 fatty acids and retinol in my diet without going overboard.
 
-- Collagen is the protein that makes up most of our bodies, including large portions of our bone, muscles, skin, blood vessels, tendons, and ligaments. It’s the “stuff” that holds our body together, and it’s deficient in modern diets.
+- Collagen is the protein that makes up most of our bodies, including large portions of our bone, muscles, skin, blood vessels, tendons, and ligaments. It’s the "stuff” that holds our body together, and it’s deficient in modern diets.
 
 - I personally take a few grams of collagen powder daily. I limit my consumption of muscle meat, and add a bit of this to peppermint tea or blackberry coconut smoothies. It’s tasteless, and serves as a useful protein source to complement and balance the rest of the protein types I eat throughout the day.
 
