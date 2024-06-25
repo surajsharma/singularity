@@ -10,6 +10,7 @@
 * 📄 [heap](heap.md)
 * 📄 [in place reversal of linked list](in place reversal of linked list.md)
 * 📄 [intervals](intervals.md)
+* 📄 [queue](queue.md)
 * 📄 [sliding window](sliding window.md)
 * 📄 [topological sort](topological sort.md)
 * 📄 [trie](trie.md)
