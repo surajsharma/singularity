@@ -281,11 +281,32 @@ function gel(el) {
     return document.getElementById(el);
 }
 
+function setLocalVersion(v) {
+    localStorage.setItem('singularity_version', v);
+}
+
+function getLocalVersion() {
+    return localStorage.getItem('singularity_version');
+}
+
+function reloadOnVersionChange(lv, rv) {
+    if (rv != lv) {
+        localStorage.setItem('singularity_version', rv);
+        window.location.href = window.location.href;
+    }
+}
+
 if (support) {
     document.addEventListener('thread_sync', async (event) => {
         switch (thread_sync.count) {
             case 1:
                 says(searchVersion, `search db version: 0.0.${thread_sync.data.version}`);
+                const localVersion = getLocalVersion();
+                if (localVersion == null) {
+                    setLocalVersion(thread_sync.data.version);
+                    localVersion = thread_sync.data.version;
+                }
+                reloadOnVersionChange(localVersion, thread_sync.data.version);
                 break;
             case 4:
                 await loadSearchIndices();
