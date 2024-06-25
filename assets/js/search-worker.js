@@ -1,5 +1,3 @@
-//TODO: fetch and write stream
-
 let dbName = "singularity-search";
 
 const baseUrl = "https://raw.githubusercontent.com/surajsharma/singularity/master";

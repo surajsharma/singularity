@@ -1,3 +1,4 @@
+#!/usr/bin/env bash
 echo ⚙️ rebuilding file indices...
 find . -name "index.md" -type f -delete
 node assets/js/files-index.js archives

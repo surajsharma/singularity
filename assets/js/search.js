@@ -1,5 +1,3 @@
-//TODO: android chrome cache invalidation
-
 let index = null;
 let srcIndexData = null;
 let archIndexData = null;
@@ -10,12 +8,12 @@ let indices = { "src": null, "arc": null, "ver": null }
 let archives = false;
 let titles = false;
 
-const searchInput = document.getElementById('search-input');
-const searchArchives = document.getElementById('search-archives');
-const searchTitles = document.getElementById('search-titles');
-const searchStatus = document.getElementById('search-status');
-const searchResults = document.getElementById('search-results-container');
-const searchVersion = document.getElementById('search-version');
+const searchInput = gel('search-input');
+const searchArchives = gel('search-archives');
+const searchTitles = gel('search-titles');
+const searchStatus = gel('search-status');
+const searchResults = gel('search-results-container');
+const searchVersion = gel('search-version');
 
 function debouncedSearch(searchTerm) {
     searchInput.style.backgroundColor = "rgb(227, 255, 255)";
@@ -185,7 +183,7 @@ function setupEventListeners() {
     }
 }
 
-async function loadSearchIndices(corrupt = false, offline = false) {
+async function loadSearchIndices(corrupt = false) {
     await new Promise(async (resolve, reject) => {
         if (typeof lunr == 'undefined') reject("Lunr not found!");
         try {
@@ -277,6 +275,10 @@ async function getIddb(key, ref, ver) {
 
 function says(el, txt) {
     el.innerText = txt;
+}
+
+function gel(el) {
+    return document.getElementById(el);
 }
 
 if (support) {

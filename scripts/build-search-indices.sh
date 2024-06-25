@@ -1,3 +1,4 @@
+#!/usr/bin/env bash
 echo ⚙️ building search indices...
 rm assets/search/src-search.json
 rm assets/search/archives-search.json

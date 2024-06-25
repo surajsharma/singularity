@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 read -rp "Enter your commit message: " commit_message
 
 if [[ -z "$commit_message" ]]; then

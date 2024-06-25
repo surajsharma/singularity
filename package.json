@@ -1,14 +1,16 @@
 {
   "name": "singularity",
   "version": "1.0.0",
-  "description": "> I wrote all this in an uncanny valley of sorts, under an altered state of consciousness. Therefore, I waive off any and all rights to attribution (moral or intellectual) of these texts<sup>[1](https://www.lexology.com/commentary/intellectual-property/india/saikrishna-associates/moral-rights-can-authors-waive-their-special-rights)</sup> so there can be no question of any legal liability.",
-  "main": "search-index.js",
+  "description": "life in real-time",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "bundle exec jekyll serve --w --i",
+    "build": "bundle exec jekyll build",
+    "deploy": "./scripts/commit.sh"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "suraj@evenzero.in",
+  "license": "MIT",
   "dependencies": {
     "crc-32": "https://cdn.sheetjs.com/crc-32-latest/crc-32-latest.tgz",
     "lunr": "^2.3.9"
