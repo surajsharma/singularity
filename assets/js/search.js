@@ -221,8 +221,8 @@ async function initSearchWorkerless() {
     } else {
         try {
             says(searchStatus, 'Loading...');
-            srcIndexData = await fetchRemoteJson(SRC + `?v=${Date.now()}`);
-            archIndexData = await fetchRemoteJson(ARCHIVES + `?v=${Date.now()}`);
+            srcIndexData = await fetchRemoteJson(SRC);
+            archIndexData = await fetchRemoteJson(ARCHIVES);
             says(searchStatus, '');
 
             // load main index
@@ -236,7 +236,7 @@ async function initSearchWorkerless() {
 
 async function fetchRemoteJson(loc, t = false) {
     try {
-        const resp = await fetch(loc, { cache: "no-store" });
+        const resp = await fetch(loc + `?v=${Date.now()}`, { cache: "no-store" });
         return t ? resp.text() : resp.json();
     } catch (error) {
         console.error('Error fetching search index:', error);

@@ -10,7 +10,7 @@ const DB = `${baseUrl}/assets/search/db.json`;
 
 async function fetchRemoteJson(loc, t = false) {
     try {
-        const resp = await fetch(loc, { cache: "no-store" });
+        const resp = await fetch(loc + `?v=${Date.now()}`, { cache: "no-store" });
         return t ? resp.text() : resp.json();
     } catch (error) {
         console.log("~ fetchRemoteJson ~ error:", error);
@@ -46,7 +46,7 @@ async function setVersionedIddb(db, version, schecksum, achecksum) {
 
         arc.onsuccess = async (evt) => {
             if (!evt.target.result) { //init
-                const arcdata = await fetchRemoteJson(ARCHIVES + `?v=${version}`);
+                const arcdata = await fetchRemoteJson(ARCHIVES);
                 const tx = db.transaction("release", "readwrite");
                 const store = tx.objectStore("release");
                 store.put({ id: "arc", value: arcdata });
@@ -59,7 +59,7 @@ async function setVersionedIddb(db, version, schecksum, achecksum) {
 
         src.onsuccess = async (evt) => {
             if (!evt.target.result) { //init
-                const srcdata = await fetchRemoteJson(SRC + `?v=${version}`);
+                const srcdata = await fetchRemoteJson(SRC);
                 store = db.transaction("release", "readwrite").objectStore("release");
                 store.put({ id: "src", value: srcdata });
             }
@@ -95,7 +95,7 @@ async function setVersionedIddb(db, version, schecksum, achecksum) {
 
             //--arc checksum mismatch--
             if (event.target.result.value.achecksum != achecksum) {
-                const arcdata = await fetchRemoteJson(ARCHIVES + `?v=${version}`);
+                const arcdata = await fetchRemoteJson(ARCHIVES);
                 store = db.transaction("release", "readwrite").objectStore("release");
                 store.put({ id: "arc", value: arcdata });
 
@@ -110,7 +110,7 @@ async function setVersionedIddb(db, version, schecksum, achecksum) {
 
             //--src checksum mismatch--
             if (event.target.result.value.schecksum != schecksum) {
-                const srcdata = await fetchRemoteJson(SRC + `?v=${version}`);
+                const srcdata = await fetchRemoteJson(SRC);
                 store = db.transaction("release", "readwrite").objectStore("release");
 
                 store.put({ id: "src", value: srcdata });

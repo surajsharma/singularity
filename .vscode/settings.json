@@ -30,6 +30,8 @@
   "GitHooks.hooksDirectory": "\\\\wsl.localhost\\Ubuntu\\home\\suraj\\singularity\\.git\\hooks",
   "C_Cpp.errorSquiggles": "disabled",
   "cSpell.enableFiletypes": [
+    "!c",
+    "!git-commit",
     "markdown_latex_combined"
   ],
   "cSpell.language": "en-GB"
