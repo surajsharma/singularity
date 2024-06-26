@@ -15,6 +15,7 @@ const searchStatus = gel('search-status');
 const searchResults = gel('search-results-container');
 const searchVersion = gel('search-version');
 
+
 function debouncedSearch(searchTerm) {
     searchInput.style.backgroundColor = "rgb(227, 255, 255)";
     searchStatus.style.color = "black";
@@ -38,8 +39,11 @@ function debouncedSearch(searchTerm) {
 }
 
 function getLink(item) {
+
+    const colab_blob_url = "https://colab.research.google.com/github/surajsharma/singularity/blob/master/"
+
     if (item.ref.endsWith("ipynb")) {
-        return `https://nbviewer.org/urls/evenzero.in/singularity/${item.ref}`;
+        return `${colab_blob_url}${item.ref}`;
     }
 
     if (item.ref.endsWith("md")) {
@@ -291,6 +295,7 @@ function getLocalVersion() {
 
 function reloadOnVersionChange(lv, rv) {
     if (rv != lv) {
+        says(searchStatus, "DB updated, reloading...");
         localStorage.setItem('singularity_version', rv);
         window.location.href = window.location.href;
     }
