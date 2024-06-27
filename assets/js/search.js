@@ -7,6 +7,7 @@ let indices = { "src": null, "arc": null, "ver": null }
 // search modifiers
 let archives = false;
 let titles = false;
+let versionUpdated = false;
 
 const searchInput = gel('search-input');
 const searchArchives = gel('search-archives');
@@ -192,7 +193,7 @@ async function loadSearchIndices(corrupt = false) {
         if (typeof lunr == 'undefined') reject("Lunr not found!");
         try {
             corrupt ?
-                says(searchStatus, 'Search database damaged, healing...') :
+                says(searchStatus, 'Reloading search database...') :
                 says(searchStatus, 'Loading...');
 
             await getIddb("src", indices, version);
@@ -256,11 +257,12 @@ async function getIddb(key, ref, ver) {
                 const query = store.getAll(key);
 
                 query.onsuccess = async (e) => {
-                    if (e.target.result.length < 1) {
+                    if (e.target.result.length < 1 || versionUpdated) {
                         // fault-tolerance: we're here because somehow 
                         // the local db wasn't there, the sync script has 
                         // recreated it, but page needs to register
                         await loadSearchIndices(true);
+                        versionUpdated = false;
                     } else {
                         ref[key] = e.target.result;
                         resolve(ref);
@@ -298,6 +300,7 @@ function reloadOnVersionChange(lv, rv) {
         says(searchStatus, "DB updated, reloading...");
         localStorage.setItem('singularity_version', rv);
         window.location.href = window.location.href;
+        versionUpdated = true;
     }
 }
 
@@ -317,7 +320,7 @@ if (support) {
                 await loadSearchIndices();
                 break;
             case -1:
-                await loadSearchIndices(false, true);
+                await loadSearchIndices(false);
                 break;
             default: break;
         }
