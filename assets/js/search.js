@@ -1,8 +1,4 @@
 let index = null;
-let srcIndexData = null;
-let archIndexData = null;
-
-let indices = { "src": null, "arc": null, "ver": null }
 
 // search modifiers
 let archives = false;
@@ -136,11 +132,13 @@ function displaySearch(search, searchTerm) {
 }
 
 function loadSearchIndex(data) {
+    //TODO: ideally, let a dedicated worker handle it?
+
     index = lunr.Index.load(data);
     console.log('search index loaded!');
 }
 
-function handleToggle(event) {
+async function handleToggle(event) {
     const target = event.target;
     switch (`${target.id}`) {
         case 'search-archives':
@@ -148,10 +146,14 @@ function handleToggle(event) {
             searchInput.value = '';
             searchResults.innerHTML = '';
             if (archives) {
-                archIndexData && loadSearchIndex(archIndexData);
+                const data = await getIddb("arc", version);
+                data.length && data[0].value && loadSearchIndex(data[0].value);
+                searchInput.focus();
             }
             if (!archives) {
-                srcIndexData && loadSearchIndex(srcIndexData);
+                const data = await getIddb("src", version);
+                data.length && data[0].value && loadSearchIndex(data[0].value);
+                searchInput.focus();
             }
             says(searchStatus, '');
             break;
@@ -160,6 +162,7 @@ function handleToggle(event) {
             searchInput.value = '';
             searchResults.innerHTML = '';
             says(searchStatus, '');
+            searchInput.focus();
             break;
         default:
             break;
@@ -196,19 +199,13 @@ async function loadSearchIndices(corrupt = false) {
                 says(searchStatus, 'Reloading search database...') :
                 says(searchStatus, 'Loading...');
 
-            await getIddb("src", indices, version);
-
-            indices.src.length && (srcIndexData = indices.src[0].value);
-
-            // load main index
-            indices.src && loadSearchIndex(srcIndexData);
+            const data = await getIddb("src", version);
+            data.length && data[0].value && loadSearchIndex(data[0].value);
 
             setupEventListeners();
             says(searchStatus, '');
 
-            await getIddb("arc", indices, version);
-            indices.arc.length && (archIndexData = indices.arc[0].value);
-
+            await getIddb("arc", version);
             resolve(0);
         } catch (error) {
             console.log("~ loadSearchIndices ~ error:", error);
@@ -246,10 +243,11 @@ async function fetchRemoteJson(loc, t = false) {
     }
 }
 
-async function getIddb(key, ref, ver) {
-    await new Promise((resolve, reject) => {
+async function getIddb(key, ver) {
+    return new Promise((resolve, reject) => {
         try {
             const request = self.indexedDB.open(dbName, ver);
+
             request.onsuccess = async (event) => {
                 const db = event.target.result;
                 const tx = db.transaction("release", "readonly")
@@ -257,6 +255,7 @@ async function getIddb(key, ref, ver) {
                 const query = store.getAll(key);
 
                 query.onsuccess = async (e) => {
+
                     if (e.target.result.length < 1 || versionUpdated) {
                         // fault-tolerance: we're here because somehow 
                         // the local db wasn't there, the sync script has 
@@ -264,8 +263,7 @@ async function getIddb(key, ref, ver) {
                         await loadSearchIndices(true);
                         versionUpdated = false;
                     } else {
-                        ref[key] = e.target.result;
-                        resolve(ref);
+                        resolve(e.target.result);
                     }
                 }
 
