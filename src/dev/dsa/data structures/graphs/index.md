@@ -3,3 +3,4 @@
 * 📄 [dfs-stack](dfs-stack.md)
 * 📄 [graphs](graphs.md)
 * 📄 [has-path](has-path.md)
+* 📄 [LC-1791-find-center-of-star-graph](LC-1791-find-center-of-star-graph.md)

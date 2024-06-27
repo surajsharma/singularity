@@ -20,6 +20,7 @@
 * 📄 [LC-412-fizz-buzz](LC-412-fizz-buzz.md)
 * 📄 [LC-49-group-anagrams](LC-49-group-anagrams.md)
 * 📄 [LC-53-max-subarray-kedane](LC-53-max-subarray-kedane.md)
+* 📄 [LC-56-merg-intervals](LC-56-merg-intervals.md)
 * 📄 [LC-58-length-of-last-word](LC-58-length-of-last-word.md)
 * 📄 [LC-66-plus-one](LC-66-plus-one.md)
 * 📄 [LC-724-find-pivot-index](LC-724-find-pivot-index.md)
