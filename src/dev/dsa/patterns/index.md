@@ -5,7 +5,6 @@
 * 📄 [dfs](dfs.md)
 * 📄 [dynamic programming](dynamic programming.md)
 * 📄 [fast and slow pointers](fast and slow pointers.md)
-* 📄 [graph](graph.md)
 * 📄 [greedy](greedy.md)
 * 📄 [heap](heap.md)
 * 📄 [in place reversal of linked list](in place reversal of linked list.md)
