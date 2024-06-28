@@ -4,7 +4,7 @@
 
 
 - [[greedy]]
-- [[graph]]
+- [graph](../graphs/index.md)
 - heap/priority queue
 
 ```js 
