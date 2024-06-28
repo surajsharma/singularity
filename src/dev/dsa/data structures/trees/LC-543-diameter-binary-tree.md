@@ -1,9 +1,28 @@
-- [543. Diameter of Binary Tree](https://leetcode.com/problems/diameter-of-binary-tree)
-- O(n)
+# 543. [Diameter of Binary Tree](https://leetcode.com/problems/diameter-of-binary-tree)
+## O(n)
 
+
+```python
+
+def diameterOfBinaryTree(self, root: Optional[TreeNode]) -> int:
+    def get_depth(node):
+        nonlocal dia                    # nonlocal for outer scoped var
+        if not node:                    # base case
+            return 0
+
+        left = get_depth(node.left)
+        right = get_depth(node.right)
+
+        dia = max(dia, left+right)      #diameter is updated if < l+r
+        return 1 + max(left, right)     #return greater depth for each level
+
+    dia = 0
+    get_depth(root)
+    return dia
+
+```
 
 ```js
-
 var diameterOfBinaryTree = function (root) {
     let d = 0;
     dfs(root);
@@ -20,6 +39,4 @@ var diameterOfBinaryTree = function (root) {
         return gd;
     }
 };
-
-
 ```
