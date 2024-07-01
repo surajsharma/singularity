@@ -7,7 +7,8 @@
     "watch": "bundle exec jekyll serve --w --i",
     "build": "bundle exec jekyll build",
     "deploy": "./scripts/commit.sh",
-    "ngrok": "ngrok http 4000 "
+    "ngrok": "ngrok http 4000",
+    "index": "./scripts/build-nav-indices.sh"
   },
   "keywords": [],
   "author": "suraj@evenzero.in",

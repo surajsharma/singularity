@@ -3,12 +3,6 @@
 
 @import "{{ site.theme }}";
 
-
-html {
-  transition: color 300ms, background-color 300ms;
-  filter: invert(0);
-}
-
 @mixin not-last-child($selector) {
   & #{$selector}:not(:last-child) {
     @content;

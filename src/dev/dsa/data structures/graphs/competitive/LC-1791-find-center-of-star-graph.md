@@ -1,6 +1,6 @@
-# 1791. [Find Center of Star Graph](https://leetcode.com/problems/find-center-of-star-graph)
+## 1791. [Find Center of Star Graph](https://leetcode.com/problems/find-center-of-star-graph)
 
-## O(1)
+### O(1)
 
 ```js 
 
