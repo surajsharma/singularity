@@ -21,22 +21,24 @@
     let dm = localStorage.getItem("singularity_theme");
     let dmt = document.getElementById("darkmode-icon");
 
-    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => {
-        if (!dm) {
-            localStorage.setItem("singularity_theme", e.matches ? "dark" : "light");
-        }
-    });
-
     if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
         // dark mode
         if (!dm) {
             dm = "dark";
             localStorage.setItem("singularity_theme", dm);
         }
-
         document.documentElement.style.filter = `invert(${dm === "dark" ? 1 : 0})`;
         dmt.innerText = dm === "dark" ? "☀️" : "🌙";
+    }
 
+    if (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches) {
+        // light mode
+        if (!dm) {
+            dm = "light";
+            localStorage.setItem("singularity_theme", dm);
+        }
+        document.documentElement.style.filter = `invert(${dm === "dark" ? 1 : 0})`;
+        dmt.innerText = dm === "dark" ? "☀️" : "🌙";
     }
 
     const toggleDarkMode = () => {
@@ -46,8 +48,12 @@
         localStorage.setItem("singularity_theme", dm);
     }
 
-    document.documentElement.style.filter = `invert(${dm === "dark" ? 1 : 0})`;
     dmt.addEventListener("click", toggleDarkMode);
+
+
+    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => {
+        localStorage.setItem("singularity_theme", e.matches ? "dark" : "light");
+    });
 </script>
 
 {% if jekyll.environment == "production" %}
@@ -76,7 +82,6 @@
     if (search) {
         search.href = urlprefix == "" ? "/src/search" : "/" + urlprefix + "/src/search";
     }
-
 </script>
 
 <script defer src="{{ site.baseurl }}{% link assets/js/sync-search.js %}"></script>
