@@ -12,50 +12,6 @@
     </div>
 </div>
 
-<script>
-
-    // environment
-    let urlprefix = "";
-
-    // dark mode
-    let dm = localStorage.getItem("singularity_theme");
-    let dmt = document.getElementById("darkmode-icon");
-
-    if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-        // dark mode
-        if (!dm) {
-            dm = "dark";
-            localStorage.setItem("singularity_theme", dm);
-        }
-        document.documentElement.style.filter = `invert(${dm === "dark" ? 1 : 0})`;
-        dmt.innerText = dm === "dark" ? "☀️" : "🌙";
-    }
-
-    if (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches) {
-        // light mode
-        if (!dm) {
-            dm = "light";
-            localStorage.setItem("singularity_theme", dm);
-        }
-        document.documentElement.style.filter = `invert(${dm === "dark" ? 1 : 0})`;
-        dmt.innerText = dm === "dark" ? "☀️" : "🌙";
-    }
-
-    const toggleDarkMode = () => {
-        dm = dm === "dark" ? "light" : "dark";
-        document.documentElement.style.filter = `invert(${dm === "dark" ? 1 : 0})`;
-        dmt.innerText = dm === "dark" ? "☀️" : "🌙";
-        localStorage.setItem("singularity_theme", dm);
-    }
-
-    dmt.addEventListener("click", toggleDarkMode);
-
-
-    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => {
-        localStorage.setItem("singularity_theme", e.matches ? "dark" : "light");
-    });
-</script>
-
 {% if jekyll.environment == "production" %}
 <script>
     urlprefix = "singularity";
