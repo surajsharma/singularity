@@ -3,17 +3,56 @@
         <div style="width: 100%; display: flex; flex-direction:column;">
             <h1 style="width: 100%; display: flex; justify-content:space-between; align-items: center;">
                 <a id="title" href="/">{{ site.title }}</a>
-                <a id="search-icon" href="/singularity/src/search">🔎</a>
+                <div>
+                    <a id="darkmode-icon" href="#0"></a>
+                    <a id="search-icon" href="/singularity/src/search">🔎</a>
+                </div>
             </h1>
         </div>
     </div>
 </div>
 
-<script>let urlprefix = "";</script>
+<script>
+
+    // environment
+    let urlprefix = "";
+
+    // dark mode
+    let dm = localStorage.getItem("singularity_theme");
+    let dmt = document.getElementById("darkmode-icon");
+
+    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => {
+        if (!dm) {
+            localStorage.setItem("singularity_theme", e.matches ? "dark" : "light");
+        }
+    });
+
+    if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        // dark mode
+        if (!dm) {
+            dm = "dark";
+            localStorage.setItem("singularity_theme", dm);
+        }
+
+        document.documentElement.style.filter = `invert(${dm === "dark" ? 1 : 0})`;
+        dmt.innerText = dm === "dark" ? "☀️" : "🌙";
+
+    }
+
+    const toggleDarkMode = () => {
+        dm = dm === "dark" ? "light" : "dark";
+        document.documentElement.style.filter = `invert(${dm === "dark" ? 1 : 0})`;
+        dmt.innerText = dm === "dark" ? "☀️" : "🌙";
+        localStorage.setItem("singularity_theme", dm);
+    }
+
+    document.documentElement.style.filter = `invert(${dm === "dark" ? 1 : 0})`;
+    dmt.addEventListener("click", toggleDarkMode);
+</script>
 
 {% if jekyll.environment == "production" %}
 <script>
-    urlprefix = "singularity"
+    urlprefix = "singularity";
 </script>
 {% endif %}
 

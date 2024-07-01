@@ -6,7 +6,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "watch": "bundle exec jekyll serve --w --i",
     "build": "bundle exec jekyll build",
-    "deploy": "./scripts/commit.sh"
+    "deploy": "./scripts/commit.sh",
+    "ngrok": "ngrok http 4000 "
   },
   "keywords": [],
   "author": "suraj@evenzero.in",

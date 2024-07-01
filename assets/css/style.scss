@@ -3,10 +3,20 @@
 
 @import "{{ site.theme }}";
 
+
+html {
+  transition: color 300ms, background-color 300ms;
+  filter: invert(0);
+}
+
 @mixin not-last-child($selector) {
   & #{$selector}:not(:last-child) {
     @content;
   }
+}
+
+li{
+  font-size: large;
 }
 
 .nav-item {
@@ -87,6 +97,15 @@ blockquote {
   }
 }
 
+#darkmode-icon{
+  font-size: 21px;
+  cursor: pointer;
+  margin-right: 15px;
+  &:hover {
+    text-decoration: none;
+  }
+}
+
 #search-controls{
   display: flex;
   flex-direction: column;
@@ -95,10 +114,10 @@ blockquote {
 
 #search-input{
   width: 100%;
-  border: 1px solid #eaecef;
+  border: 1px solid #b1b1b1;
   border-radius: 5px;
   padding: 5px;
-  background-color: rgb(227, 255, 255);
+  background-color: rgb(250, 250, 250);
   outline: none;
 }
 
@@ -195,7 +214,6 @@ blockquote {
     }    
   }
 }
-
 
 #search-version{
   text-align: right;

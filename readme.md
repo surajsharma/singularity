@@ -9,5 +9,3 @@
 
 
 [![pages-build-deployment](https://github.com/surajsharma/singularity/actions/workflows/pages/pages-build-deployment/badge.svg?branch=master)](https://github.com/surajsharma/singularity/actions/workflows/pages/pages-build-deployment)
-
-![](attachments/2023-03-07-15-59-20.png)![](attachments/2023-03-07-15-59-28.png)
