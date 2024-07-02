@@ -15,6 +15,7 @@
 * 📄 [LC-2529-maximum-count-of-positive-integer-and-negative-integer](LC-2529-maximum-count-of-positive-integer-and-negative-integer.md)
 * 📄 [LC-268-missing-number](LC-268-missing-number.md)
 * 📄 [LC-338-counting-bits](LC-338-counting-bits.md)
+* 📄 [LC-350-intersection-of-two-arrays-II](LC-350-intersection-of-two-arrays-II.md)
 * 📄 [LC-412-fizz-buzz](LC-412-fizz-buzz.md)
 * 📄 [LC-49-group-anagrams](LC-49-group-anagrams.md)
 * 📄 [LC-53-max-subarray-kedane](LC-53-max-subarray-kedane.md)
