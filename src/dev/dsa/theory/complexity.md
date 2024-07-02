@@ -1,3 +1,6 @@
+![alt text](../../../../attachments/time-complexity.png)
+
+
 These are the most commonly used classifications for order of magnitude in big O notation, sorted from the best (most efficient) to worst (least efficient):
 
     - Constant time 
