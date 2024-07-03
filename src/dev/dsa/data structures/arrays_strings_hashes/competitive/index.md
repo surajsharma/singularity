@@ -7,6 +7,7 @@
 * 📄 [LC-13-roman-to-int](LC-13-roman-to-int.md)
 * 📄 [LC-136-single-number](LC-136-single-number.md)
 * 📄 [LC-14-longest-common-prefix](LC-14-longest-common-prefix.md)
+* 📄 [LC-1509-minimum-difference-between-largest-and-smallest-value-in-three-moves](LC-1509-minimum-difference-between-largest-and-smallest-value-in-three-moves.md)
 * 📄 [LC-1550-three-consecutive-odds](LC-1550-three-consecutive-odds.md)
 * 📄 [LC-20-valid-parenthesis](LC-20-valid-parenthesis.md)
 * 📄 [LC-2154-keep-multiplying-found-values-by-two](LC-2154-keep-multiplying-found-values-by-two.md)

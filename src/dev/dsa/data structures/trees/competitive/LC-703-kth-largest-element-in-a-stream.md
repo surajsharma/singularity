@@ -1,5 +1,6 @@
-- https://leetcode.com/problems/kth-largest-element-in-a-stream
-- O(k log n), O(log n)
+## 703. [Kth largest element in a stream]( https://leetcode.com/problems/kth-largest-element-in-a-stream)
+
+### O(k log n), O(log n)
 
 
 ```js 
