@@ -7,5 +7,6 @@
 * 📄 [07-closures](07-closures.md)
 * 📄 [08-prototypes](08-prototypes.md)
 * 📄 [09-this](09-this.md)
-* 📄 [10-async](10-async.md)
-* 📄 [11-iterators-and-generators](11-iterators-and-generators.md)
+* 📄 [10-symbol](10-symbol.md)
+* 📄 [11-async](11-async.md)
+* 📄 [12-iterators-and-generators](12-iterators-and-generators.md)

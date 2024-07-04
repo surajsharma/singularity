@@ -1,0 +1,33 @@
+
+## 2181. [Merge Nodes in Between Zeros](https://leetcode.com/problems/merge-nodes-in-between-zeros/)
+
+### O(n)
+
+
+```js
+
+var mergeNodes = function (head) {
+    let mlist = new ListNode()
+    let tail = mlist
+
+    let sh = 0
+    let sp = head
+    let fp = head.next
+
+    while (fp.next) {
+        sp = sp.next
+        fp = fp.next
+        sh += sp.val
+
+        if (fp.val === 0 && sh != 0) {
+            tail.next = new ListNode(sh)
+            tail = tail.next
+            sh = 0
+        }
+    }
+
+    return mlist.next
+
+};
+
+```
