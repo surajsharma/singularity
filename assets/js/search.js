@@ -14,7 +14,7 @@ const searchVersion = gel('search-version');
 
 
 function debouncedSearch(searchTerm) {
-    searchInput.style.backgroundColor = "rgb(227, 255, 255)";
+    searchInput.style.backgroundColor = "rgb(250, 250, 250)";
     searchStatus.style.color = "black";
 
     if (searchResults) searchResults.innerHTML = '';
@@ -306,13 +306,20 @@ if (support) {
     document.addEventListener('thread_sync', async (event) => {
         switch (thread_sync.count) {
             case 1:
-                says(searchVersion, `search db version: 0.0.${thread_sync.data.version}`);
+                if (!thread_sync.data) return;
+
+                const { version } = thread_sync.data;
+
+                says(searchVersion, `search db version: 0.0.${version}`);
+
                 const localVersion = getLocalVersion();
+
                 if (localVersion == null) {
                     setLocalVersion(thread_sync.data.version);
                     localVersion = thread_sync.data.version;
                 }
-                reloadOnVersionChange(localVersion, thread_sync.data.version);
+
+                reloadOnVersionChange(localVersion, version);
                 break;
             case 4:
                 await loadSearchIndices();

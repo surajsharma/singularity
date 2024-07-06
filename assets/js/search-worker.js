@@ -1,7 +1,5 @@
-let dbName = "singularity-search";
-
+const dbName = "singularity-search";
 const baseUrl = "https://raw.githubusercontent.com/surajsharma/singularity/master";
-
 const SRC = `${baseUrl}/assets/search/src-search.json`;
 const ARCHIVES = `${baseUrl}/assets/search/archives-search.json`;
 const DB = `${baseUrl}/assets/search/db.json`;
@@ -20,13 +18,11 @@ async function createVersionedIddb(db) {
     // creates the ver object store because it didn't exist
     if (!db) return;
     try {
-        let store;
         if (!db.objectStoreNames.contains("release")) {
-            store = db.createObjectStore("release", {
+            db.createObjectStore("release", {
                 keyPath: "id"
             });
         }
-
     } catch (error) {
         console.log("~ createVersionedIddb ~ error:", error)
     }
@@ -45,14 +41,9 @@ async function setVersionedIddb(db, version, schecksum, achecksum) {
         arc.onsuccess = async (evt) => {
             if (!evt.target.result) { //init
                 const arcdata = await fetchRemoteJson(ARCHIVES);
-                const tx = db.transaction("release", "readwrite");
-                const store = tx.objectStore("release");
+                store = db.transaction("release", "readwrite").objectStore("release");
                 store.put({ id: "arc", value: arcdata });
             }
-        }
-
-        arc.onerror = async (evt) => {
-            console.log("~ arc.onerror= ~ evt:", evt)
         }
 
         src.onsuccess = async (evt) => {
@@ -63,12 +54,8 @@ async function setVersionedIddb(db, version, schecksum, achecksum) {
             }
         }
 
-        src.onerror = async (evt) => {
-            console.log("~ arc.onerror= ~ evt:", evt)
-        }
-
-        ver.onsuccess = async (event) => {
-            if (!event.target.result) { //failsafe
+        ver.onsuccess = async (evt) => {
+            if (!evt.target.result) { //failsafe
                 store.put({
                     id: "ver", value: {
                         version, schecksum, achecksum
@@ -79,7 +66,7 @@ async function setVersionedIddb(db, version, schecksum, achecksum) {
             }
 
             //--ver mismatch--
-            if (event.target.result.value.version != version) {
+            if (evt.target.result.value.version != version) {
 
                 //write fetched to store 
                 const newVersion = version;
@@ -89,10 +76,12 @@ async function setVersionedIddb(db, version, schecksum, achecksum) {
                         version: newVersion, schecksum, achecksum
                     }
                 });
+
+                return;
             };
 
             //--arc checksum mismatch--
-            if (event.target.result.value.achecksum != achecksum) {
+            if (evt.target.result.value.achecksum != achecksum) {
                 const arcdata = await fetchRemoteJson(ARCHIVES);
                 store = db.transaction("release", "readwrite").objectStore("release");
                 store.put({ id: "arc", value: arcdata });
@@ -104,24 +93,38 @@ async function setVersionedIddb(db, version, schecksum, achecksum) {
                         version, schecksum, achecksum: newAchecksum
                     }
                 });
+
+                return;
             }
 
             //--src checksum mismatch--
-            if (event.target.result.value.schecksum != schecksum) {
+            if (evt.target.result.value.schecksum != schecksum) {
+                console.log("🚀 ~ ver.onsuccess= ~ schecksum:", schecksum);
+
                 const srcdata = await fetchRemoteJson(SRC);
                 store = db.transaction("release", "readwrite").objectStore("release");
-
                 store.put({ id: "src", value: srcdata });
 
                 const newSchecksum = schecksum;
 
-                store.put({ id: "ver", value: { version, schecksum: newSchecksum, achecksum } })
+                store.put({ id: "ver", value: { version, schecksum: newSchecksum, achecksum } });
+
+                return;
             }
+        }
+
+        arc.onerror = async (evt) => {
+            console.log("~ arc.onerror= ~ evt:", evt)
+        }
+
+        src.onerror = async (evt) => {
+            console.log("~ arc.onerror= ~ evt:", evt)
         }
 
         ver.onerror = async (evt) => {
             console.log("~ arc.onerror= ~ evt:", evt)
         }
+
     } catch (error) {
         console.log("~ setVersionedIddb ~ error:", error)
     }
@@ -132,8 +135,6 @@ async function syncIddb() {
         ({ version, achecksum, schecksum } = await fetchRemoteJson(DB));
 
         if (!version) return new Error("Could not load database metadata");
-
-        postMessage({ thread: { msg: 'version', count: 1, data: { version: version } } });
 
         const request = self.indexedDB.open(dbName, version);
 
@@ -146,6 +147,11 @@ async function syncIddb() {
         request.onsuccess = (event) => {
             if (request.result.objectStoreNames.contains("release")) {
                 setVersionedIddb(request.result, version, schecksum, achecksum);
+
+                const ver = request.result.version;
+
+                postMessage({ thread: { msg: 'version', count: 1, data: { version: ver } } });
+
                 postMessage({ thread: { msg: 'src', count: 4 } });
             }
         }
@@ -161,7 +167,7 @@ async function syncIddb() {
 }
 
 onmessage = async (ev) => {
-    if (ev.data == 'iddb-sync') {
+    if (ev.data == "iddb-sync") {
         syncIddb();
     }
 }

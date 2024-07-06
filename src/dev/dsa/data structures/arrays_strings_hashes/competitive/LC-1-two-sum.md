@@ -21,7 +21,7 @@ var twoSum = function (nums, target) {
 
 - [[two pointers]] approach
 
-![two-sum-dsa](../../../../../attachments/dsa-2-sum.png)
+![two-sum-dsa](../../../../../../attachments/dsa-2-sum.png)
 
 
 - python (naive)
