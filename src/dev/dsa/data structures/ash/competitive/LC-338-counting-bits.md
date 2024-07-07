@@ -1,5 +1,6 @@
-- https://leetcode.com/problems/counting-bits/
-- O(n)
+## 338. [Counting Bits](https://leetcode.com/problems/counting-bits/)
+
+### O(n)
 
 ```js
 var countBits = function(n) {

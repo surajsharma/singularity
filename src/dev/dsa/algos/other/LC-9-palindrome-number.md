@@ -1,5 +1,6 @@
-- https://leetcode.com/problems/palindrome-number/
-- O(1)
+## 9. [Palindrome Number](https://leetcode.com/problems/palindrome-number/)
+
+### O(1)
 
 
 ```python

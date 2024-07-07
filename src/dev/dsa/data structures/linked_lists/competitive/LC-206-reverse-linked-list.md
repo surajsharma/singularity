@@ -1,5 +1,6 @@
-- [206 - Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/description/)
-- O(n)
+## 206. [Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/description/)
+
+### O(n)
 
 ```javascript
 

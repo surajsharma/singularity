@@ -1,5 +1,5 @@
-- https://leetcode.com/problems/longest-common-prefix
-- O(n)
+##  14. [Longest common prefix](https://leetcode.com/problems/longest-common-prefix)
+### O(n)
 
 ```python
 def longestCommonPrefix(strs):

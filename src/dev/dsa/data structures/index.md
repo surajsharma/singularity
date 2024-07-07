@@ -1,4 +1,5 @@
+* 📂 [ash](ash)
 * 📂 [graphs](graphs)
 * 📂 [linked_lists](linked_lists)
-* 📂 [mash](mash)
+* 📂 [matrices](matrices)
 * 📂 [trees](trees)

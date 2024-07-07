@@ -1,5 +1,7 @@
-- https://leetcode.com/problems/valid-palindrome/description/
-- O(n)
+## 125. [Valid Palindrome II](https://leetcode.com/problems/valid-palindrome-ii/)
+
+### O(n)
+
 
 ```js
 var isPalindrome = function (s) {

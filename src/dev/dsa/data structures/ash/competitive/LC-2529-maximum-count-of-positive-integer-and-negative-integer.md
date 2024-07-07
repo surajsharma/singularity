@@ -1,5 +1,6 @@
-- https://leetcode.com/problems/maximum-count-of-positive-integer-and-negative-integer
-- O(n)
+## 2529. [Maximum count of positive integer and negative integer](https://leetcode.com/problems/maximum-count-of-positive-integer-and-negative-integer)
+
+### O(n)
 
 ```python
 

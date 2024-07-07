@@ -1,6 +1,6 @@
-- https://leetcode.com/problems/group-anagrams
+## 49. [Group anagrams](https://leetcode.com/problems/group-anagrams)
 
-
+### O(n)
 
 ```javascript
 let strs = ["eat","tea","tan","ate","nat","bat"]

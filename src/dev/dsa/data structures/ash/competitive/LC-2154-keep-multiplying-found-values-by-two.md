@@ -1,5 +1,6 @@
-- https://leetcode.com/problems/keep-multiplying-found-values-by-two
-- O(n)
+## 2154. [Keep Multiplying Found Values By Two](https://leetcode.com/problems/keep-multiplying-found-values-by-two)
+
+### O(n)
 
 ```python
 class Solution(object):

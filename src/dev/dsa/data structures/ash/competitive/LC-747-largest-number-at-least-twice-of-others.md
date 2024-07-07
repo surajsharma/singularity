@@ -1,5 +1,6 @@
-- https://leetcode.com/problems/largest-number-at-least-twice-of-others
-- O(n)
+### 747. [Largest Number at least twice of others](https://leetcode.com/problems/largest-number-at-least-twice-of-others)
+ 
+## O(n)
 
 ```python
 class Solution(object):

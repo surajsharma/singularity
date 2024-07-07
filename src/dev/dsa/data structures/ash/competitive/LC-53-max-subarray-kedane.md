@@ -1,5 +1,6 @@
-- https://leetcode.com/problems/maximum-subarray/
-- O(n)
+## 53. [Maximum Subarray](https://leetcode.com/problems/maximum-subarray/)
+
+### O(n)
 
 ```js
 function maxContiguousSum (arr) {

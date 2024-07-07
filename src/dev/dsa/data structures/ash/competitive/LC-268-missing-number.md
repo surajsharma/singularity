@@ -1,9 +1,6 @@
-# 268. [Missing Number]()
+# 268. [Missing Number](https://leetcode.com/problems/missing-number/)
 # O(n)
 
-
-
--  js (naive) 
 
 ```js 
 
@@ -24,8 +21,6 @@ var missingNumber = function (nums) {
 
 ```
 
-
-- js bit manipulation
 
 ```js
 

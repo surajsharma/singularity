@@ -1,7 +1,9 @@
-- https://leetcode.com/problems/find-pivot-index
-- O(n)
+## 724. [Find Pivot Index](https://leetcode.com/problems/find-pivot-index)
+
+### O(n)
 
 ```python
+
 class Solution:
     def pivotIndex(self, nums: List[int]) -> int:
         # total_sum - left_sum - P[i] == left_sum
@@ -13,4 +15,5 @@ class Solution:
                 return i
             
         return -1
+
 ```

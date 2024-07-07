@@ -1,5 +1,4 @@
-- Valid Anagram
-- LC 242 - https://leetcode.com/problems/valid-anagram/
+## 242. [Valid Anagram](https://leetcode.com/problems/valid-anagram/)
 
 
 ```javascript

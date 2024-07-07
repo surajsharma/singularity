@@ -1,4 +1,6 @@
-- https://leetcode.com/problems/plus-one/description/
+## 66. [Plus One](https://leetcode.com/problems/plus-one/description/)
+
+### O(n)
 
 ```python
 

@@ -1,6 +1,8 @@
-# [94. Binary Tree Inorder Traversal](https://leetcode.com/problems/binary-tree-inorder-traversal/)
-- O(n)
-- Inorder = left-root-right
+## 94. [Binary Tree Inorder Traversal](https://leetcode.com/problems/binary-tree-inorder-traversal/)
+
+### O(n)
+
+### Inorder = left-root-right
 
 ```js
 

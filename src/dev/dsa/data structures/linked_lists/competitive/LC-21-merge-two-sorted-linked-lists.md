@@ -1,5 +1,6 @@
-# [21. Merge Two Sorted Linked Lists](https://leetcode.com/problems/merge-two-sorted-lists/description/)
-- O(n)
+## 21. [Merge Two Sorted Linked Lists](https://leetcode.com/problems/merge-two-sorted-lists/description/)
+
+### O(n)
 
 
 ```js 

@@ -1,6 +1,7 @@
-- https://leetcode.com/problems/contains-duplicate/
-- Sub-Optimal solution
-- O(n*n)
+## 217. [Contains Duplicate](https://leetcode.com/problems/contains-duplicate/)
+
+
+### O(n*n)
 
 ```js
 var containsDuplicate = function(nums) {
@@ -17,16 +18,13 @@ var containsDuplicate = function(nums) {
 console.log(containsDuplicate([1,2,3,4]))
 ```
 
-- Optimal solution
-- O(n)
+### O(n)
 
 ```js
 var containsDuplicate = function(nums) {
     return [...new Set(nums)].length !== nums.length;
 };
 ```
-
-- python
 
 ```python
 def containsDuplicate(nums: [int]) -> bool:
