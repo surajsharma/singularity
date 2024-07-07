@@ -12,9 +12,9 @@
     </div>
 </div>
 
-<script defer src="{{ site.baseurl }}{% link assets/js/search-worker.js %}?v={{ site.time | date:'%s' }}"></script>
-<script defer src="{{ site.baseurl }}{% link assets/js/sync-search.js %}?v={{ site.time | date:'%s' }}"></script>
-<script defer>
+<script src="{{ site.baseurl }}{% link assets/js/search-worker.js %}?v={{ site.time | date:'%s' }}"></script>
+
+<script>
     let urlprefix = "";
 
     const redundant_title = document.querySelector('h1');
@@ -35,8 +35,10 @@
     const worker = new Worker("{{ site.baseurl }}{% link assets/js/search-worker.js %}?v={{ site.time | date:'%s' }}");    
 </script>
 
+<script defer src="{{ site.baseurl }}{% link assets/js/sync-search.js %}?v={{ site.time | date:'%s' }}"></script>
+
 {% if jekyll.environment == "production" %}
-<script defer>
+<script>
     urlprefix = "singularity";
 </script>
 {% endif %}
