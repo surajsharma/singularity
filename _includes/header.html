@@ -12,8 +12,8 @@
     </div>
 </div>
 
-<script src="{{ site.baseurl }}{% link assets/js/search-worker.js %}?v={{ site.time | date:'%s' }}"></script>
-<script src="{{ site.baseurl }}{% link assets/js/sync-search.js %}?v={{ site.time | date:'%s' }}"></script>
+<script defer src="{{ site.baseurl }}{% link assets/js/search-worker.js %}?v={{ site.time | date:'%s' }}"></script>
+<script defer src="{{ site.baseurl }}{% link assets/js/sync-search.js %}?v={{ site.time | date:'%s' }}"></script>
 <script defer>
     let urlprefix = "";
 
@@ -36,7 +36,7 @@
 </script>
 
 {% if jekyll.environment == "production" %}
-<script>
+<script defer>
     urlprefix = "singularity";
 </script>
 {% endif %}
