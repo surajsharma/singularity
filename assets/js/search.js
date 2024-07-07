@@ -312,7 +312,7 @@ if (support) {
 
                 says(searchVersion, `search db version: 0.0.${version}`);
 
-                const localVersion = getLocalVersion();
+                let localVersion = getLocalVersion();
 
                 if (localVersion == null) {
                     setLocalVersion(thread_sync.data.version);
