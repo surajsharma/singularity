@@ -1,8 +1,7 @@
 const dbName = "singularity-search";
-const baseUrl = "https://raw.githubusercontent.com/surajsharma/singularity/master";
-const SRC = `${baseUrl}/assets/search/src-search.json`;
-const ARCHIVES = `${baseUrl}/assets/search/archives-search.json`;
-const DB = `${baseUrl}/assets/search/db.json`;
+const SRC = `../search/src-search.json`;
+const ARCHIVES = `../search/archives-search.json`;;
+const DB = `../search/db.json`;
 
 async function fetchRemoteJson(loc, t = false) {
     try {
@@ -33,6 +32,7 @@ async function setVersionedIddb(db, version, schecksum, achecksum) {
 
         let tx = db.transaction("release", "readwrite")
         let store = tx.objectStore("release");
+        let shouldReload = false;
 
         const ver = await store.get("ver");
         const src = await store.get("src");
@@ -61,14 +61,11 @@ async function setVersionedIddb(db, version, schecksum, achecksum) {
                         version, schecksum, achecksum
                     }
                 });
-
-                return;
             }
 
             //--ver mismatch--
             if (evt.target.result.value.version != version) {
 
-                //write fetched to store 
                 const newVersion = version;
 
                 store.put({
@@ -77,7 +74,8 @@ async function setVersionedIddb(db, version, schecksum, achecksum) {
                     }
                 });
 
-                return;
+
+
             };
 
             //--arc checksum mismatch--
@@ -94,22 +92,36 @@ async function setVersionedIddb(db, version, schecksum, achecksum) {
                     }
                 });
 
-                return;
+                postMessage({
+                    thread: {
+                        msg: 'src',
+                        count: 4,
+                        data: { reload: true }
+                    }
+                });
+
             }
 
             //--src checksum mismatch--
             if (evt.target.result.value.schecksum != schecksum) {
-                console.log("🚀 ~ ver.onsuccess= ~ schecksum:", schecksum);
+                const srcdata = await fetchRemoteJson(SRCL);
 
-                const srcdata = await fetchRemoteJson(SRC);
                 store = db.transaction("release", "readwrite").objectStore("release");
+
                 store.put({ id: "src", value: srcdata });
 
                 const newSchecksum = schecksum;
 
                 store.put({ id: "ver", value: { version, schecksum: newSchecksum, achecksum } });
 
-                return;
+                postMessage({
+                    thread: {
+                        msg: 'src',
+                        count: 4,
+                        data: { reload: true }
+                    }
+                });
+
             }
         }
 
@@ -144,15 +156,28 @@ async function syncIddb() {
             postMessage({ thread: { msg: 'release', count: 1 } });
         };
 
-        request.onsuccess = (event) => {
+        request.onsuccess = async (event) => {
             if (request.result.objectStoreNames.contains("release")) {
-                setVersionedIddb(request.result, version, schecksum, achecksum);
 
                 const ver = request.result.version;
 
-                postMessage({ thread: { msg: 'version', count: 1, data: { version: ver } } });
+                postMessage({
+                    thread: {
+                        msg: 'version',
+                        count: 1,
+                        data: { version: ver }
+                    }
+                });
 
-                postMessage({ thread: { msg: 'src', count: 4 } });
+                await setVersionedIddb(request.result, version, schecksum, achecksum);
+
+                postMessage({
+                    thread: {
+                        msg: 'src',
+                        count: 4,
+                        data: { reload: false }
+                    }
+                });
             }
         }
 
@@ -160,7 +185,6 @@ async function syncIddb() {
             console.error("Error opening database:", event.target.error);
             return false;
         };
-
     } catch (error) {
         console.log("~ syncIddb ~ error:", error);
     }

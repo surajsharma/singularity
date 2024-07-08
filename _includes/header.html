@@ -21,7 +21,6 @@
 
 <script>
     const worker = new Worker("{{ site.baseurl }}{% link assets/js/search-worker.js %}");
-
     const redundant_title = document.querySelector('h1');
     if (redundant_title) {
         redundant_title.style.opacity = 0;

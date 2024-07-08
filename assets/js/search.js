@@ -3,7 +3,6 @@ let index = null;
 // search modifiers
 let archives = false;
 let titles = false;
-let versionUpdated = false;
 
 const searchInput = gel('search-input');
 const searchArchives = gel('search-archives');
@@ -256,12 +255,11 @@ async function getIddb(key, ver) {
 
                 query.onsuccess = async (e) => {
 
-                    if (e.target.result.length < 1 || versionUpdated) {
+                    if (e.target.result.length < 1) {
                         // fault-tolerance: we're here because somehow 
                         // the local db wasn't there, the sync script has 
                         // recreated it, but page needs to register
                         await loadSearchIndices(true);
-                        versionUpdated = false;
                     } else {
                         resolve(e.target.result);
                     }
@@ -285,21 +283,9 @@ function gel(el) {
     return document.getElementById(el);
 }
 
-function setLocalVersion(v) {
-    localStorage.setItem('singularity_version', v);
-}
-
-function getLocalVersion() {
-    return localStorage.getItem('singularity_version');
-}
-
-function reloadOnVersionChange(lv, rv) {
-    if (rv != lv) {
-        says(searchStatus, "DB updated, reloading...");
-        localStorage.setItem('singularity_version', rv);
-        window.location.href = window.location.href;
-        versionUpdated = true;
-    }
+function reloadOnUpdate() {
+    says(searchStatus, "DB updated, reloading...");
+    window.location.href = window.location.href;
 }
 
 if (support) {
@@ -307,22 +293,18 @@ if (support) {
         switch (thread_sync.count) {
             case 1:
                 if (!thread_sync.data) return;
-
                 const { version } = thread_sync.data;
-
                 says(searchVersion, `search db version: 0.0.${version}`);
-
-                let localVersion = getLocalVersion();
-
-                if (localVersion == null) {
-                    setLocalVersion(thread_sync.data.version);
-                    localVersion = thread_sync.data.version;
-                }
-
-                reloadOnVersionChange(localVersion, version);
                 break;
             case 4:
-                await loadSearchIndices();
+                if (!thread_sync.data) return;
+                const { reload } = thread_sync.data;
+
+                if (reload) {
+                    reloadOnUpdate();
+                } else {
+                    await loadSearchIndices();
+                }
                 break;
             case -1:
                 await loadSearchIndices(false);
