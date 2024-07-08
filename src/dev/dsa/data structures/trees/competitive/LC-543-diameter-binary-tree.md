@@ -1,5 +1,6 @@
-# 543. [Diameter of Binary Tree](https://leetcode.com/problems/diameter-of-binary-tree)
-## O(n)
+## 543. [Diameter of Binary Tree](https://leetcode.com/problems/diameter-of-binary-tree)
+
+### O(n)
 
 
 ```python

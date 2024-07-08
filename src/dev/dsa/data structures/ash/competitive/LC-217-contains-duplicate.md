@@ -1,6 +1,5 @@
 ## 217. [Contains Duplicate](https://leetcode.com/problems/contains-duplicate/)
 
-
 ### O(n*n)
 
 ```js

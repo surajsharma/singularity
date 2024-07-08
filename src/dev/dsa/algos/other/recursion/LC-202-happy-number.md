@@ -1,5 +1,6 @@
-- https://leetcode.com/problems/happy-number
-- O(n)
+## 202. [Happy Number](https://leetcode.com/problems/happy-number)
+
+### O(n)
 
 
 ```js

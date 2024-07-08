@@ -1,6 +1,5 @@
 ## 169. [Majority element](https://leetcode.com/problems/majority-element/)
 
-
 ### O(n log n)
 
 ```js

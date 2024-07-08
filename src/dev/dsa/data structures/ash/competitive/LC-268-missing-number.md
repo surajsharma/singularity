@@ -1,5 +1,6 @@
-# 268. [Missing Number](https://leetcode.com/problems/missing-number/)
-# O(n)
+## 268. [Missing Number](https://leetcode.com/problems/missing-number/)
+
+### O(n)
 
 
 ```js 

@@ -1,5 +1,6 @@
-# 1382. [Balance a binary tree](https://leetcode.com/problems/balance-a-binary-search-tree/)
-## O(n)
+## 1382. [Balance a binary tree](https://leetcode.com/problems/balance-a-binary-search-tree/)
+
+### O(n)
 
 
 ```js

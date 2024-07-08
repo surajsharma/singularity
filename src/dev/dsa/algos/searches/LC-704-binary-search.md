@@ -1,5 +1,6 @@
-- https://leetcode.com/problems/binary-search/
-- O(log n)
+## 704. [Binary Search](https://leetcode.com/problems/binary-search/)
+
+### O(log n)
 
 ```python
 

@@ -1,4 +1,5 @@
 ##  14. [Longest common prefix](https://leetcode.com/problems/longest-common-prefix)
+
 ### O(n)
 
 ```python

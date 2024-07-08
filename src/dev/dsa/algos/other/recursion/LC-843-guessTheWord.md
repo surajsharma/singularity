@@ -1,9 +1,7 @@
-- https://leetcode.com/problems/guess-the-word/description/
-- HARD
+## 843. [Guess The Word](https://leetcode.com/problems/guess-the-word/description/)
+
 
 ```javascript
-
-
 var findSecretWord = function (words, master) {
     const randomWord = words[Math.floor(Math.random() * words.length)]
     const response = master.guess(randomWord)

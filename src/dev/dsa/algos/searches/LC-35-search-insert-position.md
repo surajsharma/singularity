@@ -1,5 +1,6 @@
-- https://leetcode.com/problems/search-insert-position/description/
-- O(n) worst case
+## 35. [Search insert position](https://leetcode.com/problems/search-insert-position/description/)
+
+### O(n) worst case
 
 ```python
 
