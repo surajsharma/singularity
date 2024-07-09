@@ -17,7 +17,7 @@
 </script>
 {% endif %}
 
-<script src="{{ site.baseurl }}{% link assets/js/search-worker.js %}"></script>
+<script src="{{ site.baseurl }}{% link assets/js/search-worker.js %}?v={{ site.time | date:'%s' }}"></script>
 
 <script>
     const worker = new Worker("{{ site.baseurl }}{% link assets/js/search-worker.js %}");
