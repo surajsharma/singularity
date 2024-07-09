@@ -11,7 +11,7 @@
   - [Borrowing methods	with `call`](#borrowing-methodswith-call)
   - [Chain constructor `call`s](#chain-constructor-calls)
   - [Revisit `this` problem](#revisit-this-problem)
-  - [`this` vs `globalThis`](#this-vs-globalthis)
+  - [Summary of `this`](#summary-of-this)
 
 
 ## `this` keyword
@@ -339,10 +339,48 @@ function BankEmployee(name, age, id, bankName) {
 
 ### Revisit `this` problem	
 
+```js 
+const btn = document.querySelector("button");
 
+class FormHandler {
+  constructor(submitBtn) {
+    submitBtn.addEventListener("click", this.submitForm);
+  }
 
+  submitForm() {
+    this.sendRequest();
+    // ERROR: this.sendRequest is not a function
+  }
+
+  sendRequest() {
+    console.log('sending request...');
+  }
+}
+
+new FormHandler(btn);
+
+```
+
+- There’s another way to fix the issue, and that’s to explicitly set the value of `this` inside the `submitForm` method.
+
+```js 
+submitBtn.addEventListener("click", this.submitForm.bind(this)); 
+```
+
+- `globalThis` is a globally available property in JavaScript that allows us to access the global object regardless of which environment our JavaScript code is executed in. 
+  - a standard way to access the global object across different JavaScript environments
 
 - ⚠️ browser support might be taken into consideration when using this property
 
-### `this` vs `globalThis`	
+### Summary of `this` 
 
+- let us summarize what value `this` has in different contexts:
+- In the case of an `arrow function`, the value of this is taken from the `surrounding context`.
+- In the case of a `regular function`, the value of this depends on `how a function is called` and whether the code is executed in `strict mode` or not.
+  - If a function is invoked as a `constructor` using the `new` keyword, the value of `this` is the newly created object.
+  - If the value of `this` is explicitly set using `bind`, `call`, or `apply` functions, then the value of this is whatever value is passed as the first argument to these functions.
+  - If a `function` is invoked as a "method", the value of `this` is the object used to call the method.
+  - If the `function` is invoked without any object, i.e., as a "function", the value of this is the global object in non-strict mode and `undefined` in strict mode.
+- In DOM event handler callbacks, the value of this is the HTML element that triggered the event.
+- In the global scope in browsers, `this` refers to the global `window` object.
+- In NodeJS, code at the top level is executed in a module scope. In ECMAScript modules, this is undefined at the top level of a module because the code in the ECMAScript module is implicitly executed in strict mode. In CommonJS modules, this refers to the module.exports object at the top level of a module

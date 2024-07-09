@@ -3,13 +3,14 @@
   "version": "1.0.0",
   "description": "life in real-time",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "bundle exec jekyll serve --w --i",
     "build": "bundle exec jekyll build",
     "deploy": "./scripts/commit.sh",
     "ngrok": "ngrok http 4000",
     "index": "./scripts/build-nav-indices.sh",
-    "sindex": "./scripts/build-search-indices.sh"
+    "sindex": "./scripts/build-search-indices.sh",
+    "checksum": "./scripts/update-checksums.sh",
+    "update": "npm run index && npm run sindex && npm run checksum"
   },
   "keywords": [],
   "author": "suraj@evenzero.in",

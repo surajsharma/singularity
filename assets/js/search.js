@@ -299,7 +299,6 @@ if (support) {
             case 4:
                 if (!thread_sync.data) return;
                 const { reload } = thread_sync.data;
-
                 if (reload) {
                     reloadOnUpdate();
                 } else {

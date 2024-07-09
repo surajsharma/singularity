@@ -1,20 +1,20 @@
-- [Symbols and privacy	Symbol](#symbols-and-privacysymbol)
+- [Symbols and privacy Symbol](#symbols-and-privacy-symbol)
 - [Adding a description to symbols](#adding-a-description-to-symbols)
-- [Symbol.toPrimitive](#symboltoprimitive)
-- [Symbol.toStringTag](#symboltostringtag)
-- [Symbol.isConcatSpreadable](#symbolisconcatspreadable)
+- [`Symbol.toPrimitive`](#symboltoprimitive)
+- [`Symbol.toStringTag`](#symboltostringtag)
+- [`Symbol.isConcatSpreadable`](#symbolisconcatspreadable)
 
 
-### Symbols and privacy	Symbol
+### Symbols and privacy Symbol
 
 
 ### Adding a description to symbols	
 
 
-### Symbol.toPrimitive	
+### `Symbol.toPrimitive`
 
 
-### Symbol.toStringTag	
+### `Symbol.toStringTag`
 
 
-### Symbol.isConcatSpreadable	
+### `Symbol.isConcatSpreadable`

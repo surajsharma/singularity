@@ -1,7 +1,7 @@
 const dbName = "singularity-search";
-const SRC = `../search/src-search.json`;
-const ARCHIVES = `../search/archives-search.json`;;
-const DB = `../search/db.json`;
+const SRC = "../search/src-search.json";
+const ARCHIVES = "../search/archives-search.json";
+const DB = "../search/db.json";
 
 async function fetchRemoteJson(loc, t = false) {
     try {
@@ -9,7 +9,7 @@ async function fetchRemoteJson(loc, t = false) {
         return t ? resp.text() : resp.json();
     } catch (error) {
         console.log("~ fetchRemoteJson ~ error:", error);
-        postMessage({ thread: { msg: 'offline', count: -1 } });
+        postMessage({ thread: { msg: "offline", count: -1 } });
     }
 }
 
@@ -23,7 +23,7 @@ async function createVersionedIddb(db) {
             });
         }
     } catch (error) {
-        console.log("~ createVersionedIddb ~ error:", error)
+        console.log("createVersionedIddb ~ error:", error)
     }
 }
 
@@ -32,7 +32,6 @@ async function setVersionedIddb(db, version, schecksum, achecksum) {
 
         let tx = db.transaction("release", "readwrite")
         let store = tx.objectStore("release");
-        let shouldReload = false;
 
         const ver = await store.get("ver");
         const src = await store.get("src");
@@ -41,7 +40,8 @@ async function setVersionedIddb(db, version, schecksum, achecksum) {
         arc.onsuccess = async (evt) => {
             if (!evt.target.result) { //init
                 const arcdata = await fetchRemoteJson(ARCHIVES);
-                store = db.transaction("release", "readwrite").objectStore("release");
+                store = db.transaction("release", "readwrite")
+                    .objectStore("release");
                 store.put({ id: "arc", value: arcdata });
             }
         }
@@ -49,7 +49,8 @@ async function setVersionedIddb(db, version, schecksum, achecksum) {
         src.onsuccess = async (evt) => {
             if (!evt.target.result) { //init
                 const srcdata = await fetchRemoteJson(SRC);
-                store = db.transaction("release", "readwrite").objectStore("release");
+                store = db.transaction("release", "readwrite")
+                    .objectStore("release");
                 store.put({ id: "src", value: srcdata });
             }
         }
@@ -61,27 +62,25 @@ async function setVersionedIddb(db, version, schecksum, achecksum) {
                         version, schecksum, achecksum
                     }
                 });
+                return;
             }
 
             //--ver mismatch--
             if (evt.target.result.value.version != version) {
-
                 const newVersion = version;
-
                 store.put({
                     id: "ver", value: {
                         version: newVersion, schecksum, achecksum
                     }
                 });
-
-
-
             };
 
             //--arc checksum mismatch--
             if (evt.target.result.value.achecksum != achecksum) {
                 const arcdata = await fetchRemoteJson(ARCHIVES);
-                store = db.transaction("release", "readwrite").objectStore("release");
+                store = db.transaction("release", "readwrite")
+                    .objectStore("release");
+
                 store.put({ id: "arc", value: arcdata });
 
                 const newAchecksum = achecksum;
@@ -94,7 +93,7 @@ async function setVersionedIddb(db, version, schecksum, achecksum) {
 
                 postMessage({
                     thread: {
-                        msg: 'src',
+                        msg: "src",
                         count: 4,
                         data: { reload: true }
                     }
@@ -104,7 +103,7 @@ async function setVersionedIddb(db, version, schecksum, achecksum) {
 
             //--src checksum mismatch--
             if (evt.target.result.value.schecksum != schecksum) {
-                const srcdata = await fetchRemoteJson(SRCL);
+                const srcdata = await fetchRemoteJson(SRC);
 
                 store = db.transaction("release", "readwrite").objectStore("release");
 
@@ -163,7 +162,7 @@ async function syncIddb() {
 
                 postMessage({
                     thread: {
-                        msg: 'version',
+                        msg: "version",
                         count: 1,
                         data: { version: ver }
                     }
@@ -173,7 +172,7 @@ async function syncIddb() {
 
                 postMessage({
                     thread: {
-                        msg: 'src',
+                        msg: "src",
                         count: 4,
                         data: { reload: false }
                     }
@@ -185,6 +184,7 @@ async function syncIddb() {
             console.error("Error opening database:", event.target.error);
             return false;
         };
+
     } catch (error) {
         console.log("~ syncIddb ~ error:", error);
     }
