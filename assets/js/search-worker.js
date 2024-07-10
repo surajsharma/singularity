@@ -6,8 +6,6 @@ const ARCHIVES = "../search/archives-search.json" + v;
 const DB = "../search/db.json" + v;
 
 async function fetchRemoteJson(loc, t = false) {
-    console.log("🚀 ~ fetchRemoteJson ~ loc:", loc)
-
     try {
         const resp = await fetch(loc + `?v=${Date.now()}`, { cache: "no-store" });
         return t ? resp.text() : resp.json();
