@@ -152,6 +152,7 @@ async function syncIddb() {
         const request = self.indexedDB.open(dbName, version);
 
         request.onupgradeneeded = (event) => {
+            // called when the db version changes
             console.log("Database didn't exist, creating now.");
             createVersionedIddb(request.result);
             postMessage({ thread: { msg: 'release', count: 1 } });
@@ -171,14 +172,6 @@ async function syncIddb() {
                 });
 
                 await setVersionedIddb(request.result, version, schecksum, achecksum);
-
-                postMessage({
-                    thread: {
-                        msg: "src",
-                        count: 4,
-                        data: { reload: false }
-                    }
-                });
             }
         }
 
