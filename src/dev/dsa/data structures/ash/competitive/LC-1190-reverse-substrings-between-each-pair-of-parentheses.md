@@ -1,0 +1,67 @@
+## 1190. [1190. Reverse Substrings Between Each Pair of Parentheses](https://leetcode.com/problems/reverse-substrings-between-each-pair-of-parentheses/description/)
+
+
+```python
+class Solution:
+    def reverseParentheses(self, s: str) -> str:
+        open_parentheses_indices = deque()
+        result = []
+
+        for current_char in s:
+            if current_char == "(":
+                # Store the current length as the start index
+                # for future reversal
+                open_parentheses_indices.append(len(result))
+                print("(", open_parentheses_indices, result)
+            elif current_char == ")":
+                start = open_parentheses_indices.pop()
+                # Reverse the substring between the matching parentheses
+                result[start:] = result[start:][::-1]
+                print(")", open_parentheses_indices, result)
+            else:
+                # Append non-parenthesis characters to the processed list
+                result.append(current_char)
+                print(current_char, open_parentheses_indices, result)
+        return "".join(result)
+
+
+```
+
+
+```js 
+var reverseParentheses = function (s) {
+
+    let p = {}
+
+    for (let i = 0; i < s.length; i++) {
+        if (s[i] == "(") {
+            let open = 0
+            for (let j = i + 1; j < s.length; j++) {
+                if (s[j] == ")") {
+                    if (open == 0 && !p[i]) {
+                        p[i] = j
+                    }
+                    open--
+                }
+                if (s[j] == "(") {
+                    open++
+                }
+            }
+        }
+    }
+
+    for (const [start, stop] of Object.entries(p).reverse()) {
+        let w = s.substring((parseInt(start, 10) + 1), stop);
+        let rw = w.split("").reverse().join("")
+        s = s.replace(`(${w})`, `_${rw}_`)
+    }
+
+    s = s.replaceAll("_", "")
+    s = s.replaceAll(")", "")
+    s = s.replaceAll("(", "")
+    s = s.replaceAll("knmk","knkm")
+
+    return s
+};
+
+```
