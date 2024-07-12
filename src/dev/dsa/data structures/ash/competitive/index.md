@@ -10,6 +10,7 @@
 * 📄 [LC-1509-minimum-difference-between-largest-and-smallest-value-in-three-moves](LC-1509-minimum-difference-between-largest-and-smallest-value-in-three-moves.md)
 * 📄 [LC-1550-three-consecutive-odds](LC-1550-three-consecutive-odds.md)
 * 📄 [LC-169-majority-element](LC-169-majority-element.md)
+* 📄 [LC-1717-maximum-score-from-removing-substrings](LC-1717-maximum-score-from-removing-substrings.md)
 * 📄 [LC-1823-find-the-winner-of-the-circular-game](LC-1823-find-the-winner-of-the-circular-game.md)
 * 📄 [LC-20-valid-parenthesis](LC-20-valid-parenthesis.md)
 * 📄 [LC-2154-keep-multiplying-found-values-by-two](LC-2154-keep-multiplying-found-values-by-two.md)
