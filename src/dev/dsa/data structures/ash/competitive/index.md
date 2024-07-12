@@ -1,5 +1,6 @@
 * 📄 [LC-1-two-sum](LC-1-two-sum.md)
 * 📄 [LC-11-container-with-most-water](LC-11-container-with-most-water.md)
+* 📄 [LC-1190-reverse-substrings-between-each-pair-of-parentheses](LC-1190-reverse-substrings-between-each-pair-of-parentheses.md)
 * 📄 [LC-121-best-time-to-buy-and-sell-stock](LC-121-best-time-to-buy-and-sell-stock.md)
 * 📄 [LC-125-valid-palindrome](LC-125-valid-palindrome.md)
 * 📄 [LC-1296-divide-array-in-sets-of-k-consecutive-numbers](LC-1296-divide-array-in-sets-of-k-consecutive-numbers.md)
