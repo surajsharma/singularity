@@ -29,7 +29,7 @@ async function createVersionedIddb(db) {
     }
 }
 
-async function setVersionedIddb(db, version, schecksum, achecksum) {
+async function setVersionedIddb(db, version, schecksum, achecksum, shouldReload) {
     try {
         let tx = db.transaction("release", "readwrite")
         let store = tx.objectStore("release");
@@ -37,8 +37,6 @@ async function setVersionedIddb(db, version, schecksum, achecksum) {
         const ver = await store.get("ver");
         const src = await store.get("src");
         const arc = await store.get("arc");
-
-        let shouldReload = false;
 
         arc.onsuccess = async (evt) => {
             if (!evt.target.result) { //init
@@ -65,6 +63,15 @@ async function setVersionedIddb(db, version, schecksum, achecksum) {
                         version, schecksum, achecksum
                     }
                 });
+
+                postMessage({
+                    thread: {
+                        msg: "src/arc",
+                        count: 4,
+                        data: { reload: shouldReload }
+                    }
+                });
+
                 return;
             }
 
@@ -132,9 +139,6 @@ async function setVersionedIddb(db, version, schecksum, achecksum) {
         ver.onerror = async (evt) => {
             console.log("~ arc.onerror= ~ evt:", evt)
         }
-
-
-
     } catch (error) {
         console.log("~ setVersionedIddb ~ error:", error)
     }
@@ -148,11 +152,14 @@ async function syncIddb() {
 
         const request = self.indexedDB.open(dbName, version);
 
+        let shouldReload = false;
+
         request.onupgradeneeded = (event) => {
             // called when the db version changes
-            console.log("Database didn't exist, creating now.");
+            console.log("🔔 Database upgrade needed.");
             createVersionedIddb(request.result);
             postMessage({ thread: { msg: 'release', count: 1 } });
+            shouldReload = true;
         };
 
         request.onsuccess = async (event) => {
@@ -168,7 +175,8 @@ async function syncIddb() {
                     }
                 });
 
-                await setVersionedIddb(request.result, version, schecksum, achecksum);
+                await setVersionedIddb(request.result, version, schecksum, achecksum, shouldReload);
+
             }
         }
 
