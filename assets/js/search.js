@@ -270,7 +270,7 @@ async function getIddb(key, ver) {
                 }
             }
         } catch (error) {
-            console.log("~ awaitnewPromise ~ error:", error)
+            reject(error);
         }
     });
 }

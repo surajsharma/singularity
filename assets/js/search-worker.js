@@ -31,13 +31,14 @@ async function createVersionedIddb(db) {
 
 async function setVersionedIddb(db, version, schecksum, achecksum) {
     try {
-
         let tx = db.transaction("release", "readwrite")
         let store = tx.objectStore("release");
 
         const ver = await store.get("ver");
         const src = await store.get("src");
         const arc = await store.get("arc");
+
+        let shouldReload = false;
 
         arc.onsuccess = async (evt) => {
             if (!evt.target.result) { //init
@@ -93,14 +94,7 @@ async function setVersionedIddb(db, version, schecksum, achecksum) {
                     }
                 });
 
-                postMessage({
-                    thread: {
-                        msg: "src",
-                        count: 4,
-                        data: { reload: true }
-                    }
-                });
-
+                shouldReload = true;
             }
 
             //--src checksum mismatch--
@@ -115,15 +109,16 @@ async function setVersionedIddb(db, version, schecksum, achecksum) {
 
                 store.put({ id: "ver", value: { version, schecksum: newSchecksum, achecksum } });
 
-                postMessage({
-                    thread: {
-                        msg: 'src',
-                        count: 4,
-                        data: { reload: true }
-                    }
-                });
-
+                shouldReload = true;
             }
+
+            postMessage({
+                thread: {
+                    msg: "src/arc",
+                    count: 4,
+                    data: { reload: shouldReload }
+                }
+            });
         }
 
         arc.onerror = async (evt) => {
@@ -137,6 +132,8 @@ async function setVersionedIddb(db, version, schecksum, achecksum) {
         ver.onerror = async (evt) => {
             console.log("~ arc.onerror= ~ evt:", evt)
         }
+
+
 
     } catch (error) {
         console.log("~ setVersionedIddb ~ error:", error)
