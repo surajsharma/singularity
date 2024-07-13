@@ -18,6 +18,7 @@
 * 📄 [LC-242-valid-anagram](LC-242-valid-anagram.md)
 * 📄 [LC-2529-maximum-count-of-positive-integer-and-negative-integer](LC-2529-maximum-count-of-positive-integer-and-negative-integer.md)
 * 📄 [LC-268-missing-number](LC-268-missing-number.md)
+* 📄 [LC-2751-robot-collisions](LC-2751-robot-collisions.md)
 * 📄 [LC-338-counting-bits](LC-338-counting-bits.md)
 * 📄 [LC-350-intersection-of-two-arrays-II](LC-350-intersection-of-two-arrays-II.md)
 * 📄 [LC-412-fizz-buzz](LC-412-fizz-buzz.md)
