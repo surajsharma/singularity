@@ -190,11 +190,11 @@ function setupEventListeners() {
     }
 }
 
-async function loadSearchIndices(corrupt = false) {
+async function loadSearchIndices(reload = false) {
     await new Promise(async (resolve, reject) => {
         if (typeof lunr == 'undefined') reject("Lunr not found!");
         try {
-            corrupt ?
+            reload ?
                 says(searchStatus, 'Reloading search database...') :
                 says(searchStatus, 'Loading...');
 
@@ -210,7 +210,6 @@ async function loadSearchIndices(corrupt = false) {
             console.log("~ loadSearchIndices ~ error:", error);
             reject(error);
         }
-
     });
 }
 
@@ -283,11 +282,6 @@ function gel(el) {
     return document.getElementById(el);
 }
 
-function reloadOnUpdate() {
-    says(searchStatus, "DB updated, reloading...");
-    window.location.href = window.location.href;
-}
-
 if (support) {
     document.addEventListener('thread_sync', async (event) => {
         switch (thread_sync.count) {
@@ -299,11 +293,7 @@ if (support) {
             case 4:
                 if (!thread_sync.data) return;
                 const { reload } = thread_sync.data;
-                if (reload) {
-                    reloadOnUpdate();
-                } else {
-                    await loadSearchIndices();
-                }
+                await loadSearchIndices(reload);
                 break;
             case -1:
                 await loadSearchIndices(false);
