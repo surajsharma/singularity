@@ -29,5 +29,6 @@
 * 📄 [LC-66-plus-one](LC-66-plus-one.md)
 * 📄 [LC-680-valid-palindrome 2](LC-680-valid-palindrome 2.md)
 * 📄 [LC-724-find-pivot-index](LC-724-find-pivot-index.md)
+* 📄 [LC-726-number-of-atoms](LC-726-number-of-atoms.md)
 * 📄 [LC-747-largest-number-at-least-twice-of-others](LC-747-largest-number-at-least-twice-of-others.md)
 * 📄 [LC-846-hand-of-straights](LC-846-hand-of-straights.md)
