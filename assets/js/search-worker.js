@@ -1,13 +1,12 @@
 const dbName = "singularity-search";
-const v = `?v=${Date.now()}`;
 
-const SRC = "../search/src-search.json" + v;
-const ARCHIVES = "../search/archives-search.json" + v;
-const DB = "../search/db.json" + v;
+const SRC = "../search/src-search.json";
+const ARCHIVES = "../search/archives-search.json";
+const DB = "../search/db.json";
 
 async function fetchRemoteJson(loc, t = false) {
     try {
-        const resp = await fetch(loc + `?v=${Date.now()}`, { cache: "no-store" });
+        const resp = await fetch(loc + `?v=${Date.now()}`, { cache: "reload" });
         return t ? resp.text() : resp.json();
     } catch (error) {
         console.log("~ fetchRemoteJson ~ error:", error);
