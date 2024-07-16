@@ -1,6 +1,8 @@
 * 📄 [LC-110-balanced-binary-tree](LC-110-balanced-binary-tree.md)
 * 📄 [LC-1382-balance-a-binary-tree](LC-1382-balance-a-binary-tree.md)
 * 📄 [LC-199-binary-tree-right-side-view](LC-199-binary-tree-right-side-view.md)
+* 📄 [LC-2096-step-by-step-directions-from-a-binary-tree-node-to-another](LC-2096-step-by-step-directions-from-a-binary-tree-node-to-another.md)
+* 📄 [LC-2196-create-binary-tree-from-descriptions](LC-2196-create-binary-tree-from-descriptions.md)
 * 📄 [LC-543-diameter-binary-tree](LC-543-diameter-binary-tree.md)
 * 📄 [LC-703-kth-largest-element-in-a-stream](LC-703-kth-largest-element-in-a-stream.md)
 * 📄 [LC-94-binary-tree-inorder-traversal](LC-94-binary-tree-inorder-traversal.md)
