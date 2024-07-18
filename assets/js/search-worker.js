@@ -42,7 +42,7 @@ async function setVersionedIddb(db, version, schecksum, achecksum, shouldReload)
                 const arcdata = await fetchRemoteJson(ARCHIVES);
                 store = db.transaction("release", "readwrite")
                     .objectStore("release");
-                store.put({ id: "arc", value: arcdata });
+                store.put({ id: "arc", value: arcdata, checksum: achecksum });
             }
         }
 
@@ -51,7 +51,7 @@ async function setVersionedIddb(db, version, schecksum, achecksum, shouldReload)
                 const srcdata = await fetchRemoteJson(SRC);
                 store = db.transaction("release", "readwrite")
                     .objectStore("release");
-                store.put({ id: "src", value: srcdata });
+                store.put({ id: "src", value: srcdata, checksum: schecksum });
             }
         }
 
@@ -90,7 +90,7 @@ async function setVersionedIddb(db, version, schecksum, achecksum, shouldReload)
                 store = db.transaction("release", "readwrite")
                     .objectStore("release");
 
-                store.put({ id: "arc", value: arcdata });
+                store.put({ id: "arc", value: arcdata, checksum: achecksum });
 
                 const newAchecksum = achecksum;
 
@@ -109,7 +109,7 @@ async function setVersionedIddb(db, version, schecksum, achecksum, shouldReload)
 
                 store = db.transaction("release", "readwrite").objectStore("release");
 
-                store.put({ id: "src", value: srcdata });
+                store.put({ id: "src", value: srcdata, checksum: schecksum });
 
                 const newSchecksum = schecksum;
 
