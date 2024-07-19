@@ -35,19 +35,18 @@ function debouncedSearch(searchTerm) {
 }
 
 function getLink(item) {
-
-    const colab_blob_url = "https://colab.research.google.com/github/surajsharma/singularity/blob/master/"
+    const colab_blob_url = "https://colab.research.google.com/github/surajsharma/singularity/blob/master/";
 
     if (item.ref.endsWith("ipynb")) {
         return `${colab_blob_url}${item.ref}`;
     }
 
     if (item.ref.endsWith("md")) {
-        return urlprefix == "" ?
+        return !production ?
             `/${item.ref.replace('.md', '.html')}` : `/singularity/${item.ref.replace('.md', '.html')}`;
     }
 
-    return urlprefix == "" ? `/${item.ref}` : `/singularity/${item.ref}`;
+    return !production ? `/${item.ref}` : `/singularity/${item.ref}`;
 }
 
 function displaySearch(search, searchTerm) {
