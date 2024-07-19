@@ -9,34 +9,24 @@
     </div>
 </div>
 
-<script>let urlprefix = "";</script>
-
 {% if jekyll.environment == "production" %}
 <script>
-    urlprefix = "singularity"
+    const stub = "singularity"
 </script>
 {% endif %}
 
 <script src="{{ site.baseurl }}{% link assets/js/search-worker.js %}?v={{ site.time | date:'%s' }}"></script>
 
 <script>
-    const worker = new Worker("{{ site.baseurl }}{% link assets/js/search-worker.js %}");
-    const redundant_title = document.querySelector('h1');
-    if (redundant_title) {
-        redundant_title.style.opacity = 0;
-    }
+    const prod = (typeof stub === "undefined");
+    const search_url = prod ? "/src/search" : "/" + stub + "/src/search";
+    const title_url = prod ? "/" : "/" + stub;
 
-    const title = document.getElementById("title");
-    if (title) {
-        title.href = urlprefix == "" ? "/" : "/" + urlprefix;
-    }
+    const search_worker = new Worker("{{ site.baseurl }}{% link assets/js/search-worker.js %}?v={{ site.time | date:'%s' }}");
 
-    const search = document.getElementById("search-icon");
-
-    if (search) {
-        search.href = urlprefix == "" ? "/src/search" : "/" + urlprefix + "/src/search";
-    }
-
+    const redundant_title = document.querySelector('h1').style.opacity = 0;
+    const title = document.getElementById("title").href = title_url;
+    const search = document.getElementById("search-icon").href = search_url;
 </script>
 
 <script defer src="{{ site.baseurl }}{% link assets/js/sync-search.js %}"></script>

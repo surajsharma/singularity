@@ -1,7 +1,7 @@
 const dbName = "singularity-search";
 
 const SRC = "../search/src-search.json";
-const ARCHIVES = "../search/archives-search.json";
+const ARC = "../search/archives-search.json";
 const DB = "../search/db.json";
 
 async function fetchRemoteJson(loc, t = false) {
@@ -39,7 +39,7 @@ async function setVersionedIddb(db, version, schecksum, achecksum, shouldReload)
 
         arc.onsuccess = async (evt) => {
             if (!evt.target.result) { //init
-                const arcdata = await fetchRemoteJson(ARCHIVES);
+                const arcdata = await fetchRemoteJson(ARC);
                 store = db.transaction("release", "readwrite")
                     .objectStore("release");
                 store.put({ id: "arc", value: arcdata, checksum: achecksum });
@@ -86,7 +86,7 @@ async function setVersionedIddb(db, version, schecksum, achecksum, shouldReload)
 
             //--arc checksum mismatch--
             if (evt.target.result.value.achecksum != achecksum) {
-                const arcdata = await fetchRemoteJson(ARCHIVES);
+                const arcdata = await fetchRemoteJson(ARC);
                 store = db.transaction("release", "readwrite")
                     .objectStore("release");
 

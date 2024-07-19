@@ -203,8 +203,6 @@ async function loadSearchIndices(reload = false) {
 
             setupEventListeners();
             says(searchStatus, '');
-
-            await getIddb("arc", version);
             resolve(0);
         } catch (error) {
             console.log("~ loadSearchIndices ~ error:", error);
@@ -220,7 +218,7 @@ async function initSearchWorkerless() {
         try {
             says(searchStatus, 'Loading...');
             srcIndexData = await fetchRemoteJson(SRC);
-            archIndexData = await fetchRemoteJson(ARCHIVES);
+            archIndexData = await fetchRemoteJson(ARC);
             says(searchStatus, '');
 
             // load main index

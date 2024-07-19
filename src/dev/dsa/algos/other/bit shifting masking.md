@@ -16,7 +16,7 @@ console.log(num >> 1); // Right shift by 1, result: 2 (binary: 10)
 
 2. Bit Masking:
 
-Bit masking is like using a template to keep or remove certain bits. We use bitwise AND (&) to keep bits and bitwise OR (|) to set bits. It's often used with hexadecimal numbers for readability.
+Bit masking is like using a template to keep or remove certain bits. We use bitwise AND `&` to keep bits and bitwise OR `|` to set bits. It's often used with hexadecimal numbers for readability.
 
 Here's a basic example:
 
