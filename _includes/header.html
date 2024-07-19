@@ -29,4 +29,4 @@
     const search = document.getElementById("search-icon").href = search_url;
 </script>
 
-<script defer src="{{ site.baseurl }}{% link assets/js/sync-search.js %}"></script>
+<script defer src="{{ site.baseurl }}{% link assets/js/sync-search.js %}?v={{ site.time | date:'%s' }}"></script>
