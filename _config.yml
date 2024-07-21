@@ -1,2 +1,2 @@
-exclude: ["src-search.json", "archives-search.json"]
+exclude: ["src-search.json", "archives-search.json", "node_modules", "_site"]
 livereload: true
