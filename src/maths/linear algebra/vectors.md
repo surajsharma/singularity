@@ -16,14 +16,14 @@ layout: katex
 
 ## Points 
 
-![Alt text](image.png)
+![Alt text](../../../attachments/image.png)
 
 ## Vectors
 
 - Vector 'represents' a difference between two Points
 - aka an arrow from any point x to any point y 
 - aka "instructions to get from one point to another"
-![Alt text](image-1.png)
+![Alt text](../../../attachments/image-1.png)
 - vectors do not have a position, they are just abstractions over difference between two points  
 - have a __direction__ = angle in which they point
     - __orientation__ = slope of the line they are on
@@ -42,7 +42,7 @@ $$|\vec V| = \sqrt{V_{x}^2 + V_{y}^2 + V_{z}^2}$$
 - you can subtract two points and get  a vector :
 $$ \vec V = P - Q  $$
 - think of this as "V going from Q to P" 
-![Alt text](image-2.png)
+![Alt text](../../../attachments/image-2.png)
 - agebraically, subtract each of the coordinates separately : 
 
 $$ (V_x,V_y,V_z) = (P_x,P_y,P_z) - (Q_x,Q_y,Q_z) = (P_x-Q_x, P_y-Q_y, P_z-Q_z) $$
@@ -68,20 +68,20 @@ $$
 
 - you can add a vector and a point __to get a new point__
 - given a starting __position__ (__point__) and a __displacement__ (__vector__), you will get a new position / __point__
-![Alt text](image-3.png)
+![Alt text](../../../attachments/image-3.png)
 
 ### Adding Vectors 
 
 - imagine putting one vector after another 
 - __commutative__ = order does not matter 
-![Alt text](image-4.png)
+![Alt text](../../../attachments/image-4.png)
 - formally:
 - $$ \vec V + \vec W = (V_x,V_y,V_z) + (W_x,W_y,W_z) = (V_x+W_x, V_y+W_y, V_z+W_z) $$
 
 ### Scalar Product / Multiplying Vector with Number 
 
 - makes the vector shorter or longer 
-![Alt text](image-5.png)
+![Alt text](../../../attachments/image-5.png)
 - if a number is -ve vector will point the other way 
 - it will remain along the same line 
 - formally : 
@@ -126,7 +126,7 @@ $$
 - gives another vector 
 - $$ \vec V \times \vec W $$ 
 - cross product of two vectors is perpendicular to both of them
-- ![Alt text](image-6.png)
+- ![Alt text](../../../attachments/image-6.png)
 
 - the computation is a bit more involved:
 - $$ \vec S = \vec U \times \vec R \\
