@@ -105,7 +105,7 @@ function displaySearch(search, searchTerm) {
 
         const searchTitleLinkRaw = document.createElement('a');
         searchTitleLinkRaw.id = "search-result-title-newtab";
-        searchTitleLinkRaw.href = `/singularity/${item.ref}`
+        searchTitleLinkRaw.href = !production ? `/${item.ref}` : `/singularity/${item.ref}`;
         searchTitleLinkRaw.textContent = "📄";
         searchTitleLinkRaw.target = '_blank';
 
