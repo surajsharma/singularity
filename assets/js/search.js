@@ -61,6 +61,7 @@ function displaySearch(search, searchTerm) {
     });
 
     says(searchStatus, `Found ${search.length} results for ${searchTerm}`);
+
     sortedSearch.forEach((item, idx) => {
         const searchResultDiv = document.createElement('div');
         searchResultDiv.id = `${archives ? 'search-result-arch' : 'search-result'}`;
@@ -82,40 +83,57 @@ function displaySearch(search, searchTerm) {
         const searchResultTitleTop = document.createElement('div');
         searchResultTitleTop.id = 'search-result-title-top';
 
-        const title = item.ref.match(/\/([^/]*)$/)[0].replace('/', '').replace('.md', '');
+        let title = item.ref.match(/\/([^/]*)$/)[0].replace('/', '').replace('.md', '');
+        const isNotebook = title.endsWith(".ipynb");
 
         const searchTitleLink = document.createElement('a');
 
         const link = getLink(item, title);
 
         searchTitleLink.id = "search-result-title";
-        searchTitleLink.href = link;
+        !isNotebook && (searchTitleLink.href = link);
+
         searchTitleLink.textContent = title.length > 40 ?
             title.substring(0, 40 - '...'.length) + '...' :
-            title;
+            title.replace('.ipynb', '');
 
         const searchTitleLinks = document.createElement('div');
         searchTitleLinks.id = 'search-title-links';
 
-        const searchTitleLinkNewTab = document.createElement('a');
-        searchTitleLinkNewTab.id = "search-result-title-newtab";
-        searchTitleLinkNewTab.href = link;
-        searchTitleLinkNewTab.textContent = "↗️";
-        searchTitleLinkNewTab.target = '_blank';
+        let searchTitleLinkNewTab;
+
+        if (isNotebook) {
+            searchTitleLinkNewTab = document.createElement('a');
+            const img = document.createElement('img');
+            img.src = "https://colab.research.google.com/assets/colab-badge.svg";
+            img.alt = "Google Colab";
+            img.style.marginTop = "8px";
+            img.style.scale = "0.8";
+
+            searchTitleLinkNewTab.id = "search-result-title-newtab";
+            searchTitleLinkNewTab.href = link; // Note: 'link' should be defined elsewhere in your code
+            searchTitleLinkNewTab.target = '_blank';
+            searchTitleLinkNewTab.appendChild(img);
+        } else {
+            searchTitleLinkNewTab = document.createElement('a');
+            searchTitleLinkNewTab.id = "search-result-title-newtab";
+            searchTitleLinkNewTab.href = link;
+            searchTitleLinkNewTab.textContent = "↗️";
+            searchTitleLinkNewTab.target = '_blank';
+        }
 
         const searchTitleLinkRaw = document.createElement('a');
         searchTitleLinkRaw.id = "search-result-title-newtab";
         searchTitleLinkRaw.href = !production ? `/${item.ref}` : `/singularity/${item.ref}`;
-        searchTitleLinkRaw.textContent = "📄";
+        searchTitleLinkRaw.textContent = "⬇️";
         searchTitleLinkRaw.target = '_blank';
-
 
         const searchResultLoc = document.createElement('pre');
         searchResultLoc.id = "search-result-loc";
         searchResultLoc.textContent = item.ref;
 
-        searchTitleLinks.appendChild(searchTitleLinkRaw);
         searchTitleLinks.appendChild(searchTitleLinkNewTab);
+        searchTitleLinks.appendChild(searchTitleLinkRaw);
 
         searchResultTitleTop.appendChild(searchTitleLink);
         searchResultTitleTop.appendChild(searchTitleLinks);

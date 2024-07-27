@@ -17,23 +17,24 @@ function upgradeDbChecksums() {
         const src = readFileAsStringSync("assets/search/src-search.json");
         const arc = readFileAsStringSync("assets/search/archives-search.json");
 
-        const schecksum = CRC32C.str(src, 0);
-        const achecksum = CRC32C.str(arc, 0);
+        const new_schecksum = CRC32C.str(src, 0);
+        const new_achecksum = CRC32C.str(arc, 0);
 
-        let db = fs.readFileSync("assets/search/db.json", "utf-8");
+        let dbfile = fs.readFileSync("assets/search/db.json", "utf-8");
 
-        let db_json = JSON.parse(db);
+        let { db, version, achecksum, schecksum } = JSON.parse(dbfile);
 
-        db_json.db = db_json.db;
-        db_json.version = db_json.version + 1;
-        db_json.achecksum = achecksum;
-        db_json.schecksum = schecksum;
+        if (new_achecksum != achecksum || new_schecksum != schecksum) {
+            version = version + 1;
+            achecksum = new_achecksum;
+            schecksum = new_schecksum;
+            const filePath = path.join('assets', 'search', `db.json`);
 
-        const filePath = path.join('assets', 'search', `db.json`);
+            fs.writeFileSync(filePath, JSON.stringify({ db, version, achecksum, schecksum }), function (err) {
+                if (err) throw err;
+            });
+        } else return;
 
-        fs.writeFileSync(filePath, JSON.stringify(db_json), function (err) {
-            if (err) throw err;
-        });
 
     } catch (error) {
         console.log("~ upgradeDbChecksums ~ error:", error)
