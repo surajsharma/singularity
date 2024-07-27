@@ -91,10 +91,10 @@ function createSearchResultItem(item, idx) {
     let searchTitleLinkNewTab;
 
     if (isNotebook) {
-        searchTitleIndex.style.backgroundColor = "#fe5";
+        searchTitleIndex.style.backgroundColor = "#ffa10a";
         searchTitleLinkNewTab = document.createElement('a');
         const img = document.createElement('img');
-        img.src = "/assets/img/colab-badge.svg";
+        img.src = !production ? "/assets/img/colab-badge.svg" : "/singularity/assets/img/colab-badge.svg";
         img.alt = "Google Colab";
 
         img.style.marginTop = "2px";
