@@ -1,5 +1,19 @@
 ## 2024
 
+### July
+
+- to blame "others" for lack of any spiritual enlightenment is akin to blaming the weather, otherness exists for all - even the hermit in his cave will have some interface with society if he is to survive - the truth is we are simply too habituated, too conditioned - removing oneself from the battlefield of karma is only logistical aid to the challenge - there is a way out even even from hell, infact, the gates of hell never close unlike heaven where the gates are always closed. we stay in hell out of laziness predominantly.
+
+- yet, furthering the cause is of paramount necessity now. especially since the fruits of meditation are now tangible in a subtle form, and for the first time in empirical gross form. 
+
+- the difficulty is not a matter of "will" but a lack of correct understanding. will is a rational faculty and follows understanding but if your understanding is faulty, you will act lazily thinking you will be able to bruteforce your way through the time when the time comes, but the lack of understanding entails the belief that we are following time, when the counterintuitive truth is, time follows us. the other folly of understanding is the thought that there is no end to wants, which will give rise to the fatalist belief that working towards one's salvation is more-or-less futile endeavor because the end of maya is a shore so distant as to be inaccessible. this is categorically false and an irrational trick of the mind to keep us from the goal.
+
+- yet another fetter in the search is a desire for desirelessness or an overnight, permanent change from wrong to right understanding - a satori that will fix all your problems - it may be possible but is rarer than history would have you believe - a spiritual lottery is not on the cards for most of us, swallow this bitter pill as early as possible. and remember that `even arhats have been known to regress`
+
+- the resolution of discipline was for me a question of perpetual self-debate. 
+
+- the truth is hard to grasp because it is counterintuitive to the point of stupidity. to tie another is to tie yourself. to free another is to free yourself. 
+
 ### June
 
 - ___embutement___, __noun__, _the liminal state preceding embodiment, the quantum wave function right before the collapse, the physical state of schrodinger's cat a moment before observation_, a state of contexual superposition.
@@ -34,7 +48,6 @@
     - firebase
     - puppeteer
     - transformersjs
-    - 
 
 - war is the domain of morons in this environment, moreover starting a global conflict now would mean risk losing it all in the best case and gaining nothing at its worst. my assertion is that the current '?' that looms overhead is a perpetual phenomenon, the capital H of history and the real that hurts - in other words the persistent threat of (personal) insanity that feeds the engine of not.
 
@@ -107,13 +120,6 @@
 
 
 - imagine the "automation" it took to get here, two millennia worth of work that stood to be destroyed at the itch of a finger. 
-
-
-
-
-
-
-
 
 
 ### April
