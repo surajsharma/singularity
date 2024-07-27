@@ -107,7 +107,7 @@ function displaySearch(search, searchTerm) {
             const img = document.createElement('img');
             img.src = "https://colab.research.google.com/assets/colab-badge.svg";
             img.alt = "Google Colab";
-            img.style.marginTop = "8px";
+            img.style.marginTop = "5px";
             img.style.scale = "0.8";
 
             searchTitleLinkNewTab.id = "search-result-title-newtab";
