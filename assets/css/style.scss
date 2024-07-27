@@ -9,7 +9,7 @@
   }
 }
 
-li{
+li {
   font-size: large;
 }
 
@@ -48,7 +48,7 @@ li{
 }
 
 .markdown-body h1 {
-  border:0;
+  border: 0;
 }
 
 .markdown-body p {
@@ -75,15 +75,15 @@ blockquote {
     "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
 }
 
-#header{
+#header {
   display: flex;
-  flex-direction:row;
+  flex-direction: row;
   width: 100% !important;
-  flex-wrap: wrap;  
+  flex-wrap: wrap;
   position: relative;
 }
 
-#search-icon{
+#search-icon {
   font-size: 21px;
   cursor: pointer;
   &:hover {
@@ -91,7 +91,7 @@ blockquote {
   }
 }
 
-#darkmode-icon{
+#darkmode-icon {
   font-size: 21px;
   cursor: pointer;
   margin-right: 15px;
@@ -100,13 +100,13 @@ blockquote {
   }
 }
 
-#search-controls{
+#search-controls {
   display: flex;
   flex-direction: column;
-  gap: 10px; 
+  gap: 10px;
 }
 
-#search-input{
+#search-input {
   width: 100%;
   border: 1px solid #b1b1b1;
   border-radius: 5px;
@@ -115,7 +115,7 @@ blockquote {
   outline: none;
 }
 
-#search-results{
+#search-results {
   width: 100%;
   height: 100%;
   padding: 0px;
@@ -123,7 +123,7 @@ blockquote {
   margin-top: 20px;
 }
 
-#search-results-container{
+#search-results-container {
   width: 100%;
   height: 100%;
   padding: 5px;
@@ -131,7 +131,7 @@ blockquote {
   flex-direction: column;
 }
 
-#search-status{
+#search-status {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -139,32 +139,32 @@ blockquote {
   font-weight: 700;
 }
 
-#search-options{
+#search-options {
   display: flex;
   gap: 20px;
 }
 
-#search-result-arch{
+#search-result-arch {
   padding: 5px;
   margin: 5px;
   display: flex;
 
-  #index{
+  #index {
     background-color: #fbff00;
-    color:white;
+    color: white;
     padding: 5px;
     font-weight: 700;
-    #text{
+    #text {
       transform: rotate(-90deg);
-    }    
+    }
   }
 
-  #search-result-div-items{
+  #search-result-div-items {
     display: flex;
     flex-direction: column;
   }
 
-  #search-result-div-items{
+  #search-result-div-items {
     display: inline-flex;
     flex-direction: column;
     min-width: 0;
@@ -173,21 +173,24 @@ blockquote {
     overflow: hidden;
   }
 
-  #search-result-title-top{
+  #search-result-title-top {
     display: inline-flex;
     justify-content: space-between;
     min-width: 0;
     width: 100%;
   }
 
-  #search-title-links{
+  #search-title-links {
     display: inline-flex;
     justify-content: center;
     align-items: center;
     gap: 8px;
+    &:hover {
+      text-decoration: none;
+    }
   }
 
-  #search-result-title{
+  #search-result-title {
     font-size: medium;
     margin: 5px;
     display: inline-flex;
@@ -195,42 +198,43 @@ blockquote {
     word-wrap: break-word;
   }
 
-  #search-result-loc{
+  #search-result-loc {
     font-size: small;
     margin: 5px;
-    width:100%;
+    width: 100%;
     min-width: none;
-    overflow-y:scroll;
+    overflow-y: scroll;
     scrollbar-width: none; /* Firefox 64 */
     -ms-overflow-style: none; /* Internet Explorer 11 */
-    &::-webkit-scrollbar { /** WebKit */
+    &::-webkit-scrollbar {
+      /** WebKit */
       display: none;
-    }    
+    }
   }
 }
 
-#search-version{
+#search-version {
   text-align: right;
   font-size: 8px;
   width: 100%;
 }
 
-#search-result{
+#search-result {
   padding: 5px;
   margin: 5px;
   display: flex;
 
-  #index{
+  #index {
     background-color: #88ffff;
-    color:white;
+    color: white;
     padding: 5px;
-    #text{
+    #text {
       transform: rotate(-90deg);
     }
     font-weight: 700;
   }
 
-  #search-result-div-items{
+  #search-result-div-items {
     display: inline-flex;
     flex-direction: column;
     min-width: 0;
@@ -239,21 +243,24 @@ blockquote {
     overflow: hidden;
   }
 
-  #search-result-title-top{
+  #search-result-title-top {
     display: inline-flex;
     justify-content: space-between;
     min-width: 0;
     width: 100%;
   }
 
-  #search-title-links{
+  #search-title-links {
     display: inline-flex;
     justify-content: center;
-    align-items: center;
+    // align-items: center;
     gap: 8px;
+    &:hover {
+      text-decoration: none;
+    }
   }
 
-  #search-result-title{
+  #search-result-title {
     font-size: medium;
     margin: 5px;
     display: inline-flex;
@@ -261,17 +268,17 @@ blockquote {
     word-wrap: break-word;
   }
 
-  #search-result-loc{
+  #search-result-loc {
     font-size: small;
     margin: 5px;
-    width:100%;
+    width: 100%;
     min-width: none;
-    overflow-y:scroll;
+    overflow-y: scroll;
     scrollbar-width: none; /* Firefox 64 */
     -ms-overflow-style: none; /* Internet Explorer 11 */
-    &::-webkit-scrollbar { /** WebKit */
+    &::-webkit-scrollbar {
+      /** WebKit */
       display: none;
-    }    
+    }
   }
-
 }

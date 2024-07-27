@@ -49,6 +49,93 @@ function getLink(item) {
     return !production ? `/${item.ref}` : `/singularity/${item.ref}`;
 }
 
+function createSearchResultItem(item, idx) {
+    const searchResultDiv = document.createElement('div');
+    searchResultDiv.id = `${archives ? 'search-result-arch' : 'search-result'}`;
+
+    const searchResultDivItems = document.createElement('div');
+    searchResultDivItems.id = "search-result-div-items";
+
+    const titleidx = idx < 9 ? "0" + (idx + 1) : (idx + 1);
+
+    const searchTitleIndex = document.createElement('div');
+    searchTitleIndex.id = 'index';
+
+    const searchTitleIndexText = document.createElement('div');
+    searchTitleIndexText.id = "text";
+
+    says(searchTitleIndexText, titleidx);
+    searchTitleIndex.appendChild(searchTitleIndexText);
+    searchResultDiv.appendChild(searchTitleIndex);
+
+    const searchResultTitleTop = document.createElement('div');
+    searchResultTitleTop.id = 'search-result-title-top';
+
+    let title = item.ref.match(/\/([^/]*)$/)[0].replace('/', '').replace('.md', '');
+    const isNotebook = title.endsWith(".ipynb");
+
+    const searchTitleLink = document.createElement('a');
+
+    const link = getLink(item, title);
+
+    searchTitleLink.id = "search-result-title";
+    !isNotebook && (searchTitleLink.href = link);
+
+    searchTitleLink.textContent = title.length > 40 ?
+        title.substring(0, 40 - '...'.length) + '...' :
+        title.replace('.ipynb', '');
+
+    const searchTitleLinks = document.createElement('div');
+    searchTitleLinks.id = 'search-title-links';
+
+    let searchTitleLinkNewTab;
+
+    if (isNotebook) {
+        searchTitleIndex.style.backgroundColor = "#fe5";
+        searchTitleLinkNewTab = document.createElement('a');
+        const img = document.createElement('img');
+        img.src = "/assets/img/colab-badge.svg";
+        img.alt = "Google Colab";
+
+        img.style.marginTop = "2px";
+        img.style.scale = "0.85";
+
+        searchTitleLinkNewTab.id = "search-result-title-newtab";
+        searchTitleLinkNewTab.href = link;
+        searchTitleLinkNewTab.target = '_blank';
+        searchTitleLinkNewTab.appendChild(img);
+    } else {
+        searchTitleLinkNewTab = document.createElement('a');
+        searchTitleLinkNewTab.id = "search-result-title-newtab";
+        searchTitleLinkNewTab.href = link;
+        searchTitleLinkNewTab.textContent = "↗️";
+        searchTitleLinkNewTab.target = '_blank';
+    }
+
+    const searchTitleLinkRaw = document.createElement('a');
+    searchTitleLinkRaw.id = "search-result-title-newtab";
+    searchTitleLinkRaw.href = !production ? `/${item.ref}` : `/singularity/${item.ref}`;
+    searchTitleLinkRaw.textContent = "⬇️";
+    searchTitleLinkRaw.target = '_blank';
+
+    const searchResultLoc = document.createElement('pre');
+    searchResultLoc.id = "search-result-loc";
+    searchResultLoc.textContent = item.ref;
+
+    searchTitleLinks.appendChild(searchTitleLinkNewTab);
+    searchTitleLinks.appendChild(searchTitleLinkRaw);
+
+    searchResultTitleTop.appendChild(searchTitleLink);
+    searchResultTitleTop.appendChild(searchTitleLinks);
+
+    searchResultDivItems.appendChild(searchResultTitleTop);
+    searchResultDivItems.appendChild(searchResultLoc);
+
+    searchResultDiv.appendChild(searchResultDivItems);
+
+    searchResults.appendChild(searchResultDiv);
+}
+
 function displaySearch(search, searchTerm) {
     const sortedSearch = search.sort((a, b) => {
         const hasIndexMD_a = a.ref.toLowerCase().endsWith("/index.md");
@@ -63,87 +150,7 @@ function displaySearch(search, searchTerm) {
     says(searchStatus, `Found ${search.length} results for ${searchTerm}`);
 
     sortedSearch.forEach((item, idx) => {
-        const searchResultDiv = document.createElement('div');
-        searchResultDiv.id = `${archives ? 'search-result-arch' : 'search-result'}`;
-
-        const searchResultDivItems = document.createElement('div');
-        searchResultDivItems.id = "search-result-div-items";
-
-        const titleidx = idx < 9 ? "0" + (idx + 1) : (idx + 1);
-
-        const searchTitleIndex = document.createElement('div');
-        searchTitleIndex.id = 'index';
-
-        const searchTitleIndexText = document.createElement('div');
-        searchTitleIndexText.id = "text";
-        says(searchTitleIndexText, titleidx);
-        searchTitleIndex.appendChild(searchTitleIndexText);
-        searchResultDiv.appendChild(searchTitleIndex);
-
-        const searchResultTitleTop = document.createElement('div');
-        searchResultTitleTop.id = 'search-result-title-top';
-
-        let title = item.ref.match(/\/([^/]*)$/)[0].replace('/', '').replace('.md', '');
-        const isNotebook = title.endsWith(".ipynb");
-
-        const searchTitleLink = document.createElement('a');
-
-        const link = getLink(item, title);
-
-        searchTitleLink.id = "search-result-title";
-        !isNotebook && (searchTitleLink.href = link);
-
-        searchTitleLink.textContent = title.length > 40 ?
-            title.substring(0, 40 - '...'.length) + '...' :
-            title.replace('.ipynb', '');
-
-        const searchTitleLinks = document.createElement('div');
-        searchTitleLinks.id = 'search-title-links';
-
-        let searchTitleLinkNewTab;
-
-        if (isNotebook) {
-            searchTitleLinkNewTab = document.createElement('a');
-            const img = document.createElement('img');
-            img.src = "https://colab.research.google.com/assets/colab-badge.svg";
-            img.alt = "Google Colab";
-            img.style.marginTop = "5px";
-            img.style.scale = "0.8";
-
-            searchTitleLinkNewTab.id = "search-result-title-newtab";
-            searchTitleLinkNewTab.href = link; // Note: 'link' should be defined elsewhere in your code
-            searchTitleLinkNewTab.target = '_blank';
-            searchTitleLinkNewTab.appendChild(img);
-        } else {
-            searchTitleLinkNewTab = document.createElement('a');
-            searchTitleLinkNewTab.id = "search-result-title-newtab";
-            searchTitleLinkNewTab.href = link;
-            searchTitleLinkNewTab.textContent = "↗️";
-            searchTitleLinkNewTab.target = '_blank';
-        }
-
-        const searchTitleLinkRaw = document.createElement('a');
-        searchTitleLinkRaw.id = "search-result-title-newtab";
-        searchTitleLinkRaw.href = !production ? `/${item.ref}` : `/singularity/${item.ref}`;
-        searchTitleLinkRaw.textContent = "⬇️";
-        searchTitleLinkRaw.target = '_blank';
-
-        const searchResultLoc = document.createElement('pre');
-        searchResultLoc.id = "search-result-loc";
-        searchResultLoc.textContent = item.ref;
-
-        searchTitleLinks.appendChild(searchTitleLinkNewTab);
-        searchTitleLinks.appendChild(searchTitleLinkRaw);
-
-        searchResultTitleTop.appendChild(searchTitleLink);
-        searchResultTitleTop.appendChild(searchTitleLinks);
-
-        searchResultDivItems.appendChild(searchResultTitleTop);
-        searchResultDivItems.appendChild(searchResultLoc);
-
-        searchResultDiv.appendChild(searchResultDivItems);
-
-        searchResults.appendChild(searchResultDiv);
+        createSearchResultItem(item, idx);
     });
 }
 
