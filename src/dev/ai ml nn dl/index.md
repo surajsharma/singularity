@@ -1,2 +1,0 @@
-* 📂 [practice](practice)
-* 📂 [theory](theory)

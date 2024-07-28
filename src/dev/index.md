@@ -1,4 +1,4 @@
-* 📂 [ai ml nn dl](ai ml nn dl)
+* 📂 [ai](ai)
 * 📂 [cs_phil](cs_phil)
 * 📂 [dsa](dsa)
 * 📂 [languages](languages)

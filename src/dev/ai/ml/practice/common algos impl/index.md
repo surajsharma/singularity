@@ -1,0 +1,1 @@
+* 📒 <a href="https://colab.research.google.com/github/surajsharma/singularity/blob/master/src/dev/ai/ml/practice/common algos impl/k-nearest-neighbour-knn.ipynb" target="_blank">k-nearest-neighbour-knn</a> ↗️
