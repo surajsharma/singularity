@@ -1,5 +1,17 @@
 ## 2024
 
+
+### August
+
+- there is no time to grow complacent, even as a skadagami things have changed fundamentally for me. now practicing meditation isn't a matter of time but a chance at preemptively shortening the next and final birth - i think i may yet sublimate time to a point that there isn't a return or if there is one, it is exceedingly short.
+
+- from skadagami to anagami or even arhat is a whole different ball game though, but with newfound understanding i am certain it won't take as long as it did to get here. nearly forty years of rummaging through darkness i have squandered much but not enough to be completely spiritually bankrupt or even consider the inevitability of my once-and-final return.
+
+- increasingly, there have been moments of Proustian bliss wherein i feel my being zooming through the memory of all births at once. of course the memory of present lifetime are highlighted as the strongest during such moments, but I know there is more to them than meets the being.
+
+- moving forward is a matter of physical restraint, mental agility, and overall discipline that should see me through. of these ___mental agility___ is most important since lethargy starts in the mind, i must constantly keep reminding myself of the long journey ahead and of the depleting reserves needed to carry it out.
+
+
 ### July
 
 - to blame "others" for lack of any spiritual enlightenment is akin to blaming the weather, otherness exists for all - even the hermit in his cave will have some interface with society if he is to survive - the truth is we are simply too habituated, too conditioned - removing oneself from the battlefield of karma is only logistical aid to the challenge - there is a way out even even from hell, infact, the gates of hell never close unlike heaven where the gates are always closed. we stay in hell out of laziness predominantly.
