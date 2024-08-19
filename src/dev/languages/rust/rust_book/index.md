@@ -16,6 +16,7 @@
 * 📄 [15-smart pointers](15-smart pointers.md)
 * 📄 [16-concurrency](16-concurrency.md)
 * 📄 [17 oopf](17 oopf.md)
+* 📄 [17-std_alloc](17-std_alloc.md)
 * 📄 [18-patterns and matching](18-patterns and matching.md)
 * 📄 [19-advanced features](19-advanced features.md)
 * 📄 [20-multithreaded web server](20-multithreaded web server.md)
