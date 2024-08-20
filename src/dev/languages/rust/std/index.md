@@ -1,4 +1,4 @@
-* 📄 [01-hashmap](01-hashmap.md)
+* 📄 [01-std_hashmap](01-std_hashmap.md)
 * 📄 [02-std_io](02-std_io.md)
 * 📄 [03-std_cell](03-std_cell.md)
 * 📄 [04-std_hash](04-std_hash.md)
