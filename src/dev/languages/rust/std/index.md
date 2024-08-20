@@ -14,3 +14,6 @@
 * 📄 [14-std_path_pathbuf](14-std_path_pathbuf.md)
 * 📄 [15-std_num](15-std_num.md)
 * 📄 [16-std_num_NonZeroU32](16-std_num_NonZeroU32.md)
+* 📄 [17-std_alloc](17-std_alloc.md)
+* 📄 [18-std_arch](18-std_arch.md)
+* 📄 [19-std_sync_atomics](19-std_sync_atomics.md)
