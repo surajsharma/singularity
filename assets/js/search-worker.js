@@ -30,8 +30,7 @@ async function createVersionedIddb(db) {
 
 async function setVersionedIddb(db, version, schecksum, achecksum, shouldReload) {
     try {
-        let tx = db.transaction("release", "readwrite")
-        let store = tx.objectStore("release");
+        let store = db.transaction("release", "readwrite").objectStore("release");
 
         const ver = await store.get("ver");
         const src = await store.get("src");
@@ -40,19 +39,46 @@ async function setVersionedIddb(db, version, schecksum, achecksum, shouldReload)
         arc.onsuccess = async (evt) => {
             if (!evt.target.result) { //init
                 const arcdata = await fetchRemoteJson(ARC);
-                store = db.transaction("release", "readwrite")
-                    .objectStore("release");
+                store = db.transaction("release", "readwrite").objectStore("release");
                 store.put({ id: "arc", value: arcdata, checksum: achecksum });
             }
+
+            //--arc checksum mismatch--
+            if (evt.target.result?.checksum != achecksum) {
+                const arcdata = await fetchRemoteJson(ARC);
+                store = db.transaction("release", "readwrite").objectStore("release");
+
+                store.put({ id: "arc", value: arcdata, checksum: achecksum });
+
+                shouldReload = true;
+            }
+        }
+
+        arc.onerror = async (evt) => {
+            console.log("~ arc.onerror= ~ evt:", evt)
         }
 
         src.onsuccess = async (evt) => {
             if (!evt.target.result) { //init
                 const srcdata = await fetchRemoteJson(SRC);
-                store = db.transaction("release", "readwrite")
-                    .objectStore("release");
+                store = db.transaction("release", "readwrite").objectStore("release");
                 store.put({ id: "src", value: srcdata, checksum: schecksum });
             }
+
+            //--src checksum mismatch--
+            if (evt.target.result?.checksum != schecksum) {
+                const srcdata = await fetchRemoteJson(SRC);
+
+                store = db.transaction("release", "readwrite").objectStore("release");
+
+                store.put({ id: "src", value: srcdata, checksum: schecksum });
+
+                shouldReload = true;
+            }
+        }
+
+        src.onerror = async (evt) => {
+            console.log("~ src.onerror= ~ evt:", evt)
         }
 
         ver.onsuccess = async (evt) => {
@@ -62,20 +88,10 @@ async function setVersionedIddb(db, version, schecksum, achecksum, shouldReload)
                         version, schecksum, achecksum
                     }
                 });
-
-                postMessage({
-                    thread: {
-                        msg: "src/arc",
-                        count: 4,
-                        data: { reload: shouldReload }
-                    }
-                });
-
-                return;
             }
 
             //--ver mismatch--
-            if (evt.target.result.value.version != version) {
+            if (evt.target.result?.value.version != version) {
                 const newVersion = version;
                 store.put({
                     id: "ver", value: {
@@ -83,61 +99,19 @@ async function setVersionedIddb(db, version, schecksum, achecksum, shouldReload)
                     }
                 });
             };
-
-            //--arc checksum mismatch--
-            if (evt.target.result.value.achecksum != achecksum) {
-                const arcdata = await fetchRemoteJson(ARC);
-                store = db.transaction("release", "readwrite")
-                    .objectStore("release");
-
-                store.put({ id: "arc", value: arcdata, checksum: achecksum });
-
-                const newAchecksum = achecksum;
-
-                store.put({
-                    id: "ver", value: {
-                        version, schecksum, achecksum: newAchecksum
-                    }
-                });
-
-                shouldReload = true;
-            }
-
-            //--src checksum mismatch--
-            if (evt.target.result.value.schecksum != schecksum) {
-                const srcdata = await fetchRemoteJson(SRC);
-
-                store = db.transaction("release", "readwrite").objectStore("release");
-
-                store.put({ id: "src", value: srcdata, checksum: schecksum });
-
-                const newSchecksum = schecksum;
-
-                store.put({ id: "ver", value: { version, schecksum: newSchecksum, achecksum } });
-
-                shouldReload = true;
-            }
-
-            postMessage({
-                thread: {
-                    msg: "src/arc",
-                    count: 4,
-                    data: { reload: shouldReload }
-                }
-            });
-        }
-
-        arc.onerror = async (evt) => {
-            console.log("~ arc.onerror= ~ evt:", evt)
-        }
-
-        src.onerror = async (evt) => {
-            console.log("~ arc.onerror= ~ evt:", evt)
         }
 
         ver.onerror = async (evt) => {
-            console.log("~ arc.onerror= ~ evt:", evt)
+            console.log("~ ver.onerror= ~ evt:", evt)
         }
+
+        postMessage({
+            thread: {
+                msg: "src/arc",
+                count: 4,
+                data: { reload: shouldReload }
+            }
+        });
     } catch (error) {
         console.log("~ setVersionedIddb ~ error:", error)
     }
