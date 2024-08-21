@@ -44,19 +44,11 @@ async function setVersionedIddb(db, version, schecksum, achecksum, shouldReload)
             }
 
             //--arc checksum mismatch--
-            if (evt.target.result?.value.achecksum != achecksum) {
+            if (evt.target.result?.checksum != achecksum) {
                 const arcdata = await fetchRemoteJson(ARC);
                 store = db.transaction("release", "readwrite").objectStore("release");
 
                 store.put({ id: "arc", value: arcdata, checksum: achecksum });
-
-                const newAchecksum = achecksum;
-
-                store.put({
-                    id: "ver", value: {
-                        version, schecksum, achecksum: newAchecksum
-                    }
-                });
 
                 shouldReload = true;
             }
@@ -74,16 +66,12 @@ async function setVersionedIddb(db, version, schecksum, achecksum, shouldReload)
             }
 
             //--src checksum mismatch--
-            if (evt.target.result?.value.schecksum != schecksum) {
+            if (evt.target.result?.checksum != schecksum) {
                 const srcdata = await fetchRemoteJson(SRC);
 
                 store = db.transaction("release", "readwrite").objectStore("release");
 
                 store.put({ id: "src", value: srcdata, checksum: schecksum });
-
-                const newSchecksum = schecksum;
-
-                store.put({ id: "ver", value: { version, schecksum: newSchecksum, achecksum } });
 
                 shouldReload = true;
             }
