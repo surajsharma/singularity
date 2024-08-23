@@ -18,3 +18,5 @@
 * 📄 [18-std_arch](18-std_arch.md)
 * 📄 [19-std_sync_atomics](19-std_sync_atomics.md)
 * 📄 [20-std_sync_barrier](20-std_sync_barrier.md)
+* 📄 [21-std_time_SystemTime](21-std_time_SystemTime.md)
+* 📄 [22-std_collections_LinkedList](22-std_collections_LinkedList.md)

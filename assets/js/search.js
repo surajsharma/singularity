@@ -155,8 +155,6 @@ function displaySearch(search, searchTerm) {
 }
 
 function loadSearchIndex(data) {
-    //TODO: ideally, let a dedicated worker handle it?
-
     index = lunr.Index.load(data);
     console.log('search index loaded!');
 }
@@ -310,7 +308,7 @@ if (support) {
             case 1:
                 if (!thread_sync.data) return;
                 const { version } = thread_sync.data;
-                says(searchVersion, `search db version: 0.0.${version}`);
+                says(searchVersion, `search db version: ${parseInt(version) / 100}`);
                 break;
             case 4:
                 if (!thread_sync.data) return;
