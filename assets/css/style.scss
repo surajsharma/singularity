@@ -3,6 +3,18 @@
 
 @import "{{ site.theme }}";
 
+@media (prefers-color-scheme: dark) {
+  // Styles for dark mode here
+  body {
+    background-color: #111;
+    filter: invert(1);
+  }
+
+  .exclude-invert {
+    filter: invert(1);
+  }
+}
+
 @mixin not-last-child($selector) {
   & #{$selector}:not(:last-child) {
     @content;
