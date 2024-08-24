@@ -15,7 +15,7 @@
         link.innerText = decodeURIComponent(
             n.substring(0, n.lastIndexOf(".")) || n
         );
-        navitem.setAttribute("class", "nav-item");
+        navitem.setAttribute("class", "nav-item exclude-invert");
         let nurl = u.origin;
         for (let i = 0; i <= index; i++) {
             nurl += `/${depth[i]}`;
