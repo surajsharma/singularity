@@ -3,6 +3,8 @@
 
 ### August
 
+- what is religion if not the "science of one"? where every idea is peer-reviewed by every cell, bone and sinew.
+
 - there is no time to grow complacent, even as a skadagami things have changed fundamentally for me. now practicing meditation isn't a matter of time but a chance at preemptively shortening the next and final birth - i think i may yet sublimate time to a point that there isn't a return or if there is one, it is exceedingly short.
 
 - from skadagami to anagami or even arhat is a whole different ball game though, but with newfound understanding i am certain it won't take as long as it did to get here. nearly forty years of rummaging through darkness i have squandered much but not enough to be completely spiritually bankrupt or even consider the inevitability of my once-and-final return.
