@@ -1,6 +1,6 @@
 * 📂 [arch](arch)
 * 📂 [collections](collections)
-* 📂 [error](error)
+* 📂 [error handling](error handling)
 * 📂 [fs](fs)
 * 📂 [io](io)
 * 📂 [memory mgmt](memory mgmt)

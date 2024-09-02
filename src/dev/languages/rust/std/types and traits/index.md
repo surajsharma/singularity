@@ -1,4 +1,7 @@
 * 📄 [07-std_convert](07-std_convert.md)
 * 📄 [09-std_any_any](09-std_any_any.md)
 * 📄 [11-std_option](11-std_option.md)
+* 📄 [34-std_char](34-std_char.md)
+* 📄 [35-std_ops](35-std_ops.md)
+* 📄 [36-std_marker](36-std_marker.md)
 * 📄 [39-std_str](39-std_str.md)
