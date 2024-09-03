@@ -1,20 +1,14 @@
 - `cargo.toml`
 
 ```toml
-
-
 [dependencies]
 serde = { version = "1.0.209", features = ["derive"] }
 serde_json = "1.0.127"
-
-
 ```
 
 - basic serde usage
 
-
 ```rs
-
 extern crate serde;
 extern crate serde_json;
 
@@ -43,5 +37,4 @@ fn main() {
 	println!("Deserialized: {:?}", deserialized);
 
 }
-
 ```

@@ -2,8 +2,7 @@
 
 ```toml
 [dependencies]
-serde_json = "1.0.127"
-
+rayon = "1.10.0"
 ```
 
 - basic rayon usage

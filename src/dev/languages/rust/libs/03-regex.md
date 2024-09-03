@@ -1,5 +1,11 @@
-```rs 
+- `cargo.toml`
 
+```toml
+[dependencies]
+regex = "1.10.6"
+```
+
+```rs 
 extern crate regex;
 use regex::Regex;
 
@@ -17,8 +23,6 @@ fn main() {
         }
     }
 }
-
-
 ```
 
 - see also [[18-patterns and matching]]
