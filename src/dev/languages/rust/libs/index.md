@@ -2,3 +2,4 @@
 * 📄 [02-rayon](02-rayon.md)
 * 📄 [03-regex](03-regex.md)
 * 📄 [04-mio](04-mio.md)
+* 📄 [05-warp](05-warp.md)
