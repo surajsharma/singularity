@@ -314,6 +314,10 @@ if (support) {
                 if (!thread_sync.data) return;
                 const { reload } = thread_sync.data;
                 await loadSearchIndices(reload);
+
+                if (reload) {
+                    window.location.reload(true);
+                }
                 break;
             case -1:
                 await loadSearchIndices(false);
