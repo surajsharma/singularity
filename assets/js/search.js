@@ -213,6 +213,9 @@ function setupEventListeners() {
 }
 
 async function loadSearchIndices(reload = false) {
+    console.log("🚀 ~ loadSearchIndices ~ reload:", reload)
+
+
     await new Promise(async (resolve, reject) => {
         if (typeof lunr == 'undefined') reject("Lunr not found!");
         try {
@@ -231,6 +234,10 @@ async function loadSearchIndices(reload = false) {
             reject(error);
         }
     });
+
+    if (reload) {
+        window.location.reload(true);
+    }
 }
 
 async function initSearchWorkerless() {
