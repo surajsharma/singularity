@@ -1,6 +1,7 @@
 * 📄 [Desiderata](Desiderata.md)
 * 📄 [Emily Dickinson](Emily Dickinson.md)
 * 📄 [Ezra Pound](Ezra Pound.md)
+* 📄 [Francis Burdett Thomas](Francis Burdett Thomas.md)
 * 📄 [Ghalib](Ghalib.md)
 * 📄 [Hafiz](Hafiz.md)
 * 📄 [Heinrich Heine](Heinrich Heine.md)
