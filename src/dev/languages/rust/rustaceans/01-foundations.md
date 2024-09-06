@@ -1,7 +1,7 @@
 - [Talking about memory](#talking-about-memory)
 - [Memory Terminology](#memory-terminology)
 - [\[High-and-low level\] mental-models for variables](#high-and-low-level-mental-models-for-variables)
-
+- [Memory Regions](#memory-regions)
 
 ## Talking about memory
 
@@ -43,12 +43,12 @@
 
 ## [High-and-low level] mental-models for variables
 
-- High-level models are useful when thinking about code at the level of lifetimes and borrows
+- High-level model is useful when thinking about code at the level of lifetimes and borrows
 
-- Low-level models are good for when you are reasoning about unsafe code and raw pointers.
+- Low-level model is good for when you are reasoning about unsafe code and raw pointers.
 
 
-### ![](https://img.shields.io/badge/High level models-coral?style=flat-square&color=coral)
+### ![](https://img.shields.io/badge/High level model-coral?style=flat-square&color=coral)
 
 - In the high-level model, we don’t think of variables as places that hold bytes. 
 
@@ -74,18 +74,119 @@
 - For example, there cannot be two parallel flows with mutable access to a value. Nor can there be a flow that borrows a value while there is no flow that owns the value. Listing 1-2 shows examples of both of these cases.
 
 ```rs
+
 let mut x;
-// this access would be illegal, nowhere to draw the flow from:
+
+// 1. this access would be illegal, nowhere to draw the flow from:
 // assert_eq!(x, 42);
-1 x = 42;
-// this is okay, can draw a flow from the value assigned above:
-2 let y = &x;
-// this establishes a second, mutable flow from x:
-3 x = 43;
-// this continues the flow from y, which in turn draws from x.
+x = 42;
+
+// 2. this is okay, can draw a flow from the value assigned above:
+let y = &x;
+
+// 3. this establishes a second, mutable flow from x:
+x = 43;
+
+// 4. this continues the flow from y, which in turn draws from x.
 // but that flow conflicts with the assignment to x!
-4 assert_eq!(*y, 42);
+assert_eq!(*y, 42);
+
+```
+> [Listing 1-2](https://play.rust-lang.org/?version=stable&mode=debug&edition=2021&gist=cc6b2d42d0cab4f5437f6998898a50d4)
+
+
+```
+error[E0506]: cannot assign to `x` because it is borrowed
+  --> src/main.rs:13:5
+   |
+10 |     let y = &x;
+   |             -- `x` is borrowed here
+...
+13 |     x = 43;
+   |     ^^^^^^ `x` is assigned to here but it was already borrowed
+...
+17 |     assert_eq!(*y, 42);
+   |     ------------------ borrow later used here
 ```
 
+- ___Notice that if 4 was not there, this code would compile fine!___ so the BC is objecting to the dereference of Y because the value of x has moved!
 
-### Low level models
+- ***Shadowing***: If a new variable is declared with the same name as a previous one, they are still considered distinct variables. This is called _shadowing_ — the later variable 'shadows' the former by the same name. The two variables coexist, though subsequent code no longer has a way to name the earlier one. 
+
+
+### ![](https://img.shields.io/badge/Low level model-coral?style=flat-square&color=coral)
+
+- Variables name memory locations that may or may not hold legal values.
+
+- For example, in the statement `let x: usize`, the variable `x` is a name for a region of memory on the stack that has room for a value the size of a `usize`, though it does not have a well-defined value (its slot is empty).
+
+- If you declare multiple variables with the same name, they still end up with different chunks of memory backing them. This model matches the memory model used by C and C++, and many other low-level languages, and is useful for when you need to reason explicitly about memory.
+
+## Memory Regions
+
+- There are many different regions of memory, and perhaps surprisingly, not all of them are stored in the DRAM of your computer.
+
+- The three most important regions for the purposes of writing Rust code are the `stack`, the `heap`, and `static memory`.
+
+### ![](https://img.shields.io/badge/The Stack-coral?style=flat-square&color=coral)
+
+- stack is a segment of memory that your program uses as **scratch space** for function calls
+
+- Each time a function is called, a contiguous chunk of memory called a **frame** is allocated at the top of the stack.
+
+- Near the bottom of the stack is the frame for the `main` function
+
+- as functions call other functions, additional frames are pushed onto the stack
+
+- A function’s frame contains all the variables within that function, along with any arguments the function takes. 
+
+- When the function returns, its stack frame is reclaimed.
+
+- **Stack frames, and crucially the fact that they eventually disappear, are very closely tied to the notion of lifetimes in Rust**
+
+- Any variable stored in a frame on the stack cannot be accessed after that frame goes away, so any reference to it must have a 
+lifetime that is at most as long as the lifetime of the frame.
+
+### ![](https://img.shields.io/badge/The Heap-coral?style=flat-square&color=coral)
+
+- ___The heap is a pool of memory that isn’t tied to the current call stack of the program.___
+
+- Values in heap memory live until they are explicitly deallocated.
+
+- This is useful when you want a value to live beyond the lifetime of the current function’s frame.
+
+- If that value is the function’s return value, the calling function can leave some space on its stack for the called function to write that value into before it returns. 
+
+- But if you want to, say, send that value to a different thread with which the current thread may share no stack frames at all, you can store it on the heap.
+
+- when you heap-allocate memory, the resulting pointer has an unconstrained lifetime—its lifetime is however long your program keeps it alive.
+
+- The primary mechanism for interacting with the heap in Rust is the `Box` type. 
+
+- When you write `Box::new(value)`, the value is placed on the heap, and what you are given back (the `Box<T>`) is a pointer to that value on the heap. 
+
+- When the `Box` is eventually dropped, that memory is freed.
+
+- If you forget to deallocate heap memory, it will stick around forever, and your application will eventually eat up all the memory on your machine.
+
+- This is called leaking memory and is usually something you want to avoid. ___However, there are some cases where you explicitly want to leak memory___.
+
+- For example, say you have a read-only configuration that the entire program should be able to access.
+
+- You can allocate that on the heap and explicitly leak it with `Box::leak` to get a `'static` reference to it.
+
+### ![](https://img.shields.io/badge/Static Memory-coral?style=flat-square&color=coral)
+
+- Static memory is really a catch-all term for several closely related regions located in the file your program is compiled into
+
+- These regions are automatically loaded into your program’s memory when that program is executed
+
+- Values in static memory live for the entire execution of your program
+
+- Static memory also holds the memory for variables you declare with the static keyword, as well as certain constant values in your code, like strings.
+
+- The special lifetime `'static`, which gets its name from the static memory region, marks a reference as being valid for "as long as static memory is around," which is until the program shuts down.
+
+- Since a static variable’s memory is allocated when the program starts, a reference to a variable in static memory is, by definition, `'static`, as it is not deallocated until the program shuts down. 
+
+- The inverse is not true—***there can be `'static` references that do not point to static memory***—but the name is still appropriate: once you create a reference with a static lifetime, ***whatever it points to might as well be in static memory*** as far as the rest of the program is concerned, as it can be used for however long your program wishes.
