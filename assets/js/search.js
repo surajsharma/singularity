@@ -11,7 +11,6 @@ const searchStatus = gel('search-status');
 const searchResults = gel('search-results-container');
 const searchVersion = gel('search-version');
 
-
 function debouncedSearch(searchTerm) {
     searchInput.style.backgroundColor = "rgb(250, 250, 250)";
     searchStatus.style.color = "black";
@@ -161,6 +160,8 @@ function loadSearchIndex(data) {
 
 async function handleToggle(event) {
     const target = event.target;
+    const version = getIddbVersion();
+
     switch (`${target.id}`) {
         case 'search-archives':
             archives = target.checked;
@@ -215,19 +216,12 @@ function setupEventListeners() {
 async function loadSearchIndices(dto) {
     await new Promise(async (resolve, reject) => {
         if (typeof lunr == 'undefined') reject("Lunr not found!");
-        const { reload, schecksum, achecksum, version } = dto;
+        const { reload, version } = dto;
         try {
             reload ?
                 says(searchStatus, 'Reloading search database...') :
                 says(searchStatus, 'Loading...');
-
             let data = await getIddb("src", version);
-
-            if (data[0].checksum != schecksum) {
-                console.log("stale data here", data[0].checksum, schecksum);
-
-            }
-
             data.length && data[0].value && loadSearchIndex(data[0].value);
             setupEventListeners();
             says(searchStatus, '');
@@ -279,7 +273,6 @@ async function getIddb(key, ver) {
                 const query = store.getAll(key);
 
                 query.onsuccess = async (e) => {
-
                     if (e.target.result.length < 1) {
                         // fault-tolerance: we're here because somehow 
                         // the local db wasn't there, the sync script has 
@@ -306,6 +299,19 @@ function says(el, txt) {
 
 function gel(el) {
     return document.getElementById(el);
+}
+
+function getIddbVersion() {
+    let request = indexedDB.open(dbName);
+
+    request.onsuccess = function (event) {
+        let db = event.target.result;
+        return db.version;
+    };
+
+    request.onerror = function (event) {
+        console.log("~ getIddbVersion ~ error:", event.target.errorCode);
+    };
 }
 
 if (support) {
