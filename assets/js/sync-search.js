@@ -1,4 +1,3 @@
-let version, achecksum, schecksum;
 const thread_sync = { msg: null, count: 0, data: {} };
 const threadSyncEvent = new CustomEvent('thread_sync', {
     detail: { ...thread_sync },

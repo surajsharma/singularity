@@ -212,17 +212,23 @@ function setupEventListeners() {
     }
 }
 
-async function loadSearchIndices(reload = false) {
+async function loadSearchIndices(dto) {
     await new Promise(async (resolve, reject) => {
         if (typeof lunr == 'undefined') reject("Lunr not found!");
+        const { reload, schecksum, achecksum, version } = dto;
         try {
             reload ?
                 says(searchStatus, 'Reloading search database...') :
                 says(searchStatus, 'Loading...');
 
-            const data = await getIddb("src", version);
-            data.length && data[0].value && loadSearchIndex(data[0].value);
+            let data = await getIddb("src", version);
 
+            if (data[0].checksum != schecksum) {
+                console.log("stale data here", data[0].checksum, schecksum);
+
+            }
+
+            data.length && data[0].value && loadSearchIndex(data[0].value);
             setupEventListeners();
             says(searchStatus, '');
             resolve(0);
@@ -305,16 +311,15 @@ function gel(el) {
 if (support) {
     document.addEventListener('thread_sync', async (event) => {
         switch (thread_sync.count) {
-            case 1:
+            case 4:
                 if (!thread_sync.data) return;
                 const { version } = thread_sync.data;
                 says(searchVersion, `search db version: ${parseInt(version) / 100}`);
                 break;
-            case 4:
+            case 2:
                 if (!thread_sync.data) return;
-                const { reload } = thread_sync.data;
-                await loadSearchIndices(reload);
-               break;
+                await loadSearchIndices(thread_sync.data);
+                break;
             case -1:
                 await loadSearchIndices(false);
                 break;

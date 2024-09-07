@@ -47,10 +47,31 @@ async function setVersionedIddb(db, version, schecksum, achecksum, shouldReload)
             if (evt.target.result?.checksum != achecksum) {
                 const arcdata = await fetchRemoteJson(ARC);
                 store = db.transaction("release", "readwrite").objectStore("release");
+                const updateData = store.put({ id: "arc", value: arcdata, checksum: achecksum });
+                updateData.onsuccess = () => {
+                    shouldReload = true;
+                    postMessage({
+                        thread: {
+                            msg: "arc",
+                            count: 1,
+                            data: { reload: shouldReload, version, schecksum, achecksum }
+                        }
+                    });
+                };
 
-                store.put({ id: "arc", value: arcdata, checksum: achecksum });
-
-                shouldReload = true;
+                const updateVer = store.put({
+                    id: "ver", value: {
+                        version: version, schecksum, achecksum
+                    }
+                });
+            } else {
+                postMessage({
+                    thread: {
+                        msg: "arc",
+                        count: 1,
+                        data: { reload: shouldReload, version, schecksum, achecksum }
+                    }
+                });
             }
         }
 
@@ -68,12 +89,33 @@ async function setVersionedIddb(db, version, schecksum, achecksum, shouldReload)
             //--src checksum mismatch--
             if (evt.target.result?.checksum != schecksum) {
                 const srcdata = await fetchRemoteJson(SRC);
-
                 store = db.transaction("release", "readwrite").objectStore("release");
+                const updateData = store.put({ id: "src", value: srcdata, checksum: schecksum });
 
-                store.put({ id: "src", value: srcdata, checksum: schecksum });
+                updateData.onsuccess = () => {
+                    shouldReload = true;
+                    postMessage({
+                        thread: {
+                            msg: "src",
+                            count: 2,
+                            data: { reload: shouldReload, version, schecksum, achecksum }
+                        }
+                    });
+                }
 
-                shouldReload = true;
+                const updateVer = store.put({
+                    id: "ver", value: {
+                        version: version, schecksum, achecksum
+                    }
+                });
+            } else {
+                postMessage({
+                    thread: {
+                        msg: "src",
+                        count: 2,
+                        data: { reload: shouldReload, version, schecksum, achecksum }
+                    }
+                });
             }
         }
 
@@ -92,26 +134,35 @@ async function setVersionedIddb(db, version, schecksum, achecksum, shouldReload)
 
             //--ver mismatch--
             if (evt.target.result?.value.version != version) {
-                const newVersion = version;
-                store.put({
+                const updateVer = store.put({
                     id: "ver", value: {
-                        version: newVersion, schecksum, achecksum
+                        version: version, schecksum, achecksum
                     }
                 });
-            };
+                updateVer.onsuccess = () => {
+                    postMessage({
+                        thread: {
+                            msg: "ver",
+                            count: 4,
+                            data: { reload: shouldReload, version, schecksum, achecksum }
+                        }
+                    });
+                }
+            } else {
+                postMessage({
+                    thread: {
+                        msg: "ver",
+                        count: 4,
+                        data: { reload: shouldReload, version, schecksum, achecksum }
+                    }
+                });
+            }
         }
 
         ver.onerror = async (evt) => {
             console.log("~ ver.onerror= ~ evt:", evt)
         }
 
-        postMessage({
-            thread: {
-                msg: "src/arc",
-                count: 4,
-                data: { reload: shouldReload }
-            }
-        });
     } catch (error) {
         console.log("~ setVersionedIddb ~ error:", error)
     }
@@ -131,25 +182,21 @@ async function syncIddb() {
             // called when the db version changes
             console.log("🔔 Database upgrade needed.");
             createVersionedIddb(request.result);
-            postMessage({ thread: { msg: 'release', count: 1 } });
+            postMessage({ thread: { msg: 'release', count: 0 } });
             shouldReload = true;
         };
 
         request.onsuccess = async (event) => {
             if (request.result.objectStoreNames.contains("release")) {
-
                 const ver = request.result.version;
-
                 postMessage({
                     thread: {
                         msg: "version",
                         count: 1,
-                        data: { version: ver }
+                        data: { ver }
                     }
                 });
-
                 await setVersionedIddb(request.result, version, schecksum, achecksum, shouldReload);
-
             }
         }
 
