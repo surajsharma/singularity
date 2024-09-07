@@ -1,5 +1,58 @@
 ## 2024
 
+### September
+
+> sow not emotion  tis a weed / that grows in hedge rows, every fool / fancies his own emotions breed / the right to teach, the right to rule - [[Francis Burdett Thomas]]
+
+- do i want to know what kind of trauma leads a bunch of people to want to go on an adventure to measure the depths of their own stupidity? i don't but i can say with some certainty that anyone who could even faintly remember the depths of my explorations would not force me to lead them down any rabbithole. they've already started apologizing and i havent even begun in any earnestness yet or even with any sort of urgency. lucky for me, these isn't the fist batch of tourists i have transported from one secrecy to another.
+
+- i am a row of golden deers lined up in a super symmetry
+
+- the question isn't how they failed, nor how they were delivered unto abject failure and its eternal return, the question is WHEN did they decide to call it a "success", and under whose aegis for they are not the sort who make their own path.
+
+- i keep hearing "its been a while" and "we are ready" but i don't see anyone gearing up to invade poland, a mark of mass insanity?
+
+- or was it their intention to make me a crucible of their collective grief? if so, i had swallowed centuries worth of it, and was ready for more
+
+- or were they simply confused, aimless and intentionless, out for whatever they could get - this seems more plausible given their helplessness, and given my accomodating attitude.
+
+- if it was anger aginst "god" they were taking out on me, then that implies their faith in god, and i could have a more understanding stance towards their actions, even though by now i had enough knowledge to not need that hypothesis anymore.
+
+- in the end, it was the same square of a search for misplaced leadership, a failing cultural and socio-political system, an empire breathing its last through my dreams that seemed to explain it all, which called for kindness and sympathy above all, all of which i had in spades for the lifetime.
+
+- there was still a fear of the new, even though i was nearing my 4th decade. old customs and systems are entrenched as always, but it is never my style to force my beliefs down another's throat, i simply ate theirs and passed them out for what they were worth. 
+
+- sublimating opinions is one thing, but were they actually crazy enough to want to kill an idea? i don't think so, however even their best minds could not fathom a way to profit from this still, which brings us back to entrenched beliefs, conditioning, old habits and free will. best to stay away from such debates.
+
+- and now i had russians making claims so tall, if i were to mention them in polite company or even talk about them i would get weird looks, but uncannily enough it was making sense, i was being confided into the secret history of civilizations, which made me shake in my boots.
+
+- the real mystery was my crucifix was still just economic, my exhortations to draw-and-quarter me fell on deaf ears, they would have too had they not bought into my "Death is not a punishment" schtick, which only served to make my sentence longer and my torture worse wtf
+
+- writing frequency for personal things like this diary had gone drown drastically from say, even last year, i had little left to say anymore and realized even here that i was just repeating myself, which was no fun, which made "work" fun however ironically, i had become a machine and they used me as such, but as machines they were worth way more to me than i could ever be to them, infact i was probably mostly a liability in economic terms, but i continued to be a cultural "asset", however poorly treated.
+
+- the eternal question remained, was i being led through the labyrinths, or was i doing the leading here? either way, pretty moronic tribal tragedy if nothing comes of it. a shame for religious and democratic communities worldwide, so i tried to keep my mischief under wraps and play along.
+
+- one NEW aspect of personal writings could be to use it as a guage of spiritual progress, but spiritual progress is an oxymoron, nurture works reductively and you forget more than you remember, but still, could i .. perhaps track "spiritual goals"? but no sooner do i type these two words it hits me that this cannot be done. 
+
+- well what about this then? ![rupa_jhana](image.png)
+
+- **practice without understanding**, this is a useless table and i might as well die having made only halfway through ... 
+
+- otoh, it seems a trifle simplistic to say that the inner game is also a matter of numbers...which brings us to matters of bruteforce, willpower etc.. strategies in which i put no faith whatsoever as explained elsewhere in these notes 
+
+- the notion of practice for its own sake is also lacking in understanding and maybe can be helpful in maintaining steady state once arhatship is reached but as of now seems pointless
+
+- what seems equally pointless is to strive for a greater position on the spiritual ladder because then there is no fight left to win material - i'm not going to give up sex, quit smoking and then ask the world for lambos now am i? but no, even if i have it backwards here, that behaviour change FOLLOWS kusala states - there seems to be little reason left for me to truly WANT anything
+
+- so in my 38th year my position is this, fresh out of fucks to give - i understand that an organ grinder without his monkey is really not worth anything. so, having resolved to quietly move away and extricate myself from society and let nature take its due course. having this much resolve, what should my action be? 
+
+- to make any economic progress at gunpoint seems futile, downstream pleasures have been well defeated, if not conquered by spiritual aspirations and concerns for mom and sis have been well assuaged by the OWBs. 
+
+- at the same time ditching mother (to be cared for by her absentee co-conspirators?) and not seeing her through would be cowardice, and i will find no peace in mother nature if i leave without her permission...i would not find a peaceful death unless she ejects me... 
+
+- i could easily fake behaviour forcing her to kick me out but that doesn't work since i can never act in bad faith and delude myself for the sake of some imagined "freedom" 
+
+- i guess my only option is to keep trying to fuck some sense into these ppl, while improving my inner condition
 
 ### August
 
@@ -253,5 +306,6 @@
 
 
 [//begin]: # "Autogenerated link references for markdown compatibility"
+[Francis Burdett Thomas]: <../lit/poetry/Francis Burdett Thomas> "Francis Burdett Thomas"
 [the 2 rupees cult]: <../tyrna get murdered/the underworld/the 2 rupees cult> "Invocation"
 [//end]: # "Autogenerated link references"
