@@ -34,7 +34,7 @@
 
 - one NEW aspect of personal writings could be to use it as a guage of spiritual progress, but spiritual progress is an oxymoron, nurture works reductively and you forget more than you remember, but still, could i .. perhaps track "spiritual goals"? but no sooner do i type these two words it hits me that this cannot be done. 
 
-- well what about this then? ![rupa_jhana](image.png)
+- well what about this then? ![rupa_jhana](../../../attachments/rupa_jhana.png)
 
 - **practice without understanding**, this is a useless table and i might as well die having made only halfway through ... 
 

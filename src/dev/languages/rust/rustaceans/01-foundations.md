@@ -1,6 +1,6 @@
 - [Talking about memory](#talking-about-memory)
 - [Memory Terminology](#memory-terminology)
-- [\[High-and-low level\] mental-models for variables](#high-and-low-level-mental-models-for-variables)
+- [High-and-low level mental-models](#high-and-low-level-mental-models)
 - [Memory Regions](#memory-regions)
 
 ## Talking about memory
@@ -41,14 +41,13 @@
 - ```let string = 'Hello world';``` Even though we assign a string value to the variable string, the actual value of the variable is a pointer to the first character in the string value 'Hello world', and not the string value itself.
 
 
-## [High-and-low level] mental-models for variables
+## High-and-low level mental-models
 
 - High-level model is useful when thinking about code at the level of lifetimes and borrows
 
 - Low-level model is good for when you are reasoning about unsafe code and raw pointers.
 
-
-### ![](https://img.shields.io/badge/High level model-coral?style=flat-square&color=coral)
+> ![](https://img.shields.io/badge/High level model-coral?style=flat-square&color=coral)
 
 - In the high-level model, we don’t think of variables as places that hold bytes. 
 
@@ -59,7 +58,6 @@
 - When a variable is later accessed, you can ![](https://img.shields.io/badge/imagine drawing a line-red?style=flat-square&color=green) from the previous access of that variable to the new access, which establishes a dependency relationship between the two accesses. 
 
 - ![moved](https://img.shields.io/badge/-If the value in a variable is moved, no lines can be drawn from it anymore.-red?style=flat-square&color=green)
-
 
 - ![legality](https://img.shields.io/badge/In this model, a variable exists only so long as it holds a legal value-red?style=flat-square&color=green)
 
@@ -114,7 +112,7 @@ error[E0506]: cannot assign to `x` because it is borrowed
 - ***Shadowing***: If a new variable is declared with the same name as a previous one, they are still considered distinct variables. This is called _shadowing_ — the later variable 'shadows' the former by the same name. The two variables coexist, though subsequent code no longer has a way to name the earlier one. 
 
 
-### ![](https://img.shields.io/badge/Low level model-coral?style=flat-square&color=coral)
+> ![](https://img.shields.io/badge/Low level model-coral?style=flat-square&color=coral)
 
 - Variables name memory locations that may or may not hold legal values.
 
@@ -128,7 +126,7 @@ error[E0506]: cannot assign to `x` because it is borrowed
 
 - The three most important regions for the purposes of writing Rust code are the `stack`, the `heap`, and `static memory`.
 
-### ![](https://img.shields.io/badge/The Stack-coral?style=flat-square&color=coral)
+> ![](https://img.shields.io/badge/The Stack-coral?style=flat-square&color=coral)
 
 - stack is a segment of memory that your program uses as **scratch space** for function calls
 
@@ -147,7 +145,8 @@ error[E0506]: cannot assign to `x` because it is borrowed
 - Any variable stored in a frame on the stack cannot be accessed after that frame goes away, so any reference to it must have a 
 lifetime that is at most as long as the lifetime of the frame.
 
-### ![](https://img.shields.io/badge/The Heap-coral?style=flat-square&color=coral)
+
+> ![](https://img.shields.io/badge/The Heap-coral?style=flat-square&color=coral)
 
 - ___The heap is a pool of memory that isn’t tied to the current call stack of the program.___
 
@@ -175,7 +174,7 @@ lifetime that is at most as long as the lifetime of the frame.
 
 - You can allocate that on the heap and explicitly leak it with `Box::leak` to get a `'static` reference to it.
 
-### ![](https://img.shields.io/badge/Static Memory-coral?style=flat-square&color=coral)
+> ![](https://img.shields.io/badge/Static Memory-coral?style=flat-square&color=coral)
 
 - Static memory is really a catch-all term for several closely related regions located in the file your program is compiled into
 
