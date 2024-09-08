@@ -1,28 +1,28 @@
-const fs = require("fs");
-const path = require("path");
+import { lstatSync, readdirSync, statSync, appendFileSync } from 'fs';
+import { join } from 'path';
+
 const directoryPath = process.argv[2];
+
+import buildDirectoryTree from "./dirtree.js";
 
 if (!directoryPath) {
   console.log("Please specify the directory path as a command line parameter.");
   process.exit(1);
 }
 
-function createFileIndices(dirPath) {
+function createFileIndices(dirPath, tree) {
   const excludedDirs = ["target", ".", ".ipynb_checkpoints", ".out"];
   const excludedFiles = [".DS_Store", "index.md", "search.md", "search-worker.js"];
   const excludedExts = [".png", ".jpg", ".gif", ".lock"];
-  const splExts = [".ipynb"]
+  const splExts = [".ipynb"];
+  const colab_blob_url = "https://colab.research.google.com/github/surajsharma/singularity/blob/master/";
 
-
-  const colab_blob_url = "https://colab.research.google.com/github/surajsharma/singularity/blob/master/"
-
-  let items;
 
   try {
-    if (fs.lstatSync(dirPath).isDirectory()) {
-      items = fs.readdirSync(dirPath).sort((a, b) => {
-        const isFileA = fs.statSync(path.join(dirPath, a)).isFile();
-        const isFileB = fs.statSync(path.join(dirPath, b)).isFile();
+    if (lstatSync(dirPath).isDirectory()) {
+      let items = readdirSync(dirPath).sort((a, b) => {
+        const isFileA = statSync(join(dirPath, a)).isFile();
+        const isFileB = statSync(join(dirPath, b)).isFile();
 
         // Folders first
         if (isFileA && !isFileB) {
@@ -36,13 +36,14 @@ function createFileIndices(dirPath) {
       });;
 
       items.forEach((item) => {
-        const itemPath = path.join(dirPath, item);
-        const itemStats = fs.lstatSync(itemPath);
+        const itemPath = join(dirPath, item);
+        const itemStats = lstatSync(itemPath);
+
         if (itemStats.isDirectory()) {
           const dirName = item.split("/")[item.split("/").length - 1];
           if (!excludedDirs.includes(dirName)) {
             const dirStr = `* 📂 [${item}](${dirName})\n`;
-            fs.appendFileSync(`${dirPath}/index.md`, dirStr, function (err) {
+            appendFileSync(`${dirPath}/index.md`, dirStr, function (err) {
               if (err) throw err;
             });
             createFileIndices(itemPath);
@@ -68,7 +69,7 @@ function createFileIndices(dirPath) {
               fileStr = `* 📄 [${item.replace(".md", "")}](${fileName})\n`;
             }
             if (!excludedExts.includes(path.extname(fileName))) {
-              fs.appendFileSync(`${dirPath}/index.md`, fileStr, function (err) {
+              appendFileSync(`${dirPath}/index.md`, fileStr, function (err) {
                 if (err) throw err;
               });
             }
@@ -87,4 +88,20 @@ function getExternalLink(link, text) {
   return `<a href="${link}" target="_blank">${text}</a> ↗️\n`
 }
 
-createFileIndices(directoryPath);
+// createFileIndices(directoryPath);
+
+const tree = buildDirectoryTree(directoryPath);
+
+if (tree) {
+  console.log("🚀 ~ tree:", tree.name, tree.type)
+
+  while (tree.children.length) {
+    tree.children.forEach(ch => {
+      console.log("🚀 ~ ch:", ch);
+    })
+  }
+
+  // Pretty print the JSON tree
+} else {
+  console.error(`Error: Directory '${directoryPath}' not found or not a directory.`);
+}

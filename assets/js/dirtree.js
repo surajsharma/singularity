@@ -1,19 +1,20 @@
-const fs = require('fs'); // File system module
-const path = require("path");
-const directoryPath = process.argv[2];
+import fs from 'fs';
 
-function buildDirectoryTree(dirPath) {
-    // Check if the path exists and is a directory
+export default function buildDirectoryTree(dirPath) {
     if (!fs.existsSync(dirPath) || !fs.lstatSync(dirPath).isDirectory()) {
         return null;
     }
 
     const files = fs.readdirSync(dirPath);
+
     const subdirs = files.filter(file => fs.lstatSync(`${dirPath}/${file}`).isDirectory());
-    const allFiles = files.map(file => ({ name: file, type: 'file' })); // Add info for files
+
+    const allFiles = files.filter(file => !fs.lstatSync(`${dirPath}/${file}`).isDirectory())
+        .map(file => ({ name: file, type: 'file' }));
 
     const tree = {
-        name: dirPath.split('/').pop(), // Get the directory name
+        name: dirPath.split('/').pop(),
+        type: fs.lstatSync(`${dirPath}`).isDirectory() ? "dir" : "file",
         children: [],
     };
 
@@ -24,16 +25,15 @@ function buildDirectoryTree(dirPath) {
         }
     }
 
-    tree.children.push(...allFiles); // Add files to children
-
+    tree.children.push(...allFiles);
     return tree;
 }
 
-// Example usage
+/* Example usage
 const directoryTree = buildDirectoryTree(directoryPath);
 
 if (directoryTree) {
     console.log(JSON.stringify(directoryTree, null, 2)); // Pretty print the JSON tree
 } else {
     console.error(`Error: Directory '${directoryPath}' not found or not a directory.`);
-}
+}*/

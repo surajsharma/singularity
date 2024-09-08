@@ -1,7 +1,7 @@
-const fs = require("fs");
-const path = require("path");
-const lunr = require("lunr");
-const readline = require('readline');
+import { readFileSync, readdirSync, statSync, appendFileSync } from "fs";
+import { join, basename, extname } from "path";
+import lunr from "lunr";
+import { clearLine, cursorTo } from 'readline';
 
 
 const directoryPath = process.argv[2];
@@ -18,7 +18,7 @@ if (!directoryPath) {
 function readFileAsStringSync(filePath, encoding = 'utf8') {
   //using async throws lunr off
   try {
-    const data = fs.readFileSync(filePath, encoding);
+    const data = readFileSync(filePath, encoding);
     return JSON.stringify(data);
   } catch (err) {
     throw err;
@@ -28,7 +28,7 @@ function readFileAsStringSync(filePath, encoding = 'utf8') {
 function createSearchIndexDirs(dirPath) {
   try {
     const stack = [dirPath];
-    items = fs.readdirSync(dirPath);
+    // const items = readdirSync(dirPath);
 
     const idx = lunr(function () {
       this.ref('id');
@@ -37,30 +37,31 @@ function createSearchIndexDirs(dirPath) {
 
       while (stack.length > 0) {
         const currentPath = stack.pop();
-        const contents = fs.readdirSync(currentPath);
+        const contents = readdirSync(currentPath);
+
         contents.forEach(async itemName => {
-          const itemPath = path.join(currentPath, itemName);
-          const stats = fs.statSync(itemPath);
+          const itemPath = join(currentPath, itemName);
+          const stats = statSync(itemPath);
 
           if (stats.isDirectory()) {
-            const item = path.basename(currentPath);
+            const item = basename(currentPath);
             if (!excludedDirs.includes(item)) {
               stack.push(itemPath);
               const entry = { id: itemPath, item, content: 'dir' };
               this.add(entry);
-              readline.clearLine(process.stdout, 0);
-              readline.cursorTo(process.stdout, 0, null);
+              clearLine(process.stdout, 0);
+              cursorTo(process.stdout, 0, null);
               process.stdout.write(`Search index for directory: ${item}`);
             }
           } else {
-            const item = path.basename(itemPath).replace('.md', '');
+            const item = basename(itemPath).replace('.md', '');
             if (!excludedFiles.includes(item)) {
-              if (!excludedExts.includes(path.extname(item))) {
+              if (!excludedExts.includes(extname(item))) {
                 let content = readFileAsStringSync(itemPath);
                 const entry = { id: itemPath, item, content };
                 this.add(entry);
-                readline.clearLine(process.stdout, 0);
-                readline.cursorTo(process.stdout, 0, null);
+                clearLine(process.stdout, 0);
+                cursorTo(process.stdout, 0, null);
                 process.stdout.write(`Search index created for file: ${item}`);
               }
             }
@@ -70,8 +71,8 @@ function createSearchIndexDirs(dirPath) {
 
     }, this);
 
-    const filePath = path.join('assets', 'search', `${directoryPath}-search.json`);
-    fs.appendFileSync(filePath, JSON.stringify(idx), function (err) {
+    const filePath = join('assets', 'search', `${directoryPath}-search.json`);
+    appendFileSync(filePath, JSON.stringify(idx), function (err) {
       if (err) throw err;
     });
 
