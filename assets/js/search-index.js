@@ -1,14 +1,12 @@
 import { readFileSync, readdirSync, statSync, appendFileSync } from "fs";
 import { join, basename, extname } from "path";
-import lunr from "lunr";
 import { clearLine, cursorTo } from 'readline';
-
+import lunr from "lunr";
 
 const directoryPath = process.argv[2];
 const excludedDirs = ["target", ".", ".ipynb_checkpoints", ".out"];
 const excludedFiles = [".DS_Store", "index.md", "search.md"];
 const excludedExts = [".png", ".jpg", ".gif", ".lock"];
-
 
 if (!directoryPath) {
   console.log("Please specify the directory path as a command line parameter.");
@@ -28,7 +26,6 @@ function readFileAsStringSync(filePath, encoding = 'utf8') {
 function createSearchIndexDirs(dirPath) {
   try {
     const stack = [dirPath];
-    // const items = readdirSync(dirPath);
 
     const idx = lunr(function () {
       this.ref('id');
@@ -51,7 +48,7 @@ function createSearchIndexDirs(dirPath) {
               this.add(entry);
               clearLine(process.stdout, 0);
               cursorTo(process.stdout, 0, null);
-              process.stdout.write(`Search index for directory: ${item}`);
+              process.stdout.write(`🔍 Indexing: ${item}`);
             }
           } else {
             const item = basename(itemPath).replace('.md', '');
@@ -62,13 +59,12 @@ function createSearchIndexDirs(dirPath) {
                 this.add(entry);
                 clearLine(process.stdout, 0);
                 cursorTo(process.stdout, 0, null);
-                process.stdout.write(`Search index created for file: ${item}`);
+                process.stdout.write(`🔍 Indexing: ${item}`);
               }
             }
           }
         });
       }
-
     }, this);
 
     const filePath = join('assets', 'search', `${directoryPath}-search.json`);
