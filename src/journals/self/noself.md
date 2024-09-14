@@ -4,6 +4,9 @@
 
 > sow not emotion  tis a weed / that grows in hedge rows, every fool / fancies his own emotions breed / the right to teach, the right to rule - [[Francis Burdett Thomas]]
 
+
+![faith_belief_thought](../../../attachments/faith_belief_thought.png)
+
 - do i want to know what kind of trauma leads a bunch of people to want to go on an adventure to measure the depths of their own stupidity? i don't but i can say with some certainty that anyone who could even faintly remember the depths of my explorations would not force me to lead them down any rabbithole. they've already started apologizing and i havent even begun in any earnestness yet or even with any sort of urgency. lucky for me, these isn't the fist batch of tourists i have transported from one secrecy to another.
 
 - i am a row of golden deers lined up in a super symmetry
