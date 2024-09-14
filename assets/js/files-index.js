@@ -1,14 +1,9 @@
 import { lstatSync, writeFileSync } from 'fs';
 import { extname, join } from 'path';
+import { excludedDirs, excludedExts, excludedFiles, splExts, colab_blob_url } from './constants.js';
 import { buildDirectoryTree, getExternalLink, getSortedItems } from "./utils.js";
 
 const directoryPath = process.argv[2];
-
-const excludedDirs = ["target", ".", ".ipynb_checkpoints", ".out"];
-const excludedFiles = [".DS_Store", "index.md", "search.md", "search-worker.js"];
-const excludedExts = [".png", ".jpg", ".gif", ".lock"];
-const splExts = [".ipynb", ".ts", ".js", ".rs", ".toml", ".wat", ".wasm", ".json", ".html"];
-const colab_blob_url = "https://colab.research.google.com/github/surajsharma/singularity/blob/master/";
 
 if (!directoryPath) {
   console.log("Please specify the directory path as a command line parameter.");

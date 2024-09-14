@@ -1,4 +1,4 @@
-import { existsSync, lstatSync, readdirSync, statSync, readFileSync } from 'fs';
+import { existsSync, lstatSync, readdirSync, readFileSync, statSync } from 'fs';
 import { join } from 'path';
 
 export function readFileAsStringSync(filePath, encoding = 'utf8') {
@@ -62,4 +62,13 @@ export function getSortedItems(path) {
         return a.localeCompare(b);
     });
     return items;
+}
+
+export function getEmojis(str) {
+    const regex = /<a?:.+?:\d{18}>|\p{Extended_Pictographic}/gu;
+    return str.match(regex) || [];
+}
+
+export function removeDuplicates(arr) {
+    return [...new Set(arr)];
 }
