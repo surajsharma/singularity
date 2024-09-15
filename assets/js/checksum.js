@@ -1,36 +1,31 @@
-const fs = require("fs");
-const path = require("path"); 0
-const CRC32C = require("crc-32/crc32c");
-
-function readFileAsStringSync(filePath, encoding = 'utf8') {
-    //using async throws lunr off
-    try {
-        const data = fs.readFileSync(filePath, encoding);
-        return JSON.stringify(data);
-    } catch (err) {
-        throw err;
-    }
-}
+import { readFileSync, writeFileSync } from "fs";
+import { join } from "path";
+import { str } from "crc-32/crc32c";
+import { readFileAsStringSync } from "./utils.js";
 
 function upgradeDbChecksums() {
     try {
         const src = readFileAsStringSync("assets/search/src-search.json");
         const arc = readFileAsStringSync("assets/search/archives-search.json");
+        const emo = readFileAsStringSync("assets/search/emoji-search.json")
 
-        const new_schecksum = CRC32C.str(src, 0);
-        const new_achecksum = CRC32C.str(arc, 0);
+        const new_schecksum = str(src, 0);
+        const new_achecksum = str(arc, 0);
+        const new_echecksum = str(emo, 0);
 
-        let dbfile = fs.readFileSync("assets/search/db.json", "utf-8");
+        let dbfile = readFileSync("assets/search/db.json", "utf-8");
 
-        let { db, version, achecksum, schecksum } = JSON.parse(dbfile);
+        let { db, version, achecksum, schecksum, echecksum } = JSON.parse(dbfile);
 
-        if (new_achecksum != achecksum || new_schecksum != schecksum) {
+        if (new_achecksum != achecksum || new_schecksum != schecksum || new_echecksum != echecksum) {
             version = version + 1;
             achecksum = new_achecksum;
             schecksum = new_schecksum;
-            const filePath = path.join('assets', 'search', `db.json`);
+            echecksum = new_echecksum;
 
-            fs.writeFileSync(filePath, JSON.stringify({ db, version, achecksum, schecksum }), function (err) {
+            const filePath = join('assets', 'search', `db.json`);
+
+            writeFileSync(filePath, JSON.stringify({ db, version, achecksum, schecksum, echecksum }), function (err) {
                 if (err) throw err;
             });
         } else return;

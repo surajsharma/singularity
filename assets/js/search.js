@@ -1,3 +1,5 @@
+
+
 let index = null;
 
 // search modifiers
@@ -11,7 +13,29 @@ const searchStatus = gel('search-status');
 const searchResults = gel('search-results-container');
 const searchVersion = gel('search-version');
 
-function debouncedSearch(searchTerm) {
+
+async function emojiSearch(unicode) {
+
+    const version = getIddbVersion();
+
+    const regex = /<a?:.+?:\d{18}>|\p{Extended_Pictographic}/gu;
+    const emojisInSearchTerm = unicode.match(regex) || [];
+
+    const data = await getIddb("emo", version);
+    const lookup = data[0].value;
+
+    let result = [];
+
+    emojisInSearchTerm.forEach(emoji => {
+        if (emoji in lookup) {
+            result.push(lookup[emoji])
+        }
+    })
+
+    return result.flat(Infinity).filter(result => archives ? result.startsWith('archives') : !result.startsWith('archives'));
+}
+
+async function debouncedSearch(searchTerm) {
     searchInput.style.backgroundColor = "rgb(250, 250, 250)";
     searchStatus.style.color = "black";
 
@@ -24,7 +48,14 @@ function debouncedSearch(searchTerm) {
     }
 
     try {
-        const search = titles ? index.search(`item:` + searchTerm) : index.search(searchTerm);
+        let search = titles ? index.search(`item:` + searchTerm) : index.search(searchTerm);
+
+        const searchEmoji = await emojiSearch(searchTerm);
+
+        searchEmoji.forEach(emojiSearchResult => {
+            search.push({ ref: emojiSearchResult, score: 99 })
+        });
+
         displaySearch(search, searchTerm);
     } catch (error) {
         says(searchStatus, "search error: " + error.message);

@@ -1,34 +1,21 @@
-const fs = require("fs");
-const path = require("path");
-const lunr = require("lunr");
-const readline = require('readline');
+import { readdirSync, statSync, writeFileSync } from "fs";
+import { basename, extname, join } from "path";
+import { clearLine, cursorTo } from 'readline';
+import { excludedDirs, excludedExts, excludedFiles } from './constants.js';
+import { buildDirectoryTree, getEmojis, readFileAsStringSync, removeDuplicates } from './utils.js';
 
+import lunr from "lunr";
 
 const directoryPath = process.argv[2];
-const excludedDirs = ["target", ".", ".ipynb_checkpoints", ".out"];
-const excludedFiles = [".DS_Store", "index.md", "search.md"];
-const excludedExts = [".png", ".jpg", ".gif", ".lock"];
-
 
 if (!directoryPath) {
   console.log("Please specify the directory path as a command line parameter.");
   process.exit(1);
 }
 
-function readFileAsStringSync(filePath, encoding = 'utf8') {
-  //using async throws lunr off
-  try {
-    const data = fs.readFileSync(filePath, encoding);
-    return JSON.stringify(data);
-  } catch (err) {
-    throw err;
-  }
-}
-
 function createSearchIndexDirs(dirPath) {
   try {
     const stack = [dirPath];
-    items = fs.readdirSync(dirPath);
 
     const idx = lunr(function () {
       this.ref('id');
@@ -37,48 +24,141 @@ function createSearchIndexDirs(dirPath) {
 
       while (stack.length > 0) {
         const currentPath = stack.pop();
-        const contents = fs.readdirSync(currentPath);
+        const contents = readdirSync(currentPath);
+
         contents.forEach(async itemName => {
-          const itemPath = path.join(currentPath, itemName);
-          const stats = fs.statSync(itemPath);
+          const itemPath = join(currentPath, itemName);
+          const stats = statSync(itemPath);
 
           if (stats.isDirectory()) {
-            const item = path.basename(currentPath);
+            const item = basename(currentPath);
             if (!excludedDirs.includes(item)) {
               stack.push(itemPath);
               const entry = { id: itemPath, item, content: 'dir' };
               this.add(entry);
-              readline.clearLine(process.stdout, 0);
-              readline.cursorTo(process.stdout, 0, null);
-              process.stdout.write(`Search index for directory: ${item}`);
+              clearLine(process.stdout, 0);
+              cursorTo(process.stdout, 0, null);
+              process.stdout.write(`🔍 Indexing: ${item}`);
             }
           } else {
-            const item = path.basename(itemPath).replace('.md', '');
+            const item = basename(itemPath).replace('.md', '');
             if (!excludedFiles.includes(item)) {
-              if (!excludedExts.includes(path.extname(item))) {
+              if (!excludedExts.includes(extname(item))) {
                 let content = readFileAsStringSync(itemPath);
                 const entry = { id: itemPath, item, content };
                 this.add(entry);
-                readline.clearLine(process.stdout, 0);
-                readline.cursorTo(process.stdout, 0, null);
-                process.stdout.write(`Search index created for file: ${item}`);
+                clearLine(process.stdout, 0);
+                cursorTo(process.stdout, 0, null);
+                process.stdout.write(`🔍 Indexing: ${item}`);
               }
             }
           }
         });
       }
-
     }, this);
 
-    const filePath = path.join('assets', 'search', `${directoryPath}-search.json`);
-    fs.appendFileSync(filePath, JSON.stringify(idx), function (err) {
+    const filePath = join('assets', 'search', `${directoryPath}-search.json`);
+    writeFileSync(filePath, JSON.stringify(idx), function (err) {
       if (err) throw err;
     });
-
   } catch (err) {
     console.error(`Error processing ${dirPath}:`, err);
     process.exitCode = 1;
   }
 }
 
+function createEmojiSearchIndex(tree) {
+  try {
+    if (tree.type === 'dir') {
+      tree.children.forEach(childTree => {
+        if (childTree.type === 'dir') {
+          const currentDirPath = childTree.path;
+          const children = childTree.children;
+
+          children.forEach(async (child) => {
+            //process dir name
+            if (child.type === 'dir') {
+              const emojisInDirName = getEmojis(child.name);
+              emojisInDirName.forEach(async (emoji) => {
+                const filePath = join(currentDirPath, "index.md");
+                await addEmojiToIndex(emoji, filePath);
+              })
+            }
+
+            //process file name            
+            if (child.type === 'file') {
+              const emojisInFileName = getEmojis(child.name);
+              const ext = extname(child.name);
+
+              emojisInFileName.forEach(async (emoji) => {
+                const filePath = join(currentDirPath, child.name);
+                await addEmojiToIndex(emoji, filePath);
+              });
+
+              //process file contents
+              if (!excludedExts.includes(ext)) {
+                const content = readFileAsStringSync(join(childTree.path, child.name));
+                const emojisInFile = removeDuplicates(getEmojis(content));
+                const filePath = join(childTree.path, child.name);
+                emojisInFile.forEach(async (emoji) => {
+                  await addEmojiToIndex(emoji, filePath)
+                })
+
+              }
+            }
+          })
+          createEmojiSearchIndex(childTree);
+        }
+      });
+    }
+  } catch (err) {
+    console.log("~ createEmojiSearchIndex ~ err:", err)
+    process.exitCode = 1;
+  }
+}
+
+async function addEmojiToIndex(unicode, filePath) {
+  return new Promise(async (resolve, reject) => {
+    const indexPath = join('assets', 'search', `emoji-search.json`);
+    // const unicode = emoji.codePointAt(0).toString(16);
+    try {
+      let jsonObject = readFileAsStringSync(indexPath);
+      jsonObject = JSON.parse(JSON.parse(jsonObject));
+
+      if (jsonObject.hasOwnProperty(unicode)) {
+        if (!jsonObject[unicode].includes(filePath)) {
+          jsonObject = {
+            ...jsonObject,
+            [unicode]: [...jsonObject[unicode], filePath]
+          }
+        }
+      } else {
+        jsonObject = {
+          ...jsonObject,
+          [unicode]: [...(jsonObject[unicode] || []), filePath]
+        }
+      }
+
+      writeFileSync(indexPath, JSON.stringify(jsonObject), function (err) {
+        if (err) reject(err);
+      });
+
+      resolve(0);
+    } catch (error) {
+      if (error.code === 'ENOENT') {
+        const jsonObject = {}
+        jsonObject[unicode] = [filePath];
+        writeFileSync(indexPath, JSON.stringify(jsonObject), function (err) {
+          if (err) reject(err);
+        });
+        resolve(0);
+      } else {
+        console.error('Error updating emoji index:', error);
+        reject(error);
+      }
+    }
+  });
+}
+
 createSearchIndexDirs(directoryPath);
+createEmojiSearchIndex(buildDirectoryTree(directoryPath));

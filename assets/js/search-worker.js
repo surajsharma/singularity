@@ -2,6 +2,7 @@ const dbName = "singularity-search";
 
 const SRC = "../search/src-search.json";
 const ARC = "../search/archives-search.json";
+const EMO = "../search/emoji-search.json";
 const DB = "../search/db.json";
 
 async function fetchRemoteJson(loc, t = false) {
@@ -28,13 +29,58 @@ async function createVersionedIddb(db) {
     }
 }
 
-async function setVersionedIddb(db, version, schecksum, achecksum, shouldReload) {
+async function setVersionedIddb(db, version, schecksum, achecksum, echecksum, shouldReload) {
     try {
         let store = db.transaction("release", "readwrite").objectStore("release");
 
         const ver = await store.get("ver");
         const src = await store.get("src");
         const arc = await store.get("arc");
+        const emo = await store.get("emo");
+
+        emo.onsuccess = async (evt) => {
+            if (!evt.target.result) { //init
+                const emodata = await fetchRemoteJson(EMO);
+                store = db.transaction("release", "readwrite").objectStore("release");
+                store.put({ id: "emo", value: emodata, checksum: echecksum });
+            }
+
+            //--arc checksum mismatch--
+            if (evt.target.result?.checksum != achecksum) {
+                const emodata = await fetchRemoteJson(EMO);
+                store = db.transaction("release", "readwrite").objectStore("release");
+                const updateData = store.put({ id: "emo", value: emodata, checksum: echecksum });
+                updateData.onsuccess = () => {
+                    shouldReload = true;
+                    postMessage({
+                        thread: {
+                            msg: "emo",
+                            count: 3,
+                            data: { reload: shouldReload, version, schecksum, achecksum, echecksum }
+                        }
+                    });
+                };
+
+                const updateVer = store.put({
+                    id: "ver", value: {
+                        version: version, schecksum, achecksum, echecksum
+                    }
+                });
+            } else {
+                postMessage({
+                    thread: {
+                        msg: "emo",
+                        count: 3,
+                        data: { reload: shouldReload, version, schecksum, achecksum, echecksum }
+                    }
+                });
+            }
+        }
+
+        emo.onerror = async (evt) => {
+            console.log("~ emo.onerror= ~ evt:", evt)
+        }
+
 
         arc.onsuccess = async (evt) => {
             if (!evt.target.result) { //init
@@ -170,7 +216,7 @@ async function setVersionedIddb(db, version, schecksum, achecksum, shouldReload)
 
 async function syncIddb() {
     try {
-        ({ version, achecksum, schecksum } = await fetchRemoteJson(DB));
+        ({ version, achecksum, schecksum, echecksum } = await fetchRemoteJson(DB));
 
         if (!version) return new Error("Could not load database metadata");
 
@@ -196,7 +242,7 @@ async function syncIddb() {
                         data: { ver }
                     }
                 });
-                await setVersionedIddb(request.result, version, schecksum, achecksum, shouldReload);
+                await setVersionedIddb(request.result, version, schecksum, achecksum, echecksum, shouldReload);
             }
         }
 

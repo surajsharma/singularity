@@ -1,5 +1,8 @@
-const fs = require("fs");
-const path = require("path");
+import { lstatSync, writeFileSync } from 'fs';
+import { extname, join } from 'path';
+import { excludedDirs, excludedExts, excludedFiles, splExts, colab_blob_url } from './constants.js';
+import { buildDirectoryTree, getExternalLink, getSortedItems } from "./utils.js";
+
 const directoryPath = process.argv[2];
 
 if (!directoryPath) {
@@ -7,84 +10,59 @@ if (!directoryPath) {
   process.exit(1);
 }
 
-function createFileIndices(dirPath) {
-  const excludedDirs = ["target", ".", ".ipynb_checkpoints", ".out"];
-  const excludedFiles = [".DS_Store", "index.md", "search.md", "search-worker.js"];
-  const excludedExts = [".png", ".jpg", ".gif", ".lock"];
-  const splExts = [".ipynb"]
-
-
-  const colab_blob_url = "https://colab.research.google.com/github/surajsharma/singularity/blob/master/"
-
-  let items;
-
+function createFileIndices(tree) {
   try {
-    if (fs.lstatSync(dirPath).isDirectory()) {
-      items = fs.readdirSync(dirPath).sort((a, b) => {
-        const isFileA = fs.statSync(path.join(dirPath, a)).isFile();
-        const isFileB = fs.statSync(path.join(dirPath, b)).isFile();
+    if (tree.type === 'dir') {
+      tree.children.forEach(childTree => {
+        if (childTree.type === 'dir') {
+          let folders = getSortedItems(childTree.path).filter(f => lstatSync(join(childTree.path, f)).isDirectory());
+          let files = getSortedItems(childTree.path).filter(f => !lstatSync(join(childTree.path, f)).isDirectory());
+          let mdStr = '';
 
-        // Folders first
-        if (isFileA && !isFileB) {
-          return 1;
-        } else if (!isFileA && isFileB) {
-          return -1;
-        }
+          folders.forEach(folder => {
+            const dirName = childTree.path.split("/")[childTree.path.split("/").length - 1];
+            if (!excludedDirs.includes(dirName)) {
+              mdStr += `* 📂 [${folder}](${folder})\n`;
+            }
+          });
 
-        // Then sort alphabetically
-        return a.localeCompare(b);
-      });;
+          files.forEach(fnWithExt => {
+            const ext = extname(fnWithExt);
+            const fnWithoutExt = fnWithExt.replace(extname(fnWithExt), "");
+            const itemPath = join(childTree.path, fnWithExt);
 
-      items.forEach((item) => {
-        const itemPath = path.join(dirPath, item);
-        const itemStats = fs.lstatSync(itemPath);
-        if (itemStats.isDirectory()) {
-          const dirName = item.split("/")[item.split("/").length - 1];
-          if (!excludedDirs.includes(dirName)) {
-            const dirStr = `* 📂 [${item}](${dirName})\n`;
-            fs.appendFileSync(`${dirPath}/index.md`, dirStr, function (err) {
+            if (!excludedFiles.includes(fnWithExt) && !excludedExts.includes(ext)) {
+              if (splExts.includes(ext)) {
+                switch (ext) {
+                  case ".ipynb":
+                    const colabLink = colab_blob_url + itemPath;
+                    mdStr += `* 📒 ${getExternalLink(colabLink, fnWithoutExt)}`;
+                    break;
+                  default:
+                    mdStr += `* 📄 [${fnWithExt}](${fnWithExt})\n`;
+                    break;
+                }
+              } else {
+                mdStr += `* 📄 [${fnWithoutExt}](${fnWithExt})\n`;
+              }
+            }
+          })
+
+          if (mdStr.length) {
+            writeFileSync(`${childTree.path}/index.md`, mdStr, function (err) {
               if (err) throw err;
             });
-            createFileIndices(itemPath);
           }
-        } else {
-          let fileStr = "";
-          const fileName = item.split("/")[item.split("/").length - 1];
-          if (!excludedFiles.includes(fileName)) {
-            //special file?
-            if (splExts.includes(path.extname(fileName))) {
-              let matchingExt = splExts.find(ext => fileName.includes(ext));
-              switch (matchingExt) {
-                case ".ipynb":
-                  const colabLink = colab_blob_url + itemPath;
-                  const nbName = item.replace(".ipynb", "");
-                  fileStr = `* 📒 ${getExternalLink(colabLink, nbName)}`;
-                  break;
-                default:
-                  fileStr = `* 📄 [fileName](${fileName})\n`;
-                  break;
-              }
-            } else {
-              fileStr = `* 📄 [${item.replace(".md", "")}](${fileName})\n`;
-            }
-            if (!excludedExts.includes(path.extname(fileName))) {
-              fs.appendFileSync(`${dirPath}/index.md`, fileStr, function (err) {
-                if (err) throw err;
-              });
-            }
-          }
+
+          createFileIndices(childTree);
         }
       });
-      return;
+
     }
   } catch (err) {
-    console.error(`Error processing ${dirPath}:`, err);
+    console.log("~ createFileIndices ~ err:", err)
     process.exitCode = 1;
   }
 }
 
-function getExternalLink(link, text) {
-  return `<a href="${link}" target="_blank">${text}</a> ↗️\n`
-}
-
-createFileIndices(directoryPath);
+createFileIndices(buildDirectoryTree(directoryPath));
