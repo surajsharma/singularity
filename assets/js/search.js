@@ -15,21 +15,24 @@ const searchVersion = gel('search-version');
 
 
 async function emojiSearch(unicode) {
+
     const version = getIddbVersion();
 
     const regex = /<a?:.+?:\d{18}>|\p{Extended_Pictographic}/gu;
     const emojisInSearchTerm = unicode.match(regex) || [];
+
     const data = await getIddb("emo", version);
     const lookup = data[0].value;
 
     let result = [];
+
     emojisInSearchTerm.forEach(emoji => {
         if (emoji in lookup) {
             result.push(lookup[emoji])
         }
     })
 
-    return result[0].filter(result => archives ? result.startsWith('archives') : !result.startsWith('archives'));
+    return result.flat(Infinity).filter(result => archives ? result.startsWith('archives') : !result.startsWith('archives'));
 }
 
 async function debouncedSearch(searchTerm) {
@@ -46,6 +49,7 @@ async function debouncedSearch(searchTerm) {
 
     try {
         let search = titles ? index.search(`item:` + searchTerm) : index.search(searchTerm);
+
         const searchEmoji = await emojiSearch(searchTerm);
 
         searchEmoji.forEach(emojiSearchResult => {
