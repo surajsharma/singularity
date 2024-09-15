@@ -51,7 +51,6 @@ async function debouncedSearch(searchTerm) {
         let search = titles ? index.search(`item:` + searchTerm) : index.search(searchTerm);
 
         const searchEmoji = Array.from(new Set(await emojiSearch(searchTerm)));
-        console.log("🚀 ~ debouncedSearch ~  searchEmoji:", searchEmoji)
 
         searchEmoji.forEach(emojiSearchResult => {
             search.push({ ref: emojiSearchResult, score: 99 })
