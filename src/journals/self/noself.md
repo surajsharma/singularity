@@ -4,6 +4,7 @@
 
 > sow not emotion  tis a weed / that grows in hedge rows, every fool / fancies his own emotions breed / the right to teach, the right to rule - [[Francis Burdett Thomas]]
 
+- i am that which became one from two
 
 ![faith_belief_thought](../../../attachments/faith_belief_thought.png)
 
