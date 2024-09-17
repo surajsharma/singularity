@@ -1,1 +1,1 @@
-* 📄 [01-foundations](01-foundations.md)
+* 📂 [01-foundations](01-foundations)

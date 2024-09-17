@@ -6,12 +6,13 @@
   "scripts": {
     "dev": "bundle exec jekyll serve --w --i",
     "build": "bundle exec jekyll build",
+    "clean": "rm -rf _site && bundle exec jekyll build",
     "deploy": "./scripts/commit.sh",
     "ngrok": "ngrok http 4000",
     "index": "./scripts/build-nav-indices.sh",
     "sindex": "./scripts/build-search-indices.sh",
     "checksum": "./scripts/update-checksums.sh",
-    "update": "npm run index && npm run sindex && npm run checksum"
+    "fresh": "npm run clean && npm run index && npm run sindex && npm run checksum"
   },
   "keywords": [],
   "author": "suraj@evenzero.in",

@@ -1,0 +1,5 @@
+* 📄 [01-talking about memory](01-talking about memory.md)
+* 📄 [02-memory terminology](02-memory terminology.md)
+* 📄 [03-mental models for memory](03-mental models for memory.md)
+* 📄 [04-memory regions](04-memory regions.md)
+* 📄 [05-ownership](05-ownership.md)
