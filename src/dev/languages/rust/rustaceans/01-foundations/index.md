@@ -3,3 +3,4 @@
 * 📄 [03-mental models for memory](03-mental models for memory.md)
 * 📄 [04-memory regions](04-memory regions.md)
 * 📄 [05-ownership](05-ownership.md)
+* 📄 [06-drop order](06-drop order.md)
