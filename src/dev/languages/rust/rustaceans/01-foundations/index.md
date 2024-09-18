@@ -4,3 +4,5 @@
 * 📄 [04-memory regions](04-memory regions.md)
 * 📄 [05-ownership](05-ownership.md)
 * 📄 [06-drop order](06-drop order.md)
+* 📄 [07-borrowing](07-borrowing.md)
+* 📄 [08-lifetimes](08-lifetimes.md)
