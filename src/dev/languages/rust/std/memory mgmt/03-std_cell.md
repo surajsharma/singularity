@@ -21,3 +21,9 @@ fn main() {
 }
 
 ```
+
+> The Cell type in the standard library is an interesting example of safe [interior mutability](../../rustaceans/01-foundations/07-borrowing.html#interior-mutability) through invariants. 
+- It is not shareable across threads and never gives out a reference to the value contained in the Cell. 
+- Instead, the methods all either replace the value entirely or return a copy of the contained value. 
+- Since no references can exist to the inner value, it is always okay to move it. 
+- And since Cell isn’t shareable across threads, the inner value will never be concurrently mutated even though mutation happens through a shared reference.
