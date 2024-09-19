@@ -1,4 +1,3 @@
-* 📂 [src](src)
 * 📄 [01-appendices](01-appendices.md)
 * 📄 [02-guessing-game](02-guessing-game.md)
 * 📄 [03-common-concepts](03-common-concepts.md)
@@ -19,4 +18,3 @@
 * 📄 [18-patterns and matching](18-patterns and matching.md)
 * 📄 [19-advanced features](19-advanced features.md)
 * 📄 [20-multithreaded web server](20-multithreaded web server.md)
-* 📄 [Cargo.toml](Cargo.toml)
