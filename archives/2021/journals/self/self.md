@@ -78,14 +78,14 @@ I hope I die before any of you get anything, I really do.
 
 #screenshots #movies
 
-![](../../../../../attachments/ghost-dog-0.png)
-![](../../../../../attachments/ghost-dog-1.png)
-![](../../../../../attachments/ghost-dog-2.png)
-![](../../../../../attachments/ghost-dog-3.png)
-![](../../../../../attachments/ghost-dog-4.png)
-![](../../../../../attachments/ghost-dog-5.png)
-![](../../../../../attachments/ghost-dog-6.png)
-![](../../../../../attachments/ghost-dog-7.png)
+![](../../../../attachments/ghost-dog-0.png)
+![](../../../../attachments/ghost-dog-1.png)
+![](../../../../attachments/ghost-dog-2.png)
+![](../../../../attachments/ghost-dog-3.png)
+![](../../../../attachments/ghost-dog-4.png)
+![](../../../../attachments/ghost-dog-5.png)
+![](../../../../attachments/ghost-dog-6.png)
+![](../../../../attachments/ghost-dog-7.png)
 
 ---
 

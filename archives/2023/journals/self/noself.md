@@ -1035,7 +1035,7 @@ i know there's good #leadership out there i just don't know where they keep it
 ---
 
 
-- ![](../../../attachments/✅❌.png) #mentalmodels
+- ![](../../../../attachments/✅❌.png) #mentalmodels
 
 
 

@@ -14,9 +14,6 @@ TO BECOME AN EXPERT IN OUTLANDISH IDEAS IS SIMPLY HARMFUL.
 
 Zi You asked what filial piety was. The Master said, "The filial piety nowadays means the support of one's parents. But dogs and horses likewise are able to do something in the way of support;-without reverence, what is there to distinguish the one support given from the other?"
 
-
-![](../../../attachments/2023-03-11-17-36-00-in%20the%20morning.png)
-
 WORRY ABOUT HAVING WHAT IT TAKES TO HOLD ONE. 
 DON’T WORRY ABOUT YOUR WORTH GOING UNRECOGNIZED, 
 PURSUE QUALITIES WORTH RECOGNIZING.

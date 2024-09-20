@@ -1,8 +1,8 @@
 https://www.enjoyalgorithms.com/system-design-courses/
 
-![](../../../attachments/2023-03-09-18-30-36-system-design-terms1.png)
+![](../../../../attachments/2023-03-09-18-30-36-system-design-terms1.png)
 
-![](../../../attachments/2023-03-09-18-31-18-system-design-availability.png)
+![](../../../../attachments/2023-03-09-18-31-18-system-design-availability.png)
 
 ### Throughput
 
@@ -12,7 +12,7 @@ Throughput is the maximum rate of transfer or capacity of the system. It is use
 
 Latency is a measure of the time duration to produce the result. It is the time spent or lags generating the desired output. In other words, latency helps us measure the speed of the system. Lower the Latency, the higher the speed of the system.
 
-![](../../../attachments/2023-03-09-18-32-16-system-design-latency.png)
+![](../../../../attachments/2023-03-09-18-32-16-system-design-latency.png)
 
 
 ### Load Balancing

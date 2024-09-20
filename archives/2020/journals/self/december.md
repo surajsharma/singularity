@@ -1,6 +1,6 @@
 ## Woke Capitalism
 
-![](../../../../../attachments/2023-03-06-09-19-02.png)
+![](../../../../attachments/2023-03-06-09-19-02.png)
 
 ## causally
 

@@ -50,7 +50,7 @@ Even if you are pretending that science is about "models" or fitting equations a
 
 ## Local maxima
 
-![](../../../../../attachments/2023-03-07-15-56-35-local-maxima-chess-parable.png)
+![](../../../../attachments/2023-03-07-15-56-35-local-maxima-chess-parable.png)
 
 ### The plot
 

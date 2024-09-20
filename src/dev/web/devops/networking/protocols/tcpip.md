@@ -1,4 +1,4 @@
-![](../../../../attachments/2023-03-10-11-01-55-tcpip.png)
+![](../../../../../../attachments/2023-03-10-11-01-55-tcpip.png)
 
 Transmission Control Protocol (TCP) is a more powerful and more functional wrapper around the Internet Protocol (IP).
 

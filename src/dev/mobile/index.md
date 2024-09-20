@@ -1,2 +1,1 @@
-* 📄 [android](android.md)
-* 📄 [kotlin](kotlin.md)
+* 📂 [android](android)
