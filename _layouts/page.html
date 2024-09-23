@@ -18,4 +18,14 @@ layout: default
       l.href = l.href.substring(0, l.href.length - 3);
     }
   });
+
+
+  const links = document.querySelectorAll('a');
+  links.forEach(link => {
+    // Check if the link is an external link
+    if (link.hostname !== window.location.hostname) {
+      link.target = '_blank';
+      link.rel = 'noopener noreferrer';
+    }
+  });
 </script>
