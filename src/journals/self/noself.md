@@ -87,16 +87,22 @@
 
 ### June
 
-- ___embutement___, __noun__, _the liminal state preceding embodiment, the quantum wave function right before the collapse, the physical state of schrodinger's cat a moment before observation_, a state of contexual superposition.
+- 📰 ___embutement___, __noun__, _the liminal state preceding embodiment, the quantum wave function right before the collapse, the physical state of schrodinger's cat right before the moment of observation_, a state of contexual superposition, wherein for all intents and purposes the wave function has collapsed pending formal verification, or the collapsing of the wave function in intent or will. 
 
 ### May 
 
 - no success is  without its attendant jelousy, even the smallest step to the future is periled by its shadow  
+
 - i was poor that decided to live for the rich instead of dying for myself, death is not a punishment
+
 - quantum tradeoffs everywhere
+
 - my threshold for pain was immense, but i wondered...
+
 - i no longer fought with shadows
+
 - the libertarian's hatred towards me was completely justified, and welcome for i was everything he dreamt of being but "life" made them compromise.
+
 - my father is a kind of man who could hold your soul in your hands and you couldn't complain
 
 - #ip prediction-as-a-service a war predicting API endpoint serving a single probability of global mood for war, lets call it #inversepolarity #imminentthreatindex 
