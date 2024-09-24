@@ -1,25 +1,188 @@
 - [Chapter 6: Enums and Pattern Matching](#chapter-6-enums-and-pattern-matching)
   - [Defining an Enum](#defining-an-enum)
     - [Enum Values](#enum-values)
-    - [The Option Enum and Its Advantages Over Null Values](#the-option-enum-and-its-advantages-over-null-values)
-  - [The match Control Flow Construct](#the-match-control-flow-construct)
-    - [Patterns That Bind to Values](#patterns-that-bind-to-values)
-    - [Matching with Option](#matching-with-option)
+    - [The `Option` Enum and Its Advantages Over Null Values](#the-option-enum-and-its-advantages-over-null-values)
+  - [The `match` Control Flow Construct](#the-match-control-flow-construct)
+    - [Matching with `Option<T>`](#matching-with-optiont)
     - [Matches Are Exhaustive](#matches-are-exhaustive)
-    - [Catch-All Patterns and the \_ Placeholder](#catch-all-patterns-and-the-_-placeholder)
-  - [Concise Control Flow with if let](#concise-control-flow-with-if-let)
-
-
+    - [Catch-All Patterns and the `_` Placeholder](#catch-all-patterns-and-the-_-placeholder)
+  - [Concise Control Flow with if `let`](#concise-control-flow-with-if-let)
 
 ## Chapter 6: Enums and Pattern Matching 
+
+-  enums give you a way of saying a value is one of a possible set of values.
+
 ### Defining an Enum 
+
+```rs 
+enum IpAddrKind {
+    V4,
+    V6,
+}
+
+let four = IpAddrKind::V4;
+let six = IpAddrKind::V6;
+```
+
 #### Enum Values 
-#### The Option Enum and Its Advantages Over Null Values 
-### The match Control Flow Construct 
-#### Patterns That Bind to Values 
-#### Matching with Option<T> 
+
+```rs
+enum IpAddrKind {
+    V4,
+    V6,
+}
+
+struct IpAddr {
+    kind: IpAddrKind,
+    address: String,
+}
+
+let home = IpAddr {
+    kind: IpAddrKind::V4,
+    address: String::from("127.0.0.1"),
+};
+
+let loopback = IpAddr {
+    kind: IpAddrKind::V6,
+    address: String::from("::1"),
+};
+```
+
+- rather than an enum inside a struct, we can put data directly into each enum variant
+
+```rs 
+enum IpAddr {
+    V4(String),
+    V6(String),
+}
+
+let home = IpAddr::V4(String::from("127.0.0.1"));
+
+let loopback = IpAddr::V6(String::from("::1"));
+```
+
+#### The `Option` Enum and Its Advantages Over Null Values 
+
+- The `Option` type encodes the very common scenario in which a value could be something or it could be nothing.
+
+- Rust doesn’t have the null feature that many other languages have. 
+
+- Null is a value that means there is no value there. 
+
+- In languages with null, variables can always be in one of two states: null or not-null.
+
+- Rust does not have nulls, but it does have an enum that can encode the concept of a value being present or absent
+
+```rs 
+enum Option<T> {
+    None,
+    Some(T),
+}
+```
+
+```rs 
+let some_number = Some(5);
+let some_char = Some('e');
+let absent_number: Option<i32> = None;
+``` 
+
+```rs
+fn main() {
+    let x: i8 = 5;
+    let y: Option<i8> = Some(5);
+
+    let sum = x + y; // won't compile
+    // you have to convert an Option<T> to a T before 
+    // you can perform T operations with it
+} 
+
+// solution 1
+fn main() {
+    let x: i8 = 5;
+    let y: Option<i8> = Some(5);
+
+    if let Some(y_value) = y {
+        let sum = x + y_value;
+        println!("Sum: {}", sum);
+    } else {
+        println!("Cannot add values because y is None");
+    }
+}
+```
+
+- solution 2 - or use `unwrap_or` - which returns the value inside the `Option` if it's` Some(value)`, or the provided default value (0 in this case) if it's `None`.
+
+```rs 
+fn main() {
+    let x: i8 = 5;
+    let y: Option<i8> = Some(5);
+
+    let sum = x + y.unwrap_or(0);
+    println!("Sum: {}", sum);
+}
+```
+
+### The `match` Control Flow Construct 
+
+-  to compare a value against a series of patterns and then execute code based on which pattern matches
+
+-  Patterns can be made up of literal values, variable names, wildcards, and many other things see [[18-patterns and matching]]
+
+#### Matching with `Option<T>` 
+
+```rs 
+fn plus_one(x: Option<i32>) -> Option<i32> {
+    match x {
+        None => None,
+        Some(i) => Some(i + 1),
+    }
+}
+
+let five = Some(5);
+let six = plus_one(five);
+let none = plus_one(None);
+```
+
+- You’ll see this pattern a lot in Rust code: `match` against an `enum`, bind a variable to the data inside, and then execute code based on it. 
+
 #### Matches Are Exhaustive 
-#### Catch-All Patterns and the _ Placeholder 
-### Concise Control Flow with if let 
 
+- the arms’ patterns must cover all possibilities
 
+```rs
+// won't compile until None is handled
+fn plus_one(x: Option<i32>) -> Option<i32> {
+    match x {
+        Some(i) => Some(i + 1),
+    }
+}
+```
+
+#### Catch-All Patterns and the `_` Placeholder 
+
+### Concise Control Flow with if `let`
+
+- combine `if` and `let` into a less verbose way to handle values that match one pattern while ignoring the rest
+
+- you can think of `if let` as syntax sugar for a `match` that runs code when the value matches one pattern and then ignores all other values.
+
+```rs 
+//instead of
+let mut count = 0;
+match coin {
+    Coin::Quarter(state) => println!("State quarter from {state:?}!"),
+    _ => count += 1,
+}
+
+//we can write
+let mut count = 0;
+if let Coin::Quarter(state) = coin {
+    println!("State quarter from {state:?}!");
+} else {
+    count += 1;
+}
+```
+
+[//begin]: # "Autogenerated link references for markdown compatibility"
+[18-patterns and matching]: <18-patterns and matching> "18-patterns and matching"
+[//end]: # "Autogenerated link references"
