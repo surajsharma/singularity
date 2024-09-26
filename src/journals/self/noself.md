@@ -3,8 +3,10 @@
 ### September
 
 > sow not emotion  tis a weed / that grows in hedge rows, every fool / fancies his own emotions breed / the right to teach, the right to rule - [[Francis Burdett Thomas]]
-
-- i am that which became one from two
+   
+ - i am that which became one from two
+  
+ - feel so bad for these poor souls, i am here to give my all and take nothing in return, but i have so little to give, even with my life, you think if the higher ups were happy with them they would have given them more than this... perhaps next time i will be blessed with even greater gifts for them
 
 ![faith_belief_thought](../../../attachments/faith_belief_thought.png)
 

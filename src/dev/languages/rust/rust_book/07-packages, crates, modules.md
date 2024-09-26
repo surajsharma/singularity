@@ -17,7 +17,31 @@
 
 ## Chapter 7: Managing Growing Projects with Packages, Crates, and Modules 
 ### Packages and Crates 
-### Defining Modules to Control Scope and Privacy 
+
+```
+package
+  binary crate
+    root module
+      module
+      module
+      module
+      ...
+  library crate 
+    root module
+      module
+      module
+      module
+      ...
+```
+
+### Defining Modules to Control Scope and Privacy
+
+- Start from the crate root: When compiling a crate, the compiler first looks in the crate root file (usually `src/lib.rs` for a library crate or `src/main.rs` for a binary crate) for code to compile.
+- Declaring modules: **In the crate root file, you can declare new modules**; say you declare a “garden” module with `mod garden`;. The compiler will look for the module’s code in these places:
+  - Inline, within curly brackets that replace the semicolon following mod garden
+  - In the file `src/garden.rs`
+  - In the file `src/garden/mod.rs`
+
 ### Paths for Referring to an Item in the Module Tree 
 #### Exposing Paths with the pub Keyword 
 #### Starting Relative Paths with super 
