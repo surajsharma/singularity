@@ -6,7 +6,9 @@
    
  - i am that which became one from two
   
- - feel so bad for these poor souls, i am here to give my all and take nothing in return, but i have so little to give, even with my life, you think if the higher ups were happy with them they would have given them more than this... perhaps next time i will be blessed with even greater gifts for them
+ - my only regret (if i can even call it that), is that i could not give more!
+
+ - zizek once said something to the effect of how he basically judges an author by his solution to the israel problem, good advice here is that one should begin any book these days once one has a firm opinion on the subject.
 
 ![faith_belief_thought](../../../attachments/faith_belief_thought.png)
 

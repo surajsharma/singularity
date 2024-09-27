@@ -1,0 +1,92 @@
+# being and difference 
+- time as a subtractive synthesis of difference 
+
+
+- as far as once can see, time streches on indivisibly and invisibly, there are no "breaks" or "gaps" in the ordering of objective time, then how come a synthesis is possible? for a dialectical to occur, there needs to be a gap between subject and object of cognition, in this conginitive sphere we find no imperfections, time appears to us like an ideal field streching across acres of ripe corn on a flat prarie on a moonlit night.
+
+
+- yet from womb to tomb, time allows for no gaps, including states of apperception  like sleep, coma or sleep or altered perception like meditative, dreams etc. the fabric of time knows no holes, neither in mathematics, nor as its biological counterpart - memory.
+
+
+- even death is not untouched by the continuation of time in narratives of reincarnation, astral travel, karma and the like- which the spiritual literature of the world recounts frequently and fondly.
+
+
+- in an unbroken circle like this, difference is introduced - often violently - firstly dividing time and the cognition thereof, secondly, the perception of this difference with itself pervasively, infinitely, and recursively, creating a feedback loop.
+
+
+- what introduces this difference is not time itself, neither anything "perceived", not only because perception assumes time apriori but also because time, in as much as it appears to be "caused" to the being, always appears as something external to perception, and therefore is always outside its control. it is as if, slipstreaming in through a blind spot in perception, time fills the aquarium called reality. 
+
+
+- the singularity of this blind spot is confirmed by the narrative of "big bang" in modern science, a singular incident describing the beginning of all time
+
+
+- if time is not-caused, but only appears to do so, then what is it that introduces it? to begin this murder investigation, we can start with the cadaver itself - the cessation of time in a dead body is nothing if not the cessation of memory. memory as the biological consequence of time is indeed a road to unraveling this mystery.
+
+
+- the cessation of memory is not the same as apperception or altered perception, in that there is a finality  without duplication or further propagation 
+
+
+- in death, time exits with as much violence as its introduction - leaving behind memory of someone's memories.
+
+
+- sandwiched between birth and death is a linear progression of "nows" and "nevers", wherein every now is recursively constitued by innumerable nevers and nows and likewise, every never funnels down to the final one. but the bookends speak volumes about the library. 
+
+
+- thus is the twice-ejected being constitued, excommunicated from and into memory in the physical sense. 
+
+
+- descartes' big project was to understand this reductively through doubt, but the immediacy of memory, and the continuity of perception create a dense soup leaving little wiggle room for doubt. doubt dissolves quickly in excruciating pain or euphoric highs.
+
+
+- neither are past, present, and future artifacts of a kantian imagination, generative antinomies for they imply, however miserly, a self-referential, self-causal loop. 
+
+
+- the twice-ejected being is rather first "geworfen" into the plot, then thrown out of it with impunity and indifference 
+
+
+- one could say the being's life is a `movement` within a liminal statis between two cul-de-sacs that at once terminate into each and extend out of each other, and then if you believe in reincarnation, a repetitive movement that is locally linear but curved up for bigger frames of time. 
+
+
+- each movement is the representative of this intertitiality of memory. motion itself is an additive synthesis of memory, this principle makes motion pictures and animated films possible, indeed more generally all storytelling within memory, including the storytelling with mediums such as music is a clever use of motion
+
+
+- motion as a by-product of difference and repetition is the next clue. traditionally this holy grail leads us to arguments that lead to richer and more intuitive understanding of memory as one possible ontology of time, such as prime mover, which in turn ends up in one ends of the cul-de-sac with taboo labels like ad-infinitum, homunculus etc, however the finitude of physical being, memory or no memory, bags away the difference betwwen a finite singularity in an infinte singularity, as a direct result, the relation between motion and time comes under considerable duress.
+
+
+- causality is the third clue in establishing our thesis. as common-sense implores, and everyday experience suggests in no uncertain terms, one cannot drink the same glass of water forever, just as one cannot step in the same river twice. both materialism (the slave) and its dialectic (the master) appear and disappear with elusive first cause or causes.
+
+
+- the primordial essence of eternal return is memory, not time. in that it is memory that causes time if we are to take socrates seriously when he said that knowledge is recall. 
+
+
+- indeed the violent introduction in and out of time is an expression of memory, and it's first cause, transcendental memory, which is the only pure difference there is that can be named. 
+
+
+- ordinarily, cognition is not seen as the subject itself, but in fact that is all transcendental memory is, cogition as the subject. as pure difference, it is a gapless gap suturing space and time together across physicall apparent and mathematical dimensions
+
+
+- transcendental memory is the essence of eternal return, the holy grail of all of being's existential seeking 
+
+
+- i remember waking up one morning and a beautiful song was playing on the radio, a proustian wave of happiness washed over me, it was a song from a latest bollywood movie, and it was the first time i had heard it, but though the melody was as familiar as a long-lost friend, those ideal few seconds were without the paranoia and dread of a deja-vu, yet absolutely lacking in any unfamiliarity. a bluesy tune with and excellent base line and a cerpescular melody that welded my morning to every twilight preceding and since.
+  
+
+- if it as a appears hegelian hoax to say memory is the cause-celebre of cognition and the context for the appearance of the apparition of duality, then that is because it is precisely that, but my aim here is to use it as fundamentally as a unit of instruction in an exposition of the final reality, i.e. to go beyond time needs still a manouver that involves some fancy driving around ontologies that currently populate human knowledge - not only to avoid the curse of circularity, but also to establish memory in its own right, something hitherto ignored by philosophers and psychologists alike.
+
+
+- the first manouver is in the understanding of forgetting, no one ever actually forgets anything, but the priority of remeberance changes from moment to moment, alongwith the distance from the co-ordinates of space-time where the memory resides - to forget is to remember something else. thus firstly, memory is to be understood as time, still apriori but unfolded and stretching infinitely across dimensions of pure difference. for simplicty one can keep this analogy confined to two-dimensions.
+
+
+- the forgetting of dreams is a prime example, frued's royal road is a richer alternative to our humble trail in that it may be more accessible to some, but our trail is long-winded, more beautiful and consistent. the difference in our approach and that of frued's is akin to strolling to-and-fro on a piece of highway versus taking a stroll through a pine forest. or the tidy ebb-and-flow of the ocean waves crashing on the beach versus the messy and wild traversal of a river from its origin to the sea.
+  
+
+- just as quickly as a dream is forgotten, reality is re-membered. the dream is then re-constituted by wakefulness but the encoding is of course lossy, partly due to the sensitive, phenomenologically reduced nature of the memory that constitues sleep.
+
+
+- both rememberance and forgetting are partial movements of pure difference, whereas eternal return is the completion of these movements 
+
+
+- having thus established conciousness as a singular traversal across the two faustian ends of pure difference disguised as memory (and it's refletion, forgetting), we can begin to address the curse of circularity in pure difference itself
+
+
+- it is easy to dismiss pure difference as "turtles all the way down", but in fact a more mathematical exposition is possible [1] 
