@@ -1,11 +1,12 @@
 # being and difference 
 - time as a subtractive synthesis of difference 
 
+1. 
 
-- as far as once can see, time streches on indivisibly and invisibly, there are no "breaks" or "gaps" in the ordering of objective time, then how come a synthesis is possible? for a dialectical to occur, there needs to be a gap between subject and object of cognition, in this conginitive sphere we find no imperfections, time appears to us like an ideal field streching across acres of ripe corn on a flat prarie on a moonlit night.
+- as far as one can see, time stretches on indivisibly and invisibly, there are no "breaks" or "gaps" in the ordering of objective time, then how come a synthesis is possible? for a dialectical to occur, there needs to be a gap between subject and object of cognition, in this conginitive sphere we find no imperfections, time appears to us like an ideal field streching across acres of ripe corn  on a moonlit prarie night.
 
 
-- yet from womb to tomb, time allows for no gaps, including states of apperception  like sleep, coma or sleep or altered perception like meditative, dreams etc. the fabric of time knows no holes, neither in mathematics, nor as its biological counterpart - memory.
+- yet from womb to tomb, time allows for no gaps, including states of apperception  like sleep, coma or sleep or altered perception like meditative, dreams, under anesthesia etc. the fabric of time knows no holes, neither in mathematics, nor as its biological counterpart - memory.
 
 
 - even death is not untouched by the continuation of time in narratives of reincarnation, astral travel, karma and the like- which the spiritual literature of the world recounts frequently and fondly.
@@ -26,7 +27,7 @@
 - the cessation of memory is not the same as apperception or altered perception, in that there is a finality  without duplication or further propagation 
 
 
-- in death, time exits with as much violence as its introduction - leaving behind memory of someone's memories.
+- in death, time exits with as much violence as in its introduction - leaving behind memory of someone's memories.
 
 
 - sandwiched between birth and death is a linear progression of "nows" and "nevers", wherein every now is recursively constitued by innumerable nevers and nows and likewise, every never funnels down to the final one. but the bookends speak volumes about the library. 
@@ -38,19 +39,19 @@
 - descartes' big project was to understand this reductively through doubt, but the immediacy of memory, and the continuity of perception create a dense soup leaving little wiggle room for doubt. doubt dissolves quickly in excruciating pain or euphoric highs.
 
 
-- neither are past, present, and future artifacts of a kantian imagination, generative antinomies for they imply, however miserly, a self-referential, self-causal loop. 
+- neither are past, present, and future artifacts of a kantian imagination, generative antinomies- for they imply, however miserly, a self-referential, self-causal loop. 
 
 
 - the twice-ejected being is rather first "geworfen" into the plot, then thrown out of it with impunity and indifference 
 
 
-- one could say the being's life is a `movement` within a liminal statis between two cul-de-sacs that at once terminate into each and extend out of each other, and then if you believe in reincarnation, a repetitive movement that is locally linear but curved up for bigger frames of time. 
+- one could say the being's life is a `movement` within a liminal statis between two cul-de-sacs that at once terminate into and extend out of each other, and then if you believe in reincarnation, a repetitive movement that is locally linear but curved up for bigger frames of time. 
 
 
-- each movement is the representative of this intertitiality of memory. motion itself is an additive synthesis of memory, this principle makes motion pictures and animated films possible, indeed more generally all storytelling within memory, including the storytelling with mediums such as music is a clever use of motion
+- each movement is the representative of this interstitiality of memory. motion itself is an additive synthesis of memory, this principle makes motion pictures and animated films possible, indeed more generally all storytelling within memory, including the storytelling with mediums such as music is a clever use of motion
 
 
-- motion as a by-product of difference and repetition is the next clue. traditionally this holy grail leads us to arguments that lead to richer and more intuitive understanding of memory as one possible ontology of time, such as prime mover, which in turn ends up in one ends of the cul-de-sac with taboo labels like ad-infinitum, homunculus etc, however the finitude of physical being, memory or no memory, bags away the difference betwwen a finite singularity in an infinte singularity, as a direct result, the relation between motion and time comes under considerable duress.
+- motion as a by-product of this difference and repetition is the next clue. traditionally this  leads us to arguments that end up in a richer and more intuitive understanding of memory as one possible ontology of time, such as prime mover, which in turn ends up in one ends of the cul-de-sac with taboo labels like ad-infinitum, homunculus etc, however the finitude of physical being, memory or no memory, bags away the difference betwen a finite singularity in an infinte singularity, as a direct result, the relation between motion and time comes under considerable duress.
 
 
 - causality is the third clue in establishing our thesis. as common-sense implores, and everyday experience suggests in no uncertain terms, one cannot drink the same glass of water forever, just as one cannot step in the same river twice. both materialism (the slave) and its dialectic (the master) appear and disappear with elusive first cause or causes.
@@ -89,4 +90,107 @@
 - having thus established conciousness as a singular traversal across the two faustian ends of pure difference disguised as memory (and it's refletion, forgetting), we can begin to address the curse of circularity in pure difference itself
 
 
-- it is easy to dismiss pure difference as "turtles all the way down", but in fact a more mathematical exposition is possible [1] 
+- it is easy to dismiss pure difference as "turtles all the way down", but in fact a more mathematical exposition is possible [1]  
+
+
+- pure difference is duality ___embuted___, the moment of intention right before it becomes an action, the potential implicit in each circumstance, in other words, causality implicit 
+
+
+- there are two parts to it, the pure bit is the symbolic, and the difference is the real. there are no imaginary gaps in pure difference, infact, the lack of the imaginary constitues pure difference such that, the imaginary synthesiszes it into it's offspring - difference itself. 
+
+
+- this dialectical is not unlike what happens when a photocopy or projection is made - the original, the negative, the antethesis of pure difference meets substance of paper, copy machine, projecter screen etc and becomes an image, enlarged or inverted or tangible.
+
+
+- without the imaginary, it remains dormant as an antithesis
+
+
+- the pure bit is the corporeality of the symbolic, it complements the antithesis that is the real but is not constituted by it, but rather with another antithesis - that of the more creative duality of imaginary and symbolic - there is nothing real in the symbol, it is a tabula rasa marked on the underside, but unable to roll itself over without difference 
+
+
+- thus, like an eternally flipping coin levitating in a quantum superposition, pure difference awaits for memory to allow the wave function to collapse.  the important thing to note here is that each face of the coin is a duality in itself. could we then not describe singularity as a fabrication of not single duality but rather a pair? 
+
+
+- these four mothers (causality implicit) of reality give then birth to one daughter that transcribes reality for being - that daughter is memory, or causality made as explicit (at once real, imaginary, and symbolic) as the atriums and ventricles in each heart.
+
+---
+
+- alternatively, we can study pure difference by beginning with difference itself. 
+
+- in order to have a difference we need a duality, a singular entity cannot be differentiated against itself in any particular moment of time, to differ is to compare one thing with another
+
+- pure difference is simply this comparison folded onto itself, or difference compared with difference itself making the total number of entities four 
+
+- to attempt this mathematically is to arrive at four different singularities of zero, inifinity, unity or duality. depending on the arithmatical operation. regardless, a chasm opens and yawns for all those that dare peek in - already we can see how pure difference works, what is also interesting to note is that [duality renders itself more readily as an antithesis than not], thus for our intents and purposes, it is safe to conclude that reality is an expression of difference and memory, not unlike a magnetic tape unspooling over the floor.
+
+---
+
+
+- just as difference has its origin in pure difference, memory has its origin in transcendental memory. this is nothing but a more formal way to state the crude mind-body duality. 
+
+- whereas zero and inifinity are self-contained infinite singularities, unity or duality are finite ones 
+
+
+- pure difference thus defined, implies an impossibility of any metaphysics to describe it accurately without infinite regression, only an ontology can do the job 
+
+--- 
+
+
+- reducing duality to difference and memory (aka mind and body in a local frame of reference) still leaves us with the questions of their origin, the quad here is apriory memory, apriori difference, and their aposteriori counterparts 
+
+
+- the structure of pure difference is a great clue in understanding the structure of substance, so we can start there, that in in a "folding" of the substance onto itself 
+
+
+- the commanding monism here must be seen as a whole, and the structural details of all spatio-temporal reality reveals itself to be "folded" but not curved, there is no "curved" movement in space as two parallel lines never meet even if they traverse infinitely over a curved euclidian space 
+
+
+-  light curves can measure the light intensity of a celestial object or region as a function of time, but light itself does not curve, it only bends. in as much a bend is a differential of the fold, we can use this intuition to trace the geometry of pure difference 
+
+
+- pure difference as a nonduality is an angular bend (as opposed to a curve) with the crease marking the channel through which memory traverses and substance is nothing but this dialectic of bend, crease, and the oft forgotten fold itself.
+
+
+- in atomic terms, this manifests as a unity, wherein the nucleus is the fold around which the electrons trace their creases indefinitely. at more general levels, we can see the pattern repeat in celestial bodies like those that make up the solar system.
+
+
+- how the primitive angularity of the nonduality ends up in locally perceived curvature is also a function of pure difference, albeit one that is several rungs down in the essence of its function 
+
+
+- this conginitive sphere is the subject of reflexive perception appropriated via modalities of matter, the language-less, shadow-free origin of the origin itself, the primary bend without quadratic embelishments lies *without* the spherical perfection of any self-sustainable and stable configuration of matter 
+
+
+- reality, is then, in some fundamental sense, bent. it is not the case that this corruption happens within substance, the case is that that substance itself is a successive corruption of difference prima facie and the twice-excommunicated being can do naught but repent this fact perpetually between entry and exit 
+
+--- 
+
+2.  
+
+- it is causality which belies the expression of being as a finite, different subject of an infinite, indifferent object. 
+
+
+- since perceived time is not causa-sui rather a consequence of pure difference (folding upon itself), the self-similarity between two succesive moments is a difference in itself. the superhighway of difference is punctuated with exits in time at self-similar and regular intervals 
+
+
+- a determined being can thus, break the loop of eternal return to arrive at transcendental memory, which is memory in superposition, a door which opens into pure difference itself. though this journey is so fraught with existential dangers and fears that few attempt and fewer still arrive at the destination
+
+
+- transcendental memory is a disembodied phenomenon it isn't a recall of time in the mind but a recall of time outside of any and all minds - in terms of its interface with pure difference, it is the rememberance of forgetting - the realm of all things lost, the kingdom of the imaginary
+
+
+- Schrödinger's cat is the keychain you misplaced last time until you found it, between the time you lost and found it, it was an artifact in transcendental memory - regardless of how many people saw it lying on the mantle, it was not there until you recalled its coordinates or somehow otherwise chanced upon it - including having someone else find it for you. 
+
+
+- the way out of difference and into pure difference is a similar recall of something long forgetten, except the thing forgotten is forgetfulness itself
+
+
+- blind spot of the  "big bang", or a singular entry point of time into substance is therefore a myth perpetuated by parochial and limited scientific foresight, there isn't a single original fold but as many as there are dimensions available for observation, which surely as mathematics confirms, are more than three.
+
+
+- time is the perforation that marks the borders between one dimension and another, across which extends difference as planes of angularly folded faces of a singular, n-dimensional polyhedra. our observable universe is one such face.
+
+
+-  the perforation itself is a duality consisting of succession of stiches and gaps between them, the stitch itself is an instance of difference and the cause of memory (difference welded to difference) whereas the gap is an instance of pure difference and the cause of transcendental memory (difference separated from itself)
+
+
+- causality, or the time it takes for one stitch to turn into the next is thus not a watertight concept
