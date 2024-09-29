@@ -1,3 +1,4 @@
+* 📂 [being and difference](being and difference)
 * 📂 [glimpses of divinity](glimpses of divinity)
 * 📂 [poems](poems)
 * 📂 [singularity](singularity)
