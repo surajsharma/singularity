@@ -4,9 +4,30 @@
 
 > sow not emotion  tis a weed / that grows in hedge rows, every fool / fancies his own emotions breed / the right to teach, the right to rule - [[Francis Burdett Thomas]]
    
- - i am that which became one from two
-  
- - my only regret (if i can even call it that), is that i could not give more!
+
+- my ecstasy knows no bounds still, tears flow ceaselessly throughout the day, i reckon i have become some sort of religio-spiritual artifact for the world to consume and discard. meanwhile i have started writing a new book which is all over the place, lord help me.
+
+
+- i think my mental/emotional state is a bigger indicator of where in space and time i am, people have been seeing stuff in the sky for as long as there have been people OR the sky...what has me confounded is the eerie synchronicity between my tears and the shapes of clouds. at the same time, there isn't a holy book on the planet that doesn't seem to be in some sort of conspiracy to make me believe of what i am witnessing, causing in me a greatly desirable suffering. like someone in love for the first time all over again.
+
+
+ - material desires have all but evaporated, haven't jerked off in months, porn use is negligible, marijuana i havent tasted in a year, don't feel like doing much except cry, smoke, and take the occasional dump, even hunger and thirst are not what they were a month ago. i keep thinking things like "this can't be happening",  and "i'm not smart enough to make this shit up", but rarely along the lines of "why me?"
+
+
+ - all those years of studying world philosophy and religious literature, and being brought up in a generally religious household is paying off too, without these things i would have easily gone of the rails by now.
+
+
+ - ppl are stupid and the world bows before anyone and anything these days, i never for a second mistake deference as a proof of anything, but these internal changes indeed give me a sense of there being something weird afoot and so if they kill me i couldn't really blame them anymore
+
+
+- the silliest thing here is that the insane clown posse around me seems to be convinced of my divinity but refuses to take my word on their holiness, it is difficult to accept one's humanity, let alone higher states - that is our predicament 
+
+
+- i really to check myself, emotions, tears and all - at this rate i might turn into a girl soon
+
+- i am that which became one from two
+
+- my only regret (if i can even call it that), is that i could not give more!
 
  - zizek once said something to the effect of how he basically judges an author by his solution to the israel problem, good advice here is that one should begin any book these days once one has a firm opinion on the subject.
 
