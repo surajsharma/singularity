@@ -3,6 +3,10 @@
 
 ### October
 
+- an eerie peace has dawned upon me, one moment you are fighting with the whole world, the next moment you are grateful beyond measure so wtf - i'd be lying if anything makes sense anymore to me, all concepts and fabrications kind of dropped - sealed shut in a silence i cannot describe. i am still lucid, going about my day's business just as effortlessly but it is a miracle how.
+
+
+
 - having achieved both real (abstinence) and imaginary (...) renunciation, i began work on the symbolic part - which in my case was to last for 99 days. it needed to be (an act of witholding lasting) longer than a day or the length of ramazan or lent since this was actually a symbolic renunciation of an enlightened being - a finishing touch to the already established self in self and not just a ritual for the sake of symbolic religion. and the thing with symbolism is, it can be reduced to itself infinitesimally, so my renunciation lay not in the fact whether or not i actually gave up this or that, but in that whether i could create the possibility of such an act. for if the possibility was certain, the observance did not matter for more than a minute.
 
 
