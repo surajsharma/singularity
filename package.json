@@ -19,6 +19,7 @@
   "license": "MIT",
   "dependencies": {
     "crc-32": "https://cdn.sheetjs.com/crc-32-latest/crc-32-latest.tgz",
-    "lunr": "^2.3.9"
+    "lunr": "^2.3.9",
+    "marked": "^14.1.2"
   }
 }
