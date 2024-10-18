@@ -1,5 +1,6 @@
 import { existsSync, lstatSync, readdirSync, readFileSync, statSync } from 'fs';
 import { join } from 'path';
+import { marked } from 'marked';
 
 export function readFileAsStringSync(filePath, encoding = 'utf8') {
     //using async throws lunr off
@@ -67,6 +68,21 @@ export function getSortedItems(path) {
 export function getEmojis(str) {
     const regex = /<a?:.+?:\d{18}>|\p{Extended_Pictographic}/gu;
     return str.match(regex) || [];
+}
+
+
+export function getTags(str) {
+    const tokens = marked.lexer(str);
+    console.log("🚀 ~ getTags ~ tokens:", tokens)
+
+    const nonCodeTokens = tokens.filter(token => token.type !== 'Code' && token.type !== 'Codespan');
+    // console.log("🚀 ~ getTags ~ nonCodeTokens:", nonCodeTokens)
+
+    const mdstr = marked.parser(nonCodeTokens);
+    // console.log("🚀 ~ getTags ~ mdstr:", mdstr)
+
+    const regex = /#(?!\d)\w+/g;
+    return mdstr.match(regex) || [];
 }
 
 export function removeDuplicates(arr) {
