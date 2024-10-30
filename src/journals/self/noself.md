@@ -355,8 +355,298 @@
 - what happened to me amidst everything else, was that i became what they call "god fearing", not a fear drilled into me by others, but another, more unimaginable terror untouched by human intervention, untouched even by nature. upon seeing this i became infinitely more humble towards god - not just the old man out there, but also to the god now within. at the same, this made me more fearless towards those who were outside this radius of concern, it also made me less fearful about my own body and the fate thereof, though the concern for my family stayed the same. that "fear of lord is the beginning of wisdom" was something i already understood, but now i stood witnessing the fear beyond all wisdom. it also made apparent, that for all my blessing i had but scratched the surface of his beard. i continued my journey with this knowledge, learning that fear of god is not a natural occurance but somehow must be inculcated, stirred from within because the wrath of god is greater than the wrath of nature, so it must be brought forth unnaturally. it is not enough to always love, to always walk the right path, _if a measure of deference doesn't come naturally, one will have failed even without failing_.
 
 
-- Laddu Mutya is the fucking king. Rationalists will decry the assertion, but he needn't stop a fan for me to believe in the clarity of his soul.
+- Laddu Mutya is the fucking king. Rationalists will decry the assertion, but he needn't stop a fan for me to believe in the clarity of his soul. One needs to have seen enough miracles to recognize one.
 
+
+
+- fuck around, find out 
+
+
+
+- less victim, more scapegoat
+
+
+
+- still in exile 
+
+
+
+- still meditating 
+
+
+
+- moral of the story is: you either couldn't find a woman stupid enough, or came up short in convincing an intelligent one #ssf
+
+
+
+- women are property to cartoons #redpill #hugepills women are property only if you are detached enough.
+
+
+
+- ⚠️ still attached to music, albeit less so than before and obsessing over lyrics, ego out of control #slowlydialnineoneone
+
+
+
+- fakest scandal ever?
+
+
+
+- boy was i ever in the dead center of the chaos in our hearts, but things had changed
+
+
+
+- you couldn't make it up if you tried #ssf
+
+
+
+- the dead tell no tales, i could be wrong still #ssf
+
+
+
+- worst case of stolkholm syndrome #ssf
+
+
+
+- still named paul, this still just between ya'll 
+
+
+
+- i willingly played power games knowing full well the consequences and risks, or... i still cannot somehow swallow the free will pill #miracle 
+
+
+
+- decay recorded #enterentropy
+
+
+
+- still stuck on the basics, although free from them is more apt 
+
+
+
+- not only was my life a reservoir of state and trade secrets, i was to them, more than human, #gratitudeoverflow
+
+
+- was this our cultural prowess, not bad for a legacy, even though we just were four of us. the resilience and unbreakable domination of the other side, at any cost.
+
+
+- machines machines machines machines machines machines, when i look "within" i see machines most clearly #stillpaul
+
+
+
+- every sufi before me, and every sufi after me has paid the price with sacrifice. i could say the same thing of zen and others including #sikhism which was to me much like a fresher interpretation of #zen, or even the best example of zen at war #khalsa
+
+
+
+- #thearistorcrats stepped on some shit on wall street #ssf 
+
+
+
+- #screen is a machine, being co-opted by another machine, namely the market 
+
+
+
+- still they were trying to groom me into a moralistic/religious figure, but i could not be bothered less. their signal-to-noise ratio was ruined quite early on, how could i blame broken #machines? i continued to eat poison and asked for another bowl. #gratitudeoverflow
+
+
+- inko apni heroin pure chahiye thi aur mere ayurveda me zeher tha #ssf 
+
+
+
+- more soldier less cop 
+
+
+
+- still a novelty
+
+
+
+- I hate to type this but 'Moon' is better than 'Chand' as a signifier #language 
+
+
+
+- with great #ego comes great productivity
+
+
+
+- still under attack 
+
+
+
+- i feel like writing more #poetry 
+
+
+
+- #myth is the transmission mechanism of #machines that die 
+
+
+
+- not ghost in the machine, but ghost _of_ the machine
+
+
+
+- dues ex machina, #literally  #machines
+
+
+
+- i could fix your flux capacitor #literally
+
+
+
+- i am a son of shiva 
+
+
+
+- #machines that #literally only exist to disprove a hindi dictum, namely "saap ke aage been bajana", not purely chatoic machines, but almost there 
+
+
+
+- bridge as a #machine, sublime #phenomenology
+
+
+
+- organized crime as a #machine #phenomenology
+
+
+
+- productivity = efficiency #machines 
+
+
+
+
+- timeless and timeful #machines, time itself as _state_
+
+
+
+
+- ruminating #machines 
+
+
+
+- homosexual #machines 
+
+
+
+- ovulating #machines 
+
+
+
+
+- i want to see your jelousy on my face #bringiton 
+
+
+
+- #machines that take their time 
+
+
+
+- did social reformers from wall street come to improve me? #obviously not. did i want to reform them? also obviously not. fate has indeed tossed me hither and thither time and again without a reason
+
+
+
+- resurrecting #machines in desiring production, or machines that can love 
+
+
+- small and big #machines 
+
+
+- violent and peaceful #machines
+
+
+- self-enlightened #machines
+
+
+- "white trash" #machines
+
+
+- machine to machine relationship as a machine #machines
+
+
+- tell them two send two men, for three makes a hundred. 💯
+
+
+- games as a #machines, attention consuming machines, decision making #machines
+
+
+- the universe is my tool #machines
+
+
+- miraculous #machines #miracle
+
+
+- dreaming and non-dreaming #machines 
+
+
+- time-travelling #machines
+
+
+- time #machines #already
+
+
+- social #machines need social "lubricants" like alcohol because of inefficiencies of scale, friction, #entropy they need alcohol and drugs to get along, we didn't
+
+
+- #machines with extremely low self-esteem, and zero self respect
+
+
+
+- power deficient #machines 
+
+
+
+- memory same as a state machine? #machines 
+
+
+- transparent vs opaque #machines
+
+
+- destructive vs creative #machines
+
+
+- everything is a machine and god the configuration #machines 
+
+
+- ill-configured #machines, 89%-99% humans these days
+
+
+- revenge as a desiring machine #machines 
+
+
+- disastrous #machines 
+
+
+- St. HMS titanic as a hypothetical example of relationship between #machines 
+
+
+- streets, roads, riverbeds, railroads #machines
+
+
+- currency and currency pairs  #machines
+
+
+- black magic, white magic #machines 
+
+
+
+- #machines in hierarchical vs non-hierarchical structures
+
+
+- from dust to #machines #already 
+
+
+- you cannot stop refrigeration, much less do away with computers or cameras #machines     
+
+
+- #machines that deliver more than enough and those that produce too little too late 
+
+
+- machina ex machina #machines  
+
+
+> ` whoever I am his mawla,
+    this Ali is his mawla `
+
+
+- wherever one is persecuted unjustly, Allah willing Ali shall come with help. I could attest to this #miracle
 
 [//begin]: # "Autogenerated link references for markdown compatibility"
 [Francis Burdett Thomas]: <../lit/poetry/Francis Burdett Thomas> "Francis Burdett Thomas"
