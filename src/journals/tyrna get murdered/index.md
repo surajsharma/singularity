@@ -1,5 +1,3 @@
-* 📂 [being and difference](being and difference)
-* 📂 [empires of transcendent machines](empires of transcendent machines)
 * 📂 [glimpses of divinity](glimpses of divinity)
 * 📂 [poems](poems)
 * 📂 [singularity](singularity)
