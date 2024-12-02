@@ -1,2 +1,3 @@
-* 📂 [being and difference](being and difference)
-* 📂 [empires of transcendent machines](empires of transcendent machines)
+* 📂 [01. being and difference](01. being and difference)
+* 📂 [02. empires of transcendent machines](02. empires of transcendent machines)
+* 📂 [03. escaping entropy](03. escaping entropy)
