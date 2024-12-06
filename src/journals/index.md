@@ -1,4 +1,3 @@
-* 📂 [codex habitus conatus](codex habitus conatus)
 * 📂 [energy homework](energy homework)
 * 📂 [lit](lit)
 * 📂 [self](self)
