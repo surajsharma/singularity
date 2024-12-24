@@ -116,16 +116,16 @@ println!("x = {x}, y = {y}");
 ```rust
 fn ch_4(){
   let mut str_lit = String::from("hello");
-	str_lit.push_str(", world");
+  str_lit.push_str(", world");
 
-	println!("{}",str_lit);	
-	
-	let word = first_word(&str_lit);
-	//str_lit.clear();
-	
-	println!("{}",word);
-	
-	fn first_word(s: &str) -> usize {
+  println!("{}",str_lit);	
+
+  let word = first_word(&str_lit);
+  //str_lit.clear();
+
+  println!("{}",word);
+
+  fn first_word(s: &str) -> usize {
     let bytes = s.as_bytes();
     for (i, &item) in bytes.iter().enumerate() {
         if item == b' ' {
@@ -133,7 +133,7 @@ fn ch_4(){
         }
     }
     s.len()
-	}  
+  }  
 }
 ```
 

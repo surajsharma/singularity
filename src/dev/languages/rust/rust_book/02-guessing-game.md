@@ -49,7 +49,7 @@ io::stdin().read_line(&mut guess)
 
 ```toml 
 [dependencies]
-rand = "0.9.0
+rand = "0.9.0"
 ```
 
 ```rs 
