@@ -81,6 +81,9 @@ println!("x = {x}, y = {y}");
 
 - We call the action of creating a reference [[07-borrowing]].
 
+- **References are non-owning pointers, because they do not own the data they point to.**
+
+
 #### Mutable References 
 
 - Mutable references have one big restriction: if you have a mutable reference to a value, you can have no other references to that value.
