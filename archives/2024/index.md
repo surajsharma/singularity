@@ -1,1 +1,2 @@
 * 📂 [dev](dev)
+* 📂 [journals](journals)
