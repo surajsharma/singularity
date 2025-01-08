@@ -7,3 +7,9 @@
 - https://en.wikipedia.org/wiki/Stitch_(textile_arts)
 
 - https://www.google.com/search?q=Mendelsohn+triple+systems&dpr=1
+
+-- 
+
+- https://en.wikipedia.org/wiki/Hedgehog%27s_dilemma
+
+-- 
