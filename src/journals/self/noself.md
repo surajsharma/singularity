@@ -39,3 +39,7 @@
 
 
 - i would be coming back for a memory extraction and then there would not remain even the memory of us here, but for that a lot of memory need be generated
+
+---
+
+- zyada logon ki life virtual hui, kuch ke grandchildren 
