@@ -1,4 +1,5 @@
 * 📂 [ai](ai)
+* 📂 [byox](byox)
 * 📂 [dsa](dsa)
 * 📂 [languages](languages)
 * 📂 [mobile](mobile)
