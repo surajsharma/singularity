@@ -2,6 +2,13 @@
 
 ### Jan
 
+
+- #newsoftheempire my mental health was obviously down but by now i could care less, they had made some sort of a dictator out of me and were off to create another saddam or stalin, whichever was in fashion.
+
+
+- #newsoftheempire i had not only theoretically proved it, but also in my bones i knew #chess was totally deterministic, and i wondered whether, as a kid who loved his free will so much, [i hated it as a kid], and as an adult scoffed at the idea of playing let alone learning such a game, but the pull and beauty were such i could not resist, despite the landscape and chess community being totally out of whack c*nts and the biggest bunch of solipsists and egotists, i carried on ignoring the red flags and soon the determinism itself became a feature, as in the whole challenge was to _find_ the right determinism. we needed more guys like emory tate and less like bobby fisher for sure. to that extent so was tetris, but chess was more visceral than any video game. actually as some kid on yt said, chess is haram, one should stay away amap. #games #infinitegames
+
+
 - #newsoftheempire writing a metaphysics you will come dangerously close to writing a philosophy of mind, but that kind of mudding the waters will drown in ad nauseum. this is why most are confused about which way to go, not for everyone. it requires a painful exatitude most don't have the patience for.
 
 
