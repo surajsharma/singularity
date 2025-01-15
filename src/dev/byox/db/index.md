@@ -1,2 +1,3 @@
-* 📄 [00](00.md)
-* 📄 [01](01.md)
+* 📄 [00 - intro](00 - intro.md)
+* 📄 [01 - updating files in place](01 - updating files in place.md)
+* 📄 [02 - atomic renaming](02 - atomic renaming.md)
