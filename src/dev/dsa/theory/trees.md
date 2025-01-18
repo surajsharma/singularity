@@ -1,3 +1,4 @@
+- [In graph theory, a tree is an undirected graph in which any two vertices are connected by exactly one path, or equivalently a connected acyclic undirected graph](#in-graph-theory-a-tree-is-an-undirected-graph-in-which-any-two-vertices-are-connected-by-exactly-one-path-or-equivalently-a-connected-acyclic-undirected-graph)
 - [Basic Classifications:](#basic-classifications)
   - [General Tree (N-ary Tree): The most general form, where a node can have any number of children.](#general-tree-n-ary-tree-the-most-general-form-where-a-node-can-have-any-number-of-children)
   - [Binary Tree: Each node can have at most two children, typically referred to as "left" and "right."](#binary-tree-each-node-can-have-at-most-two-children-typically-referred-to-as-left-and-right)
@@ -14,6 +15,8 @@
 - [Choosing the Right Tree:](#choosing-the-right-tree)
 - [DB performance: binary, B, LSM trees](#db-performance-binary-b-lsm-trees)
 
+
+## In graph theory, a tree is an undirected graph in which any two vertices are connected by exactly one path, or equivalently a connected acyclic undirected graph
 
 There are many types of trees in data structures, each with specific properties and use cases. Here's a breakdown of some common ones:
 
