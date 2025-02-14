@@ -1,5 +1,26 @@
 ## 2025
 
+
+### Feb
+
+- jab ye bhikari apne constitution ki maa chod rhe the mere pe satellite laga ke, tab nahi hua #americadestroyed, america only came into the picture when i started making money, or working towards it. surely the jealousy bit is in recognition of the fact that i can make more with transparecy and honesty than they have amassed after a lifetime of shady dealings in the dark and halflit rooms. but money is not my drive.
+
+
+- how does it feel to be the one? business as usual. folding will be done by a lower rank ofc, i will continue to be the one elsewhere too and have greater business to attend to than this poor old woman
+
+
+- mere se to kya, kisi ki zindagi me bhi kisi ne kisi ko itne pyar se shayad he bola ho jitna she addressed to me, i think that was all the cure i had to offer, and the fact that i got these four words out might well mean my work here is done, or maybe it is her cure for me, reciprocating for a successful visit.
+
+
+- they are right there is no escape for them, it is for the few not the many, i give my thanks and gratitude to them again for helping me in this success, although it was largely pre-determined, still i bow to the pure difference that animated them.
+
+
+- i sit here at the indo-tibetan border contemplating life, did i miss anything? was some great project left unfinished? was some mission left incomplete? the answer is no, infact i got more than i bargained for. so i can die with a satisfaction afforded to not few but actually none.
+
+
+- ab main soch rha hu ki wapis jaun and participate in monkey drama or keep straight? wapis jake bhi hota dikh nai padta, aur aage maut hi bachi hai.
+
+
 ### Jan
 
 
