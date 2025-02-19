@@ -3,6 +3,10 @@
 
 ### Feb
 
+
+- it was so amusing to see david pinched between two sides of his own creation, surely he deserved better, surely he had better intentions for the world but it was not meant to be
+
+
 - jab ye bhikari apne constitution ki maa chod rhe the mere pe satellite laga ke, tab nahi hua #americadestroyed, america only came into the picture when i started making money, or working towards it. surely the jealousy bit is in recognition of the fact that i can make more with transparecy and honesty than they have amassed after a lifetime of shady dealings in the dark and halflit rooms. but money is not my drive.
 
 
@@ -20,6 +24,10 @@
 
 - ab main soch rha hu ki wapis jaun and participate in monkey drama or keep straight? wapis jake bhi hota dikh nai padta, aur aage maut hi bachi hai.
 
+
+- if the measure of your success is who you are jealous of, surely things loop somewhere as i had a bunch of trillionaires just writhing and squirming at each breath that i drew. 
+
+- it was never my intention to speak truth to power, nor power's intention to lie to me, yet here we are!
 
 ### Jan
 
