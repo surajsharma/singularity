@@ -16,6 +16,3 @@
     - Mind IS the doubt. 
     
 - These one hundred and twelve methods of meditation constitute the whole science of transforming mind. We will enter them one by one. We will try to comprehend first intellectually. But use your intellect only as an instrument, not as a master.
-
-
-- 

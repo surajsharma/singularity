@@ -1,6 +1,10 @@
 
 # Chapter 3: Start with the Visible: Explore Activity
 
+- [Chapter 3: Start with the Visible: Explore Activity](#chapter-3-start-with-the-visible-explore-activity)
+    - [3.4.3 Activity Lifecycle](#343-activity-lifecycle)
+
+
 3.1 What Is Activity?
 
 3.2 Activity Fundamentals
