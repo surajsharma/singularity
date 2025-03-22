@@ -1,4 +1,5 @@
 * 📂 [docker](docker)
+* 📂 [k8s](k8s)
 * 📂 [networking](networking)
 * 📄 [glossary](glossary.md)
 * 📄 [software architect's hit list](software architect's hit list.md)

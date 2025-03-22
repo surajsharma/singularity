@@ -1,5 +1,6 @@
 * 📂 [ai](ai)
 * 📂 [byox](byox)
+* 📂 [devops](devops)
 * 📂 [dsa](dsa)
 * 📂 [languages](languages)
 * 📂 [mobile](mobile)
