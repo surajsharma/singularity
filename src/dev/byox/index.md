@@ -1,2 +1,1 @@
 * 📂 [db](db)
-* 📄 [Build an Orchestrator in Go (From Scratch) (MEAP V11) -- Tim Boring -- All 13 chapters, 2023 -- Manning Publications -- 9781617299759 -- 56b6559025f156fef07a6f7077bf37be -- Anna’s Archive-1](Build an Orchestrator in Go (From Scratch) (MEAP V11) -- Tim Boring -- All 13 chapters, 2023 -- Manning Publications -- 9781617299759 -- 56b6559025f156fef07a6f7077bf37be -- Anna’s Archive-1.pdf)

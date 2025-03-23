@@ -3,4 +3,3 @@
 * 📂 [03. counting](03. counting)
 * 📂 [04. probability](04. probability)
 * 📂 [05. recurrences](05. recurrences)
-* 📄 [LLM](LLM.pdf)
