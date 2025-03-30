@@ -2,7 +2,7 @@ import { readdirSync, statSync, writeFileSync } from "fs";
 import { basename, extname, join } from "path";
 import { clearLine, cursorTo } from 'readline';
 import { excludedDirs, excludedExts, excludedFiles } from './constants.js';
-import { buildDirectoryTree, getEmojis, readFileAsStringSync, removeDuplicates } from './utils.js';
+import { buildDirectoryTree, getEmojis, readFileAsStringSync, removeDuplicates, getTags } from './utils.js';
 
 import lunr from "lunr";
 
@@ -117,10 +117,86 @@ function createEmojiSearchIndex(tree) {
   }
 }
 
+function createTagsSearchIndex(tree) {
+  try {
+    if (tree.type === 'dir') {
+      tree.children.forEach(childTree => {
+        if (childTree.type === 'dir') {
+          const children = childTree.children;
+
+          children.forEach(async (child) => {
+            if (child.type === 'file') {
+              //process file contents
+              const ext = extname(child.name);
+              if (!excludedExts.includes(ext)) {
+                const content = readFileAsStringSync(join(childTree.path, child.name));
+                const tagssInFile = removeDuplicates(getTags(content));
+                const filePath = join(childTree.path, child.name);
+                tagssInFile.forEach(async (tag) => {
+                  await addTagToIndex(tag, filePath)
+                })
+
+              }
+            }
+          })
+          createTagsSearchIndex(childTree);
+        }
+      });
+    }
+  } catch (err) {
+    console.log("~ createEmojiSearchIndex ~ err:", err)
+    process.exitCode = 1;
+  }
+}
+
+
+
+async function addTagToIndex(unicode, filePath) {
+  return new Promise(async (resolve, reject) => {
+    const indexPath = join('assets', 'search', `tags-search.json`);
+    try {
+      let jsonObject = readFileAsStringSync(indexPath);
+      jsonObject = JSON.parse(JSON.parse(jsonObject));
+
+      if (jsonObject.hasOwnProperty(unicode)) {
+        if (!jsonObject[unicode].includes(filePath)) {
+          jsonObject = {
+            ...jsonObject,
+            [unicode]: [...jsonObject[unicode], filePath]
+          }
+        }
+      } else {
+        jsonObject = {
+          ...jsonObject,
+          [unicode]: [...(jsonObject[unicode] || []), filePath]
+        }
+      }
+
+      writeFileSync(indexPath, JSON.stringify(jsonObject), function (err) {
+        if (err) reject(err);
+      });
+
+      resolve(0);
+    } catch (error) {
+      if (error.code === 'ENOENT') {
+        const jsonObject = {}
+        jsonObject[unicode] = [filePath];
+        writeFileSync(indexPath, JSON.stringify(jsonObject), function (err) {
+          if (err) reject(err);
+        });
+        resolve(0);
+      } else {
+        console.error('Error updating tags index:', error);
+        reject(error);
+      }
+    }
+  });
+}
+
+
 async function addEmojiToIndex(unicode, filePath) {
   return new Promise(async (resolve, reject) => {
     const indexPath = join('assets', 'search', `emoji-search.json`);
-    // const unicode = emoji.codePointAt(0).toString(16);
     try {
       let jsonObject = readFileAsStringSync(indexPath);
       jsonObject = JSON.parse(JSON.parse(jsonObject));
@@ -160,5 +236,6 @@ async function addEmojiToIndex(unicode, filePath) {
   });
 }
 
-createSearchIndexDirs(directoryPath);
-createEmojiSearchIndex(buildDirectoryTree(directoryPath));
+// createSearchIndexDirs(directoryPath);
+// createEmojiSearchIndex(buildDirectoryTree(directoryPath));
+createTagsSearchIndex(buildDirectoryTree(directoryPath));
