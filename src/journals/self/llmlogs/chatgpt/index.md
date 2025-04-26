@@ -1,6 +1,7 @@
 * 📄 [ent-go-one-to-many](ent-go-one-to-many.md)
 * 📄 [ent-go-schemas-best-practices](ent-go-schemas-best-practices.md)
 * 📄 [entgo-orm-nil-dereference-go](entgo-orm-nil-dereference-go.md)
+* 📄 [floating-terminal-app-guide](floating-terminal-app-guide.md)
 * 📄 [go-commas-in-url](go-commas-in-url.md)
 * 📄 [kubectl-pod-logs](kubectl-pod-logs.md)
 * 📄 [logging-filters-in-go](logging-filters-in-go.md)
