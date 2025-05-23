@@ -1,4 +1,3 @@
-* 📂 [llmlogs](llmlogs)
 * 📂 [principles](principles)
 * 📂 [psych](psych)
 * 📂 [rituals](rituals)
