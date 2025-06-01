@@ -10,9 +10,50 @@ if (!directoryPath) {
   process.exit(1);
 }
 
+
+function processRoot(dirNode) {
+  let folders = getSortedItems(dirNode.path).filter(f => lstatSync(join(dirNode.path, f)).isDirectory());
+  let files = getSortedItems(dirNode.path).filter(f => !lstatSync(join(dirNode.path, f)).isDirectory());
+  let mdStr = '';
+
+  folders.forEach(folder => {
+    const dirName = dirNode.path.split("/").pop();
+    if (!excludedDirs.includes(dirName)) {
+      mdStr += `* 📂 [${folder}](${folder})\n`;
+    }
+  });
+
+  files.forEach(fnWithExt => {
+    const ext = extname(fnWithExt);
+    const fnWithoutExt = fnWithExt.replace(extname(fnWithExt), "");
+    const itemPath = join(dirNode.path, fnWithExt);
+
+    if (!excludedFiles.includes(fnWithExt) && !excludedExts.includes(ext)) {
+      if (splExts.includes(ext)) {
+        switch (ext) {
+          case ".ipynb":
+            const colabLink = colab_blob_url + itemPath;
+            mdStr += `* 📒 ${getExternalLink(colabLink, fnWithoutExt)}`;
+            break;
+          default:
+            mdStr += `* 📄 [${fnWithExt}](${fnWithExt})\n`;
+            break;
+        }
+      } else {
+        mdStr += `* 📄 [${fnWithoutExt}](${fnWithExt})\n`;
+      }
+    }
+  });
+
+  if (mdStr.length) {
+    writeFileSync(`${dirNode.path}/index.md`, mdStr);
+  }
+}
+
 function createFileIndices(tree) {
   try {
     if (tree.type === 'dir') {
+      processRoot(tree);
       tree.children.forEach(childTree => {
         if (childTree.type === 'dir') {
           let folders = getSortedItems(childTree.path).filter(f => lstatSync(join(childTree.path, f)).isDirectory());
@@ -57,7 +98,6 @@ function createFileIndices(tree) {
           createFileIndices(childTree);
         }
       });
-
     }
   } catch (err) {
     console.log("~ createFileIndices ~ err:", err)
