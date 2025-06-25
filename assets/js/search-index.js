@@ -38,7 +38,7 @@ function createSearchIndexDirs(dirPath) {
               this.add(entry);
               clearLine(process.stdout, 0);
               cursorTo(process.stdout, 0, null);
-              process.stdout.write(`🔍 Indexing: ${item}`);
+              process.stdout.write(`🔍 Indexing dir: ${itemPath}`);
             }
           } else {
             const item = basename(itemPath).replace('.md', '');
@@ -49,7 +49,7 @@ function createSearchIndexDirs(dirPath) {
                 this.add(entry);
                 clearLine(process.stdout, 0);
                 cursorTo(process.stdout, 0, null);
-                process.stdout.write(`🔍 Indexing: ${item}`);
+                process.stdout.write(`🔍 Indexing file: ${itemPath}`);
               }
             }
           }
