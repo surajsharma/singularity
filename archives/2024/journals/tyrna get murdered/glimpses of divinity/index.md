@@ -14,4 +14,3 @@
 * 📄 [9 wall street sannyas and service rendered](9 wall street sannyas and service rendered.md)
 * 📄 [attunement](attunement.md)
 * 📄 [definitions](definitions.md)
-* 📄 [outline](outline.md)
