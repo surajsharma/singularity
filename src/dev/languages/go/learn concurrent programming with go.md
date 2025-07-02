@@ -1,0 +1,1 @@
+- https://www.goodreads.com/book/show/133488053-learn-concurrent-programming-with-go
