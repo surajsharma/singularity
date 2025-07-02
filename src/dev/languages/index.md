@@ -1,5 +1,6 @@
 * 📂 [asm-re](asm-re)
 * 📂 [c](c)
 * 📂 [compiler](compiler)
+* 📂 [go](go)
 * 📂 [lisp&co](lisp&co)
 * 📂 [rust](rust)
