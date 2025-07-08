@@ -2,4 +2,3 @@
 * 📂 [02. empires of transcendent machines](02. empires of transcendent machines)
 * 📂 [03. the manifest and the cargo](03. the manifest and the cargo)
 * 📄 [00. attunement](00. attunement.md)
-* 📄 [cover](cover.jpeg)
