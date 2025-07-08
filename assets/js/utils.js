@@ -48,21 +48,45 @@ export function getExternalLink(link, text) {
     return `<a href="${link}" target="_blank">${text}</a> ↗️\n`
 }
 
+
 export function getSortedItems(path) {
-    const items = readdirSync(path).sort((a, b) => {
-        const isFileA = statSync(join(path, a)).isFile();
-        const isFileB = statSync(join(path, b)).isFile();
-        // Folders first
-        if (isFileA && !isFileB) {
-            return 1;
-        } else if (!isFileA && isFileB) {
-            return -1;
-        }
-        // Then sort alphabetically
-        return a.localeCompare(b);
+    const items = readdirSync(path);
+
+    const withMeta = items.map(name => {
+        const fullPath = join(path, name);
+        const isFile = statSync(fullPath).isFile();
+
+        const match = name.match(/^(\d+)[^\d]?/); // leading number
+        const hasNumericPrefix = !!match;
+        const numericPrefix = hasNumericPrefix ? parseInt(match[1], 10) : null;
+
+        return { name, isFile, hasNumericPrefix, numericPrefix };
     });
-    return items;
+
+    const folders = withMeta.filter(i => !i.isFile);
+    const allFoldersHaveNumericPrefix = folders.length > 0 && folders.every(f => f.hasNumericPrefix);
+
+    withMeta.sort((a, b) => {
+        // folders before files
+        if (!a.isFile && b.isFile) return -1;
+        if (a.isFile && !b.isFile) return 1;
+
+        // numeric prefix sort for folders
+        if (
+            allFoldersHaveNumericPrefix &&
+            !a.isFile && !b.isFile &&
+            a.hasNumericPrefix && b.hasNumericPrefix
+        ) {
+            return a.numericPrefix - b.numericPrefix;
+        }
+
+        // fallback: alphabetical
+        return a.name.localeCompare(b.name);
+    });
+
+    return withMeta.map(i => i.name);
 }
+
 
 export function getEmojis(str) {
     const regex = /<a?:.+?:\d{18}>|\p{Extended_Pictographic}/gu;

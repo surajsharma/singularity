@@ -10,60 +10,68 @@ if (!directoryPath) {
   process.exit(1);
 }
 
-
 function createFileIndices(tree) {
   try {
-    if (tree.type !== 'dir') return;
+    if (tree.type === 'dir') {
+      tree.children.forEach(childTree => {
+        if (childTree.type === 'dir') {
+          let folders = getSortedItems(childTree.path).filter(f => lstatSync(join(childTree.path, f)).isDirectory());
+          let files = getSortedItems(childTree.path).filter(f => !lstatSync(join(childTree.path, f)).isDirectory());
+          let mdStr = '';
 
-    let folders = getSortedItems(tree.path).filter(f => lstatSync(join(tree.path, f)).isDirectory());
-    let files = getSortedItems(tree.path).filter(f => !lstatSync(join(tree.path, f)).isDirectory());
-    let mdStr = '';
+          folders.sort((a, b) => {
+            const aMatch = a.match(/^(\d+)/);
+            const bMatch = b.match(/^(\d+)/);
+            if (aMatch && bMatch) {
+              return parseInt(aMatch[1], 10) - parseInt(bMatch[1], 10);
+            }
+            return a.localeCompare(b);
+          });
+          
+          folders.forEach(folder => {
+            const dirName = childTree.path.split("/")[childTree.path.split("/").length - 1];
+            if (!excludedDirs.includes(dirName)) {
+              mdStr += `* 📂 [${folder}](${folder})\n`;
+            }
+          });
 
-    folders.forEach(folder => {
-      const dirName = tree.path.split("/").pop();
-      if (!excludedDirs.includes(dirName)) {
-        mdStr += `* 📂 [${folder}](${folder})\n`;
-      }
-    });
+          files.forEach(fnWithExt => {
+            const ext = extname(fnWithExt);
+            const fnWithoutExt = fnWithExt.replace(extname(fnWithExt), "");
+            const itemPath = join(childTree.path, fnWithExt);
 
-    files.forEach(fnWithExt => {
-      const ext = extname(fnWithExt);
-      const fnWithoutExt = fnWithExt.replace(ext, "");
-      const itemPath = join(tree.path, fnWithExt);
+            if (!excludedFiles.includes(fnWithExt) && !excludedExts.includes(ext)) {
+              if (splExts.includes(ext)) {
+                switch (ext) {
+                  case ".ipynb":
+                    const colabLink = colab_blob_url + itemPath;
+                    mdStr += `* 📒 ${getExternalLink(colabLink, fnWithoutExt)}`;
+                    break;
+                  default:
+                    mdStr += `* 📄 [${fnWithExt}](${fnWithExt})\n`;
+                    break;
+                }
+              } else {
+                mdStr += `* 📄 [${fnWithoutExt}](${fnWithExt})\n`;
+              }
+            }
+          })
 
-      if (!excludedFiles.includes(fnWithExt) && !excludedExts.includes(ext)) {
-        if (splExts.includes(ext)) {
-          switch (ext) {
-            case ".ipynb":
-              const colabLink = colab_blob_url + itemPath;
-              mdStr += `* 📒 ${getExternalLink(colabLink, fnWithoutExt)}`;
-              break;
-            default:
-              mdStr += `* 📄 [${fnWithExt}](${fnWithExt})\n`;
-              break;
+          if (mdStr.length) {
+            writeFileSync(`${childTree.path}/index.md`, mdStr, function (err) {
+              if (err) throw err;
+            });
           }
-        } else {
-          mdStr += `* 📄 [${fnWithoutExt}](${fnWithExt})\n`;
+
+          createFileIndices(childTree);
         }
-      }
-    });
+      });
 
-    if (mdStr.length) {
-      writeFileSync(`${tree.path}/index.md`, mdStr);
     }
-
-    // recurse into subdirectories
-    tree.children.forEach(childTree => {
-      if (childTree.type === 'dir') {
-        createFileIndices(childTree);
-      }
-    });
-
   } catch (err) {
-    console.log("~ createFileIndices ~ err:", err);
+    console.log("~ createFileIndices ~ err:", err)
     process.exitCode = 1;
   }
 }
-
 
 createFileIndices(buildDirectoryTree(directoryPath));
