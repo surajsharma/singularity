@@ -15,8 +15,10 @@ function createFileIndices(tree) {
     if (tree.type === 'dir') {
       tree.children.forEach(childTree => {
         if (childTree.type === 'dir') {
+
           let folders = getSortedItems(childTree.path).filter(f => lstatSync(join(childTree.path, f)).isDirectory());
           let files = getSortedItems(childTree.path).filter(f => !lstatSync(join(childTree.path, f)).isDirectory());
+
           let mdStr = '';
 
           folders.sort((a, b) => {
