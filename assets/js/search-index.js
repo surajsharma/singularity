@@ -115,90 +115,77 @@ function createSearchIndexDirs(dirPath) {
 function createEmojiSearchIndex(tree) {
   try {
     const emojiIndex = {};
-    const processedPaths = new Set(); // Prevent duplicate processing
     
-    function processTree(node) {
-      if (node.type === 'dir' && node.children) {
-        node.children.forEach(child => {
-          const childPath = child.path;
-          
-          // Skip if already processed
-          if (processedPaths.has(childPath)) {
-            return;
-          }
-          processedPaths.add(childPath);
-          
-          // Process directory name
-          if (child.type === 'dir') {
-            const emojisInDirName = getEmojis(child.name);
-            const indexPath = join(childPath, "index.md");
-            
-            emojisInDirName.forEach(emoji => {
-              const unicode = emoji.codePointAt(0).toString(16);
-              if (!emojiIndex[unicode]) {
-                emojiIndex[unicode] = new Set();
-              }
-              emojiIndex[unicode].add(indexPath);
-            });
-            
-            // Recursively process subdirectories
-            processTree(child);
-          }
-          
-          // Process file
-          if (child.type === 'file') {
-            const ext = extname(child.name);
-            const filePath = join(child.path || dirname(childPath), child.name);
-            
-            // Process emojis in filename
-            const emojisInFileName = getEmojis(child.name);
-            emojisInFileName.forEach(emoji => {
-              const unicode = emoji.codePointAt(0).toString(16);
-              if (!emojiIndex[unicode]) {
-                emojiIndex[unicode] = new Set();
-              }
-              emojiIndex[unicode].add(filePath);
-            });
-            
-            // Process emojis in file content
-            if (!excludedExts.includes(ext)) {
-              try {
-                let content = readFileAsStringSync(filePath);
-                
-                // Limit content size for emoji processing
-                if (content.length > 50000) {
-                  content = content.substring(0, 50000);
-                }
-                
-                const emojisInFile = removeDuplicates(getEmojis(content));
-                emojisInFile.forEach(emoji => {
-                  const unicode = emoji.codePointAt(0).toString(16);
-                  if (!emojiIndex[unicode]) {
-                    emojiIndex[unicode] = new Set();
-                  }
-                  emojiIndex[unicode].add(filePath);
-                });
-              } catch (readError) {
-                console.warn(`⚠️  Could not read file for emoji processing: ${filePath}`);
-              }
-            }
-          }
-        });
+    function addEmojiToIndex(unicode, filePath) {
+      if (!emojiIndex[unicode]) {
+        emojiIndex[unicode] = new Set();
       }
+      emojiIndex[unicode].add(filePath);
     }
     
-    processTree(tree);
+    if (tree.type === 'dir') {
+      tree.children.forEach(childTree => {
+        if (childTree.type === 'dir') {
+          const currentDirPath = childTree.path;
+          const children = childTree.children;
+
+          children.forEach((child) => {
+            // Process dir name
+            if (child.type === 'dir') {
+              const emojisInDirName = getEmojis(child.name);
+              emojisInDirName.forEach((emoji) => {
+                const unicode = emoji.codePointAt(0).toString(16);
+                const filePath = join(currentDirPath, "index.md");
+                addEmojiToIndex(unicode, filePath);
+              });
+            }
+
+            // Process file name            
+            if (child.type === 'file') {
+              const emojisInFileName = getEmojis(child.name);
+              const ext = extname(child.name);
+
+              emojisInFileName.forEach((emoji) => {
+                const unicode = emoji.codePointAt(0).toString(16);
+                const filePath = join(currentDirPath, child.name);
+                addEmojiToIndex(unicode, filePath);
+              });
+
+              // Process file contents
+              if (!excludedExts.includes(ext)) {
+                try {
+                  const content = readFileAsStringSync(join(childTree.path, child.name));
+                  const emojisInFile = removeDuplicates(getEmojis(content));
+                  const filePath = join(childTree.path, child.name);
+                  emojisInFile.forEach((emoji) => {
+                    const unicode = emoji.codePointAt(0).toString(16);
+                    addEmojiToIndex(unicode, filePath);
+                  });
+                } catch (readError) {
+                  console.warn(`⚠️  Could not read file for emoji processing: ${join(childTree.path, child.name)}`);
+                }
+              }
+            }
+          });
+          
+          // Recursively process subdirectories
+          createEmojiSearchIndex(childTree);
+        }
+      });
+    }
     
-    // Convert Sets to Arrays for JSON serialization
-    const finalIndex = {};
-    Object.keys(emojiIndex).forEach(unicode => {
-      finalIndex[unicode] = Array.from(emojiIndex[unicode]);
-    });
-    
-    const indexPath = join(searchDir, 'emoji-search.json');
-    writeFileSync(indexPath, JSON.stringify(finalIndex));
-    
-    console.log(`✅ Emoji search index created: ${indexPath} (${Object.keys(finalIndex).length} emojis)`);
+    // Convert Sets to Arrays and write to file (only on initial call)
+    if (tree.path === directoryPath) {
+      const finalIndex = {};
+      Object.keys(emojiIndex).forEach(unicode => {
+        finalIndex[unicode] = Array.from(emojiIndex[unicode]);
+      });
+      
+      const indexPath = join(searchDir, 'emoji-search.json');
+      writeFileSync(indexPath, JSON.stringify(finalIndex));
+      
+      console.log(`✅ Emoji search index created: ${indexPath} (${Object.keys(finalIndex).length} emojis)`);
+    }
     
   } catch (err) {
     console.error("Error creating emoji search index:", err);
