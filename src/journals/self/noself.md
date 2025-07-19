@@ -10,8 +10,10 @@
 
 - 50% is default and default is sadness, one needs very little for 51% 
 
-- 
-
+- a time-travelling versioning system that :
+  - can be "replayed", step through diffs incrementally 
+  - reverse-step
+  - whole file or given ln numbers ("zen mode")
 
 
 ### Feb
