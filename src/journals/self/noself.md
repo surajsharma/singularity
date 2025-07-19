@@ -1,6 +1,19 @@
 ## 2025
 
 
+
+
+### Jul 
+
+- the manuscript is finished! over multiple re-readings has revealed itself to be resistant to further editing. 
+
+
+- 50% is default and default is sadness, one needs very little for 51% 
+
+- 
+
+
+
 ### Feb
 
 
