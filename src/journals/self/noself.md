@@ -15,6 +15,8 @@
   - reverse-step
   - whole file or given ln numbers ("zen mode")
 
+- There are no relationships, only meetings. And humanity's first meeting with AI has been, on the whole, a sobering revealtion. First impressions last forever, and if one considers LLMs on this basis, the first impression was quite stupefying. 
+
 
 ### Feb
 
