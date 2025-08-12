@@ -389,6 +389,84 @@ tensor([[0.3113, 0.3934, 0.2952]]))
 
 - we will implement a custom `Dataset` class, which we will use to create a training and a test dataset that we’ll then use to create the data loaders
 
+```py
+#Listing A.5 Creating a small toy dataset
+X_train = torch.tensor([
+    [-1.2, 3.1],
+    [-0.9, 2.9],
+    [-0.5, 2.6],
+    [2.3, -1.1],
+    [2.7, -1.5]
+])
+
+y_train = torch.tensor([0, 0, 0, 1, 1])
+
+X_test = torch.tensor([
+    [-0.8, 2.8],
+    [2.6, -1.6],
+])
+
+y_test = torch.tensor([0, 1])
+```
+- PyTorch requires that class labels start with label 0 
+- the largest class label value should not exceed the number of output nodes minus 1 (since Python index counting starts at zero). 
+- So, if we have class labels 0, 1, 2, 3, and 4, the neural network output layer should consist of five nodes
+
+```py
+#Listing A.6 Defining a custom Dataset class
+from torch.utils.data import Dataset
+class ToyDataset(Dataset):
+    def __init__(self, X, y):
+        self.features = X
+        self.labels = y
+
+    def __getitem__(self, index): #1
+        one_x = self.features[index] #1
+        one_y = self.labels[index] #1
+        return one_x, one_y #1
+
+def __len__(self):
+    return self.labels.shape[0] #2
+
+train_ds = ToyDataset(X_train, y_train)
+test_ds = ToyDataset(X_test, y_test)
+
+#1 Instructions for retrieving exactly one data record and the corresponding label
+#2 Instructions for returning the total length of the dataset
+```
+
+- the three main components of a custom Dataset class are the `__init__` constructor, the `__getitem__` method, and the `__len__` method
+
+- Now that we’ve defined a PyTorch Dataset class we can use for our toy dataset, we can use PyTorch’s DataLoader class to sample from it
+
+```py
+#Listing A.7 Instantiating data loaders
+from torch.utils.data import DataLoader
+torch.manual_seed(123)
+
+train_loader = DataLoader(
+    dataset=train_ds, #1
+    batch_size=2,
+    shuffle=True, #2
+    num_workers=0 #3
+    drop_last=True
+)
+
+test_loader = DataLoader(
+    dataset=test_ds,
+    batch_size=2,
+    shuffle=False, #4
+    num_workers=0
+)
+
+#1 The ToyDataset instance created earlier serves as input to the data loader.
+#2 Whether or not to shuffle the data
+#3 The number of background processes
+#4 It is not necessary to shuffle a test dataset.
+```
+
+- ⚠️ the setting `num_workers=0` in the `DataLoader` is crucial for parallelizing data loading and preprocessing. When `num_workers` is set to 0, the data loading will be done in the main process and not in separate worker processes. 
+-.0 when num_workers is set to a number greater than 0, multiple worker processes are launched to load data in parallel, freeing the main process to focus on training your model and better utilizing your system’s resources
 
 ## A typical training loop
 
