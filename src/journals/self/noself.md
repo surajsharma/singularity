@@ -1,6 +1,11 @@
 ## 2025
 
 
+### Aug 
+
+- around the time people start being jealous of poets... is time to leave the planet
+
+
 
 
 ### Jul 

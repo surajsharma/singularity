@@ -11,7 +11,6 @@
 * 📄 [go-race-conditions](go-race-conditions.md)
 * 📄 [gocui-pty-go](gocui-pty-go.md)
 * 📄 [jesus as a proxy](jesus as a proxy.md)
-* 📄 [jesus as a proxy.md:Zone](jesus as a proxy.md:Zone.Identifier)
 * 📄 [kubectl-pod-logs](kubectl-pod-logs.md)
 * 📄 [logging-filters-in-go](logging-filters-in-go.md)
 * 📄 [math-diffeomorphism](math-diffeomorphism.md)
