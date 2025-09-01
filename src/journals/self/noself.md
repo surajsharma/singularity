@@ -3,7 +3,12 @@
 
 ### Aug 
 
+<<<<<<< Updated upstream
 - around the time people start being jealous of poets... is time to leave the planet
+=======
+- NixOS on the dell was a victory, i was able to reclaim much space and power.
+
+>>>>>>> Stashed changes
 
 
 
