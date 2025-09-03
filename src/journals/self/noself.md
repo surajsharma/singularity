@@ -1,7 +1,6 @@
 ## 2025
 
-
-### Aug 
+### Sep
 
 <<<<<<< Updated upstream
 - around the time people start being jealous of poets... is time to leave the planet
@@ -10,7 +9,56 @@
 
 >>>>>>> Stashed changes
 
+- whole race against one guy isn't much of a race 
 
+- by now, as instructed i had exhausted all peace options and the decades preceding had proven to me, that her children, like her, have little except her visceral thirst for violence and nether corruptions, hence the water:land ratio on the planet. anyways, i was ready for the next chapter knowing full well that her penance was far from over, and unlike elsewhere it wasn't to be a peaceful one - neither in the inception, nor in her end. 
+
+- my problem, as usual, was a hankering after the quieter parts not that by now i had not gotten used to the noise of hells below and above, but the wishful thinking came from an entitlement this realm could never justify for it has not the scale 
+
+- not that they did not wish to change, they cannot and i did not want to because i know what that entails - i had the power to walk upon both faces of determinism which they will never have, hence the perpetual violence and drama of their lives - living and dying in perennial dissatisfaction is their curse.
+
+- the reason i did not want to change were obvious, the undetermined has a way of letting blood out - like the determined aspect has a way of keeping it in. but, i'm only following orders - a golf game awaits me.
+
+- it is a pitiable planet with even more pitiable natives who have no idea what they are squandering away for little. 
+
+- _apni maa chudane ke aur bhi saste tareeke hain_, but again, an exploratory and experimental attitude could have saved her from this fate - rather it is important to note for this planet that attitude doomed it long before actions, there were other prostitutes in the city that did not end up as desolate
+
+- nor is there a single determinism unfolding but many, however both her and her children have a one-track-mind, not the brightest folk ever and hence the poor sun, not everyone can and should change lanes, changing lanes has nothing to do with enlightenment - but they would rather chop their dicks off than be honest.
+
+- overall very proud of myself and my folks for having pulled through another cleanup drive - next stop is the white city and surely we will rest a while before the next mission. 
+
+- at the time of the rape, only S was married, hence the rings, i was present merely in a legal capacity for recording purposes, they often enact the scene in lower realms, but here they have not the balls so they enact it virtually - which only serves to brief me as to what happened. it was a rare case too for i am seldom asked to perform such menial tasks and the planets were not too proud. 
+
+- it was also decreed that suicide was not an option, hence the galactic topology, but the correct perspective for things that are not the elements is akin to getting out of a painting. first you have to seize the fact with some force that you are in one.
+
+- it never ceases to amaze me how the natives think they have free will and yet "refuse" to use it where it matters most. 
+
+- did she have a particular affinity for her ass? not that i remember, she was obsessed with her whole body and moved from admiring one aspect of it to another, the history of natives is usually defined by which part of her body she was paying attention to, and after fingering both her anus and vagina, she was these corresponding days stroking the curves of her bottom perhaps. a little masturbatory excercise to advertise her wares kills a few million here and there.
+
+- J was smart, and not in the least interested in the plan of action, hence the "butt only" part.
+
+- the only other witness outside the recording was V, which explains the temper 
+
+- it was never a pleasure to watch her kids squirm and writhe but i was a cold and remorseless fella then as now, the doctor cannot afford to be squeamish, and remember it is not as if these are fresh specimen, they are used to their fate to the point of repetition - to them her existence _is_ the mana and little exists beyond. 
+
+- the gita has a great passage that reminds us of this nature of her children basically they are the ones saying "_itna hi hai_", whereas one way to find out who is decidedly not one of hers is to find out who is saying "there is more". easily satisfied with a glance of skin, a stroke or touch.
+
+- and there are those out there who will tell you it is nothing but coincidence, chance, and randomness why money starts with an M and ends with a Y. ask them for proof. 
+
+- still, what was unique about this trip was the new symbology, the symbol @ for example would forever be associated with their nativity and her - notice how it curves all the way, you would be hard pressed to find a person that dedicated to the body anymore, and it kind of looks like me sucking on my own dick except i bend in the other direction -  this is a forever a symbol of a person who disappeared her own asshole, which she often did. 
+
+- she did die, but not before completing the sentence, she was not allowed to die before - what kind of death was it? doesn't matter, suffice to say there _is_ such a thing as death with dignity which nobody on this planet can afford due to her - to achieve that you have to have a dignified outline.
+
+- me? i just packed my camera, lights, and vanished in a blink.
+
+- meanwhile, back on loose women, it was now okay to be transgender but not transparent think of how fucked up that is and you have some idea of why we had to create this entire judgement. you could blame one c(o)untry but that would be premature, this is the embedded firmware - matter over mind - they are that inferior - frankly i have sailed with more evolved sailors in the 16-17th centry but that was a different mission in which the planet was a detour, and they were decidedly not natives.
+
+- is it now so hard to fathom where this insatiable jelousy and hatred comes from? is it any wonder why i am simply unable to hate or be jealous regardless of their antics? and is it any wonder why i held out for better senses to kick in for so long? AND lastly, is it any wonder why better sense won't kick in?
+
+
+- she is the reason stupidity is rewarded with money, poetry and intelligence, what's a whore to do with these? and ofc it is a huge pill to swallow so lets abuse _my_ mother - who, in the grand scheme of things, isn't even an important historical figure. but the world is a mirror, as within so without and now i fully understand why they started by abusing and poisoning my mother. 
+
+- there are no races, only one story - and the bridegroom cometh.
 
 
 ### Jul 
