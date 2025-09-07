@@ -2,9 +2,15 @@
 
 ### Sep
 
-- around the time people start being jealous of poets... is time to leave the planet
-- NixOS on the dell was a victory, i was able to reclaim much space and power.
 
+
+
+- #NixOS truly was a superior linux experience, did not feel like an utter waste of time like every other distro, not only does the debian fishing hat stands schooled, it makes arch look like choir boy being rubbed the wrong way!
+
+
+- around the time people start being jealous of poets... is time to leave the planet
+
+- #NixOS on the dell was a victory, i was able to reclaim much space and power.
 
 - whole race against one guy isn't much of a race 
 

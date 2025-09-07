@@ -2,6 +2,7 @@
 ### The idea: own a resource inside an object, and let the object’s lifetime manage the resource’s lifetime.
 
 - Resource = anything that must be acquired and released properly: memory, file handles, sockets, mutexes, DB connections, etc.
+
 - Acquisition happens in the constructor, release happens in the destructor.
 
 ### ✅ What RAII actually means
@@ -20,9 +21,9 @@
 
 - Reference counting is just one possible RAII strategy.
 
-- std::shared_ptr is the example: it uses RAII + refcount → last owner frees the resource.
+- `std::shared_ptr` is the example: it uses RAII + refcount → last owner frees the resource.
 
-- But std::unique_ptr is RAII too — no refcount at all, just one owner.
+- But `std::unique_ptr` is RAII too — no refcount at all, just one owner.
 
 ### 🚫 Garbage collection vs RAII
 
@@ -32,7 +33,7 @@
 
 ## So the essence is:
 
-> RAII turns “manual alloc/free” into “automatic acquire/release at scope exit,” without a collector.
+> RAII turns "manual alloc/free" into "automatic acquire/release at scope exit", without a collector.
 
 ### example w/file
 
