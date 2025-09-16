@@ -3,6 +3,16 @@
 ### Sep
 
 
+- forget the book the book is a vanity project, useful for no more than the 4-5 people that are ready at any given point, the book is no news, it is for you to hide and me to find.
+
+
+- my whole life i remained a contested yet divisive figure, that sort of thing leaves scars  
+
+
+- being "lucky" in an otherwise heartbreaking tale #ssf 
+
+
+- There was an evolving model of human behaviour emergent in me that worked on the primary duality of Priviledge/License this was too badass for the general public obviously too advanced..... things could well retain their transactional attributes necessary for work to get done so for example, the Priviledge to hangout with the "paypal mafia" consisted in the license they had to kill me anytime. 
 
 
 - #NixOS truly was a superior linux experience, did not feel like an utter waste of time like every other distro, not only does the debian fishing hat stands schooled, it makes arch look like choir boy being rubbed the wrong way!
