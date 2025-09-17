@@ -1,3 +1,4 @@
+* 📂 [competitive](competitive)
 * 📄 [anagram](anagram.md)
 * 📄 [array-rotation](array-rotation.md)
 * 📄 [find-avg-of-subarray](find-avg-of-subarray.md)
