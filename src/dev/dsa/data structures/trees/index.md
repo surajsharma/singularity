@@ -1,2 +1,0 @@
-* 📂 [competitive](competitive)
-* 📂 [general](general)
