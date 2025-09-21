@@ -1,6 +1,22 @@
 ## 20. [Valid Parentheses](https://leetcode.com/problems/valid-parentheses/)
 
-### O(n*n)
+### O(n) using proper stack
+
+```python
+def isValid(s) -> bool:
+	stack = []
+	mapping = {')':'(','[':']','{':'}'}
+
+	for char in s:
+		if char in mapping:
+			if not stack or stack.pop() != mapping[char]:
+				return False
+		else:
+			stack.append(char)
+	return len(stack) == 0
+```
+
+### O(n*n) using string concatanation
 
 ```python
 #!/usr/bin/env python3
