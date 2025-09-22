@@ -3,6 +3,36 @@
 ### Sep
 
 
+- alcohol, like war, is an overdetermination, violence is a fool's errand i can't kill enough spiders, just the ones that annoy me 
+
+
+- it was heartening to see palestine finally being recognized
+
+
+- judaism is strongly matriarchal on the backend, overcompensating for the strong frontend but that's why they are oppressed.
+
+
+- 12 is gay, 21 is straight, inside the mother you are two, outside her one 
+
+
+- quit-without-quitting
+
+
+- my whole body had turned into a singular ear 
+
+
+- through my woes is the way into the city of lost children 
+
+
+- overall i was once again vindicated, a 10 day no-smoking excursion revealed it was easier now to quit bidis than be done with one's libido, so i was right in taming the stronger horse first. #wholedifferentballgame
+
+
+- i had in my ears a superlative kind of music, decay sings as one, yet two, but never both at the same time and i found myself wondering whether i could make it sing in unison. every note a song unto itself and the whole thing lasts about less than a second. why it passes the turing test is due to its accuracy and timing, which unlike the overdetermined feedback from the goblins, isn't yet set in stone that much. why was all this so painful for k? not that it isn't for me, but somehow between all my earthly anguish and misgivings, it appears as a relief.
+
+
+- i never understood the lure of material power, power to do what exactly? wipe thine ass? a schoolteacher has absolute power, yet the students turn out little better. all power is faux power, remember that in a determinism power is also an illusion, albeit some of us are unable to shake off the price tag with that power.
+
+
 - forget the book the book is a vanity project, useful for no more than the 4-5 people that are ready at any given point, the book is no news, it is for you to hide and me to find.
 
 
