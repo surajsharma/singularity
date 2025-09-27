@@ -1,5 +1,3 @@
-
-
 let index = null;
 
 // search modifiers
@@ -14,25 +12,33 @@ const searchResults = gel('search-results-container');
 const searchVersion = gel('search-version');
 
 
-async function emojiSearch(unicode) {
-
+async function emojiSearch(searchTerm) {
     const version = getIddbVersion();
 
+    // Match both Discord-style custom emoji <a:xxx:123456789012345678>
+    // and standard Unicode pictographic emojis
     const regex = /<a?:.+?:\d{18}>|\p{Extended_Pictographic}/gu;
-    const emojisInSearchTerm = unicode.match(regex) || [];
+    const emojisInSearchTerm = searchTerm.match(regex) || [];
 
     const data = await getIddb("emo", version);
-    const lookup = data[0].value;
+    const lookup = data[0].value; // this is your emoji-search.json mapping
 
     let result = [];
 
     emojisInSearchTerm.forEach(emoji => {
-        if (emoji in lookup) {
-            result.push(lookup[emoji])
-        }
-    })
+        // Convert emoji char → hex code for lookup
+        const unicode = emoji.codePointAt(0).toString(16);
 
-    return result.flat(Infinity).filter(result => archives ? result.startsWith('archives') : !result.startsWith('archives'));
+        if (lookup[unicode]) {
+            result.push(lookup[unicode]);
+        }
+    });
+
+    return result
+        .flat(Infinity)
+        .filter(result => 
+            archives ? result.startsWith('archives') : !result.startsWith('archives')
+        );
 }
 
 async function debouncedSearch(searchTerm) {
