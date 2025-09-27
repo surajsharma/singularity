@@ -1,2 +1,1 @@
 * 📂 [array](array)
-* 📂 [strings](strings)

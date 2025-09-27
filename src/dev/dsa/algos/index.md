@@ -1,5 +1,4 @@
 * 📂 [other](other)
 * 📂 [searches](searches)
-* 📂 [searches ](searches )
 * 📂 [sorts](sorts)
 * 📂 [traversal](traversal)
