@@ -2,31 +2,9 @@
 
 ### O(n)
 
+#### naive, iterative, looping, uses dummy nodes
 
-```rust 
-impl Solution {
-    pub fn merge_two_lists(list1: Option<Box<ListNode>>, list2: Option<Box<ListNode>>) -> Option<Box<ListNode>> {
-        match (list1, list2) {
-            (None, None) => None,
-            (Some(l1), None) => Some(l1),
-            (None, Some(l2)) => Some(l2),
-            (Some(mut l1), Some(mut l2)) => {
-                if l1.val <= l2.val {
-                    l1.next = Self::merge_two_lists(l1.next, Some(l2));
-                    Some(l1)
-                } else {
-                    l2.next = Self::merge_two_lists(Some(l1), l2.next);
-                    Some(l2)
-                }
-            }
-        }
-    }
-}
-
-```
-
-```js 
-
+```javascript 
 var mergeTwoLists = function(list1, list2) {
 
     let newHead = dummyHead = new ListNode(); 
@@ -45,20 +23,15 @@ var mergeTwoLists = function(list1, list2) {
     if(list1){
         dummyHead.next = list1;
     }
-
     if(list2){
         dummyHead.next = list2;
     }    
 
     return newHead.next;
 };
-
 ```
 
-
-
 ```python
-
 # Definition for singly-linked list.
 # class ListNode:
 #     def __init__(self, val=0, next=None):
@@ -81,6 +54,48 @@ class Solution:
         dummyHead.next = list1 if list1 else list2 
 
         return newHead.next
+```
+
+#### recursive
+
+- unoptimised tail-recursion in python (1000 calls), but we can try
+
+```python
+class Solution:
+    def mergeTwoLists(self, list1: Optional[ListNode], list2: Optional[ListNode]) -> Optional[ListNode]:
+
+        if not list1:
+            return list2
+
+        if not list2:
+            return list1 
+
+        if list1.val <= list2.val:
+            list1.next = self.mergeTwoLists(list1.next, list2)
+            return list1
+        else:
+            list2.next = self.mergeTwoLists(list1, list2.next)
+            return list2
+```
+```rust 
+impl Solution {
+    pub fn merge_two_lists(list1: Option<Box<ListNode>>, list2: Option<Box<ListNode>>) -> Option<Box<ListNode>> {
+        match (list1, list2) {
+            (None, None) => None,
+            (Some(l1), None) => Some(l1),
+            (None, Some(l2)) => Some(l2),
+            (Some(mut l1), Some(mut l2)) => {
+                if l1.val <= l2.val {
+                    l1.next = Self::merge_two_lists(l1.next, Some(l2));
+                    Some(l1)
+                } else {
+                    l2.next = Self::merge_two_lists(Some(l1), l2.next);
+                    Some(l2)
+                }
+            }
+        }
+    }
+}
 ```
 
 - [[two pointers]]
