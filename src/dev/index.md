@@ -7,4 +7,4 @@
 * 📂 [philosophy](philosophy)
 * 📂 [qa](qa)
 * 📂 [web](web)
-* 📂 [web3](web3)
+* 📂 [web3](web3)🧮

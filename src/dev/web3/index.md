@@ -1,6 +1,0 @@
-* 📂 [circom-zk](circom-zk)
-* 📂 [solidity](solidity)
-* 📂 [web3js](web3js)
-* 📄 [cryptojs](cryptojs.md)
-* 📄 [resources](resources.md)
-* 📄 [web2-web3](web2-web3.md)
