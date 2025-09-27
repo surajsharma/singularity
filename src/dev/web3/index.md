@@ -1,5 +1,4 @@
 * 📂 [circom-zk](circom-zk)
-* 📂 [data for web3](data for web3)
 * 📂 [solidity](solidity)
 * 📂 [web3js](web3js)
 * 📄 [cryptojs](cryptojs.md)
