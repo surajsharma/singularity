@@ -159,6 +159,8 @@ function createEmojiSearchIndex(tree) {
                   const filePath = join(childTree.path, child.name);
                   emojisInFile.forEach((emoji) => {
                     const unicode = emoji.codePointAt(0).toString(16);
+                    console.log("🚀 ~ createEmojiSearchIndex ~ unicode:", unicode)
+                    
                     addEmojiToIndex(unicode, filePath);
                   });
                 } catch (readError) {
