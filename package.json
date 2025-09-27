@@ -11,7 +11,7 @@
     "index": "./scripts/build-nav-indices.sh",
     "sindex": "./scripts/build-search-indices.sh",
     "checksum": "./scripts/update-checksums.sh",
-    "fres..h": "npm run clean && npm run index && npm run sindex && npm run checksum"
+    "fresh": "npm run clean && npm run index && npm run sindex && npm run checksum"
   },
   "keywords": [],
   "author": "suraj@evenzero.in",
