@@ -112,15 +112,13 @@ function createSearchIndexDirs(dirPath) {
   }
 }
 
-function createEmojiSearchIndex(tree) {
+function createEmojiSearchIndex(tree, emojiIndex = {}) {
   try {
-    const emojiIndex = {};
-    
     function addEmojiToIndex(unicode, filePath) {
       if (!emojiIndex[unicode]) {
-        emojiIndex[unicode] = new Set();
+        emojiIndex[unicode] = [];
       }
-      emojiIndex[unicode].add(filePath);
+      emojiIndex[unicode].push(filePath);
     }
     
     if (tree.type === 'dir') {
@@ -155,12 +153,10 @@ function createEmojiSearchIndex(tree) {
               if (!excludedExts.includes(ext)) {
                 try {
                   const content = readFileAsStringSync(join(childTree.path, child.name));
-                  const emojisInFile = removeDuplicates(getEmojis(content));
+                  const emojisInFile = getEmojis(content);
                   const filePath = join(childTree.path, child.name);
                   emojisInFile.forEach((emoji) => {
-                    const unicode = emoji.codePointAt(0).toString(16);
-                    console.log("🚀 ~ createEmojiSearchIndex ~ unicode:", unicode)
-                    
+                    const unicode = emoji.codePointAt(0).toString(16);                    
                     addEmojiToIndex(unicode, filePath);
                   });
                 } catch (readError) {
@@ -170,23 +166,40 @@ function createEmojiSearchIndex(tree) {
             }
           });
           
-          // Recursively process subdirectories
-          createEmojiSearchIndex(childTree);
+          // Recursively process subdirectories - pass the same emojiIndex
+          createEmojiSearchIndex(childTree, emojiIndex);
         }
       });
     }
     
-    // Convert Sets to Arrays and write to file (only on initial call)
+    // Write to file (only on initial call)
     if (tree.path === directoryPath) {
-      const finalIndex = {};
+      const indexPath = join(searchDir, 'emoji-search.json');
+      let existingIndex = {};
+      
+      // Load existing index if it exists
+      try {
+        const existingContent = readFileSync(indexPath, 'utf8');
+        existingIndex = JSON.parse(existingContent);
+      } catch (err) {
+        // File doesn't exist or is invalid, start fresh
+        console.log('Starting fresh emoji index...');
+      }
+      
+      // Merge current index with existing index
       Object.keys(emojiIndex).forEach(unicode => {
-        finalIndex[unicode] = Array.from(emojiIndex[unicode]);
+        if (existingIndex[unicode]) {
+          // Append to existing array
+          existingIndex[unicode] = existingIndex[unicode].concat(emojiIndex[unicode]);
+        } else {
+          // Add new emoji entry
+          existingIndex[unicode] = emojiIndex[unicode];
+        }
       });
       
-      const indexPath = join(searchDir, 'emoji-search.json');
-      writeFileSync(indexPath, JSON.stringify(finalIndex));
+      writeFileSync(indexPath, JSON.stringify(existingIndex));
       
-      console.log(`✅ Emoji search index created: ${indexPath} (${Object.keys(finalIndex).length} emojis)`);
+      console.log(`✅ Emoji search index updated: ${indexPath} (${Object.keys(existingIndex).length} emojis)`);
     }
     
   } catch (err) {
