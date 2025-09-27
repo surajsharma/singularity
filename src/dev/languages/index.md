@@ -2,5 +2,8 @@
 * 📂 [c&co](c&co)
 * 📂 [compiler](compiler)
 * 📂 [go](go)
+* 📂 [js](js)
 * 📂 [lisp&co](lisp&co)
 * 📂 [rust](rust)
+* 📂 [ts](ts)
+* 📂 [wasm](wasm)

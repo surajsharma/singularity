@@ -1,5 +1,6 @@
+* 📂 [db](db)
 * 📂 [docker](docker)
 * 📂 [k8s](k8s)
-* 📂 [networking](networking)
+* 📂 [system design](system design)
 * 📄 [glossary](glossary.md)
 * 📄 [software architect's hit list](software architect's hit list.md)

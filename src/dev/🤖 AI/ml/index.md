@@ -1,2 +1,1 @@
-* 📂 [agents](agents)
 * 📂 [practice](practice)

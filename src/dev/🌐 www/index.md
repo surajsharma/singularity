@@ -1,3 +1,2 @@
-* 📂 [js](js)
-* 📂 [ts](ts)
-* 📂 [wasm](wasm)
+* 📂 [client](client)
+* 📂 [server](server)
