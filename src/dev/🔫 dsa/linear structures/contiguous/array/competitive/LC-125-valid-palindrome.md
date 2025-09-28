@@ -1,4 +1,4 @@
-## 125. [Valid Palindrome II](https://leetcode.com/problems/valid-palindrome-ii/)
+## 125. [✅ Valid Palindrome](https://leetcode.com/problems/valid-palindrome/)
 
 ### O(n)
 
@@ -19,4 +19,17 @@ class Solution:
         r = ''.join(ch for ch in r if ch.isalnum())
         return r == r[::-1]
 
+```
+
+```rust 
+impl Solution {
+    pub fn is_palindrome(s: String) -> bool {
+        let filtered: String = s.chars()
+            .filter(|c| c.is_alphanumeric())
+            .map(|c| c.to_ascii_lowercase())
+            .collect();
+
+        filtered.chars().eq(filtered.chars().rev())        
+    }
+}
 ```
