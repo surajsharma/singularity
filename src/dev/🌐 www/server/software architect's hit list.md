@@ -7,7 +7,7 @@
         - transpiled  eg ts
         - generated eg kotlin
     
-- `Code reuse` across platforms (server vs web vs mobile)
+- `Code reuse` across platforms (server vs wePb vs mobile)
 
 - `Early error detection` (compile-time vs runtime error detection, breadth of validation)
 

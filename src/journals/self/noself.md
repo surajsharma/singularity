@@ -2,6 +2,8 @@
 
 ### Sep
 
+- there are only two perspectives, "brain-in-a-vat" and "pilgrimage", if the pilgrimage is successful you can control _all_ brains-in-vats but not the other way around - Pilgrimage is the ONLY way out of BIAV. Which means it is possible to start a pilgrimage _inside_ a BIAV, though there are no guarantees of success. Because all pilgrimages start in a BIAV (which is the first pilgrimage or GOD's pilgrimage) whatever happens is largely determined, thus only a rare individual wakes up. what happens if the BsIAV suspect something fishy? one may get crucified, or get the occasional raised eyebrow - it depends on the iterations/IR. 
+
 
 - alcohol, like war, is an overdetermination, violence is a fool's errand i can't kill enough spiders, just the ones that annoy me 
 

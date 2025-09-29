@@ -1,4 +1,4 @@
-## 1. [✅ Invert binary tree](https://leetcode.com/problems/invert-binary-tree)
+## 226. [✅ Invert binary tree](https://leetcode.com/problems/invert-binary-tree)
 
 ### O(n)
 
@@ -20,6 +20,4 @@ class Solution:
             invert(root.right)
         invert(root)
         return root
-```
-```
 ```

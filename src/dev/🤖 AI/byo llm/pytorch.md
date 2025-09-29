@@ -6,6 +6,7 @@
 - [Tensor ops](#tensor-ops)
   - [Precision / Tensor Data Types](#precision--tensor-data-types)
 - [Autograd - PyTorch’s automatic differentiation engine](#autograd---pytorchs-automatic-differentiation-engine)
+  - [Gradients are required when training neural networks via the popular backpropagation algorithm, which can be considered an implementation of the chain rule from calculus for neural networks.](#gradients-are-required-when-training-neural-networks-via-the-popular-backpropagation-algorithm-which-can-be-considered-an-implementation-of-the-chain-rule-from-calculus-for-neural-networks)
   - [Partial Derivatives And Gradients](#partial-derivatives-and-gradients)
 - [Implementing multilayer/deep neural networks](#implementing-multilayerdeep-neural-networks)
 - [Setting up efficient data loaders](#setting-up-efficient-data-loaders)
@@ -116,7 +117,7 @@ loss = F.binary_cross_entropy(a, y)
 
 - This is useful if we want to compute gradients. 
   
-- Gradients are required when training neural networks via the popular backpropagation algorithm, which can be considered an implementation of the chain rule from calculus for neural networks.
+### Gradients are required when training neural networks via the popular backpropagation algorithm, which can be considered an implementation of the [chain rule](https://youtu.be/wl1myxrtQHQ?si=lTuudVdxX_XygM4V) from calculus for neural networks.
 
 ![alt text](pytorch-5.png)
 
