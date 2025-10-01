@@ -1,4 +1,4 @@
-## 242. [Valid Anagram](https://leetcode.com/problems/valid-anagram/)
+## 242. [✅ Valid Anagram](https://leetcode.com/problems/valid-anagram/)
 
 
 ```javascript
@@ -20,10 +20,23 @@ var isAnagram = function (s, t) {
 ```
 
 
-```javascript
-const isAnagram218ms = (s, t) => {
-	s = s.split('').sort().join('')
-	t = t.split('').sort().join('')
-	return s == t
-}
+```python
+class Solution:
+    def isAnagram(self, s: str, t: str) -> bool:
+        s1 = s.replace(' ','').lower()
+        t1 = t.replace(' ','').lower()
+        return sorted(s1) == sorted(t1)
+```
+
+
+### O(n)
+
+```python
+from collections import Counter
+
+class Solution:
+    def isAnagram(self, s: str, t: str) -> bool:
+        s1 = s.replace(' ','').lower()
+        t1 = t.replace(' ','').lower()
+        return Counter(s1) == Counter(t1)
 ```
