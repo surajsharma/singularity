@@ -48,7 +48,7 @@ but where things get really, immeasurably ineresting, is the _parallax_ between 
 forgotten simple truths have their shadow visibly confirmed during such times a _hyperobviousness_ is the first apparent symptom, such as it was no pilgrimage that founded this nation, but rather its opposite, no hallelulahs were heard as it solidified but rahter the opposite. why the USA ends in the twenty-first century is because of this opposite from the full-circle, equally strong force of nature by whichever name called.
 
 
-not all nations are based on the idea of vice, and slim contitutions are proof not only of the atheletic proclivities of the founding fathers, but also their distance from treating verbal testimony as a source of truth but rather a strong belief in "fuck around, find out" and not in an intellectual way.
+not all nations are based on the idea of vice, and slim contitutions are proof not only of the atheletic proclivities of the founding fathers, but also their distance from treating verbal testimony as a source of truth but rather a strong belief in "fuck around, find out" and not in an intellectually sound or nuanced way.
 
 
 no doubt this jock bent of mind this has roots in european persuasions, the new world was never really "new" - what was created in the imagination of land-hungry and trigger-happy started as little more than an amusement park for the aristocracy busy plundering the eastern hemisphere. and that's where it ends, in Netflix, in Trump, in the vegas sphere which is there just excusing itself, please, mind the exodus.
