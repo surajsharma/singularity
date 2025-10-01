@@ -51,5 +51,5 @@ forgotten simple truths have their shadow visibly confirmed during such times a 
 not all nations are based on the idea of vice, and slim contitutions are proof not only of the atheletic proclivities of the founding fathers, but also their distance from treating verbal testimony as a source of truth but rather a strong belief in "fuck around, find out" and not in an intellectually sound or nuanced way.
 
 
-no doubt this jock bent of mind this has roots in european persuasions, the new world was never really "new" - what was created in the imagination of land-hungry and trigger-happy started as little more than an amusement park for the aristocracy busy plundering the eastern hemisphere. and that's where it ends, in Netflix, in Trump, in the vegas sphere which is there just excusing itself, please, mind the exodus.
+no doubt this jock bent of mind this has roots in european persuasions, the new world was never really "new" - what was created in the imagination of land-hungry and trigger-happy started as little more than an amusement park for the aristocracy busy plundering the eastern hemisphere. and that's where it ends, in Netflix, in Trump, in the vegas sphere which, like a panhandler in a gucci belt, is there just excusing itself, please, mind the exodus.
 
