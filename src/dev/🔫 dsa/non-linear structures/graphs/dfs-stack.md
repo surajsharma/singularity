@@ -26,9 +26,7 @@ const graph = {
 
 ```
 
-
 - python 
-
 
 ```python 
 
@@ -45,7 +43,7 @@ def dfs_print(graph, node):
     
     while(len(stack)):
         current = stack.pop()
-        
+     
         print(current)
         
         for neighbour in graph[current]:

@@ -20,7 +20,6 @@ dfs_print(graph, 'a')
 - python 
 
 ```python
-#!/usr/bin/env python3
 graph = {
     'a': ['b', 'c'],
     'b': ['d'],

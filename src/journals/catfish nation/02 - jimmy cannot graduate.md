@@ -3,7 +3,7 @@
 the reason jimmy regresses is not the mythical cyclicality, no rhyme belongs on the edge of history, nor post-structural euphemisms can suffice here, albeit a darkness that is naturally found within and without the human body. 
 
 
-bringing back metaphors that for some reason are no longer fashionable like the "glass celiing" aka "gender (pay) gap". then what? in the abscence of any science, which one would you start? hence, geography is out because it cannot map to, say, gender etc. leading to the search for a "grand unifying theory", in the absence of which, johnny regresses to the mean.
+bringing back metaphors that for some reason are no longer fashionable like the "glass celiing" aka "gender (pay) gap". then what? in the abscence of any science, which one would you start? hence, geography is out because it cannot map to, say, gender etc. leading to the search for a "grand unifying theory", in the absence of which, jimmy regresses to the mean.
 
 
 now, the mind that is exodus believes johnny can improve, but the rotten core knows no light, only a heathen's cowshed with some dung, a fly and lots of hay but no cow. at night jimmy likes to imagine the barn a desert, but to psychoanalyze a whole nation is to generalize, it merely happenned to be the case that jimmy's imagination led him that far from the maddening crowd.

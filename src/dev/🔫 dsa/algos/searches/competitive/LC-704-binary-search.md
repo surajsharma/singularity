@@ -3,7 +3,6 @@
 ### O(log n)
 
 ```python
-
 def BinarySearch(target, sortedLyst):
     left = 0
     right = len(sortedLyst)-1
@@ -39,6 +38,26 @@ impl Solution {
             l = M as i32 + 1;
         }
     }
+        -1
+    }
+}
+```
+
+```rust
+impl Solution {
+    pub fn search(nums: Vec<i32>, target: i32) -> i32 {
+        let mut l = 0usize;
+        let mut r = nums.len();
+
+        while l < r {
+            let m = l + (r - l) / 2;
+            match nums[m].cmp(&target) {
+                std::cmp::Ordering::Equal => return m as i32,
+                std::cmp::Ordering::Greater => r = m,
+                std::cmp::Ordering::Less => l = m + 1,
+            }
+        }
+
         -1
     }
 }
