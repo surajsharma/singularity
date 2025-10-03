@@ -103,15 +103,15 @@ class Solution:
 
     - so the dfs above using extend would be:
     ```python
-        def dfs(i, j):
-            if i < 0 or i >= m or j < 0 or j >= n or image[i][j] != start_color:
-                return
-            
-            image[i][j] = color
-            
-            neighbors = []
-            neighbors.extend([(i-1, j), (i+1, j), (i, j-1), (i, j+1)])
-            
-            for ni, nj in neighbors:
-                dfs(ni, nj)
+    def dfs(i, j):
+        if i < 0 or i >= m or j < 0 or j >= n or image[i][j] != start_color:
+            return
+        
+        image[i][j] = color
+        
+        neighbors = []
+        neighbors.extend([(i-1, j), (i+1, j), (i, j-1), (i, j+1)])
+        
+        for ni, nj in neighbors:
+            dfs(ni, nj)
     ```

@@ -39,3 +39,21 @@ To be sure the powers that be were never true to a single nation, to them its an
 
 
 Longevity was now a curse upon life for if the hedgemon comes to see he is outliving everyone else in an eternal swamp, he will become desperate to turn everything into a swamp. _drill baby drill!_ and all that jazz.
+
+
+But Longevity is never the goal of empire, "your startup will fail" is the mantra. Empires need more than ideology, a base though upon which to spin the yarn. This is always a positive idea like resilience, "can do" attitudes, and as in the case of Fourierism, a kind of self-sufficiency. Seldom is the summit clearly visible from the base camp however, so it is understandable if one works within constraints, if not "shoot for the stars", this is the essence of woke logic.
+
+
+Wahabis take it to an extereme in a manner which leaves them crashed at the landing site. A fundamental lack of balance that is the bane of millenial life and its quintessential precariousness informs their judgement.
+
+
+It would be perhaps too simplistic to assume the average lifespan in years of any civilization, but a ballpark would be lethally close to the age of the original colonies. No data is needed to confirm this but a point totally devoid from the narrative propagated through the zeitgeist.
+
+
+It is decidedly the case that what will outlive the structure and function here is an oligarchy. In that much the end resembles that of the USSR, however, these are after all, god's second favorite people so we can expect the unexpected and my entire reason to write this is to convince them if i havent already to take the longer, scenic way home, that sounds very French so probably not in Texas.
+
+
+However I may not get exactly what I want here too because waiting is to them the same thing as "doing time".
+
+
+It is exactly like a guy driving a chevy in a police chase yelling "i wouldn't get caught dead!", that old school defiance and irreverence is long gone, along with any other positive core, even enough to choose between woke and wahabi. The paradox of final choice.
