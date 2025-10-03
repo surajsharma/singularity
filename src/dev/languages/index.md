@@ -3,6 +3,7 @@
 * 📂 [compiler](compiler)
 * 📂 [go](go)
 * 📂 [js](js)
+* 📂 [jvm](jvm)
 * 📂 [lisp&co](lisp&co)
 * 📂 [rust](rust)
 * 📂 [ts](ts)
