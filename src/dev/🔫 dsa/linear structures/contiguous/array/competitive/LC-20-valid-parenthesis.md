@@ -3,17 +3,21 @@
 ### O(n) using proper stack
 
 ```python
-def isValid(s) -> bool:
-	stack = []
-	mapping = {')':'(','[':']','{':'}'}
+class Solution:
+	def isValid(s: str) -> bool:
+		stack = []
+		mapping = {'(': ')', '[': ']', '{': '}'}
 
-	for char in s:
-		if char in mapping:
-			if not stack or stack.pop() != mapping[char]:
-				return False
-		else:
-			stack.append(char)
-	return len(stack) == 0
+		for ch in s:
+			if ch in mapping:               # opening bracket
+				stack.append(mapping[ch])   # push the expected closer
+			else:                           # closing bracket
+				if not stack or stack.pop() != ch:
+					return False
+
+		return not stack
+
+print(isValid('{{}}'))
 ```
 
 ### O(n*n) using string concatanation

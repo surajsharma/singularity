@@ -61,4 +61,4 @@ Narcissism becomes the religion of the mediocre, envy its operating principle. T
 It is not the case, as is charitably assumed that the drive to become beast led them out of the pains of humanity, rather the intentions were beastly to begin with, which is to say, there were slivers of humanity left here and there at first. But they were by and large exceptions.
 
 
-The narrative of the frontier to be conquered comes to a halt every time in recoginizing the worthlessness of conquest.
+The narrative of the frontier to be conquered comes to a halt every time in recoginizing the worthlessness of conquest. From there it's a short skip to where kids are asking, like the Kerri Chandler song, "mommy what's a book?". I should know, I went from collecting terabytes of music to deleting my youtube playlists.
