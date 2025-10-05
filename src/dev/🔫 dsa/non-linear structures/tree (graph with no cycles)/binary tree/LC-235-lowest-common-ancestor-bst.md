@@ -2,10 +2,8 @@
 
 ### O(h)
 
-
-
 ```python
-```
+
 # Definition for a binary tree node.
 # class TreeNode:
 #     def __init__(self, x):
@@ -21,7 +19,7 @@ class Solution:
             if not root:
                 return
                 
-            lca[0] = root
+            lca[-1] = root
 
             if root is p or root is q:
                 return
@@ -34,6 +32,5 @@ class Solution:
                 return
 
         search(root)
-        return lca[0]
-```
+        return lca[-1]
 ```
