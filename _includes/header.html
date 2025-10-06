@@ -13,6 +13,11 @@
 <script>
     const stub = "singularity"
 </script>
+<link rel="shortcut icon" type="image/png" href="singularity/favicon.ico?">
+{% endif %}
+
+{% if jekyll.environment != "production"  %}
+<link rel="shortcut icon" type="image/png" href="favicon.ico?">
 {% endif %}
 
 <script src="{{ site.baseurl }}{% link assets/js/search-worker.js %}?v={{ site.time | date:'%s' }}"></script>
@@ -30,4 +35,4 @@
 </script>
 
 <script defer src="{{ site.baseurl }}{% link assets/js/sync-search.js %}?v={{ site.time | date:'%s' }}"></script>
-<link rel="shortcut icon" type="image/png" href="/favicon.ico?">
+
