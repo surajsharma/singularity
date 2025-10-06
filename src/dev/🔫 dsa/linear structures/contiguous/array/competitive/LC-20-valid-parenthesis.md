@@ -16,8 +16,6 @@ class Solution:
 					return False
 
 		return not stack
-
-print(isValid('{{}}'))
 ```
 
 ### O(n*n) using string concatanation
