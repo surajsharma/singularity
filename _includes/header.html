@@ -16,15 +16,20 @@
 {% endif %}
 
 <!-- favicon -->
+<link rel="shortcut icon" type="image/png"
+    href="{{ site.baseurl }}{% link assets/favicon.ico %}?v={{ site.time | date:'%s' }}">
+<link rel="icon" type="image/png" sizes="32x32"
+    href="{{ site.baseurl }}{% link assets/favicon.ico%}?v={{ site.time | date:'%s' }}">
+<link rel="icon" type="image/png" sizes="16x16"
+    href="{{ site.baseurl }}{% link assets/favicon.ico%}?v={{ site.time | date:'%s' }}">
+<link rel="apple-touch-icon" sizes="180x180"
+    href="{{ site.baseurl }}{% link assets/favicon.ico %}?v={{ site.time | date:'%s' }}">
 
-<link rel="shortcut icon" type="image/png" href="{{ site.baseurl }}{% link assets/favicon.ico %}?">
-<link rel="icon" type="image/png" sizes="32x32" href="{{ site.baseurl }}{% link assets/favicon.ico %}?">
-<link rel="icon" type="image/png" sizes="16x16" href="{{ site.baseurl }}{% link assets/favicon.ico %}?">
-<link rel="apple-touch-icon" sizes="180x180" href="{{ site.baseurl }}{% link assets/favicon.ico %}?">
+<!-- manifest for android -->
 <link rel="manifest" href="/site.webmanifest">
 
+<!-- search scripts -->
 <script src="{{ site.baseurl }}{% link assets/js/search-worker.js %}?v={{ site.time | date:'%s' }}"></script>
-
 <script>
     const production = !(typeof stub === "undefined");
     const search_url = !production ? "/src/search" : "/" + stub + "/src/search";
@@ -36,5 +41,4 @@
     const title = document.getElementById("title").href = title_url;
     const search = document.getElementById("search-icon").href = search_url;
 </script>
-
 <script defer src="{{ site.baseurl }}{% link assets/js/sync-search.js %}?v={{ site.time | date:'%s' }}"></script>
