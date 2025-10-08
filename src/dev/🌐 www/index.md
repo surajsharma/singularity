@@ -1,2 +1,1 @@
-* 📂 [client](client)
 * 📂 [server](server)
