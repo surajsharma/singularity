@@ -1,7 +1,6 @@
-## 130. [✅ Flood Fill](https://leetcode.com/problems/flood-fill/)
+## 733. [✅ Flood Fill](https://leetcode.com/problems/flood-fill/)
 
 ### O(n*m)
-
 
 - using dfs aka NEIGHBOURS
 
@@ -28,7 +27,6 @@ class Solution:
         dfs(sr,sc)
         return image
 ```
-
 
 - using bfs aka LEVELS
 
@@ -82,13 +80,13 @@ class Solution:
     # lst is now [1, 2, 3, 4]
     ```
 
-    - in bfs this line could be substituted
+  - in bfs this line could be substituted
 
     ```python
     next_level.extend([(i-1, j), (i+1, j), (i, j-1), (i, j+1)])
     ```
 
-    - with:
+  - with:
     ```python
     next_level.append((i-1, j))
     next_level.append((i+1, j))
@@ -96,12 +94,14 @@ class Solution:
     next_level.append((i, j+1))
     ```
 
-    - Or with `+=` (which also extends):
+  - Or with `+=` (which also extends):
+
     ```
     next_level += [(i-1, j), (i+1, j), (i, j-1), (i, j+1)]
     ```
 
-    - so the dfs above using extend would be:
+  - so the dfs above using extend would be:
+
     ```python
     def dfs(i, j):
         if i < 0 or i >= m or j < 0 or j >= n or image[i][j] != start_color:

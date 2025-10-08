@@ -1,4 +1,4 @@
-## 130. [Surrounded Regions](https://leetcode.com/problems/surrounded-regions/description/)
+## 130. [Surrounded Regions](https://leetcode.com/problems/surrounded-regions)
 
 ### O(n*m)
 
