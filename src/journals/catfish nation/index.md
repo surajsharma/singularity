@@ -4,4 +4,4 @@
 * 📄 [04 - whose beef is it anyway](04 - whose beef is it anyway.md)
 * 📄 [05 - the subaltern sandwitch](05 - the subaltern sandwitch.md)
 * 📄 [06 - win stupid prizes](06 - win stupid prizes.md)
-* 📄 [07 - first you think your fortunues lovely](07 - first you think your fortunues lovely.md)
+* 📄 [07 - first you think your fortunes lovely](07 - first you think your fortunes lovely.md)
