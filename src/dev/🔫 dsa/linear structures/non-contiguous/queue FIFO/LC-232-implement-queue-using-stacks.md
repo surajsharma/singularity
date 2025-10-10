@@ -1,5 +1,6 @@
 ## 232. [✅ Implement  queue using stacks](https://leetcode.com/problems/implement-queue-using-stacks)
 
+### amortized O(n)
 
 ```py
 class MyQueue:
