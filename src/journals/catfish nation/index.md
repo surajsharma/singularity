@@ -5,3 +5,4 @@
 * 📄 [05 - the subaltern sandwitch](05 - the subaltern sandwitch.md)
 * 📄 [06 - win stupid prizes](06 - win stupid prizes.md)
 * 📄 [07 - first you think your fortunes lovely](07 - first you think your fortunes lovely.md)
+* 📄 [08 - the child left behind](08 - the child left behind.md)
