@@ -6,3 +6,5 @@
 * 📄 [06 - win stupid prizes](06 - win stupid prizes.md)
 * 📄 [07 - first you think your fortunes lovely](07 - first you think your fortunes lovely.md)
 * 📄 [08 - the child left behind](08 - the child left behind.md)
+* 📄 [09 - you cannot reason with darkness](09 - you cannot reason with darkness.md)
+* 📄 [10 - america is porn](10 - america is porn.md)
