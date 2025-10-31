@@ -45,4 +45,4 @@ It is a cul-de-sac, either memeify yourself and move from ghetto to ghetto like 
 There is good reason to be vary of stalemates for the absence of compromise enflames the wings of war and ignites "animal insticts" and eggs on tribal behaviour, dance of the vanities, irrational exuberances and other expression of power imbalance.
 
 
-If you add to this exposive mixture the default narcissism of the average american, and you get a dance macabre in a burning room. 
+If you add to this exposive mixture the default narcissism of the average american, and you get a dance macabre inside a burning room. 

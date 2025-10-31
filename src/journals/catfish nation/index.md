@@ -9,3 +9,5 @@
 * 📄 [09 - you cannot reason with darkness](09 - you cannot reason with darkness.md)
 * 📄 [10 - america is porn](10 - america is porn.md)
 * 📄 [11 - every others harvest](11 - every others harvest.md)
+* 📄 [12 - smog in the ghetto](12 - smog in the ghetto.md)
+* 📄 [13 - what happens on neptune](13 - what happens on neptune.md)
