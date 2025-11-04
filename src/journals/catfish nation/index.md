@@ -11,3 +11,4 @@
 * 📄 [11 - every others harvest](11 - every others harvest.md)
 * 📄 [12 - smog in the ghetto](12 - smog in the ghetto.md)
 * 📄 [13 - what happens on neptune](13 - what happens on neptune.md)
+* 📄 [14 - the multipolar myth](14 - the multipolar myth.md)
