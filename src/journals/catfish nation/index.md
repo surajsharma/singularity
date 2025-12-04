@@ -2,7 +2,7 @@
 * 📄 [02 - jimmy cannot graduate](02 - jimmy cannot graduate.md)
 * 📄 [03 - the woke-wahabi paradox](03 - the woke-wahabi paradox.md)
 * 📄 [04 - whose beef is it anyway](04 - whose beef is it anyway.md)
-* 📄 [05 - the subaltern sandwitch](05 - the subaltern sandwitch.md)
+* 📄 [05 - the subaltern sandwich](05 - the subaltern sandwich.md)
 * 📄 [06 - win stupid prizes](06 - win stupid prizes.md)
 * 📄 [07 - first you think your fortunes lovely](07 - first you think your fortunes lovely.md)
 * 📄 [08 - the child left behind](08 - the child left behind.md)
@@ -12,3 +12,4 @@
 * 📄 [12 - smog in the ghetto](12 - smog in the ghetto.md)
 * 📄 [13 - what happens on neptune](13 - what happens on neptune.md)
 * 📄 [14 - the multipolar myth](14 - the multipolar myth.md)
+* 📄 [15 - who does not dream of nuclear annhilation](15 - who does not dream of nuclear annhilation.md)
