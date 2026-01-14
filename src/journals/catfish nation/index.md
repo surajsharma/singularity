@@ -13,3 +13,4 @@
 * 📄 [13 - what happens on neptune](13 - what happens on neptune.md)
 * 📄 [14 - the multipolar myth](14 - the multipolar myth.md)
 * 📄 [15 - who does not dream of nuclear annhilation](15 - who does not dream of nuclear annhilation.md)
+* 📄 [16 - the thielian tragedy](16 - the thielian tragedy.md)
