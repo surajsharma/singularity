@@ -1,5 +1,0 @@
-* 📄 [bubble-sort](bubble-sort.md)
-* 📄 [insertion-sort](insertion-sort.md)
-* 📄 [selection-sort-recursive](selection-sort-recursive.md)
-* 📄 [selection-sort](selection-sort.md)
-* 📄 [sort-three-states](sort-three-states.md)

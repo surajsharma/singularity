@@ -1,7 +1,0 @@
-* 📂 [recursion](recursion)
-* 📂 [simulation](simulation)
-* 📄 [bit shifting masking](bit shifting masking.md)
-* 📄 [bitwise ops](bitwise ops.md)
-* 📄 [LC-9-palindrome-number](LC-9-palindrome-number.md)
-* 📄 [reverse-number](reverse-number.md)
-* 📄 [sum-of-digits](sum-of-digits.md)
